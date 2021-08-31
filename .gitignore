@@ -1,3 +1,5 @@
+# -------------GENERAL-------------
+
 # System files
 # ------------
 
@@ -21,6 +23,12 @@ Icon
 *.sublime-workspace
 /.vscode
 /.idea
+
+# Kirby
+# (core file, automatically installed with composer)
+# --------------------------------------------------
+/kirby
+/vendor
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
