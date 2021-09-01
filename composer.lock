@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c14582f5a8636a97cc03c07ea0d0ca34",
+    "content-hash": "e8d9c39f2342f02d3bb649665b2e6434",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -54,6 +54,48 @@
                 }
             ],
             "time": "2021-04-20T12:18:18+00:00"
+        },
+        {
+            "name": "diesdasdigital/kirby-meta-knight",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/diesdasdigital/kirby-meta-knight.git",
+                "reference": "829835f1feb113d8890ed1b14f4f6ba171ebe291"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/diesdasdigital/kirby-meta-knight/zipball/829835f1feb113d8890ed1b14f4f6ba171ebe291",
+                "reference": "829835f1feb113d8890ed1b14f4f6ba171ebe291",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "autoload": {
+                "psr-4": {
+                    "diesdasdigital\\kirby-meta-knight\\": "src/models/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Muth",
+                    "email": "jonathan@diesdas.digital",
+                    "homepage": "https://diesdas.digital",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Meta Knight – SEO for Kirby",
+            "support": {
+                "issues": "https://github.com/diesdasdigital/kirby-meta-knight/issues",
+                "source": "https://github.com/diesdasdigital/kirby-meta-knight/tree/1.2"
+            },
+            "time": "2021-07-08T13:27:19+00:00"
         },
         {
             "name": "filp/whoops",

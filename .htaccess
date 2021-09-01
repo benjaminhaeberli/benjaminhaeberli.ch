@@ -42,6 +42,9 @@ RewriteRule ^(.*) index.php [L]
 
 </IfModule>
 
+# prevent directory listings
+Options -Indexes
+
 # pass the Authorization header to PHP
 SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 

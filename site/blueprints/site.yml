@@ -1,3 +1,30 @@
 title: Site
-preset: pages
-unlisted: true
+
+tabs:
+  content:
+    icon: text
+    label: Content
+    sections:
+      drafts:
+        headline: Drafts
+        type: pages
+        status: draft
+        templates:
+          - default
+          - masthead
+        image:
+          query: false
+      unlisted:
+        headline: Unlisted
+        type: pages
+        status: unlisted
+        image:
+          query: false
+      listed:
+        headline: Listed
+        type: pages
+        status: listed
+        image:
+          query: false
+
+  seotab: seo

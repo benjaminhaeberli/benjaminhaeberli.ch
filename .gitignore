@@ -29,6 +29,8 @@ Icon
 # --------------------------------------------------
 /kirby
 /vendor
+/site/plugins/*
+!/site/accounts/index.html
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
