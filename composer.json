@@ -2,7 +2,11 @@
     "name": "getkirby/plainkit",
     "description": "Kirby Plainkit",
     "type": "project",
-    "keywords": ["kirby", "cms", "starterkit"],
+    "keywords": [
+        "kirby",
+        "cms",
+        "starterkit"
+    ],
     "homepage": "https://getkirby.com",
     "authors": [
         {
@@ -18,7 +22,7 @@
         "source": "https://github.com/getkirby/starterkit"
     },
     "require": {
-        "php": ">=7.3.0 <8.1.0",
+        "php": ">=7.4.2 <=8.1.2",
         "getkirby/cms": "^3.5",
         "diesdasdigital/kirby-meta-knight": "^1.2"
     },
