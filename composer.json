@@ -23,8 +23,7 @@
     },
     "require": {
         "php": ">=7.4.2 <=8.1.2",
-        "getkirby/cms": "^3.5",
-        "diesdasdigital/kirby-meta-knight": "^1.2"
+        "getkirby/cms": "^3.5"
     },
     "scripts": {
         "start": [
