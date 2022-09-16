@@ -11,7 +11,4 @@ $kirby = new Kirby([
     ]
 ]);
 
-
-
-
 echo $kirby->render();
