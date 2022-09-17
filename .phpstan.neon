@@ -1,0 +1,9 @@
+parameters:
+    level: 6
+    paths:
+        - config
+        - site
+        - src
+        - tests
+    excludePaths:
+        - kirby

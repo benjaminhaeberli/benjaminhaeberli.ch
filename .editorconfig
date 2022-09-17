@@ -13,3 +13,6 @@ trim_trailing_whitespace = true
 
 [*.php]
 indent_size = 4
+
+[*.xml]
+insert_final_newline = false

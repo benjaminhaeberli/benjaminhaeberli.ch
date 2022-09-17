@@ -1,9 +1,7 @@
-# Personal website developed with [KirbyCMS](https://getkirby.com/) and designed by myself.
-
 <div align="center">
- <p>ee</p>
+ <p><img src="./docs/assets/swibeco.png" width="250px" alt="Logo de Swibeco"></p>
 
-**Personal website developed with [KirbyCMS](https://getkirby.com/) and designed by myself.**
+**Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself.**
 
  </div>
 
@@ -11,30 +9,41 @@
 
 ## Get started 🔎
 
-- Install PHP dependencies : `composer install`
-- Install JS dependencies : `npm install`
-- Configure [Prettier integration](https://prettier.io/docs/en/editors.html) with your editor or run `npm run prettier`
-- `php -S localhost:8000 kirby/router.php`
-
-## Stack 🧠
-
 ### Requirements
 
-- [PHP](https://secure.php.net/manual/en/install.php) >=7.4.0 <8.2.0
+- [PHP](https://secure.php.net/manual/en/install.php) ^8.1
 - [Composer](https://getcomposer.org/download/) >= 2.4.2
 - [Node.js](http://nodejs.org/) >= 16.13
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) >= 8.19.2
 
+### Install
+
+```bash
+composer install
+npm install
+php -S localhost:8000 kirby/router.php
+```
+
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
-### Dependencies
+## Stack 🧠
 
 - [Kirby](https://getkirby.com/) → CMS
-- [Ray](https://myray.app/) → debugging output
 
-#### _(Waiting list)_
+_Soon : TailwindCSS_
 
-- TailwindCSS and Vite
-- PHPCS
+#### Development
+
+- [PHPStan](https://phpstan.org/) → PHP Static Analysis Tool
+- [PHPCPD](https://phpqa.io/projects/phpcpd.html) → PHP Copy/Paste Detector
+- [PHPCodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) → PHP Coding Standards Tokenizer
+- [PHPUnit](https://phpunit.de/)
+- [PHPUnitWatcher ](https://github.com/spatie/phpunit-watcher) → Automatically run PHPUnit tests when source code changes
+- [Ray](https://myray.app/) (optional) → debugging output
+- [Prettier](https://prettier.io/) → Opinionated code formatter
+
+_Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
+
+---
 
 This work is licensed under [GNU General Public License v3.0](./README.md).

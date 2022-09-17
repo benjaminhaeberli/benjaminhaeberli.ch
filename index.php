@@ -6,13 +6,18 @@ define('KIRBY_HELPER_DUMP', false);
 
 require __DIR__  . '/kirby/bootstrap.php';
 
-$debugbar = new DebugBar\StandardDebugBar();
-$debugbar['time']->startMeasure('kirbycms', 'Kirby CMS');
-$debugbarRenderer = $debugbar->getJavascriptRenderer();
+$kirby = new Kirby\Cms\App();
 
-echo (new Kirby\Cms\App)->render();
+if (str_starts_with(kirby()->path(), 'panel/')) {
+    $debugbar = new DebugBar\StandardDebugBar();
+    $debugbar['time']->startMeasure('kirbycms', 'Kirby CMS');
+    $debugbarRenderer = $debugbar->getJavascriptRenderer();
+}
 
-ray('e');
-$debugbar['time']->stopMeasure('kirbycms');
-echo $debugbarRenderer->renderHead();
-echo $debugbarRenderer->render();
+echo $kirby->render();
+
+if (str_starts_with(kirby()->path(), 'panel/')) {
+    $debugbar['time']->stopMeasure('kirbycms');
+    echo $debugbarRenderer->renderHead();
+    echo $debugbarRenderer->render();
+}

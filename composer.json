@@ -1,6 +1,8 @@
 {
     "name": "benjaminhaeberli/benjmaminhaeberli.ch",
+    "description": "Personal website developed with KirbyCMS",
     "type": "project",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "Benjamin Haeberli",
@@ -8,32 +10,65 @@
             "homepage": "https://benjaminhaeberli.ch/"
         }
     ],
-    "require": {
-        "php": ">=7.4.0 <8.2.0",
-        "getkirby/cms": "^3.6",
-        "spatie/ray": "^1.36",
-        "maximebf/debugbar": "^1.18"
-    },
-    "scripts": {
-        "start": [
-            "Composer\\Config::disableProcessTimeout",
-            "@php -S localhost:8000 kirby/router.php"
-        ],
-        "clean": [
-            "composer clear-cache",
-            "composer dump-autoload"
-        ],
-        "phpstan": [
-            "./vendor/bin/phpstan analyse"
+    "autoload": {
+        "classmap": [
+            "src/"
         ]
     },
     "config": {
         "allow-plugins": {
             "getkirby/composer-installer": true
         },
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.1"
+        },
+        "platform-check": true
+    },
+    "scripts": {
+        "analyze": [
+            "@analyze:composer",
+            "@analyze:phpcpd",
+            "@analyze:phpcs",
+            "@analyze:phpstan"
+        ],
+        "analyze:composer": "composer validate --strict --no-check-version --no-check-all",
+        "analyze:phpcpd": "./vendor/bin/phpcpd --fuzzy --exclude kirby --exclude vendor --exclude node_modules .",
+        "analyze:phpcs": "./vendor/bin/phpcs --standard=./.phpcs.xml",
+        "analyze:phpstan": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyse",
+        "fix": [
+            "@fix:composer",
+            "@fix:phpcs"
+        ],
+        "fix:composer": [
+            "composer clear-cache",
+            "composer dump-autoload"
+        ],
+        "fix:phpcs": "./vendor/bin/phpcbf --standard=./.phpcs.xml",
+        "server": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -S localhost:8000 kirby/router.php"
+        ],
+        "test": "./vendor/bin/phpunit --configuration=./.phpunit.xml --colors=always tests/",
+        "test:watch": [
+            "Composer\\Config::disableProcessTimeout",
+            "./vendor/bin/phpunit-watcher watch --configuration=./.phpunit.xml --colors=always tests/"
+        ],
+        "zip": "composer archive --format=zip --file=dist"
+    },
+    "require": {
+        "php": "^8.1",
+        "getkirby/cms": "^3.6"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.8"
+        "maximebf/debugbar": "^1.18",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5",
+        "sebastian/phpcpd": "^6.0",
+        "sempro/phpunit-pretty-print": "^1.4",
+        "spatie/phpunit-watcher": "^1.23",
+        "spatie/ray": "^1.36",
+        "squizlabs/php_codesniffer": "3.*"
     }
 }
