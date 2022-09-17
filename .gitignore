@@ -28,7 +28,7 @@ Icon
 # (core file, automatically installed with composer)
 # --------------------------------------------------
 /kirby/*
-!/kirby/config/helpers.html
+!/kirby/config/helpers.php
 
 /vendor
 /site/plugins/*
