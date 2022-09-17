@@ -5,5 +5,6 @@ return [
     'api' => [
         'basicAuth' => true,
         'allowInsecure' => true,
-    ]
+    ],
+    'languages' => true,
 ];

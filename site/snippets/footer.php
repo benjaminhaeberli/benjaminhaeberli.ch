@@ -1,5 +1,5 @@
 <footer>
-  <p class="copyright"><?= $site->copyright() ?></p>
+  <p class="copyright"><?= site()->copyright() ?></p>
 </footer>
 
 </body>

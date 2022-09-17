@@ -1,21 +1,20 @@
-title: Site
+title: Content
 
-tabs:
-  content:
-    icon: text
-    label: Content
+options:
+  changeTitle: true
+
+columns:
+  left:
+    width: 1/2
     sections:
       drafts:
         headline: Drafts
         type: pages
         status: draft
-        templates:
-          - default
-          - masthead
         image:
           query: false
       unlisted:
-        headline: Unlisted
+        headline: Non publié
         type: pages
         status: unlisted
         image:
@@ -26,3 +25,30 @@ tabs:
         status: listed
         image:
           query: false
+ right:
+    width: 1/2
+    fields:
+      address:
+        label: Address
+        type: writer
+        inline: true
+      email:
+        label: Email
+        type: email
+      phone:
+        label: Phone
+        type: tel
+      social:
+        label: On the web
+        type: structure
+        columns:
+          platform: true
+        fields:
+          platform:
+            label: Platform
+            type: text
+            width: 1/2
+          url:
+            label: URL
+            type: url
+            width: 1/2

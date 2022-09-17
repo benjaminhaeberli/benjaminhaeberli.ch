@@ -2,7 +2,7 @@
 
 require 'kirby/bootstrap.php';
 
-$kirby = new Kirby([
+$kirby = new Kirby\Cms\App([
     'roots' => [
         'index'   => __DIR__,
         'config' =>  __DIR__ . '/config',
