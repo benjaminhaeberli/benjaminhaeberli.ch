@@ -27,10 +27,13 @@ Icon
 # Kirby
 # (core file, automatically installed with composer)
 # --------------------------------------------------
-/kirby
+/kirby/*
+!/kirby/config/helpers.html
+
 /vendor
 /site/plugins/*
 !/site/accounts/index.html
+
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
