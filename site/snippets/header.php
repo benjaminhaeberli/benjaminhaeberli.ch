@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+  <?php site()->blueprint()->field('address') ?>
   <header>
     <ul>
       <li>
@@ -22,5 +22,3 @@
       </li>
     </ul>
   </header>
-
-  <?php dump(site()->blueprint()->field('address')) ?>

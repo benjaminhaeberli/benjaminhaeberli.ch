@@ -1,10 +1,15 @@
 <?php
 
 return [
-    'debug'  => true,
+    'debug'  => false,
     'api' => [
         'basicAuth' => true,
         'allowInsecure' => true,
     ],
     'languages' => true,
+    'cache' => [
+        'pages' => [
+            'active' => false
+        ]
+    ]
 ];

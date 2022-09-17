@@ -23,7 +23,9 @@
     },
     "require": {
         "php": ">=7.4.2 <=8.1.2",
-        "getkirby/cms": "^3.5"
+        "getkirby/cms": "^3.5",
+        "spatie/ray": "^1.36",
+        "maximebf/debugbar": "^1.18"
     },
     "scripts": {
         "start": [
