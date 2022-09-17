@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
 <h1>
-  <?= $page->title() ?>
+    <?= page()->title() ?>
 </h1>
-<?= $page->text()->kirbytext() ?>
+<?= page()->content()->get('text') ?>
 
 <?php snippet('footer') ?>

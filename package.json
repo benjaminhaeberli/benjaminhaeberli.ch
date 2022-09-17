@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "author": "Benjamin Haeberli <hello@benjaminhaeberli.ch> (https://benjaminhaeberli.ch/)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
