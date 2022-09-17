@@ -1,3 +1,6 @@
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
 root = true
 
 [*.{css,scss,less,js,json,ts,sass,html,hbs,mustache,phtml,html.twig,md,yml}]
