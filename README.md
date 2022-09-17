@@ -1,25 +1,20 @@
 # Portfolio ⚡️
 
-Personal portfolio (2021), developed with Kirby CMS and designed by myself
+Portfolio website, developed with [KirbyCMS](https://getkirby.com/) and designed by myself.
 
-### Installation
+## Installation
 
--   `composer install`
--   `php -S localhost:8000 kirby/router.php`
+- `composer install`
+- `php -S localhost:8000 kirby/router.php`
 
-### Technologies
+## Technologies
 
 #### Code
 
--   [KirbyCMS](https://getkirby.com/)
--
+- [KirbyCMS](https://getkirby.com/)
+- [Ray by Spatie](https://spatie.be/docs/ray/v1/usage/reference)
 
-#### Fonts
+## Todo
 
--   [Archivo](https://fonts.google.com/specimen/Archivo)
--   [Chivo](https://fonts.google.com/specimen/Chivo)
--   [JetBrains Mono](https://www.jetbrains.com/fr-fr/lp/mono/)
-
-### Development
-
--   Spatie\Ray : [Documentation](https://spatie.be/docs/ray/v1/usage/reference)
+- Tailwind and Wite
+- PHPCS

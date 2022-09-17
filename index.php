@@ -12,6 +12,7 @@ $debugbarRenderer = $debugbar->getJavascriptRenderer();
 
 echo (new Kirby\Cms\App)->render();
 
+ray('e');
 $debugbar['time']->stopMeasure('kirbycms');
 echo $debugbarRenderer->renderHead();
 echo $debugbarRenderer->render();

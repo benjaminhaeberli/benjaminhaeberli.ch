@@ -18,6 +18,13 @@
     "start": [
       "Composer\\Config::disableProcessTimeout",
       "@php -S localhost:8000 kirby/router.php"
+    ],
+    "clean": [
+      "composer clear-cache",
+      "composer dump-autoload"
+    ],
+    "phpstan": [
+      "./vendor/bin/phpstan analyse"
     ]
   },
   "config": {
