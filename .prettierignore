@@ -1,1 +1,14 @@
 *.php
+
+kirby/
+
+vendor/
+node_modules/
+.vscode/
+
+media/
+
+site/plugins/
+site/accounts/
+site/cache/
+site/sessions/

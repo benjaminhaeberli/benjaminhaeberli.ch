@@ -1,39 +1,39 @@
 {
-  "name": "benjaminhaeberli/benjmaminhaeberli.ch",
-  "type": "project",
-  "authors": [
-    {
-      "name": "Benjamin Haeberli",
-      "email": "hello@benjaminhaeberli.ch",
-      "homepage": "https://benjaminhaeberli.ch/"
-    }
-  ],
-  "require": {
-    "php": ">=7.4.0 <8.2.0",
-    "getkirby/cms": "^3.6",
-    "spatie/ray": "^1.36",
-    "maximebf/debugbar": "^1.18"
-  },
-  "scripts": {
-    "start": [
-      "Composer\\Config::disableProcessTimeout",
-      "@php -S localhost:8000 kirby/router.php"
+    "name": "benjaminhaeberli/benjmaminhaeberli.ch",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Benjamin Haeberli",
+            "email": "hello@benjaminhaeberli.ch",
+            "homepage": "https://benjaminhaeberli.ch/"
+        }
     ],
-    "clean": [
-      "composer clear-cache",
-      "composer dump-autoload"
-    ],
-    "phpstan": [
-      "./vendor/bin/phpstan analyse"
-    ]
-  },
-  "config": {
-    "allow-plugins": {
-      "getkirby/composer-installer": true
+    "require": {
+        "php": ">=7.4.0 <8.2.0",
+        "getkirby/cms": "^3.6",
+        "spatie/ray": "^1.36",
+        "maximebf/debugbar": "^1.18"
     },
-    "optimize-autoloader": true
-  },
-  "require-dev": {
-    "phpstan/phpstan": "^1.8"
-  }
+    "scripts": {
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -S localhost:8000 kirby/router.php"
+        ],
+        "clean": [
+            "composer clear-cache",
+            "composer dump-autoload"
+        ],
+        "phpstan": [
+            "./vendor/bin/phpstan analyse"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        },
+        "optimize-autoloader": true
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.8"
+    }
 }

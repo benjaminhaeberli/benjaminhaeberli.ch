@@ -1,8 +1,16 @@
 {
-        "endOfLine": "lf",
-        "semi": true,
-        "singleQuote": false,
-        "tabWidth": 2,
-        "trailingComma": "es5",
-        "useTabs": false
+  "endOfLine": "lf",
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": ["composer.lock", "composer.json"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
 }
