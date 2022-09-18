@@ -1,11 +1,16 @@
 <div align="center">
- <p><img src="./docs/assets/swibeco.png" width="250px" alt="Logo de Swibeco"></p>
+ <p><img src="./thumbnail.png" width="800px" alt="Black and white photo of Benjamin Haeberli working on a computer."></p>
 
-**Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself.**
+**Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself 🥳**
+
+![GitHub Followers](https://img.shields.io/twitter/follow/1benjam1?style=social)
+
+[![License GPL v3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?color=192433)](./LICENSE)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/commits/main)
+[![GitHub Language](https://img.shields.io/github/languages/top/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/search?l=php)
+[![GitHub Stars](https://img.shields.io/github/stars/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/stargazers)
 
  </div>
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Get started 🔎
 
@@ -28,9 +33,11 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 ## Stack 🧠
 
+#### Production
+
 - [Kirby](https://getkirby.com/) → CMS
 
-_Soon : TailwindCSS_
+_Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.php), [Feed & Sitemap](https://github.com/bnomei/kirby3-feed), [Comments](https://github.com/sebastiangreger/kirby3-commentions), [Static Cache](https://github.com/bnomei/kirby3-staticache), [Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers), [Rate Page](https://github.com/mauricerenck/rate-page), [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)_
 
 #### Development
 
@@ -46,4 +53,4 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 ---
 
-This work is licensed under [GNU General Public License v3.0](./README.md).
+This work is licensed under [GNU General Public License v3.0](./LICENSE).
