@@ -3,7 +3,7 @@
 
 **Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself 🥳**
 
-![GitHub Followers](https://img.shields.io/twitter/follow/1benjam1?style=social)
+[![Twitter](https://img.shields.io/twitter/follow/1benjam1?style=social)](https://twitter.com/1benjam1/)
 
 [![License GPL v3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?color=192433)](./LICENSE)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/commits/main)
