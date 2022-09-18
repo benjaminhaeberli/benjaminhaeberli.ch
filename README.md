@@ -21,15 +21,22 @@
 - [Node.js](http://nodejs.org/) >= 16.13
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) >= 8.19.2
 
-### Install
+### Installation
 
-```bash
-composer install
-npm install
-php -S localhost:8000 kirby/router.php
-```
+1. `composer install`
+2. `npm install`
+3. `composer run server`
 
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
+
+### Code quality
+
+- `composer run analyze`
+- `composer run fix`
+- `composer run test-watch`
+- `npm run prettier:write`
+
+More details in [composer.json](./composer.json) and [package.json](./package.json)
 
 ## Stack 🧠
 

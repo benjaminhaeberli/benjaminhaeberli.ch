@@ -8,7 +8,6 @@
     <file>site/snippets/</file>
     <file>site/templates/</file>
     <file>src/</file>
-    <file>tests/</file>
 
     <!-- Scan only PHP files -->
     <arg name="extensions" value="php"/>
