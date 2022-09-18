@@ -1,9 +1,9 @@
 <div align="center">
  <p><img src="./thumbnail.png" width="800px" alt="Black and white photo of Benjamin Haeberli working on a computer."></p>
 
-**Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself 🥳**
+<strong>Personal website built with <a href="https://getkirby.com/" target="_blank">KirbyCMS</a> and designed by myself 🥳<strong>
 
-[![Twitter](https://img.shields.io/twitter/follow/1benjam1?style=social)](https://twitter.com/1benjam1/)
+<a href="https://twitter.com/1benjam1/" target="_blank"><img src="https://img.shields.io/twitter/follow/1benjam1?style=social"></a>
 
 [![License GPL v3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?color=192433)](./LICENSE)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/commits/main)
