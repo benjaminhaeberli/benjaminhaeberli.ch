@@ -1,6 +1,18 @@
 {
-  "private": true,
+  "name": "benjaminhaeberli.ch",
+  "description": "Personal website developed with KirbyCMS",
   "author": "Benjamin Haeberli <hello@benjaminhaeberli.ch> (https://benjaminhaeberli.ch/)",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benjaminhaeberli/benjaminhaeberli.ch.git"
+  },
+  "keywords": [
+    "kirby",
+    "website",
+    "portfolio",
+    "tailwindcss"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier:check": "prettier . --check",
@@ -8,6 +20,7 @@
   },
   "devDependencies": {
     "fast-glob": "^3.2.12",
+    "license-checker": "^25.0.1",
     "prettier": "^2.7.1",
     "prettier-plugin-css-order": "^1.3.0"
   }
