@@ -58,6 +58,11 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 
 _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
+## Ideas 💡
+
+- [ ] Add a `"funding"` key _(Adyen or Stripe payment link)_ in [composer.json](https://getcomposer.org/doc/04-schema.md#funding) and [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#funding)
+- [ ] Dynamically display a list of all dependencies _(composer.sjon + package.json)_ with authors and licenses on a "Legal Notice" page
+
 ---
 
 This work is licensed under [GNU General Public License v3.0](./LICENSE).
