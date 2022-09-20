@@ -2,10 +2,9 @@
 <phpunit
     cacheResultFile="./tests/.phpunit.result.cache"
     colors="true"
-    processIsolation="true"
     printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinterForPhpUnit9">
     <php>
         <env name="PHPUNIT_PRETTY_PRINT_PROGRESS" value="true" />
-        <const name="PHPUNIT_PRETTY_PRINT_PROGRESS" value="true" />
+        <const name="KIRBY_HELPER_DUMP" value="false" />
     </php>
 </phpunit>

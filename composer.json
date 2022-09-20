@@ -57,7 +57,7 @@
             "Composer\\Config::disableProcessTimeout",
             "@php -S localhost:8000 kirby/router.php"
         ],
-        "test": "./vendor/bin/phpunit --configuration=./.phpunit.xml --colors=always ./tests/",
+        "test": "./vendor/bin/phpunit --prepend ./tests/prepend.php --configuration=./.phpunit.xml --colors=always ./tests/",
         "test:watch": [
             "Composer\\Config::disableProcessTimeout",
             "./vendor/bin/phpunit-watcher watch"

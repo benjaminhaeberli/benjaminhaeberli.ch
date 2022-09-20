@@ -1,5 +1,3 @@
-
-
 <div align="center">
 
 <h3>👀 DON'T FORGET TO BUY A KIRBY LICENSE HERE → https://getkirby.com/buy 👀</h3>
@@ -62,6 +60,10 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
 _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
+
+## Bugs 🐛
+
+- [ ] `Cannot redeclare dump()` : install [composer-include-files](https://github.com/funkjedi/composer-include-files) and add `prepend.php` in `includes_files` props
 
 ## Ideas 💡
 

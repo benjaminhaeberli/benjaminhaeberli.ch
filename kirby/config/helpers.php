@@ -104,19 +104,17 @@ if (Helpers::hasOverride('deprecated') === false) { // @codeCoverageIgnore
 
 if (Helpers::hasOverride('dump') === false) { // @codeCoverageIgnore
 
-	if (!function_exists('dump')) {
-		/**
-		 * Simple object and variable dumper
-		 * to help with debugging.
-		 *
-		 * @param mixed $variable
-		 * @param bool $echo
-		 * @return string
-		 */
-		function dump($variable, bool $echo = true): string
-		{
-			return Helpers::dump($variable, $echo);
-		}
+	/**
+	 * Simple object and variable dumper
+	 * to help with debugging.
+	 *
+	 * @param mixed $variable
+	 * @param bool $echo
+	 * @return string
+	 */
+	function dump($variable, bool $echo = true): string
+	{
+		return Helpers::dump($variable, $echo);
 	}
 }
 
