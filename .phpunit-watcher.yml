@@ -3,10 +3,11 @@ watch:
     - config
     - site
     - src
+    - tests
   fileMask: "*.php"
 notifications:
   passingTests: false
   failingTests: false
 phpunit:
   binaryPath: "./vendor/bin/phpunit"
-  arguments: "--configuration=./.phpunit.xml --colors=always src/tests/"
+  arguments: "--configuration=./.phpunit.xml --colors=always ./tests/"

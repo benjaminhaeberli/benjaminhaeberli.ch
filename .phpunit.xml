@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <phpunit
-    bootstrap="src/tests/bootstrap.php"
-    cacheResultFile="src/tests/.phpunit.result.cache"
+    cacheResultFile="./tests/.phpunit.result.cache"
     colors="true"
+    processIsolation="true"
     printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinterForPhpUnit9">
     <php>
         <env name="PHPUNIT_PRETTY_PRINT_PROGRESS" value="true" />
+        <const name="PHPUNIT_PRETTY_PRINT_PROGRESS" value="true" />
     </php>
 </phpunit>
