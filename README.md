@@ -1,4 +1,9 @@
+
+
 <div align="center">
+
+<h3>👀 DON'T FORGET TO BUY A KIRBY LICENSE HERE → https://getkirby.com/buy 👀</h3>
+
  <p><img src="./thumbnail.png" width="800px" alt="Black and white photo of Benjamin Haeberli working on a computer."></p>
 
 **Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself 🥳**
@@ -65,4 +70,5 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 ---
 
-This work is licensed under [GNU General Public License v3.0](./LICENSE).
+This work is licensed under [GNU General Public License v3.0](./LICENSE).<br>
+<strong>Don't forget to buy a Kirby license here → https://getkirby.com/buy</strong>
