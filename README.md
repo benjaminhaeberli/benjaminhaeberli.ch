@@ -1,10 +1,10 @@
 <div align="center">
 
-<h3>👀 DON'T FORGET TO BUY A KIRBY LICENSE HERE → https://getkirby.com/buy 👀</h3>
-
  <p><img src="./thumbnail.png" width="800px" alt="Black and white photo of Benjamin Haeberli working on a computer."></p>
 
-**Personal website built with [KirbyCMS](https://getkirby.com/) and designed by myself 🥳**
+**Personal website built with [Kirby CMS](https://getkirby.com/) and designed by myself 🥳**
+
+<sup>👀 Don't forget to <strong>buy a Kirby licence</strong> to use it legally 👀<sup>
 
 [![Twitter](https://img.shields.io/twitter/follow/1benjam1?style=social)](https://twitter.com/1benjam1/)
 
@@ -36,7 +36,7 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 - `composer run analyze`
 - `composer run fix`
-- `composer run test-watch`
+- `composer run test`
 - `npm run prettier:write`
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
@@ -59,6 +59,8 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 - [Ray](https://myray.app/) (optional) → debugging output
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
+Also, [PHPDoc syntax](https://docs.phpdoc.org/guide/references/phpdoc/basic-syntax.html) is used for comments and some type hinting.
+
 _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 ## Bugs 🐛
@@ -67,10 +69,17 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 ## Ideas 💡
 
+- [ ] Install [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) and use it in `config/` files
 - [ ] Add a `"funding"` key _(Adyen or Stripe payment link)_ in [composer.json](https://getcomposer.org/doc/04-schema.md#funding) and [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#funding)
 - [ ] Dynamically display a list of all dependencies _(composer.sjon + package.json)_ with authors and licenses on a "Legal Notice" page
 
+#### Useful articles
+
+- [Where should you put logic code in Kirby CMS? - fvsch.com](https://fvsch.com/kirby-logic)
+- [PHP code typing with Kirby CMS- fvsch.com](https://fvsch.com/kirby-typing)
+
 ---
 
-This work is licensed under [GNU General Public License v3.0](./LICENSE).<br>
-<strong>Don't forget to buy a Kirby license here → https://getkirby.com/buy</strong>
+**This work is licensed under [GNU General Public License v3.0](./LICENSE).**<br>
+Don't forget to [buy a Kirby license](https://getkirby.com/buy) to use it legally.
+Others dependencies are under

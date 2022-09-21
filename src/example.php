@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-final class Email
+final class Example
 {
     private string $email;
 

@@ -10,4 +10,4 @@ notifications:
   failingTests: false
 phpunit:
   binaryPath: "./vendor/bin/phpunit"
-  arguments: "--prepend ./tests/prepend.php --configuration=./.phpunit.xml --colors=always ./tests/"
+  arguments: "--configuration=./.phpunit.xml --colors=always ./tests/"
