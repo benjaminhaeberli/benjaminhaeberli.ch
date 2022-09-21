@@ -28,7 +28,6 @@ Icon
 # (core file, automatically installed with composer)
 # --------------------------------------------------
 /kirby
-!/kirby/config/helpers.php
 
 /vendor
 /node_modules
