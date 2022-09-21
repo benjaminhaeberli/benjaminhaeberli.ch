@@ -82,7 +82,7 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 <div align="center">
 
-This work is licensed under [GNU General Public License v3.0](./LICENSE).<br>
+**This work is licensed under [GNU General Public License v3.0](./LICENSE)**<br>
 Kirby CMS is proprietary and you need to [buy a license](https://getkirby.com/buy) to use it.<br>
 Others dependencies are under MIT, BSD-3-Clause and LGPL-2.1-only license.<br>
 
