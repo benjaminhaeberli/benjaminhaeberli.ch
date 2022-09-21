@@ -59,13 +59,16 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 - [Ray](https://myray.app/) (optional) → debugging output
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
-Also, [PHPDoc syntax](https://docs.phpdoc.org/guide/references/phpdoc/basic-syntax.html) is used for comments and some type hinting.
-
 _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
+
+#### Documentation
+
+- [GitMoji](https://gitmoji.dev/) → Emoji guide for GIT commit messages
+- [PHPDoc](https://docs.phpdoc.org/guide/references/phpdoc/basic-syntax.html) → Syntax used for PHP comments and type hinting.
 
 ## Bugs 🐛
 
-- [ ] `Cannot redeclare dump()` : install [composer-include-files](https://github.com/funkjedi/composer-include-files) and add `prepend.php` in `includes_files` props
+- [x] ~~`Cannot redeclare dump()` : install [composer-include-files](https://github.com/funkjedi/composer-include-files) and add `prepend.php` in `includes_files` props~~
 
 ## Ideas 💡
 
