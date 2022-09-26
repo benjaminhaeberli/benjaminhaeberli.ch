@@ -8,7 +8,7 @@
 
 [![Twitter](https://img.shields.io/twitter/follow/1benjam1?style=social)](https://twitter.com/1benjam1/)
 
-[![License GPL v3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg?color=192433)](./LICENSE)
+[![License GPL v3](https://img.shields.io/badge/license-AGPLv3-brightgreen.svg?color=192433)](./LICENSE)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/commits/main)
 [![GitHub Language](https://img.shields.io/github/languages/top/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/search?l=php)
 [![GitHub Stars](https://img.shields.io/github/stars/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/stargazers)
@@ -86,7 +86,7 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 <div align="center">
 
-**This work is licensed under [GNU General Public License v3.0](./LICENSE)**<br>
+**This work is licensed under [GNU Affero General Public License v3.0](./LICENSE)**<br>
 Kirby CMS is proprietary and you need to [buy a license](https://getkirby.com/buy) to use it.<br>
 Others dependencies are under MIT, BSD-3-Clause and LGPL-2.1-only license.<br>
 
