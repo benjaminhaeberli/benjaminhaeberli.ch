@@ -73,6 +73,7 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 ## Ideas 💡
 
 - [ ] Install [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) and use it in `config/` files
+- [ ] Install [rector/rector](https://github.com/rectorphp/rector), [laravel/pint](https://github.com/laravel/pint) and [pestphp/pest] like [openapi-php/client ](https://github.com/openai-php/client)
 - [ ] Add a `"funding"` key _(Adyen or Stripe payment link)_ in [composer.json](https://getcomposer.org/doc/04-schema.md#funding) and [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#funding)
 - [ ] Dynamically display a list of all dependencies _(composer.sjon + package.json)_ with authors and licenses on a "Legal Notice" page
 
