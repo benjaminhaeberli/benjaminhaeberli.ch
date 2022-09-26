@@ -59,7 +59,7 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 - [Ray](https://myray.app/) (optional) → debugging output
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
-_Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
+_Soon : Laravel Mix or Vite_
 
 #### Documentation
 
