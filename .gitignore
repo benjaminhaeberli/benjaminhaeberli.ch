@@ -28,12 +28,15 @@ Icon
 # (core file, automatically installed with composer)
 # --------------------------------------------------
 /kirby
-
 /vendor
 /node_modules
 /site/plugins/*
 !/site/accounts/index.html
 
+# Environments
+# (used by vlucas/phpdotenv for sensitive credentials)
+# --------------------------------------------------
+.env
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!

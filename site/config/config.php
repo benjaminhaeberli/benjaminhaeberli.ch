@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'debug'  => true,
+    'debug'  => $_ENV['APP_DEBUG'] ?? false,
     'api' => [
         'basicAuth' => true,
-        'allowInsecure' => true,
+        'allowInsecure' => $_ENV['API_ALLOW_INSECURE'] ?? false,
     ],
     'languages' => true,
     'cache' => [

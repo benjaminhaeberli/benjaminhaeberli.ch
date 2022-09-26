@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="<?= kirby()->languageCode() ?>">
 
-<?php
-ray($kirby);
-?>
-
 <head>
     <base href="<?= site()->url() ?>">
     <link rel="icon" href="<?= url('favicon.svg') ?>">

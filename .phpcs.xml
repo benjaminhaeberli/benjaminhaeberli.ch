@@ -3,11 +3,11 @@
   <description>Custom Coding Standards</description>
 
   <!-- Scan all files in directory -->
-  <file>config/</file>
+  <file>app/</file>
+  <file>site/config/</file>
   <file>site/languages/</file>
   <file>site/snippets/</file>
   <file>site/templates/</file>
-  <file>src/</file>
 
   <!-- Scan only PHP files -->
   <arg name="extensions" value="php"/>
