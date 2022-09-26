@@ -54,7 +54,7 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 - [PHPStan](https://phpstan.org/) → PHP Static Analysis Tool
 - [PHPCPD](https://phpqa.io/projects/phpcpd.html) → PHP Copy/Paste Detector
 - [PHPCodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) → PHP Coding Standards Tokenizer
-- [PHPUnit](https://phpunit.de/)
+- [PHPUnit](https://phpunit.de/) → PHP Testing framework
 - [PHPUnitWatcher ](https://github.com/spatie/phpunit-watcher) → Automatically run PHPUnit tests when source code changes
 - [Ray](https://myray.app/) (optional) → debugging output
 - [Prettier](https://prettier.io/) → Opinionated code formatter
@@ -72,8 +72,8 @@ _Soon : Laravel Mix or Vite, PestPHP (replace PHPUnit)_
 
 ## Ideas 💡
 
-- [x] Install [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) and use it in `config/` files
-- [ ] Install [rector/rector](https://github.com/rectorphp/rector), [laravel/pint](https://github.com/laravel/pint) and [pestphp/pest] like [openapi-php/client ](https://github.com/openai-php/client)
+- [x] ~~`Install` [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) and use it in `config/` files~~
+- [ ] Install [rector/rector](https://github.com/rectorphp/rector), [laravel/pint](https://github.com/laravel/pint) and [pestphp/pest](https://github.com/pestphp/pest) like [openapi-php/client ](https://github.com/openai-php/client)
 - [ ] Add a `"funding"` key _(Adyen or Stripe payment link)_ in [composer.json](https://getcomposer.org/doc/04-schema.md#funding) and [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#funding)
 - [ ] Dynamically display a list of all dependencies _(composer.sjon + package.json)_ with authors and licenses on a "Legal Notice" page
 
