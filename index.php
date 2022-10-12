@@ -1,8 +1,12 @@
 <?php
 
+use Kirby\Toolkit\Html;
+
 /**
  * Kirby Autoloader
  */
+
+
 require __DIR__  . '/kirby/bootstrap.php';
 
 /**
@@ -17,3 +21,7 @@ $dotenv->load();
  */
 $kirby = new Kirby\Cms\App();
 echo $kirby->render();
+
+
+$benjamin = kirby()->user('RBOctEoR');
+dump(array_keys($benjamin->content('fr')->fields()));

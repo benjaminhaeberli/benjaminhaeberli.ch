@@ -1,0 +1,23 @@
+title:
+  en: User
+  fr: Utilisateur
+
+fields:
+  portfolio:
+    label: Portfolio
+    translate: false
+    type: url
+    width: 1/3
+  linkedin:
+    icon: linkedin
+    label: LinkedIn
+    translate: false
+    type: url
+    width: 1/3
+  twitter:
+    icon: twitter
+    label: Twitter
+    placeholder: @username
+    translate: false
+    type: text
+    width: 1/3

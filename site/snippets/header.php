@@ -17,7 +17,7 @@
         <ul>
             <li>
                 <a href="<?= site()->url() ?>">
-                    <?= site()->blueprint()->title() ?>
+                    <?= page()->title() ?>
                 </a>
             </li>
         </ul>

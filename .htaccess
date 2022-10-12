@@ -1,6 +1,8 @@
 # Kirby .htaccess
 # revision 2020-06-15
 
+Redirect /topi/ https://google.ch/
+
 # rewrite rules
 <IfModule mod_rewrite.c>
 
@@ -26,14 +28,20 @@ RewriteEngine on
 # except for the .well-known folder, which is used for Let's Encrypt and security.txt
 RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 
-# block all files in the content folder from being accessed directly
+# block access to files in web root
+RewriteRule ^[^\/]+\.[a-z]+ index.php [L]
+
+# block direct access to files under kirby folders
 RewriteRule ^content/(.*) index.php [L]
-
-# block all files in the site folder from being accessed directly
 RewriteRule ^site/(.*) index.php [L]
-
-# block direct access to Kirby and the Panel sources
 RewriteRule ^kirby/(.*) index.php [L]
+
+# block direct access to files under dev folders
+RewriteRule ^app/(.*) index.php [L]
+RewriteRule ^docs/(.*) index.php [L]
+RewriteRule ^tests/(.*) index.php [L]
+RewriteRule ^node_modules/(.*) index.php [L]
+RewriteRule ^vendor/(.*) index.php [L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f

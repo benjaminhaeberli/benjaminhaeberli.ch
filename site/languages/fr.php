@@ -9,8 +9,8 @@ return [
     ],
     'name' => 'Français',
     'translations' => [
-        'Address' => 'Adresse',
-        'Content' => 'Contenus'
+        'Street' => 'Adresse',
+        'Content' => 'Contenu'
     ],
     'url' => '/'
 ];
