@@ -7,17 +7,11 @@ fields:
     label: Portfolio
     translate: false
     type: url
-    width: 1/3
+    width: 1/2
   linkedin:
     icon: linkedin
     label: LinkedIn
     translate: false
+    placeholder: 'https://www.linkedin.com/in/benjaminhaeberli/'
     type: url
-    width: 1/3
-  twitter:
-    icon: twitter
-    label: Twitter
-    placeholder: @username
-    translate: false
-    type: text
-    width: 1/3
+    width: 1/2

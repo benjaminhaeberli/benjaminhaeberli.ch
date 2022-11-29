@@ -38,6 +38,13 @@ columns:
       phone:
         label: Phone
         type: tel
+      twitter:
+        icon: twitter
+        label: Twitter
+        placeholder: '1benjam1'
+        translate: false
+        type: text
+        width: 2/2
       social:
         label: On the web
         type: structure

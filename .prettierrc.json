@@ -7,6 +7,12 @@
   "useTabs": false,
   "overrides": [
     {
+      "files": ["*.yml", "*.yaml"],
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
       "files": ["composer.lock", "composer.json"],
       "options": {
         "tabWidth": 4
