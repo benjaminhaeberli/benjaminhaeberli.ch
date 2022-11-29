@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-final class Example
+final class Example implements \Stringable
 {
-    private string $email;
+    private readonly string $email;
 
     private function __construct(string $email)
     {
