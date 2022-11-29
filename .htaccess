@@ -1,8 +1,6 @@
 # Kirby .htaccess
 # revision 2020-06-15
 
-Redirect /topi/ https://google.ch/
-
 # rewrite rules
 <IfModule mod_rewrite.c>
 
@@ -31,7 +29,7 @@ RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 # block access to files in web root
 RewriteRule ^[^\/]+\.[a-z]+ index.php [L]
 
-# block direct access to files under kirby folders
+# block all files in the content folder from being accessed directly
 RewriteRule ^content/(.*) index.php [L]
 RewriteRule ^site/(.*) index.php [L]
 RewriteRule ^kirby/(.*) index.php [L]

@@ -1,7 +1,5 @@
 <?php
 
-use Kirby\Toolkit\Html;
-
 /**
  * Kirby Autoloader
  */
@@ -23,5 +21,7 @@ $kirby = new Kirby\Cms\App();
 echo $kirby->render();
 
 
-$benjamin = kirby()->user('RBOctEoR');
+/*
+$benjamin = kirby()->user('5hMOJa62');
 dump(array_keys($benjamin->content('fr')->fields()));
+ */
