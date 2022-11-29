@@ -51,12 +51,13 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 
 #### Development
 
-- [PHPStan](https://phpstan.org/) → PHP Static Analysis Tool
+- [PHPStan](https://phpstan.org/) → PHP Static Analysis tool
 - [PHPCPD](https://phpqa.io/projects/phpcpd.html) → PHP Copy/Paste Detector
 - [PHPCodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) → PHP Coding Standards Tokenizer
 - [PHPUnit](https://phpunit.de/) → PHP Testing framework
 - [PHPUnitWatcher ](https://github.com/spatie/phpunit-watcher) → Automatically run PHPUnit tests when source code changes
 - [Ray](https://myray.app/) (optional) → debugging output
+- [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
 _Soon : Laravel Mix or Vite_
