@@ -7,7 +7,8 @@ use TheHeaviestClipsOfTheUniverse\SingletonTrait;
 
 final class Seo
 {
-    use SingletonTrait, KirbyTrait;
+    use SingletonTrait;
+    use KirbyTrait;
 
     public static function metaTwitterCard()
     {

@@ -59,7 +59,7 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 
 - [Kirby](https://getkirby.com/) → CMS
 
-_Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.php), [Feed & Sitemap](https://github.com/bnomei/kirby3-feed), [Comments](https://github.com/sebastiangreger/kirby3-commentions), [Static Cache](https://github.com/bnomei/kirby3-staticache), [Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers), [Rate Page](https://github.com/mauricerenck/rate-page), [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)_
+_Soon : [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.php), [Feed & Sitemap](https://github.com/bnomei/kirby3-feed), [Comments](https://github.com/sebastiangreger/kirby3-commentions), [Static Cache](https://github.com/bnomei/kirby3-staticache), [Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers), [Rate Page](https://github.com/mauricerenck/rate-page), [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)_
 
 #### Development
 

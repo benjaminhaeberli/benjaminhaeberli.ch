@@ -4,6 +4,12 @@
  */
 const fastGlob = require("fast-glob");
 
+/**
+ * Referencing the default theme
+ * @link https://tailwindcss.com/docs/theme#referencing-the-default-theme
+ */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: fastGlob.sync([
     "./**/*.php",
@@ -11,12 +17,18 @@ module.exports = {
     "./assets/**/*.css",
   ]),
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Jost", ...defaultTheme.fontFamily.sans],
+        display: ["Wotfard", ...defaultTheme.fontFamily.sans],
+        mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono],
+      },
+    },
   },
   variants: {},
   plugins: [],
-  /* corePlugins: {
-    preflight: false,
+  corePlugins: {
+    preflight: true,
     container: false,
-  }, */
+  },
 };
