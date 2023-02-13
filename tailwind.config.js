@@ -21,7 +21,7 @@ module.exports = {
       fontFamily: {
         sans: ["Jost", ...defaultTheme.fontFamily.sans],
         display: ["Wotfard", ...defaultTheme.fontFamily.sans],
-        mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono],
+        /* mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono], */
       },
     },
   },
@@ -29,6 +29,6 @@ module.exports = {
   plugins: [],
   corePlugins: {
     preflight: true,
-    container: false,
+    container: true,
   },
 };
