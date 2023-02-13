@@ -9,11 +9,11 @@ use Rector\CodeQuality\Rector\Class_\InlineConstructorDefaultToPropertyRector;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths([
-        __DIR__ . '/app',
         __DIR__ . '/site/config',
         __DIR__ . '/site/languages',
         __DIR__ . '/site/snippets',
         __DIR__ . '/site/templates',
+        __DIR__ . '/src',
         __DIR__ . '/tests',
     ]);
 

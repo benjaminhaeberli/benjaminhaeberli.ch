@@ -8,7 +8,7 @@
 require __DIR__  . '/kirby/bootstrap.php';
 
 /**
- * Loads environmen🚀t variables from `.env` file
+ * Loads environment variables from `.env` file
  * @see https://github.com/vlucas/phpdotenv
  */
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

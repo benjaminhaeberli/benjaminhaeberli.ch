@@ -1,8 +1,14 @@
-<?php snippet('header') ?>
+<?php
 
+/** @var HomePage $page */
+?>
+
+<?php snippet('header'); ?>
+Default
 <h1>
     <?= page()->title() ?>
 </h1>
-<?= page()->content()->get('text') ?>
+<?= $page->content()->get('pagecontent') ?>
+<?= $page->getMeta() ?>
 
-<?php snippet('footer') ?>
+<?php snippet('footer'); ?>

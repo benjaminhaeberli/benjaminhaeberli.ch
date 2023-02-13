@@ -28,7 +28,8 @@
 
 1. `composer install`
 2. `npm install`
-3. `composer run server`
+3. `npm run watch`
+4. `composer run server`
 
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
@@ -40,6 +41,17 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 - `npm run prettier:write`
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
+
+## Directory structure 📁
+
+- `assets/` - Images, JavaScript, and CSS files for the front-end
+- `content/` - Content of the application (Kirby)
+- `docs/` - Technical documentation
+- `kirby/` - Kirby code - _Managed by Composer_ (Kirby)
+- `media/` - Public images and thumbnails, plugin and panel assets - _Managed by Kirby_ (Kirby)
+- `site/` - Core of the application : templates, configuration, plugins and blueprints (Kirby)
+- `src/` - Custom classes for the application (PHP)
+- `tests/` - Automated tests with PHPUnit (PHP)
 
 ## Stack 🧠
 
@@ -60,7 +72,7 @@ _Soon : TailwindCSS, [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/m
 - [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
-_Soon : Laravel Mix or Vite_
+_Soon : PostCSS plugins, maybe with Vite (cssnano with cssnano-preset-default, postcss-combine-duplicated-selectors with "removeDuplicatedValues: true", postcss-merge-idents)_
 
 #### Documentation
 

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 final class Example implements \Stringable
 {
     private readonly string $email;
@@ -26,7 +24,7 @@ final class Example implements \Stringable
     private function ensureIsValidEmail(string $email): void
     {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new InvalidArgumentException(
+            throw new \InvalidArgumentException(
                 sprintf(
                     '"%s" is not a valid email address',
                     $email

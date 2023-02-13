@@ -8,7 +8,7 @@ node_modules/
 
 media/
 
-site/plugins/
 site/accounts/
 site/cache/
+site/plugins/
 site/sessions/

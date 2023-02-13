@@ -35,7 +35,6 @@ RewriteRule ^site/(.*) index.php [L]
 RewriteRule ^kirby/(.*) index.php [L]
 
 # block direct access to files under dev folders
-RewriteRule ^app/(.*) index.php [L]
 RewriteRule ^docs/(.*) index.php [L]
 RewriteRule ^tests/(.*) index.php [L]
 RewriteRule ^node_modules/(.*) index.php [L]

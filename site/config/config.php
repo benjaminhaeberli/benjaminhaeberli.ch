@@ -7,6 +7,9 @@ return [
         'allowInsecure' => (bool) $_ENV['API_ALLOW_INSECURE'] ?? false,
     ],
     'languages' => true,
+    'auth' => [
+        'methods' => ['password', 'password-reset']
+    ],
     'cache' => [
         'pages' => [
             'active' => false
