@@ -19,8 +19,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Jost", ...defaultTheme.fontFamily.sans],
-        display: ["Wotfard", ...defaultTheme.fontFamily.sans],
+        sans: ["Helvetica", ...defaultTheme.fontFamily.sans],
+        serif: ["Crimson Text", ...defaultTheme.fontFamily.serif],
         /* mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono], */
       },
     },

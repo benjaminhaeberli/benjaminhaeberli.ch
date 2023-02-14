@@ -1,5 +1,6 @@
 <footer>
-    <p class="copyright"><?= "Copyright" ?></p>
+    Footer (todo)
+    <p class="copyright"><?= "" ?></p>
 </footer>
 
 </body>
