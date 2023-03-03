@@ -10,6 +10,12 @@ const fastGlob = require("fast-glob");
  */
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+/**
+ * Allow to add custom plugins
+ * @link https://tailwindcss.com/docs/plugins
+ */
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: fastGlob.sync([
     "./**/*.php",
@@ -20,13 +26,18 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Helvetica", ...defaultTheme.fontFamily.sans],
-        serif: ["Crimson Text", ...defaultTheme.fontFamily.serif],
+        serif: ["Crimson Pro", ...defaultTheme.fontFamily.serif],
         /* mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono], */
       },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("hocus", ["&:hover", "&:focus"]);
+      addVariant("group-hocus", [".group:hover &", ".group:focus &"]);
+    }),
+  ],
   corePlugins: {
     preflight: true,
     container: true,
