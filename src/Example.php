@@ -1,5 +1,7 @@
 <?php
 
+namespace BenjaminHaeberli;
+
 final class Example implements \Stringable
 {
     private readonly string $email;

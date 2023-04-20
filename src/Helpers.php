@@ -1,8 +1,8 @@
 <?php
 
-namespace TheHeaviestClipsOfTheUniverse;
+namespace BenjaminHaeberli;
 
-class Helpers
+final class Helpers
 {
     public static function demoHelper(): string
     {

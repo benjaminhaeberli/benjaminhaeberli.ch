@@ -1,12 +1,13 @@
 <?php
 
 /** @var HomePage $page */
+$content = $page->content();
 ?>
 
 <?php snippet('header'); ?>
 Default
 
-<?= $page->content()->get('pagecontent') ?>
+<?= $content->get('pagecontent') ?>
 <?= $page->getMeta() ?>
 
 <?php snippet('footer'); ?>

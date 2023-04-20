@@ -4,10 +4,6 @@
 
 **Personal website built with [Kirby CMS](https://getkirby.com/) and designed by myself 🥳**
 
-<sup>👀 Don't forget to <strong>buy a Kirby licence</strong> to use it legally 👀<sup>
-
-[![Twitter](https://img.shields.io/twitter/follow/1benjam1?style=social)](https://twitter.com/1benjam1/)
-
 [![License GPL v3](https://img.shields.io/badge/license-AGPLv3-brightgreen.svg?color=192433)](./LICENSE)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/commits/main)
 [![GitHub Language](https://img.shields.io/github/languages/top/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/search?l=php)
@@ -59,8 +55,6 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 
 - [Kirby](https://getkirby.com/) → CMS
 
-_Soon : [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.php), [Feed & Sitemap](https://github.com/bnomei/kirby3-feed), [Comments](https://github.com/sebastiangreger/kirby3-commentions), [Static Cache](https://github.com/bnomei/kirby3-staticache), [Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers), [Rate Page](https://github.com/mauricerenck/rate-page), [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)_
-
 #### Development
 
 - [PHPStan](https://phpstan.org/) → PHP Static Analysis tool
@@ -72,8 +66,6 @@ _Soon : [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.p
 - [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
-_Soon : PostCSS plugins, maybe with Vite (cssnano with cssnano-preset-default, postcss-combine-duplicated-selectors with "removeDuplicatedValues: true", postcss-merge-idents)_
-
 #### Documentation
 
 - [GitMoji](https://gitmoji.dev/) → Emoji guide for GIT commit messages
@@ -83,24 +75,18 @@ _Soon : PostCSS plugins, maybe with Vite (cssnano with cssnano-preset-default, p
 
 - [x] ~~`Cannot redeclare dump()` : install [composer-include-files](https://github.com/funkjedi/composer-include-files) and add `prepend.php` in `includes_files` props~~
 
-## Ideas 💡
+# Docs 📒
 
-- [x] ~~`Install` [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv) and use it in `config/` files~~
-- [ ] Install [rector/rector](https://github.com/rectorphp/rector), [laravel/pint](https://github.com/laravel/pint) and [pestphp/pest](https://github.com/pestphp/pest) like [openapi-php/client ](https://github.com/openai-php/client)
-- [ ] Add a `"funding"` key _(Adyen or Stripe payment link)_ in [composer.json](https://getcomposer.org/doc/04-schema.md#funding) and [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#funding)
-- [ ] Dynamically display a list of all dependencies _(composer.json + package.json)_ with authors and licenses on a "Legal Notice" page
-
-#### Useful articles
-
+- [Kirby : passing variables to snippets](https://getkirby.com/docs/guide/templates/snippets#passing-variables-to-snippets)
 - [Where should you put logic code in Kirby CMS? - fvsch.com](https://fvsch.com/kirby-logic)
 - [PHP code typing with Kirby CMS- fvsch.com](https://fvsch.com/kirby-typing)
-
----
+- [Tailwind : customizing colors](https://tailwindcss.com/docs/customizing-colors)
+- [Tailwind default config](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js)
 
 <div align="center">
 
 **This work is licensed under [GNU Affero General Public License v3.0](./LICENSE)**<br>
-Kirby CMS is proprietary and you need to [buy a license](https://getkirby.com/buy) to use it.<br>
+Kirby CMS is proprietary and you need to [buy a license](https://getkirby.com/buy) to use it in production.<br>
 Others dependencies are under MIT, BSD-3-Clause and LGPL-2.1-only license.<br>
 
 </div>

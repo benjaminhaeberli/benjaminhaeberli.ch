@@ -1,17 +1,17 @@
 <?php
 
-namespace TheHeaviestClipsOfTheUniverse;
+namespace BenjaminHaeberli;
 
 trait SingletonTrait
 {
-    private static $instance = null;
+    private static self|null $instance;
 
     /**
      * Returns the *Singleton* instance of this class.
      */
-    public static function instance()
+    public static function instance(): self
     {
-        if (!self::$instance) {
+        if (self::$instance === null) {
             self::$instance = new self();
         }
         return self::$instance;

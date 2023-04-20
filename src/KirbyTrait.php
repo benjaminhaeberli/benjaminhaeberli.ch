@@ -1,12 +1,12 @@
 <?php
 
-namespace TheHeaviestClipsOfTheUniverse;
+namespace BenjaminHaeberli;
 
-use Kirby\CMS\App;
+use Kirby\Cms\App;
 
 trait KirbyTrait
 {
-    private static function kirby()
+    private static function kirby(): \Kirby\Cms\App
     {
         return App::instance();
     }
