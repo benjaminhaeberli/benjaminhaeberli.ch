@@ -1,7 +1,11 @@
-title: Default Page
+title: Customers
+status:
+  draft: Draft
+  listed: Published
 
 sections:
   content:
+    type: fields
     icon: text
     label: Content
     fields:

@@ -1,0 +1,39 @@
+title:
+  en: Homepage
+  fr: Page d'accueil
+
+tabs:
+  header:
+    columns:
+      content:
+        icon: text
+        label: Content
+        width: 1/2
+        fields:
+          description:
+            label: Description
+            type: text
+          text:
+            label: Text
+            type: textarea
+            size: large
+      contentbis:
+        icon: text
+        label: Content
+        width: 1/2
+        fields:
+          desc:
+            label: Desc
+            type: text
+          line1:
+            type: line
+  bottom:
+    columns:
+      content_bottom:
+        icon: text
+        label: Content
+        width: 1/2
+        fields:
+          description_b:
+            label: Desc b
+            type: text

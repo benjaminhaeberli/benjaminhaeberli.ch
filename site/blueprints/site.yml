@@ -7,24 +7,9 @@ columns:
   left:
     width: 1/2
     sections:
-      drafts:
-        headline: Drafts
-        type: pages
-        status: draft
-        image:
-          query: false
-      unlisted:
-        headline: Non publié
-        type: pages
-        status: unlisted
-        image:
-          query: false
-      listed:
-        headline: Listed
-        type: pages
-        status: listed
-        image:
-          query: false
+      pages:
+        label: Pages
+        status: all
   right:
     width: 1/2
     fields:
@@ -39,8 +24,8 @@ columns:
         label: Phone
         type: tel
       twitter:
-        icon: twitter
-        label: Twitter
+        icon: linkedin
+        label: LinkedIn
         placeholder: '1benjam1'
         translate: false
         type: text

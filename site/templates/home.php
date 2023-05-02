@@ -5,9 +5,9 @@
         <div class="flex flex-col gap-4 max-w-2xl text-slate-900">
             <p class="font-mono font-bold uppercase text-slate-600">Bienvenue, je suis Benjamin Haeberli !</p>
             <h1 class="text-6xl font-bold font-serif">
-                Un développeur web freelance <span class="before:block before:absolute before:-inset-1 before:scale-y-75 before:bg-green-300 before:translate-y-1 relative inline-block">
+                Un développeur <span class="before:block before:absolute before:-inset-1 before:scale-y-75 before:bg-green-300 before:translate-y-1 relative inline-block">
                     <span class="relative">engagé</span>
-                </span> pour des projets plus responsables.
+                </span> pour du code performant et durable.
             </h1>
             <p>Je suis engagé en matière de durabilité, d'éthique et de respect de la vie privée</p>
             <?= page()->content()->get('text') . 'voir home.php' ?>
