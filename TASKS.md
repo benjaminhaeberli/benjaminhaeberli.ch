@@ -23,3 +23,10 @@ To install or code my version :
 - [Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers)
 - [Rate Page](https://github.com/mauricerenck/rate-page)
 - [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)
+
+## Quick refs
+
+- https://github.com/getkirby/cli
+- https://getkirby.com/docs/guide/blueprints/introduction
+- https://websitesetup.org/php-cheat-sheet/
+- https://front-line-php.com/cheat-sheet#short-closures -https://spatie.be/guidelines/laravel-php#content-ternary-operators
