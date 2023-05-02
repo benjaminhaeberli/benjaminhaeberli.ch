@@ -6,4 +6,4 @@ Description: teste
 
 ----
 
-Text: test
+Text: I'm a page test (EN)

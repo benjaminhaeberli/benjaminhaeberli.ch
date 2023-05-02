@@ -6,7 +6,7 @@ Description: test
 
 ----
 
-Text: Je suis un test
+Text: Je suis un test de page (FR)
 
 ----
 
