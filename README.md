@@ -43,7 +43,7 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 - `assets/` - Images, JavaScript, and CSS files for the front-end
 - `content/` - Content of the application (Kirby)
 - `docs/` - Technical documentation
-- `kirby/` - Kirby code - _Managed by Composer_ (Kirby)
+- `kirby/` - Kirby CMS code - _Managed by Composer_ (Kirby)
 - `media/` - Public images and thumbnails, plugin and panel assets - _Managed by Kirby_ (Kirby)
 - `site/` - Core of the application : templates, configuration, plugins and blueprints (Kirby)
 - `src/` - Custom classes for the application (PHP)
