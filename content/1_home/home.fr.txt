@@ -1,4 +1,4 @@
-Title: Home sweet home
+Title: Homepage
 
 ----
 
@@ -6,7 +6,30 @@ Description: test
 
 ----
 
-Text: Je suis un test de page (FR)
+Text: Si vous êtes un passionné de la performance et de la simplicité, vous êtes au bon endroit. Je travaille avec des technologies modernes comme (link: https://laravel.com/ text: Laravel), (link: https://getkirby.com/ text: Kirby), (link: https://tailwindcss.com/ text: TailwindCSS) ou encore SQL. Je développe pour vous des solutions éthiques, sur-mesure et écoresponsables.
+
+----
+
+Desc: 
+
+----
+
+Questions:
+
+- 
+  title: Quels sont tes tarifs ?
+  answer: '<p>Mon tarif horaire est fixé à 110 CHF, mais vous pouvez retrouver tous les détails <strong>dans ce document</strong>.</p>'
+  open: 'true'
+- 
+  title: >
+    Où habites-tu ? Travailles-tu à
+    distance ?
+  answer: "<p>J'habite en Suisse et travaille uniquement à travail, étant déjà engagé à 40% dans une entreprise à Lausanne.</p>"
+  open: 'false'
+
+----
+
+Blocks: [{"content":{"text":"hwuerhiwer","citation":"qer"},"id":"3ee19813-79dc-4a5b-ad24-cd29810eb84f","isHidden":false,"type":"quote"},{"content":{"text":"<p>ewrwer <strong>eee</strong></p>"},"id":"69739e5d-029a-4e2e-b444-a53b69cad711","isHidden":false,"type":"text"}]
 
 ----
 

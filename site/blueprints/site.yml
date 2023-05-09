@@ -15,32 +15,21 @@ columns:
     fields:
       address:
         label: Address
+          fr: Adresse
         type: writer
         inline: true
       email:
         label: Email
         type: email
-      phone:
-        label: Phone
-        type: tel
-      twitter:
+      linkedin:
         icon: linkedin
         label: LinkedIn
-        placeholder: '1benjam1'
+        placeholder: 'https://www.linkedin.com/in/benjaminhaeberli/'
         translate: false
-        type: text
-        width: 2/2
-      social:
-        label: On the web
-        type: structure
-        columns:
-          platform: true
-        fields:
-          platform:
-            label: Platform
-            type: text
-            width: 1/2
-          url:
-            label: URL
-            type: url
-            width: 1/2
+        type: url
+      github:
+        icon: github
+        label: GitHub
+        placeholder: 'github.com/benjaminhaeberli'
+        translate: false
+        type: url

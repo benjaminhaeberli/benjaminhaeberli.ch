@@ -20,7 +20,6 @@ To install or code my version :
 - [Feed & Sitemap](https://github.com/bnomei/kirby3-feed)
 - [Comments](https://github.com/sebastiangreger/kirby3-commentions)
 - [Static Cache](https://github.com/getkirby/staticache)
-- [Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers)
 - [Rate Page](https://github.com/mauricerenck/rate-page)
 - [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)
 
@@ -30,3 +29,4 @@ To install or code my version :
 - https://getkirby.com/docs/guide/blueprints/introduction
 - https://websitesetup.org/php-cheat-sheet/
 - https://front-line-php.com/cheat-sheet#short-closures -https://spatie.be/guidelines/laravel-php#content-ternary-operators
+- https://github.com/getkirby/getkirby.com/blob/main/site/snippets/faq.php

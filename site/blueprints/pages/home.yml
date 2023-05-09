@@ -3,7 +3,7 @@ title:
   fr: Page d'accueil
 
 tabs:
-  header:
+  content:
     columns:
       content:
         icon: text
@@ -27,13 +27,20 @@ tabs:
             type: text
           line1:
             type: line
-  bottom:
-    columns:
-      content_bottom:
-        icon: text
-        label: Content
-        width: 1/2
-        fields:
-          description_b:
-            label: Desc b
-            type: text
+          questions:
+            label: Questions (FAQ)
+            type: structure
+            sortable: true
+            fields:
+              title:
+                label: Title
+                type: text
+              answer:
+                label: Answer
+                type: writer
+              open:
+                label: Open?
+                type: toggle
+          blocks:
+            label: Block
+            type: blocks

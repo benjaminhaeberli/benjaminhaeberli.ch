@@ -24,8 +24,9 @@
 
 1. `composer install`
 2. `npm install`
-3. `npm run watch`
-4. `composer run server`
+3. Copy `.\.env.development.example` to `.\.env`
+5. `npm run watch`
+6. `composer run server`
 
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
@@ -51,11 +52,14 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 
 ## Stack 🧠
 
-#### Production
+### Production
 
 - [Kirby](https://getkirby.com/) → CMS
 
-#### Development
+#### Kirby Plugins
+- [Kirby 3 Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers) → Security Plugin
+
+### Development
 
 - [PHPStan](https://phpstan.org/) → PHP Static Analysis tool
 - [PHPCPD](https://phpqa.io/projects/phpcpd.html) → PHP Copy/Paste Detector
@@ -66,7 +70,7 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 - [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
-#### Documentation
+### Documentation
 
 - [GitMoji](https://gitmoji.dev/) → Emoji guide for GIT commit messages
 - [PHPDoc](https://docs.phpdoc.org/guide/references/phpdoc/basic-syntax.html) → Syntax used for PHP comments and type hinting.
