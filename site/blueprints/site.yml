@@ -13,9 +13,9 @@ columns:
   right:
     width: 1/2
     fields:
-      address:
-        label: Address
-          fr: Adresse
+      availability:
+        label: Availability
+          fr: Disponibilité
         type: writer
         inline: true
       email:

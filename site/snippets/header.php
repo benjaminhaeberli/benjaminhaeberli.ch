@@ -19,8 +19,8 @@ use Kirby\Cms\Url;
 </head>
 
 <body>
-    <header class="max-w-screen-xl pb-6 mx-auto mb-8 border-b-2 border-gray-400 border-dashed">
-        <nav class="container flex justify-between max-w-screen-xl mx-auto  text-slate-600">
+    <header class="max-w-screen-xl pb-6 mx-auto mb-8 border-b-2 border-gray-300 border-dashed">
+        <nav class="container flex justify-between max-w-screen-xl mx-auto text-slate-600">
             <ul class="flex gap-6 py-3">
                 <li>
                     <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group hover:text-slate-900 focus:outline-dashed outline-1 outline-offset-2">
@@ -60,7 +60,7 @@ use Kirby\Cms\Url;
                     </a>
                 </li>
                 <li class="flex">
-                    <a href="https://tally.so/r/mJDQXw" target="_blank" class="flex items-center gap-1 group focus:outline-dashed outline-1 outline-offset-2">
+                    <div href="https://tally.so/r/mJDQXw" target="_blank" class="flex items-center gap-1 group focus:outline-dashed outline-1 outline-offset-2">
                         <span class="relative flex items-center justify-center w-4 h-4" aria-hidden="true">
                             <span class="absolute inline-flex w-2 h-2 rounded-full opacity-75 bg-cyan-400 animate-ping"></span>
                             <span class="relative inline-flex w-2 h-2 rounded-full bg-cyan-500"></span>
@@ -68,11 +68,11 @@ use Kirby\Cms\Url;
                         <div class="flex px-3 py-1 rounded-full text-cyan-700 bg-cyan-100 group-hover:bg-cyan-100/60">
                             <span>Disponible dès le 1<sup>er</sup> avril 2023</span>
                         </div>
-                    </a>
+                    </div>
                 </li>
             </ul>
         </nav>
-        <nav class="container flex max-w-screen-xl mx-auto font-bold text-slate-700">
+        <nav class="container flex max-w-screen-xl mx-auto font-medium text-slate-700">
             <ul class="flex gap-3 py-3">
                 <li class="flex">
                     <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full group focus:bg-transparent text-slate-100 bg-slate-900 hover:bg-slate-800 focus:text-slate-900 focus:outline-dashed outline-2 outline-offset-2">
@@ -85,12 +85,11 @@ use Kirby\Cms\Url;
                 </li>
                 <li class="flex">
                     <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full group focus:bg-transparent hocus:text-slate-900 focus:outline-dashed outline-2 outline-offset-2">
-                        <svg class="w-6 h-6 stroke-2 fill-slate-700 group-hocus:fill-slate-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd" />
-                            <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" />
-                            <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                        <svg class="w-6 h-6 stroke-2 fill-slate-700 group-hocus:fill-slate-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z" clip-rule="evenodd" />
+                            <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
                         </svg>
-                        <span>Compétences</span>
+                        <span>Méthodologie</span>
                     </a>
                 </li>
                 <li class="flex">
@@ -99,6 +98,17 @@ use Kirby\Cms\Url;
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM8.547 4.505a8.25 8.25 0 1011.672 8.214l-.46-.46a2.252 2.252 0 01-.422-.586l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.211.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.654-.261a2.25 2.25 0 01-1.384-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.279-2.132z" clip-rule="evenodd" />
                         </svg>
                         <span>Éco-conception</span>
+                    </a>
+                </li>
+
+                <li class="flex">
+                    <a href="#" class="flex items-center gap-2 px-4 py-2 rounded-full group focus:bg-transparent hocus:text-slate-900 focus:outline-dashed outline-2 outline-offset-2">
+                        <svg class="w-6 h-6 stroke-2 fill-slate-700 group-hocus:fill-slate-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd" />
+                            <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" />
+                            <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                        </svg>
+                        <span>Compétences</span>
                     </a>
                 </li>
                 <li class="flex">

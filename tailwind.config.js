@@ -25,7 +25,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Helvetica", ...defaultTheme.fontFamily.sans],
+        sans: ["Work Sans", "Helvetica", ...defaultTheme.fontFamily.sans],
         serif: ["Crimson Pro", ...defaultTheme.fontFamily.serif],
         /* mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono], */
       },

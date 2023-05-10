@@ -25,8 +25,8 @@
 1. `composer install`
 2. `npm install`
 3. Copy `.\.env.development.example` to `.\.env`
-5. `npm run watch`
-6. `composer run server`
+4. `npm run watch`
+5. `composer run server`
 
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
@@ -57,6 +57,7 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 - [Kirby](https://getkirby.com/) → CMS
 
 #### Kirby Plugins
+
 - [Kirby 3 Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers) → Security Plugin
 
 ### Development

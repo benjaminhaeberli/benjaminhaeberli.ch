@@ -2,7 +2,7 @@ Title: Benjamin Haeberli
 
 ----
 
-Address: 
+Availability: Disponible dès le 1er avril 2023
 
 ----
 
@@ -15,6 +15,10 @@ Linkedin: https://www.linkedin.com/in/benjaminhaeberli/
 ----
 
 Github: https://github.com/benjaminhaeberli
+
+----
+
+Address: 
 
 ----
 
