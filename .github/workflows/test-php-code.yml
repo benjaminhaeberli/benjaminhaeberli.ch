@@ -1,0 +1,37 @@
+name: Test PHP code 🐘
+
+on: ['push', 'pull_request']
+
+jobs:
+  test-php-code:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [ubuntu-latest]
+        php: [8.1]
+
+    name: 🐘 PHP ${{ matrix.php }} - ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.composer/cache/files
+          key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, mbstring, zip
+          tools: prestissimo
+          coverage: pcov
+
+      - name: Test COMPOSER
+        run: composer test:composer
+
+      - name: Test PHP
+        run: composer test
