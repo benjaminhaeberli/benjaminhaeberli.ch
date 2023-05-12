@@ -1,6 +1,6 @@
 <?php
 
-namespace BenjaminHaeberli;
+namespace BenjaminHaeberli\Portfolio;
 
 final class Example implements \Stringable
 {

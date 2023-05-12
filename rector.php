@@ -29,4 +29,8 @@ return static function (RectorConfig $rectorConfig): void {
         SetList::TYPE_DECLARATION,
         SetList::PRIVATIZATION,
     ]);
+
+    $rectorConfig->autoloadPaths([
+        './src/bootstrap.php'
+    ]);
 };

@@ -41,15 +41,20 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "extra": {
+        "include_files": [
+            "src/bootstrap.php"
+        ]
+    },
     "scripts": {
-        "serve": "php -S localhost:8000 ./kirby/router.php",
+        "serve": "php -S localhost:8000 ./kirby/router.php --ansi",
         "refacto": "rector --ansi",
-        "lint": "pint",
+        "lint": "pint --ansi",
         "coverage": "pest --colors=always --coverage",
         "fake:refacto": "rector --dry-run --ansi",
         "fake:lint": "pint --test --ansi",
         "test:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",
-        "test:types": "phpstan analyse --ansi",
+        "test:types": "phpstan --configuration=./.phpstan.neon analyze --ansi",
         "test:unit": "pest --colors=always",
         "test": [
             "@fake:refacto",
@@ -79,7 +84,6 @@
         "phpstan/phpstan": "^1.10.15",
         "phpunit/phpunit": "^9.6.8",
         "rector/rector": "^0.14.8",
-        "sempro/phpunit-pretty-print": "^1.4",
-        "spatie/ray": "^1.37.1"
+        "sempro/phpunit-pretty-print": "^1.4"
     }
 }

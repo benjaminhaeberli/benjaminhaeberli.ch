@@ -65,7 +65,6 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 - [PHPStan](https://phpstan.org/) → PHP Static Analysis tool
 - [Laravel/Pint](https://github.com/laravel/pint) → Opinionated PHP code style fixer for minimalists built on top of [PHP-CS-Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
 - [PHPUnit](https://phpunit.de/) & [PEST PHP](https://github.com/pestphp/pest) → PHP Testing tools
-- [Ray](https://myray.app/) → Debugging output by Spatie
 - [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 

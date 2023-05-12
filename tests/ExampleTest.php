@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use BenjaminHaeberli\Example;
+use BenjaminHaeberli\Portfolio\Example;
 use PHPUnit\Framework\TestCase;
 
 final class ExampleTest extends TestCase
