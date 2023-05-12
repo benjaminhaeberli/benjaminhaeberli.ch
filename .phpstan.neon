@@ -3,8 +3,5 @@ parameters:
   paths:
     - src
     - tests
-  excludePaths:
-    - kirby
-    - node_modules
     - site/config
-    - vendor
+    - site/models

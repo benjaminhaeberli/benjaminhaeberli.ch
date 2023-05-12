@@ -63,22 +63,15 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 ### Development
 
 - [PHPStan](https://phpstan.org/) → PHP Static Analysis tool
-- [PHPCPD](https://phpqa.io/projects/phpcpd.html) → PHP Copy/Paste Detector
-- [PHPCodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) → PHP Coding Standards Tokenizer
-- [PHPUnit](https://phpunit.de/) → PHP Testing framework
-- [PHPUnitWatcher ](https://github.com/spatie/phpunit-watcher) → Automatically run PHPUnit tests when source code changes
-- [Ray](https://myray.app/) (optional) → debugging output
+- [Laravel/Pint](https://github.com/laravel/pint) → Opinionated PHP code style fixer for minimalists built on top of [PHP-CS-Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
+- [PHPUnit](https://phpunit.de/) & [PEST PHP](https://github.com/pestphp/pest) → PHP Testing tools
+- [Ray](https://myray.app/) → Debugging output by Spatie
 - [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
 ### Documentation
 
 - [GitMoji](https://gitmoji.dev/) → Emoji guide for GIT commit messages
-- [PHPDoc](https://docs.phpdoc.org/guide/references/phpdoc/basic-syntax.html) → Syntax used for PHP comments and type hinting.
-
-## Bugs 🐛
-
-- [x] ~~`Cannot redeclare dump()` : install [composer-include-files](https://github.com/funkjedi/composer-include-files) and add `prepend.php` in `includes_files` props~~
 
 # Docs 📒
 

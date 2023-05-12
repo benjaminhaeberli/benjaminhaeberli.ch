@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<phpunit cacheResultFile="./tests/.phpunit.result.cache" colors="true" printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinterForPhpUnit9">
-  <php>
-    <env name="PHPUNIT_PRETTY_PRINT_PROGRESS" value="true" />
-    <const name="KIRBY_HELPER_DUMP" value="false" />
-  </php>
-</phpunit>

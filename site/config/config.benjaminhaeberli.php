@@ -1,10 +1,14 @@
 <?php
 
+header('X-Frame-Options: sameorigin');
+header('X-XSS-Protection: 1; mode=block');
+header('X-Content-Type-Options: nosniff');
+
 return [
-    'debug'  => (bool) $_ENV['APP_DEBUG'] ?? false,
+    'debug'  => false,
     'api' => [
         'basicAuth' => true,
-        'allowInsecure' => (bool) $_ENV['API_ALLOW_INSECURE'] ?? false,
+        'allowInsecure' => false,
     ],
     'languages' => true,
     'auth' => [
@@ -12,7 +16,7 @@ return [
     ],
     'cache' => [
         'pages' => [
-            'active' => false
+            'active' => true
         ]
     ]
 ];

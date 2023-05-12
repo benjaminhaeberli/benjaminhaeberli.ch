@@ -1,0 +1,12 @@
+{
+  "preset": "psr12",
+  "exclude": [
+    "kirby",
+    "media",
+    "site/accounts",
+    "site/plugins",
+    "site/cache",
+    "site/snippets",
+    "site/templates"
+  ]
+}

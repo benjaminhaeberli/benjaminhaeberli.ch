@@ -17,11 +17,6 @@
         "portfolio",
         "tailwindcss"
     ],
-    "extra": {
-        "include_files": [
-            "bootstrap.php"
-        ]
-    },
     "autoload": {
         "psr-4": {
             "BenjaminHaeberli\\": "src/"
@@ -30,60 +25,38 @@
             "site/"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
             "getkirby/composer-installer": true,
-            "funkjedi/composer-include-files": true
+            "funkjedi/composer-include-files": true,
+            "pestphp/pest-plugin": true
         },
-        "optimize-autoloader": true,
-        "sort-packages": true,
-        "platform": {
-            "php": "8.1"
-        },
-        "platform-check": true
+        "preferred-install": "dist",
+        "sort-packages": true
     },
     "scripts": {
-        "analyze": [
-            "@analyze:composer",
-            "@analyze:phpcpd",
-            "@analyze:phpcs",
-            "@analyze:phpstan",
-            "@analyze:rector"
-        ],
-        "analyze:composer": "composer validate --strict --no-cache",
-        "analyze:phpcpd": "./vendor/bin/phpcpd --fuzzy --exclude kirby --exclude vendor --exclude node_modules .",
-        "analyze:phpcs": "./vendor/bin/phpcs --standard=./.phpcs.xml",
-        "analyze:phpstan": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyse --ansi",
-        "analyze:rector": "./vendor/bin/rector process --dry-run --ansi",
-        "fix": [
-            "@fix:composer",
-            "@fix:phpcs"
-        ],
-        "fix:composer": [
-            "composer clear-cache",
-            "composer dump-autoload",
-            "composer bump",
-            "composer audit"
-        ],
-        "fix:phpcs": "./vendor/bin/phpcbf --standard=./.phpcs.xml",
-        "fix:rector": "./vendor/bin/rector process --ansi",
-        "test": "./vendor/bin/phpunit --configuration=./.phpunit.xml --colors=always ./tests/",
-        "watch": [
-            "Composer\\Config::disableProcessTimeout",
-            "./vendor/bin/phpunit-watcher watch"
-        ],
-        "server": [
-            "Composer\\Config::disableProcessTimeout",
-            "@php -S localhost:8000 kirby/router.php"
-        ],
-        "ci": [
-            "@fix",
-            "@analyze",
-            "@test"
-        ],
-        "zip": "composer archive --format=zip --file=dist"
+        "serve": "php -S localhost:8000 ./kirby/router.php",
+        "refacto": "rector --ansi",
+        "lint": "pint",
+        "coverage": "pest --colors=always --coverage",
+        "fake:refacto": "rector --dry-run --ansi",
+        "fake:lint": "pint --test --ansi",
+        "test:composer": "composer update --prefer-stable --no-interaction --prefer-dist && composer validate --strict --ansi",
+        "test:types": "phpstan analyse --ansi",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@fake:refacto",
+            "@fake:lint",
+            "@test:types",
+            "@test:unit"
+        ]
     },
     "require": {
         "php": "^8.1",
@@ -93,14 +66,13 @@
         "vlucas/phpdotenv": "^5.5"
     },
     "require-dev": {
+        "laravel/pint": "^1.10",
         "maximebf/debugbar": "^1.18.2",
+        "pestphp/pest": "^1.23",
         "phpstan/phpstan": "^1.10.14",
         "phpunit/phpunit": "^9.6.7",
         "rector/rector": "^0.14.8",
-        "sebastian/phpcpd": "^6.0.3",
         "sempro/phpunit-pretty-print": "^1.4",
-        "spatie/phpunit-watcher": "^1.23.6",
-        "spatie/ray": "^1.37.1",
-        "squizlabs/php_codesniffer": "^3.7.2"
+        "spatie/ray": "^1.37"
     }
 }

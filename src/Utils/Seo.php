@@ -15,7 +15,7 @@ final class Seo
         return 'summary_large_image';
     }
 
-    public static function metaFacebookSitename(): string|null
+    public static function metaFacebookSitename(): array|\Kirby\Cms\Field
     {
         return static::kirby()->site()->content()->get('title');
     }
