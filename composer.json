@@ -19,7 +19,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "BenjaminHaeberli\\": "src/"
+            "BenjaminHaeberli\\Portfolio\\": "src/"
         },
         "classmap": [
             "site/"
@@ -48,7 +48,7 @@
         "coverage": "pest --colors=always --coverage",
         "fake:refacto": "rector --dry-run --ansi",
         "fake:lint": "pint --test --ansi",
-        "test:composer": "composer update --prefer-stable --no-interaction --prefer-dist && composer validate --strict --ansi",
+        "test:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",
         "test:types": "phpstan analyse --ansi",
         "test:unit": "pest --colors=always",
         "test": [
@@ -56,23 +56,30 @@
             "@fake:lint",
             "@test:types",
             "@test:unit"
+        ],
+        "fix:composer": [
+            "@test:composer",
+            "composer clear-cache --ansi",
+            "composer dump-autoload --ansi",
+            "composer bump --ansi",
+            "composer audit --ansi"
         ]
     },
     "require": {
         "php": "^8.1",
-        "bnomei/kirby3-security-headers": "^2.5",
+        "bnomei/kirby3-security-headers": "^2.5.4",
         "funkjedi/composer-include-files": "^1.1",
-        "getkirby/cms": "^3.9.3",
+        "getkirby/cms": "^3.9.4",
         "vlucas/phpdotenv": "^5.5"
     },
     "require-dev": {
         "laravel/pint": "^1.10",
         "maximebf/debugbar": "^1.18.2",
         "pestphp/pest": "^1.23",
-        "phpstan/phpstan": "^1.10.14",
-        "phpunit/phpunit": "^9.6.7",
+        "phpstan/phpstan": "^1.10.15",
+        "phpunit/phpunit": "^9.6.8",
         "rector/rector": "^0.14.8",
         "sempro/phpunit-pretty-print": "^1.4",
-        "spatie/ray": "^1.37"
+        "spatie/ray": "^1.37.1"
     }
 }

@@ -1,37 +1,22 @@
 <?php
 
-namespace BenjaminHaeberli;
+declare(strict_types=1);
 
-trait SingletonTrait
+namespace BenjaminHaeberli\Portfolio;
+
+trait Singleton
 {
-    private static self|null $instance;
+    private static ?self $instance = null;
 
-    /**
-     * Returns the *Singleton* instance of this class.
-     */
-    public static function instance(): self
+    final private function __construct()
     {
-        if (self::$instance === null) {
-            self::$instance = new self();
-        }
-        return self::$instance;
+        $this->init();
     }
 
-    /**
-     * Protected constructor to prevent creating a new instance of the
-     * *Singleton* via the `new` operator from outside of this class.
-     */
-    private function __construct()
-    {
-    }
+    abstract private function init(): void;
 
-    /**
-     * Private clone method to prevent cloning of the instance of the
-     * *Singleton* instance.
-     *
-     * @return void
-     */
-    private function __clone()
+    final public static function instance(): self
     {
+        return static::$instance ?? (static::$instance  = new self());
     }
 }

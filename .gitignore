@@ -33,10 +33,13 @@ Icon
 /site/plugins/*
 !/site/accounts/index.html
 
-# Environments
-# (used by vlucas/phpdotenv for sensitive credentials)
+# Development
 # --------------------------------------------------
 .env
+/.phpunit.cache
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
 
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
