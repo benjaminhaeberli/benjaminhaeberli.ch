@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0987222843571e4f017cb91ab98dfc2",
+    "content-hash": "adf4d276c72e1cc8e60dda0065546cfe",
     "packages": [
         {
             "name": "bnomei/kirby3-security-headers",
@@ -2982,27 +2982,25 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.14.8",
+            "version": "0.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "46ee9a173a2b2645ca92a75ffc17460139fa226e"
+                "reference": "2125ff71ea05b079562a8f59ca48a97eb78dc07f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/46ee9a173a2b2645ca92a75ffc17460139fa226e",
-                "reference": "46ee9a173a2b2645ca92a75ffc17460139fa226e",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/2125ff71ea05b079562a8f59ca48a97eb78dc07f",
+                "reference": "2125ff71ea05b079562a8f59ca48a97eb78dc07f",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "phpstan/phpstan": "^1.9.0"
+                "phpstan/phpstan": "^1.10.14"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
                 "rector/rector-downgrade-php": "*",
-                "rector/rector-php-parser": "*",
-                "rector/rector-phpoffice": "*",
                 "rector/rector-phpunit": "*",
                 "rector/rector-symfony": "*"
             },
@@ -3012,7 +3010,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.14-dev"
+                    "dev-main": "0.15-dev"
                 }
             },
             "autoload": {
@@ -3025,9 +3023,15 @@
                 "MIT"
             ],
             "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.14.8"
+                "source": "https://github.com/rectorphp/rector/tree/0.16.0"
             },
             "funding": [
                 {
@@ -3035,7 +3039,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-14T14:09:49+00:00"
+            "time": "2023-05-05T12:12:17+00:00"
         },
         {
             "name": "sebastian/cli-parser",
