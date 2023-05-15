@@ -2,15 +2,18 @@ Title: Homepage
 
 ----
 
-Description: test
+Hero-title:
+
+<p class="font-mono font-bold uppercase text-slate-600">Bienvenue, je suis Benjamin Haeberli !</p>
+            <h1 class="text-6xl font-bold">
+                Un développeur <span class="relative inline-block before:block before:absolute before:-inset-1 before:scale-y-75 before:bg-green-300 before:translate-y-1">
+                    <span class="relative">engagé</span>
+                </span> pour du code performant et durable.
+            </h1>
 
 ----
 
-Text: Si vous êtes un passionné de la performance et de la simplicité, vous êtes au bon endroit. Je travaille avec des technologies modernes comme (link: https://laravel.com/ text: Laravel target: _blank), (link: https://getkirby.com/ text: Kirby target: _blank), (link: https://tailwindcss.com/ text: TailwindCSS target: _blank) ou encore SQL. Je développe pour vous des solutions éthiques, sur-mesure et écoresponsables.
-
-----
-
-Desc: 
+Hero-text: Si vous êtes un passionné de la performance et de la simplicité, vous êtes au bon endroit. Je travaille avec des technologies modernes comme (link: https://laravel.com/ text: Laravel target: _blank), (link: https://getkirby.com/ text: Kirby target: _blank), (link: https://tailwindcss.com/ text: TailwindCSS target: _blank) ou encore SQL. Je développe pour vous des solutions éthiques, sur-mesure et écoresponsables.
 
 ----
 
@@ -29,7 +32,7 @@ Questions:
 
 ----
 
-Blocks: [{"content":{"text":"hwuerhiwer","citation":"qer"},"id":"3ee19813-79dc-4a5b-ad24-cd29810eb84f","isHidden":false,"type":"quote"},{"content":{"text":"<p>ewrwer <strong>eee</strong></p>"},"id":"69739e5d-029a-4e2e-b444-a53b69cad711","isHidden":false,"type":"text"}]
+Desc: 
 
 ----
 

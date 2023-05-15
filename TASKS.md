@@ -24,6 +24,12 @@ To install or code my version :
 - https://front-line-php.com/cheat-sheet#short-closures -https://spatie.be/guidelines/laravel-php#content-ternary-operators
 - https://github.com/getkirby/getkirby.com/blob/main/site/snippets/faq.php
 
+**Me**
+
+- https://benjaminhaeberli.ch/
+- https://github.com/benjaminhaeberli
+- https://www.linkedin.com/in/benjaminhaeberli
+
 ## Future features
 
 - [ ] Dynamically display a list of all dependencies _(composer.json + package.json)_ with authors and licenses on a "Legal Notice" page

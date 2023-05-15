@@ -8,25 +8,16 @@ tabs:
       content:
         icon: text
         label: Content
-        width: 1/2
+        width: 2/3
         fields:
-          description:
-            label: Description
-            type: text
-          text:
-            label: Text
+          hero_title:
+            label: Hero - Title
             type: textarea
-            size: large
-      contentbis:
-        icon: text
-        label: Content
-        width: 1/2
-        fields:
-          desc:
-            label: Desc
-            type: text
-          line1:
-            type: line
+            size: medium
+          hero_text:
+            label: Hero - Text
+            type: textarea
+            size: small
           questions:
             label: Questions (FAQ)
             type: structure
@@ -41,6 +32,13 @@ tabs:
               open:
                 label: Open?
                 type: toggle
-          blocks:
-            label: Block
-            type: blocks
+      contentbis:
+        icon: text
+        label: Content
+        width: 1/3
+        fields:
+          desc:
+            label: Desc
+            type: text
+          line1:
+            type: line

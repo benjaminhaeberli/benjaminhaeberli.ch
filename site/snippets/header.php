@@ -19,8 +19,8 @@ use Kirby\Cms\Url;
 </head>
 
 <body>
-    <header class="max-w-screen-xl pb-6 mx-auto mb-8 border-b-2 border-gray-300 border-dashed">
-        <nav class="container flex justify-between max-w-screen-xl mx-auto text-slate-600">
+    <header class="max-w-screen-lg pb-6 mx-auto mb-8 border-b-2 border-gray-300 border-dashed">
+        <nav class="container flex justify-between max-w-screen-lg mx-auto text-slate-600">
             <ul class="flex gap-6 py-3">
                 <li>
                     <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group hover:text-slate-900 focus:outline-dashed outline-1 outline-offset-2">
