@@ -21,6 +21,7 @@ module.exports = {
     "./**/*.php",
     "./assets/**/*.js",
     "./assets/**/*.css",
+    "./content/**/*.txt",
   ]),
   theme: {
     extend: {

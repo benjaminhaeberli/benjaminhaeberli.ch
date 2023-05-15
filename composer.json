@@ -47,7 +47,10 @@
         ]
     },
     "scripts": {
-        "serve": "php -S localhost:8000 ./kirby/router.php --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -S localhost:8000 ./kirby/router.php --ansi"
+        ],
         "refacto": "rector --ansi",
         "lint": "pint --ansi",
         "coverage": "pest --colors=always --coverage",
