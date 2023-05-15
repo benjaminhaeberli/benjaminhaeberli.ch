@@ -26,15 +26,17 @@
 2. `npm install`
 3. Copy `.\.env.development.example` to `.\.env`
 4. `npm run watch`
-5. `composer run server`
+5. `composer serve`
 
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 ### Code quality
 
-- `composer run analyze`
-- `composer run fix`
-- `composer run test`
+- `composer coverage`
+- `composer refacto`
+- `composer lint`
+- `composer test`
+- `composer fix:composer`
 - `npm run prettier:write`
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
