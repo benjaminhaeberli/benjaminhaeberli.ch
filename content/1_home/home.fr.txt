@@ -5,7 +5,7 @@ Title: Homepage
 Hero-title:
 
 <p class="font-mono font-bold uppercase text-slate-600">Bienvenue, je suis Benjamin Haeberli !</p>
-            <h1 class="text-6xl font-bold">
+            <h1 class="text-5xl font-bold">
                 Un développeur <span class="relative inline-block before:block before:absolute before:-inset-1 before:scale-y-75 before:bg-green-300 before:translate-y-1">
                     <span class="relative">engagé</span>
                 </span> pour du code performant et durable.

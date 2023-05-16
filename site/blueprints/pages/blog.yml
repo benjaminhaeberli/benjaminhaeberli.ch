@@ -1,0 +1,28 @@
+title:
+  en: Blog
+  fr: Blog
+
+tabs:
+  content:
+    columns:
+      content:
+        icon: text
+        label: Content
+        width: 2/3
+        fields:
+          hero_title:
+            label: Hero - Title
+            type: textarea
+            size: medium
+          hero_text:
+            label: Hero - Text
+            type: textarea
+            size: small
+      contentbis:
+        icon: text
+        label: Content
+        width: 1/3
+        fields:
+          desc:
+            label: Articles
+            type: pages
