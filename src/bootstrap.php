@@ -20,11 +20,3 @@ declare(strict_types=1);
  * @see https://getkirby.com/docs/reference/templates/helpers
  */
 define('KIRBY_HELPER_DUMP', false);
-
-/**
- * Define DS if necessary, for PHPStan
- * @see https://github.com/phpstan/phpstan/issues/6744
- */
-if (!defined('DS')) {
-    define('DS', DIRECTORY_SEPARATOR);
-}
