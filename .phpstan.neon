@@ -5,4 +5,4 @@ parameters:
     - site/config/
     - site/models/
 
-  level: 3
+  level: 6

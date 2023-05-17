@@ -77,7 +77,7 @@ use Kirby\Cms\Url;
                     $links = site()->megamenu()->toStructure();
                     foreach ($links as $link) : ?>
                         <?php $page = $link->target_page()->toPage() ?>
-                        <?php if ($page = KirbyHelper::isPage($page)) : ?>
+                        <?php if (($page = KirbyHelper::isPage($page)) !== null) : ?>
                             <li class="flex">
                                 <?php if (page()->is($page)) : ?>
                                     <a href="#" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent text-slate-100 bg-slate-900 hover:bg-slate-800 focus:text-slate-900 focus:outline-dashed outline-2 ">

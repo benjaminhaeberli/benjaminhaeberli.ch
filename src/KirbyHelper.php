@@ -3,7 +3,6 @@
 namespace BenjaminHaeberli\Portfolio;
 
 use Kirby\Cms\Page;
-use PhpParser\Node\Expr\Instanceof_;
 
 final class KirbyHelper
 {
