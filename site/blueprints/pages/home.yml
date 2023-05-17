@@ -37,6 +37,8 @@ tabs:
         label: Content
         width: 1/3
         fields:
+          submenu:
+            extends: fields/submenu
           desc:
             label: Desc
             type: text

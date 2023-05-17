@@ -1,4 +1,4 @@
-Title: Homepage
+Title: Accueil
 
 ----
 
@@ -32,7 +32,31 @@ Questions:
 
 ----
 
+Submenu:
+
+- 
+  title: Intro
+  slug: introduction
+- 
+  title: Compétences
+  slug: competences
+- 
+  title: Tarifs
+  slug: tarifs
+- 
+  title: 'Avis client·e·s '
+  slug: avis-clients
+- 
+  title: 'Foire aux questions '
+  slug: foire-aux-questions
+
+----
+
 Desc: 
+
+----
+
+Classname: fields
 
 ----
 

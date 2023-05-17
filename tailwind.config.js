@@ -30,6 +30,14 @@ module.exports = {
         serif: ["Crimson Pro", ...defaultTheme.fontFamily.serif],
         /* mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono], */
       },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        xxl: "1440px",
+        "2xl": "1536px",
+      },
     },
   },
   variants: {},

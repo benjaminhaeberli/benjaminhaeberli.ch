@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main class="flex flex-col gap-32">
+<main class="flex flex-col gap-16">
     <section class="container max-w-screen-lg mx-auto">
         <div class="flex flex-wrap justify-between">
             <div class="flex flex-col gap-4 max-w-[50%] text-slate-900">
@@ -20,7 +20,19 @@
                 Compétences
             </h2>
             <div class="text-lg">
-                VOIR PDF
+                VOIR FIGMA + GITHUB
+            </div>
+        </div>
+    </section>
+
+    <section class="container max-w-screen-lg mx-auto">
+        <div class="flex flex-col max-w-2xl gap-4 text-slate-900">
+            <p class="font-mono font-bold uppercase text-slate-600">Combien ça coûte ? 💸</p>
+            <h2 class="text-3xl font-bold">
+                Tarifs
+            </h2>
+            <div class="text-lg">
+                VOIR GRILLET TARIFAIRE PDF
             </div>
         </div>
     </section>
@@ -32,7 +44,7 @@
                 Avis client·e·s
             </h2>
             <div class="text-lg">
-                VOIR PDF
+                VOIR LINKEDIN + DEMANDER AUTRES AVIS
             </div>
         </div>
     </section>
@@ -52,12 +64,12 @@
                 $questions = $page->questions()->toStructure();
                 // we can then loop through the entries and render the individual fields
                 foreach ($questions as $question) : ?>
-                    <details class="" <?= ($question->open()->toBool()) ? 'open' : '0' ?>>
+                    <details <?= ($question->open()->toBool()) ? 'open' : null ?>>
                         <summary class="p-4 font-bold border-2 border-dashed cursor-pointer border-slate-400 hover:border-slate-600">
                             <?= $question->title() ?>
                         </summary>
                         <div class="p-4">
-                            <p><?= $question->answer() ?></p>
+                            <?= $question->answer() ?>
                         </div>
                     </details>
                 <?php endforeach ?>

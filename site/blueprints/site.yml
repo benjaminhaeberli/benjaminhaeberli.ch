@@ -14,7 +14,8 @@ columns:
     width: 1/2
     fields:
       availability:
-        label: Availability
+        label:
+          en: Availability
           fr: Disponibilité
         type: writer
         inline: true
@@ -33,3 +34,24 @@ columns:
         placeholder: 'github.com/benjaminhaeberli'
         translate: false
         type: url
+        label:
+      megamenu:
+        label:
+          en: Main menu
+          fr: Menu principal
+        type: structure
+        sortable: true
+        fields:
+          target_page:
+            label: Page
+            type: pages
+            multiple: false
+            required: true
+          svg_icon:
+            label:
+              en: Icon (SVG)
+              fr: Icône (SVG)
+            type: textarea
+            size: medium
+            required: true
+

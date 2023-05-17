@@ -546,6 +546,12 @@ html {
   }
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
@@ -678,8 +684,20 @@ html {
   left: 0.25rem;
 }
 
+.left-32 {
+  left: 8rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
 .left-48 {
   left: 12rem;
+}
+
+.left-8 {
+  left: 2rem;
 }
 
 .right-1 {
@@ -688,6 +706,22 @@ html {
 
 .right-10 {
   right: 2.5rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.right-32 {
+  right: 8rem;
+}
+
+.right-64 {
+  right: 16rem;
+}
+
+.right-8 {
+  right: 2rem;
 }
 
 .top-0 {
@@ -793,6 +827,11 @@ html {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-auto {
@@ -1328,6 +1367,10 @@ html {
   gap: 3rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1724,6 +1767,16 @@ html {
   background-color: rgb(132 204 22 / var(--tw-bg-opacity));
 }
 
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
 .bg-red-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
@@ -1958,6 +2011,10 @@ html {
 
 .stroke-2 {
   stroke-width: 2;
+}
+
+.stroke-\[1\.5px\] {
+  stroke-width: 1.5px;
 }
 
 .object-contain {
@@ -2771,9 +2828,9 @@ html {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.hover\:text-slate-300:hover {
+.hover\:text-slate-700:hover {
   --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .focus\:bg-transparent:focus {
@@ -2793,12 +2850,12 @@ html {
   outline-color: #0f172a;
 }
 
-.group:hover .group-hover\:fill-slate-300 {
-  fill: #cbd5e1;
+.group:hover .group-hover\:fill-slate-700 {
+  fill: #334155;
 }
 
-.group:hover .group-hover\:stroke-slate-300 {
-  stroke: #cbd5e1;
+.group:hover .group-hover\:stroke-slate-700 {
+  stroke: #334155;
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -2825,4 +2882,26 @@ html {
 
 .group:focus .group-hocus\:fill-slate-900 {
   fill: #0f172a;
+}
+
+@media (min-width: 1440px) {
+  .xxl\:fixed {
+    position: fixed;
+  }
+
+  .xxl\:left-8 {
+    left: 2rem;
+  }
+
+  .xxl\:right-64 {
+    right: 16rem;
+  }
+
+  .xxl\:block {
+    display: block;
+  }
+
+  .xxl\:flex-col {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,12 @@
+label:
+  en: Submenu
+  fr: Sous-menu
+type: structure
+sortable: true
+fields:
+  title:
+    label: Title
+    type: text
+  slug:
+    label: Slug
+    type: slug
