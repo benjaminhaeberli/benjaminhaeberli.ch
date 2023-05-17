@@ -17,15 +17,19 @@ use BenjaminHaeberli\Portfolio\ComposerHelper;
             </div>
             <?php if (!empty($packages = ComposerHelper::getPackages())) : ?>
                 <h2 class="text-2xl font-bold">
-                    Librairies PHP
+                    Code du site
                 </h2>
-                <p>Le code complet de ce site est disponible sur <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank" class="href">ce repôt GitHub</a>.</p>
-                <ul class="p-4 text-sm bg-blue-50">
+                <p>Les librairies PHP utilisées pour développer ce site sont listées ci-dessous. Le code complet de ce dernier est disponible sur <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank" class="href">ce repôt GitHub</a>.</p>
+                <ul class="grid grid-cols-1 gap-2 p-8 text-sm md:grid-cols-2 bg-blue-50">
                     <?php foreach ($packages as $package) : ?>
-                        <li class="flex gap-2">
-                            <span><?= $package['name'] ?></span>
+                        <li class="flex gap-1">
+                            <?php if ($package->url->toString()) : ?>
+                                <a href="<?= $package->url->toString() ?>" class="href" target="_blank"><?= $package->name ?></a>
+                            <?php else : ?>
+                                <span><?= $package->name ?></span>
+                            <?php endif; ?>
                             <span>-</span>
-                            <span><?= $package['version'] ?></span>
+                            <span><?= $package->version ?></span>
                         </li>
                     <?php endforeach; ?>
 
