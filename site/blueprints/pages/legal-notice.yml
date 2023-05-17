@@ -1,0 +1,22 @@
+title:
+  en: Legal notice
+  fr: Mentions légales
+
+tabs:
+  content:
+    columns:
+      content:
+        icon: text
+        label: Content
+        width: 2/3
+        fields:
+          main_content:
+            label:
+              en: Main content
+              fr: Contenu principal
+            type: textarea
+            size: huge
+      contentbis:
+        icon: text
+        label: Content
+        width: 1/3

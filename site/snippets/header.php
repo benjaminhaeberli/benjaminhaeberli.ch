@@ -94,7 +94,7 @@ use Kirby\Cms\Url;
             </nav>
         <?php endif; ?>
         <?php if (KirbyHelper::pageHasField('submenu')) : ?>
-            <nav class="container flex flex-col max-w-screen-xl gap-4 mx-auto my-3 font-medium xxl:fixed xxl:left-8 xxl:right-64">
+            <nav class="container flex flex-col max-w-[156px] gap-4 mx-auto my-3 font-medium xxl:fixed xxl:left-8">
                 <p class="hidden xxl:block">Sommaire</p>
                 <ul class="flex gap-4 py-1 text-sm xxl:flex-col text-slate-600">
                     <?php

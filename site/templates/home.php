@@ -5,7 +5,7 @@
         <div class="flex flex-wrap justify-between">
             <div class="flex flex-col gap-4 max-w-[50%] text-slate-900">
                 <?= page()->hero_title()->kt() ?>
-                <div>
+                <div class="kirbytext">
                     <?= page()->hero_text()->kt() ?>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                         <summary class="p-4 font-bold border-2 border-dashed cursor-pointer border-slate-400 hover:border-slate-600">
                             <?= $question->title() ?>
                         </summary>
-                        <div class="p-4">
+                        <div class="p-4 kirbytext">
                             <?= $question->answer() ?>
                         </div>
                     </details>

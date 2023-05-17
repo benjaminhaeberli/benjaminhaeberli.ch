@@ -4,9 +4,9 @@
     <section class="container max-w-screen-lg mx-auto">
         <div class="flex flex-col max-w-2xl gap-4 text-slate-900">
             <p class="font-mono font-bold uppercase text-slate-600">XXXX 📜</p>
-            <h2 class="text-4xl font-bold">
+            <h1 class="text-4xl font-bold">
                 Méthodologie
-            </h2>
+            </h1>
             <div class="text-lg">
                 <p>J'utilise presque exclusivement des outils
                     <span class="relative cursor-pointer group">open source

@@ -4,6 +4,21 @@
   html {
     @apply text-slate-900;
   }
+  .kirbytext {
+    @apply flex flex-col gap-4;
+  }
+  .kirbytext h2 {
+    @apply text-3xl font-bold;
+  }
+  .kirbytext ul {
+    @apply ml-4 list-disc;
+  }
+  .kirbytext a {
+    @apply underline text-sky-600 hocus:no-underline focus:outline-dashed outline-1 outline-offset-2;
+  }
+  .href {
+    @apply underline text-sky-600 hocus:no-underline focus:outline-dashed outline-1 outline-offset-2;
+  }
 }
 
 @tailwind components;

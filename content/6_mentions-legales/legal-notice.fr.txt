@@ -1,0 +1,40 @@
+Title: Mentions légales
+
+----
+
+Main-content:
+
+Le site web benjaminhaeberli.ch est édité par **Benjamin Haeberli** et publié sous licence (link: https://github.com/benjaminhaeberli/benjaminhaeberli.ch/blob/main/LICENSE text: GNU AGPL v3.0 target:_blank). Pour toute demande technique, veuillez vous référer à l’administrateur : hello@benjaminhaeberli.ch
+
+- Benjamin Haeberli
+- Avenue Biaudet 2B
+- 1880 Bex, Suisse
+- (link: mailto:hello@benjaminhaeberli.ch text: hello@benjaminhaeberli.ch)
+- (link: tel:+41796684431 text:  +41 79 668 44 31)
+- IDE : CHE-150.194.639
+
+## Propriété intellectuelle
+
+De manière générale, les données, les programmes, les échantillons musicaux, les textes, les informations, les logos, les identités visuelles, les images (animées ou non) et leurs mises en forme, les vidéos, apparaissant sur ce site sont la propriété de **Benjamin Haeberli** et sont protégées à ce titre par les dispositions du (link: https://www.fedlex.admin.ch/eli/cc/1993/1798_1798_1798/fr text: droit d’auteur suisse target:_blank).
+
+Tout internaute s’engage à ne les utiliser uniquement dans le cadre strict offert par la licence (link: https://github.com/benjaminhaeberli/benjaminhaeberli.ch/blob/main/LICENSE text: GNU AGPL v3.0 target:_blank).
+
+## Responsabilité
+
+**Benjamin Haeberli** décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur ce site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci. **Benjamin Haeberli**  ne peut garantir l’exhaustivité et la véracité des informations présentes sur ce site ainsi que l’absence de modification par un tiers (intrusion, virus). L’internaute est seul responsable de l’utilisation qu’il fait du contenu du site.
+
+Les éléments présentés sur ce site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.
+
+La présence de liens hypertextes présents sur ce site ne crée pas une solidarité de responsabilité entre **Benjamin Haeberli** et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute. Seule la responsabilité desdits sites peut être engagée.
+
+----
+
+Uuid: OLcqFnq8pttqaQhM
+
+----
+
+Hero-title: 
+
+----
+
+Hero-text: 

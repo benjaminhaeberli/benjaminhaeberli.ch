@@ -21,7 +21,7 @@ Questions:
 
 - 
   title: Quels sont tes tarifs ?
-  answer: '<p>Mon tarif horaire est fixé à 110 CHF, mais vous pouvez retrouver tous les détails <strong>dans ce document</strong>.</p>'
+  answer: '<p>Mon tarif horaire est fixé à 110 CHF, mais vous pouvez retrouver tous les détails <a href="/#tarifs" title="Tarifs" rel="noreferrer">dans cette section</a>.</p>'
   open: 'false'
 - 
   title: >
