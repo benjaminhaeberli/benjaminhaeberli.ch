@@ -14,13 +14,86 @@
     </section>
 
     <section class="container max-w-screen-lg mx-auto">
-        <div class="flex flex-col max-w-2xl gap-4 text-slate-900">
+        <div class="flex flex-col w-9/12 gap-4 p-4 m-auto text-slate-900">
             <p class="font-mono font-bold uppercase text-slate-600">Outils et frameworks 🛠️</p>
-            <h2 class="text-3xl font-bold">
-                Compétences
-            </h2>
+            <h2 class="text-3xl font-bold">Compétences</h2>
             <div class="text-lg">
-                VOIR FIGMA + GITHUB
+                Différentes technologies et outils.
+            </div>
+            <div class="flex flex-wrap p-8 text-sm bg-slate-200 gap-x-16 gap-y-4">
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Back-End</h3>
+                    <ul>
+                        <li>PHP ⭐</li>
+                        <li><a href="https://laravel.com/" class="href" target="_blank">Laravel</a> ⭐</li>
+                        <li><a href="https://getkirby.com/" class="href" target="_blank">Kirby</a> ⭐</li>
+                        <li>API REST</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Front-End</h3>
+                    <ul>
+                        <li><a href="https://tailwindcss.com/" class="href" target="_blank">TailwindCSS</a> ⭐</li>
+                        <li><a href="https://alpinejs.dev/" class="href" target="_blank">Alpine.js</a> ⭐</li>
+                        <li><a href="https://vuejs.org/" class="href" target="_blank">Vue.js</a></li>
+                        <li>SEO<sup>1</sup></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Infrastructure</h3>
+                    <ul>
+                        <li><a href="https://infomaniak.com/fr/" class="href" target="_blank">Infomaniak</a> ⭐</li>
+                        <li>GitHub</li>
+                        <li>PHPUnit</li>
+                        <li>PestPHP</li>
+                        <li>n8n</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Bonnes pratiques</h3>
+                    <ul>
+                        <li>SOLID, DRY ❤️</li>
+                        <li>CI/CD</li>
+                        <li>UML</li>
+                        <li>TDD & DDD<sup>2</sup></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Web</h3>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>SASS/LESS</li>
+                        <li>Vite</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Outils</h3>
+                    <ul>
+                        <li>Plausible</li>
+                        <li>KeyCDN</li>
+                        <li>Google Search Console</li>
+                        <li>Ubbersuggest</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <h3 class="font-bold uppercase">Management </h3>
+                    <ul>
+                        <li>Consulting</li>
+                        <li>Audit</li>
+                        <li>Needs assessment</li>
+                        <li>Specifications</li>
+                        <li>Planning</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="text-sm"><sup>1</sup> Optimisation technique "on-site/on-page"</p>
             </div>
         </div>
     </section>

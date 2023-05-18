@@ -71,7 +71,7 @@ use Kirby\Cms\Url;
             </ol>
         </nav>
         <?php if (KirbyHelper::siteHasField('megamenu')) : ?>
-            <nav class="container flex max-w-screen-xl gap-2 p-4 mx-auto font-medium border-2 border-gray-900 text-slate-900 ">
+            <nav class="container flex max-w-screen-xl gap-2 p-4 mx-auto font-medium border-2 text-slate-50 text-slate-900">
                 <ol class="flex gap-2">
                     <?php
                     $links = site()->megamenu()->toStructure();
@@ -80,9 +80,9 @@ use Kirby\Cms\Url;
                         <?php if (($page = KirbyHelper::isPage($page)) !== null) : ?>
                             <li class="flex">
                                 <?php if (page()->is($page)) : ?>
-                                    <a href="#" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent text-slate-100 bg-slate-900 hover:bg-slate-800 focus:text-slate-900 focus:outline-dashed outline-2 ">
+                                    <a href="#" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent text-slate-50 bg-slate-900 hover:bg-slate-800 focus:text-slate-200 focus:outline-dashed outline-2 ">
                                     <?php else : ?>
-                                        <a href="<?= $page->url() ?>" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent hocus:text-slate-900 focus:outline-dashed outline-2">
+                                        <a href="<?= $page->url() ?>" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent hocus:text-slate-800 focus:outline-dashed outline-2">
                                         <?php endif; ?>
                                         <?= $link->svg_icon() ?>
                                         <span> <?= $page->title() ?></span>
@@ -94,7 +94,7 @@ use Kirby\Cms\Url;
             </nav>
         <?php endif; ?>
         <?php if (KirbyHelper::pageHasField('submenu')) : ?>
-            <nav class="container flex flex-col max-w-[156px] gap-4 mx-auto my-3 font-medium xxl:fixed xxl:left-8">
+            <nav class="container flex flex-col xxl:max-w-[156px] gap-4 mx-auto my-3 font-medium xxl:fixed xxl:-ml-44">
                 <p class="hidden xxl:block">Sommaire</p>
                 <ul class="flex gap-4 py-1 text-sm xxl:flex-col text-slate-600">
                     <?php
