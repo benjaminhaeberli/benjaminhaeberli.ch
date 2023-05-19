@@ -10,7 +10,7 @@
                 </div>
                 <div class="flex gap-4">
                     <a href="https://tally.so/r/mJDQXw" class="bh__btn">Contactez-moi</a>
-                    <a href="/methodologie" class="bh__btn bh__btn-light">Ma méthodologie</a>
+                    <a href="#tarifs" class="bh__btn bh__btn-light">Mes tarifs</a>
                 </div>
             </div>
             <img class="inline-block m-auto lg:m-0 w-96 h-96" src="/assets/images/benjamin-haeberli-software-developer-avatar.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur">

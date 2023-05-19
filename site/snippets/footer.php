@@ -5,7 +5,7 @@ use Kirby\Cms\Html;
 ?>
 <footer>
     <nav class="container flex justify-between max-w-screen-lg py-8 mx-auto mt-12 border-t-2 border-gray-300 border-dashed text-slate-600">
-        <ol class="flex flex-col gap-1 px-8 mx-auto text-sm md:px-16 lg:px-0">
+        <ol class="flex flex-col gap-1 px-8 text-sm md:px-16 lg:px-0">
             <li>
                 Icônes de heroicons.com et remixicon.com. Site codé avec Kirby et Tailwind CSS.
             </li>

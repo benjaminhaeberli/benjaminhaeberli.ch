@@ -2,11 +2,9 @@
 
 namespace BenjaminHaeberli\Portfolio\ValueObjects;
 
-use BenjaminHaeberli\Portfolio\ValueObjects\Url;
-
 final class ComposerPackage
 {
-    final const PACKAGIST_URL = "https://packagist.org/packages/";
+    final public const PACKAGIST_URL = "https://packagist.org/packages/";
 
     public readonly Url $url;
 

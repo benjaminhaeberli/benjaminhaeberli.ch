@@ -19,9 +19,3 @@ $dotenv->load();
  */
 $kirby = new Kirby\Cms\App();
 echo $kirby->render();
-
-
-/*
-$benjamin = kirby()->user('5hMOJa62');
-dump(array_keys($benjamin->content('fr')->fields()));
- */
