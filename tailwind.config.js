@@ -38,6 +38,14 @@ module.exports = {
         xxl: "1440px",
         "2xl": "1536px",
       },
+      colors: {
+        darkblue: "#131723",
+        darkyellow: {
+          400: "#FDF1D3",
+          500: "#FCE290",
+          600: "#EFCD5F",
+        },
+      },
     },
   },
   variants: {},

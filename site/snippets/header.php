@@ -21,8 +21,8 @@ use Kirby\Cms\Url;
 
 <body>
     <header class="max-w-screen-lg mx-auto mb-8">
-        <nav class="container flex items-center justify-between max-w-screen-lg px-4 mx-auto my-3 text-sm text-slate-900">
-            <ol class="flex gap-6">
+        <nav class="container flex flex-wrap items-center justify-center max-w-screen-lg gap-2 px-4 mx-auto my-3 text-sm lg:p-0 md:justify-between text-slate-900">
+            <ol class="flex flex-wrap gap-x-6 gap-y-2">
                 <li>
                     <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group hover:text-slate-700 focus:outline-dashed outline-1 outline-offset-2">
                         <svg class="w-4 h-4 fill-slate-900 group-hover:fill-slate-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -51,57 +51,28 @@ use Kirby\Cms\Url;
                 </li>
             </ol>
             <ol class="flex gap-4">
-                <li class="flex">
-                    <a href='/en' class="flex items-center gap-1 group hover:text-slate-700 focus:outline-dashed outline-1 outline-offset-2">
-                        <svg class="w-4 h-4 stroke-2 stroke-slate-900 group-hover:stroke-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
-                        </svg>
-                        <span>English version</span>
-                    </a>
-                </li>
+                <?php /* snippet('langswitch') */ ?>
                 <li class="flex">
                     <div class="flex items-center gap-1 group focus:outline-dashed outline-1 outline-offset-2">
                         <span class="relative flex items-center justify-center w-4 h-4" aria-hidden="true">
-                            <span class="absolute inline-flex w-2 h-2 bg-red-400 rounded-full opacity-75 animate-ping"></span>
-                            <span class="relative inline-flex w-2 h-2 bg-red-500 rounded-full"></span>
+                            <span class="absolute inline-flex w-2 h-2 rounded-full opacity-75 bg-darkyellow-600 animate-ping"></span>
+                            <span class="relative inline-flex w-2 h-2 rounded-full bg-darkyellow-600"></span>
                         </span>
-                        <span class="px-2 py-1 bg-red-200 rounded-full">Indisponible jusqu'au 1<sup>er</sup> août 2023</span>
+                        <span class="px-2 py-1 rounded-full bg-darkyellow-400">Indisponible jusqu'au 1<sup>er</sup> août 2023</span>
                     </div>
                 </li>
             </ol>
         </nav>
-        <?php if (KirbyHelper::siteHasField('megamenu')) : ?>
-            <nav class="container flex max-w-screen-xl gap-2 p-4 mx-auto font-medium border-2 text-slate-50 text-slate-900">
-                <ol class="flex gap-2">
-                    <?php
-                    $links = site()->megamenu()->toStructure();
-                    foreach ($links as $link) : ?>
-                        <?php $page = $link->target_page()->toPage() ?>
-                        <?php if (($page = KirbyHelper::isPage($page)) !== null) : ?>
-                            <li class="flex">
-                                <?php if (page()->is($page)) : ?>
-                                    <a href="#" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent text-slate-50 bg-slate-900 hover:bg-slate-800 focus:text-slate-200 focus:outline-dashed outline-2 ">
-                                    <?php else : ?>
-                                        <a href="<?= $page->url() ?>" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent hocus:text-slate-800 focus:outline-dashed outline-2">
-                                        <?php endif; ?>
-                                        <?= $link->svg_icon() ?>
-                                        <span> <?= $page->title() ?></span>
-                                        </a>
-                            </li>
-                        <?php endif; ?>
-                    <?php endforeach ?>
-                </ol>
-            </nav>
-        <?php endif; ?>
+        <?php /* snippet('megamenu') */ ?>
         <?php if (KirbyHelper::pageHasField('submenu')) : ?>
             <nav class="container flex flex-col xxl:max-w-[156px] gap-4 mx-auto my-3 font-medium xxl:fixed xxl:-ml-44">
-                <p class="hidden xxl:block">Sommaire</p>
-                <ul class="flex gap-4 py-1 text-sm xxl:flex-col text-slate-600">
+                <a href="#" class="hidden bh__svg-up xxl:block">Haut de page</a>
+                <ul class="flex flex-wrap gap-4 px-4 m-auto text-sm lg:p-0 xxl:flex-col lg:m-0 text-slate-600">
                     <?php
                     $links = page()->submenu()->toStructure();
                     foreach ($links as $link) : ?>
                         <li class="flex ">
-                            <a href="#<?= $link->slug() ?>" class="flex items-center px-1 focus:outline-slate-900 outline-slate-300 outline-dotted outline-2 outline-offset-2 hocus:text-slate-900">
+                            <a href="#<?= $link->slug() ?>" class="flex items-center px-1 bg-slate-50 hocus:outline-slate-900 outline-slate-300 outline-dotted hocus:outline outline-2 hocus:outline-1 hocus:text-slate-900">
                                 <?= $link->title() ?>
                             </a>
                         </li>

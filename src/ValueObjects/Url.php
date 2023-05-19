@@ -11,6 +11,6 @@ final class Url
 
     public function toString(): string
     {
-        return (string) $this->url;
+        return $this->url;
     }
 }

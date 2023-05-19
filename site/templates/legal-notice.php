@@ -8,11 +8,11 @@ use BenjaminHaeberli\Portfolio\ComposerHelper;
 
 <main class="flex flex-col gap-16">
     <section class="container max-w-screen-md mx-auto">
-        <div class="flex flex-col gap-4 text-slate-900">
+        <div class="flex flex-col gap-4 px-8 mx-auto text-slate-900 md:px-16 lg:px-0">
             <h1 class="text-4xl font-bold">
                 Mentions légales
             </h1>
-            <div class="kirbytext">
+            <div class="bh__kirbytext">
                 <?= page()->main_content()->kt() ?>
             </div>
             <?php if (!empty($packages = ComposerHelper::getPackages())) : ?>
@@ -20,11 +20,11 @@ use BenjaminHaeberli\Portfolio\ComposerHelper;
                     Code du site
                 </h2>
                 <p>Les librairies PHP utilisées pour développer ce site sont listées ci-dessous. Le code complet de ce dernier est disponible sur <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank" class="href">ce repôt GitHub</a>.</p>
-                <ul class="grid grid-cols-1 gap-2 p-8 text-sm md:grid-cols-2 bg-blue-50">
+                <ul class="z-10 grid grid-cols-1 gap-2 p-2 text-sm md:p-8 md:grid-cols-2 bg-blue-50">
                     <?php foreach ($packages as $package) : ?>
                         <li class="flex gap-1">
-                            <?php if ($package->url->toString()) : ?>
-                                <a href="<?= $package->url->toString() ?>" class="href" target="_blank"><?= $package->name ?></a>
+                            <?php if ($package->url->toString() !== '' && $package->url->toString() !== '0') : ?>
+                                <a href="<?= $package->url->toString() ?>" class="bh__basic-href-dark" target="_blank"><?= $package->name ?></a>
                             <?php else : ?>
                                 <span><?= $package->name ?></span>
                             <?php endif; ?>
