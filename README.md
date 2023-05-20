@@ -56,7 +56,6 @@ To use it, you need to configure those [Action secrets](https://docs.github.com/
 | `SSH_USERNAME` | nice_username           |
 | `SSH_PASSWORD` | very_strong_password    |
 | `SSH_DIR`      | sites/exports.nanou.ch/ |
-| `SSH_FILE`     | id_portfolio            |
 
 An [Deploy key](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/managing-deploy-keys) needs to be created on the server, without passphrase :
 

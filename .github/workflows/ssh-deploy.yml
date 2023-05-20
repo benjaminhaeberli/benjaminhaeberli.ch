@@ -24,7 +24,7 @@ jobs:
           script: |
             cd ${{ secrets.SSH_DIR }}
             eval "$(ssh-agent -s)"
-            ssh-add ~/.ssh/${{ secrets.SSH_FILE }}
+            ssh-add ~/.ssh/id_portfolio
             rm -rf vendor/
             git pull
             composer install --no-dev --optimize-autoloader --no-interaction
