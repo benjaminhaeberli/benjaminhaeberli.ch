@@ -19,6 +19,6 @@ use Kirby\Cms\Html;
 </body>
 
 <?= Html::js('assets/app.js', 'defer') ?>
-<script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/js/collect.js"></script>
+<script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js" nonce="<?= site()->nonce() ?>"></script>
 
 </html>
