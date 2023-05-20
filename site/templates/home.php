@@ -217,8 +217,8 @@
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
                             <img class="block object-cover w-16 h-16" src="/assets/images/reviews/thomasmiller.avif" alt="Photo de Thomas Miller" loading="lazy">
                             <div class="flex flex-col ">
-                                <p><a href=" https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Thomas Miller</a></p>
-                                <p>Lead UI Designer / Artist 2D</p>
+                                <p><a href=" https://www.linkedin.com/in/thomas-miller-671589a3/" class="bh__basic-href-dark" target="_blank">Thomas Miller</a></p>
+                                <p>Développeur web</p>
                             </div>
                             </a>
                         </div>
