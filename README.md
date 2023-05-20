@@ -54,6 +54,7 @@ To use it, you need to configure those [Action secrets](https://docs.github.com/
 | `SSH_USERNAME` | nice_username           |
 | `SSH_PASSWORD` | very_strong_password    |
 | `SSH_DIR`      | sites/exports.nanou.ch/ |
+| `SSH_FILE`     | id_portfolio            |
 
 An [Deploy key](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/managing-deploy-keys) needs to be created on the server, without passphrase :
 
@@ -61,7 +62,7 @@ An [Deploy key](https://docs.github.com/fr/authentication/connecting-to-github-w
 cd ~/.ssh/
 eval "$(ssh-agent -s)"
 ssh-keygen -t ecdsa -b 521 -C "admin@benjaminhaeberli.ch"
-ssh-add ~/.ssh/id_ecdas
+ssh-add ~/.ssh/id_portfolio
 ```
 
 And complete `known_hosts` with [GitHub's SSH key fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
