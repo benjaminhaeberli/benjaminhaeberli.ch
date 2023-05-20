@@ -8,6 +8,8 @@
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/commits/main)
 [![GitHub Language](https://img.shields.io/github/languages/top/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/search?l=php)
 [![GitHub Stars](https://img.shields.io/github/stars/benjaminhaeberli/benjaminhaeberli.ch?color=192433)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/stargazers)
+[![Tests](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/actions/workflows/test-php-code.yml/badge.svg)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/actions/workflows/test-php-code.yml)
+[![SSH deploy 🚀](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/actions/workflows/ssh-deploy.yml/badge.svg)](https://github.com/benjaminhaeberli/benjaminhaeberli.ch/actions/workflows/ssh-deploy.yml)
 
  </div>
 
