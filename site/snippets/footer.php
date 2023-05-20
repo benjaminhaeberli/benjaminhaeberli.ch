@@ -18,6 +18,7 @@ use Kirby\Cms\Html;
 
 </body>
 
-<?= Html::js('assets/app.js') ?>
+<?= Html::js('assets/app.js', 'defer') ?>
+<script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/js/collect.js"></script>
 
 </html>

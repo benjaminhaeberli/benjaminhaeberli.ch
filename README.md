@@ -41,11 +41,35 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
 
+### Deployment with GitHub Actions
+
+The `main.yml` workflow `.github\workflows` allow to deploy the theme using FTP. It upload only modified files and install PHP dependecies using `composer install`.
+
+To use it, you need to configure those [Action secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) :
+
+| Name           | Value (example)         |
+| -------------- | ----------------------- |
+| `SSH_HOST`     | XXXX.ftp.infomaniak.com |
+| `SSH_PORT`     | 21                      |
+| `SSH_USERNAME` | nice_username           |
+| `SSH_PASSWORD` | very_strong_password    |
+| `SSH_DIR`      | sites/exports.nanou.ch/ |
+
+An [Deploy key](https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/managing-deploy-keys) needs to be created on the server, without passphrase :
+
+```bash
+cd ~/.ssh/
+eval "$(ssh-agent -s)"
+ssh-keygen -t ecdsa -b 521 -C "admin@benjaminhaeberli.ch"
+ssh-add ~/.ssh/id_ecdas
+```
+
+Be sure that PHP version ([see Infomaniak docs](https://www.infomaniak.com/fr/support/faq/2108/modifier-la-version-de-php-utilisee-en-cli-via-ssh)) is the same as required in `composer.json` ⚠️
+
 ## Directory structure 📁
 
 - `assets/` - Images, JavaScript, and CSS files for the front-end
 - `content/` - Content of the application (Kirby)
-- `docs/` - Technical documentation
 - `kirby/` - Kirby CMS code - _Managed by Composer_ (Kirby)
 - `media/` - Public images and thumbnails, plugin and panel assets - _Managed by Kirby_ (Kirby)
 - `site/` - Core of the application : templates, configuration, plugins and blueprints (Kirby)

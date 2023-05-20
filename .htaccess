@@ -63,3 +63,22 @@ AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
+
+<VirtualHost *:80>
+  ServerName benjaminhaeberli.ch
+
+  ProxyRequests off
+  ProxyPreserveHost off
+  SSLProxyEngine on
+
+  <Location /js/script.js>
+    ProxyPass https://plausible.io/js/script.js
+    ProxyPassReverse https://plausible.io/js/script.js
+  </Location>
+
+  <Location /api/event>
+    ProxyPass https://plausible.io/api/event
+    ProxyPassReverse https://plausible.io/api/event
+  </Location>
+
+</VirtualHost>

@@ -13,11 +13,11 @@
                     <a href="#tarifs" class="bh__btn bh__btn-light">Mes tarifs</a>
                 </div>
             </div>
-            <img class="inline-block m-auto lg:m-0 w-96 h-96" src="/assets/images/benjamin-haeberli-software-developer-avatar.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
+            <img class="inline-block object-cover m-auto lg:m-0 w-96 h-96" src="/assets/images/benjamin-haeberli-software-developer-avatar.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur" loading="lazy">
         </div>
     </section>
 
-    <section id="competences" class="container max-w-screen-sm m-auto lg:max-w-screen-lg bg-slate-900">
+    <section id=" competences" class="container max-w-screen-sm m-auto lg:max-w-screen-lg bg-slate-900">
         <div class="flex flex-col gap-4 p-8 m-auto md:p-16 text-slate-50">
             <header class="flex flex-col gap-4 ">
                 <p class="font-mono font-bold uppercase text-slate-400">Outils et frameworks 🛠️</p>
@@ -199,9 +199,9 @@
                         <p class="pl-4 border-l-2 border-slate-900">J'ai fait appel à Benjamin pour refaire mon site internet. Je recherchais quelqu'un de bien organisé et réactif, et je suis super bien tombée ! Benjamin était à l'écoute de mes demandes et besoins, et j'ai senti qu'il s'est vraiment investi pour mon projet. Je sais que si j'ai le moindre souci, je peux compter sur lui pour le régler rapidement. Je le recommande sans hésitation pour vos projets web !
                         </p>
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
-                            <img class="block object-cover w-16 h-16" src="/assets/images/reviews/morganeraposo.avif" alt="Photo de Morgane Raposo">
-                            <div class="flex flex-col">
-                                <p><a href="https://www.linkedin.com/in/morgane-raposo-9602a1166" class="bh__basic-href-dark" target="_blank">Morgane Raposo</a></p>
+                            <img class="block object-cover w-16 h-16" src="/assets/images/reviews/morganeraposo.avif" alt="Photo de Morgane Raposo" loading="lazy">
+                            <div class="flex flex-col ">
+                                <p><a href=" https://www.linkedin.com/in/morgane-raposo-9602a1166" class="bh__basic-href-dark" target="_blank">Morgane Raposo</a></p>
                                 <p>Photographe elopement, mariage et reportage</p>
                             </div>
                             </a>
@@ -215,9 +215,9 @@
                             </p>
                         </div>
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
-                            <img class="block object-cover w-16 h-16" src="/assets/images/reviews/thomasmiller.avif" alt="Photo de Thomas Miller">
-                            <div class="flex flex-col">
-                                <p><a href="https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Thomas Miller</a></p>
+                            <img class="block object-cover w-16 h-16" src="/assets/images/reviews/thomasmiller.avif" alt="Photo de Thomas Miller" loading="lazy">
+                            <div class="flex flex-col ">
+                                <p><a href=" https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Thomas Miller</a></p>
                                 <p>Lead UI Designer / Artist 2D</p>
                             </div>
                             </a>
@@ -233,9 +233,9 @@
                             </p>
                         </div>
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
-                            <img class="block object-cover w-16 h-16" src="/assets/images/reviews/miguelmaldonado.avif" alt="Photo de Miguel Maldonado">
-                            <div class="flex flex-col">
-                                <p><a href="https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Miguel Maldonado</a></p>
+                            <img class="block object-cover w-16 h-16" src="/assets/images/reviews/miguelmaldonado.avif" alt="Photo de Miguel Maldonado" loading="lazy">
+                            <div class="flex flex-col ">
+                                <p><a href=" https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Miguel Maldonado</a></p>
                                 <p>Lead UI Designer / Artist 2D</p>
                             </div>
                             </a>
@@ -249,8 +249,8 @@
     <?php /* snippet('sections/foire-aux-questions') */ ?>
 
     <section class="container flex flex-col max-w-screen-lg gap-2 px-8 m-auto mx-auto text-sm md:px-16 lg:px-0">
-        <img class="block object-cover w-full h-64 " src="/assets/images/benjamin-haeberli-by-rrowell-368.avif" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
-        <span>© Photographie par <a href="https://www.rainirowell.com/" class="bh__href" target="_blank">Raini Rowell</a> sur <a href="https://goo.gl/maps/eNUojpXtKhTtqArA7" class="bh__basic-href-dark" target="_blank">l'île de Skye</a></span>
+        <img class="block object-cover w-full h-64 " src="/assets/images/benjamin-haeberli-by-rrowell-368.avif" alt="Photo de Benjamin Haeberli assis devant son ordinateur" loading="lazy">
+        <span>© Photographie par <a href=" https://www.rainirowell.com/" class="bh__href" target="_blank">Raini Rowell</a> sur <a href="https://goo.gl/maps/eNUojpXtKhTtqArA7" class="bh__basic-href-dark" target="_blank">l'île de Skye</a></span>
     </section>
 </main>
 
