@@ -13,11 +13,11 @@
                     <a href="#tarifs" class="bh__btn bh__btn-light">Mes tarifs</a>
                 </div>
             </div>
-            <img class="inline-block object-cover m-auto lg:m-0 w-96 h-96" src="/assets/images/benjamin-haeberli-software-developer-avatar.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur" loading="lazy">
+            <img class="inline-block object-cover m-auto lg:m-0 w-96 h-96" src="/assets/images/benjamin-haeberli-software-developer-avatar.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
         </div>
     </section>
 
-    <section id=" competences" class="container max-w-screen-sm m-auto lg:max-w-screen-lg bg-slate-900">
+    <section id="competences" class="container max-w-screen-sm m-auto lg:max-w-screen-lg bg-slate-900">
         <div class="flex flex-col gap-4 p-8 m-auto md:p-16 text-slate-50">
             <header class="flex flex-col gap-4 ">
                 <p class="font-mono font-bold uppercase text-slate-400">Outils et frameworks 🛠️</p>
@@ -26,7 +26,7 @@
                     J'utilise presque exclusivement des outils open source et je suis <a href="https://www.infomaniak.com/fr?utm_term=62dbdda8347a1" class="bh__href-dark" target="_blank">affilié à l'hébergeur Infomaniak</a>, connu pour ses nombreux engagements <a href="https://news.infomaniak.com/cloud-ethique/" class="bh__href-dark" target="_blank">éthiques</a> et <a href="https://www.infomaniak.com/fr/ecologie" class="bh__href-dark" target="_blank">écologiques</a>. Ayant trouvé des alternatives plus fiables et performantes, je ne recommande plus et ne travaille plus avec certains outils populaires <i class="text-slate-400">(WordPress, WooCommerce, jQuery, GULP, Bootstrap, Laravel Mix, Google Analytics, etc.)</i>
                 </div>
             </header>
-            <main class="grid justify-center grid-cols-2 gap-4 py-4 text-sm lg:grid-cols-4 text-slate-400">
+            <article class="grid justify-center grid-cols-2 gap-4 py-4 text-sm lg:grid-cols-4 text-slate-400">
                 <div class="grid gap-4">
                     <div class="h-auto max-w-full">
                         <h3 class="font-bold uppercase text-slate-50">Back-End</h3>
@@ -108,7 +108,7 @@
                         </ol>
                     </div>
                 </div>
-            </main>
+            </article>
             <div class="text-sm italic text-slate-400 ">
                 <p><sup>⭐</sup> Mes favoris !</p>
                 <p><sup>1</sup> Optimisation technique "on-site/on-page" uniquement</p>
@@ -125,7 +125,7 @@
                     Tarifs
                 </h2>
             </header>
-            <main class="grid justify-center grid-cols-1 gap-4 py-4 lg:grid-cols-3">
+            <article class="grid justify-center grid-cols-1 gap-4 py-4 lg:grid-cols-3">
                 <div class="grid gap-4 auto-rows-min">
                     <article class="flex flex-col gap-2 p-4 bg-yellow-50 outline-2 outline-dotted outline-yellow-600">
                         <h3><span class="text-xl font-bold">Tarif horaire</span> <sup>1</sup></h3>
@@ -179,7 +179,7 @@
                         </ol>
                     </article>
                 </div>
-            </main>
+            </article>
             <footer class="flex flex-col gap-2 text-sm">
                 <p><sup>1</sup> Je facture par tranche de 30min (minimum 1 heure) avec délai de paiement à 20 jours. Ce tarif horaire est majoré de 50% en cas d’horaires extraordinaires exigés : de 18:00 à 08:00 du lundi au samedi, les week-end et jours feriés (<a href="https://www.vd.ch/themes/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2022" class="bh__basic-href-dark" target="_blank">Canton de Vaud, Suisse</a>).</p>
                 <p><sup>2</sup> Le code source et la documentation doivent être rendus publiques. Licences autorisées : <a href="https://choosealicense.com/licenses/agpl-3.0/" class="bh__basic-href-dark" target="_blank">GNU AGPLv3</a>, <a href="https://choosealicense.com/licenses/gpl-3.0/" class="bh__basic-href-dark" target="_blank">GNU GPLv3</a>, <a href="https://choosealicense.com/licenses/mit/" class="bh__basic-href-dark" target="_blank">MIT License</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="bh__basic-href-dark" target="_blank">CC BY-NC-SA 4.0</a></p>
@@ -201,10 +201,9 @@
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
                             <img class="block object-cover w-16 h-16" src="/assets/images/reviews/morganeraposo.avif" alt="Photo de Morgane Raposo" loading="lazy">
                             <div class="flex flex-col ">
-                                <p><a href=" https://www.linkedin.com/in/morgane-raposo-9602a1166" class="bh__basic-href-dark" target="_blank">Morgane Raposo</a></p>
+                                <h3><a href=" https://www.linkedin.com/in/morgane-raposo-9602a1166" class="bh__basic-href-dark" target="_blank">Morgane Raposo</a></h3>
                                 <p>Photographe elopement, mariage et reportage</p>
                             </div>
-                            </a>
                         </div>
                     </article>
                     <article class="flex flex-col gap-4">
@@ -217,10 +216,9 @@
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
                             <img class="block object-cover w-16 h-16" src="/assets/images/reviews/thomasmiller.avif" alt="Photo de Thomas Miller" loading="lazy">
                             <div class="flex flex-col ">
-                                <p><a href=" https://www.linkedin.com/in/thomas-miller-671589a3/" class="bh__basic-href-dark" target="_blank">Thomas Miller</a></p>
+                                <h3><a href=" https://www.linkedin.com/in/thomas-miller-671589a3/" class="bh__basic-href-dark" target="_blank">Thomas Miller</a></h3>
                                 <p>Développeur web</p>
                             </div>
-                            </a>
                         </div>
                     </article>
                 </div>
@@ -235,10 +233,9 @@
                         <div class="flex flex-row items-center gap-4 text-sm text-slate-700">
                             <img class="block object-cover w-16 h-16" src="/assets/images/reviews/miguelmaldonado.avif" alt="Photo de Miguel Maldonado" loading="lazy">
                             <div class="flex flex-col ">
-                                <p><a href=" https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Miguel Maldonado</a></p>
-                                <p>Lead UI Designer / Artist 2D</p>
+                                <h3><a href=" https://www.linkedin.com/in/miguel-maldonado-071b23194/" class="bh__basic-href-dark" target="_blank">Miguel Maldonado</a></p>
+                                    <p>Lead UI Designer / Artist 2D</p>
                             </div>
-                            </a>
                         </div>
                     </article>
                 </div>
