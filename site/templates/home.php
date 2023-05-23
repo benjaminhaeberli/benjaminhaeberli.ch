@@ -34,8 +34,8 @@
                             <li><a href="https://www.php.net/" class="bh__basic-href-yellow" target="_blank">PHP</a> ⭐</li>
                             <li><a href="https://laravel.com/" class="bh__basic-href-yellow" target="_blank">Laravel</a> ⭐</li>
                             <li><a href="https://getkirby.com/" class="bh__basic-href-yellow" target="_blank">Kirby</a> ⭐</li>
-                            <li><a href="https://blog.hubspot.fr/website/api-rest" class="bh__basic-href-dark" target="_blank">API REST</a></li>
-                            <li><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" class="bh__basic-href-dark" target="_blank">SQL</a></li>
+                            <li><a href="https://blog.hubspot.fr/website/api-rest" class="bh__basic-href-yellow" target="_blank">API REST</a> ⭐</li>
+                            <li><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" class="bh__basic-href-yellow" target="_blank">SQL</a> ⭐</li>
                         </ol>
                     </div>
                     <div class="flex flex-col">
