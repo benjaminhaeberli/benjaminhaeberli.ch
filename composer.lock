@@ -4,35 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7f9ecee54b0b3e26eb7686a8c2fae1d",
+    "content-hash": "8bfeac03bcbbed83b20235da48872e5d",
     "packages": [
         {
-            "name": "bnomei/kirby3-feed",
-            "version": "1.5.8",
+            "name": "bnomei/kirby3-boost",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bnomei/kirby3-feed.git",
-                "reference": "e6ffb5947b58459cf848a1a3f0ee3c344fa46917"
+                "url": "https://github.com/bnomei/kirby3-boost.git",
+                "reference": "3de4fb6120de7678e04f723209e704219ae72cec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-feed/zipball/e6ffb5947b58459cf848a1a3f0ee3c344fa46917",
-                "reference": "e6ffb5947b58459cf848a1a3f0ee3c344fa46917",
+                "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/3de4fb6120de7678e04f723209e704219ae72cec",
+                "reference": "3de4fb6120de7678e04f723209e704219ae72cec",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
-                "php": ">=8.0"
+                "php": ">=8.0.0"
             },
             "require-dev": {
-                "getkirby/cms": "^3.5",
+                "getkirby/cms": ">=3.8.0",
                 "php-coveralls/php-coveralls": "^2.4",
                 "phpunit/phpunit": "^9.5"
             },
             "suggest": {
-                "bnomei/kirby3-htmlhead": "Best-practice HTML Head Element extendable with snippets.",
-                "bnomei/kirby3-robots-txt": "Automatic robots.txt. Detects xmlsitemap.",
-                "bnomei/kirby3-security-headers": "CPS headers to make the the web a saver place. Sensible defaults with zero configuration."
+                "bnomei/kirby3-apcu-cachedriver": "APCu based Cache-Driver (with garbage collection)",
+                "bnomei/kirby3-boost-demo": "Try boost with a big set of data",
+                "bnomei/kirby3-lapse": "Cache any data until set expiration time (with automatic keys)",
+                "bnomei/kirby3-mysql-cachedriver": "MySQL based Cache-Driver",
+                "bnomei/kirby3-php-cachedriver": "PHP based Cache-Driver",
+                "bnomei/kirby3-redis-cachedriver": "Redis based Cache-Driver",
+                "bnomei/kirby3-sqlite-cachedriver": "SQLite based Cache-Driver",
+                "getkirby/kql": "Kirby's Query Language API combines the flexibility of Kirby's data structures, the power of GraphQL and the simplicity of REST"
             },
             "type": "kirby-plugin",
             "extra": {
@@ -53,20 +58,32 @@
                     "email": "b@bnomei.com"
                 }
             ],
-            "description": "Generate a RSS/JSON/Sitemap-Feed from a Pages-Collection",
+            "description": "Boost the speed of Kirby by having content files of files/pages/users cached, with fast lookup based on uuid.",
             "keywords": [
-                "Sitemap",
-                "feed",
-                "json",
+                "apcu",
+                "autoid",
+                "boost",
+                "cache",
+                "file",
                 "kirby3",
                 "kirby3-cms",
                 "kirby3-plugin",
-                "rss",
-                "rss-feed"
+                "lookup",
+                "memcache",
+                "memcached",
+                "memory",
+                "mysql",
+                "pages",
+                "performance",
+                "random",
+                "redis",
+                "sqlite",
+                "token",
+                "uuid"
             ],
             "support": {
-                "issues": "https://github.com/bnomei/kirby3-feed/issues",
-                "source": "https://github.com/bnomei/kirby3-feed/tree/v1.5.8"
+                "issues": "https://github.com/bnomei/kirby3-boost/issues",
+                "source": "https://github.com/bnomei/kirby3-boost/tree/v2.3.1"
             },
             "funding": [
                 {
@@ -86,7 +103,89 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-03-02T10:55:31+00:00"
+            "time": "2023-05-22T17:00:16+00:00"
+        },
+        {
+            "name": "bnomei/kirby3-sqlite-cachedriver",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bnomei/kirby3-sqlite-cachedriver.git",
+                "reference": "c3dc55819587848c973ef0d66a5bb1ba6353f859"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bnomei/kirby3-sqlite-cachedriver/zipball/c3dc55819587848c973ef0d66a5bb1ba6353f859",
+                "reference": "c3dc55819587848c973ef0d66a5bb1ba6353f859",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "getkirby/cms": "^3.5",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "bnomei/kirby3-boost": "Boost the speed of Kirby by having content files of pages (mem-)cached, with automatic unique ID, fast lookup and Tiny-URL.",
+                "bnomei/kirby3-lapse": "Cache any data until set expiration time"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": "tests/kirby"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bnomei\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Meilick",
+                    "email": "b@bnomei.com"
+                }
+            ],
+            "description": "SQLite based Cache-Driver",
+            "keywords": [
+                "cache",
+                "key",
+                "key-value",
+                "kirby3",
+                "kirby3-cms",
+                "kirby3-plugin",
+                "performance",
+                "sqlite",
+                "value"
+            ],
+            "support": {
+                "issues": "https://github.com/bnomei/kirby3-sqlite-cachedriver/issues",
+                "source": "https://github.com/bnomei/kirby3-sqlite-cachedriver/tree/v1.4.2"
+            },
+            "funding": [
+                {
+                    "url": "https://buymeacoff.ee/bnomei",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://paypal.me/bnomei",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/bnomei",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/bnomei",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-12-15T20:39:07+00:00"
         },
         {
             "name": "claviska/simpleimage",

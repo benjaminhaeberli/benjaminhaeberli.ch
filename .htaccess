@@ -19,7 +19,6 @@ RewriteEngine on
 
 # In some environments it's necessary to
 # set the RewriteBase to:
-#
 # RewriteBase /
 
 # block files and folders beginning with a dot, such as .git

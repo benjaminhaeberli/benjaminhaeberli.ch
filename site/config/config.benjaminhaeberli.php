@@ -7,16 +7,11 @@ header('X-Content-Type-Options: nosniff');
 return [
     'debug'  => false,
     'api' => [
-        'basicAuth' => true,
         'allowInsecure' => false,
-    ],
-    'languages' => true,
-    'auth' => [
-        'methods' => ['password', 'password-reset']
     ],
     'cache' => [
         'pages' => [
-            'active' => true
+            'active' => true,
         ]
     ]
 ];

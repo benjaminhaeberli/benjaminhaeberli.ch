@@ -13,7 +13,7 @@
 
  </div>
 
-## Get started 🔎
+## Getting started 🔎
 
 ### Requirements
 
@@ -43,7 +43,9 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
 
-### Deployment with GitHub Actions
+## Deployment 🚀
+
+### Deploy with GitHub Actions
 
 The `main.yml` workflow `.github\workflows` allow to deploy the theme using FTP. It upload only modified files and install PHP dependecies using `composer install`.
 
@@ -94,9 +96,9 @@ Be sure that PHP version ([see Infomaniak docs](https://www.infomaniak.com/fr/su
 
 #### Kirby Plugins
 
-- [Kirby : Static Cache](https://github.com/getkirby/staticache) → Official Static Cache Plugin
-- [Kirby 3 : Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers) → Security Plugin
-- [Kirby 3 : Feed & Sitemap](https://github.com/bnomei/kirby3-feed) → RSS+XML Plugin
+- [Static Cache by Kirby](https://github.com/getkirby/staticache) → Static Cache
+- [Boost by Bnomei](https://github.com/bnomei/kirby3-boost/tree/main) → Cache Boost
+- [SQLite Cache Driver by Bnomei](https://github.com/bnomei/kirby3-sqlite-cachedriver) → SQLite Cache Driver
 
 ### Development
 
@@ -106,11 +108,11 @@ Be sure that PHP version ([see Infomaniak docs](https://www.infomaniak.com/fr/su
 - [Rector](https://github.com/rectorphp/rector) → PHP automated refactoring and upgrades tool
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
-### Documentation
+## Documentation 📒
 
 - [GitMoji](https://gitmoji.dev/) → Emoji guide for GIT commit messages
 
-# Docs 📒
+### Useful articles
 
 - [Kirby : passing variables to snippets](https://getkirby.com/docs/guide/templates/snippets#passing-variables-to-snippets)
 - [Where should you put logic code in Kirby CMS? - fvsch.com](https://fvsch.com/kirby-logic)

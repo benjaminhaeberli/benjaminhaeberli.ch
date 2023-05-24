@@ -7,9 +7,13 @@
 
 ### Kirby Plugins
 
+To transform into GIT/composer plugin :
+
+- benjaminhaeberli/kirby-seo
+- benjaminhaeberli/kirby-sitemap
+
 To install or code my version :
 
-- [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.php)
 - [Comments](https://github.com/sebastiangreger/kirby3-commentions)
 - [Rate Page](https://github.com/mauricerenck/rate-page)
 - [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)

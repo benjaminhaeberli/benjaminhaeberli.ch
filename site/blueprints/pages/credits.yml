@@ -1,0 +1,26 @@
+title:
+  en: Credits
+  fr: Crédits
+
+columns:
+  - width: 2/3
+    icon: text
+    label: Content
+    sections:
+      content:
+        type: fields
+        fields:
+          main_content:
+            label:
+              en: Main content
+              fr: Contenu principal
+            type: textarea
+            size: large
+  - width: 1/3
+    icon: text
+    label: Content
+    sections:
+      seo:
+        type: fields
+        fields:
+          seo: fields/seo/meta

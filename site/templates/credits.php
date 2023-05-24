@@ -6,9 +6,14 @@
             <h1 class="text-4xl font-bold">
                 <?= page()->title() ?>
             </h1>
+            <?php snippet('composer-packages') ?>
+            <li>
+                Icônes de heroicons.com et remixicon.com. Site codé avec Kirby et Tailwind CSS.
+            </li>
             <div class="bh__kirbytext">
                 <?= page()->main_content()->kt() ?>
             </div>
+
     </section>
 </main>
 

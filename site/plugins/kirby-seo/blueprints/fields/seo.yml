@@ -1,0 +1,24 @@
+type: group
+fields:
+  kirbyseometatitle:
+    label:
+      en: Meta title
+      fr: Méta-titre
+    type: text
+    maxlength: 60
+  kirbyseometadesc:
+    label:
+      en: Meta description
+      fr: Méta-description
+    type: text
+    maxlength: 160
+  kirbyseokeywords:
+    label:
+      en: Keywords
+      fr: Tags
+    type: tags
+  kirbyseocanonicalurl:
+    label:
+      en: Canonical URL
+      fr: URL canonique
+    type: url

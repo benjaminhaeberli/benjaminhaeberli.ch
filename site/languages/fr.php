@@ -4,9 +4,7 @@ return [
     'code' => 'fr',
     'default' => true,
     'direction' => 'ltr',
-    'locale' => [
-        'LC_ALL' => 'fr_FR'
-    ],
+    'locale' => 'fr_FR',
     'name' => 'Français',
     'translations' => [
         'Street' => 'Adresse',

@@ -16,7 +16,14 @@ return [
     ],
     'cache' => [
         'pages' => [
-            'active' => false
+            'active' => false,
+            'type'   => 'static',
+            'ignore' => function ($page) {
+                return $page->template()->name() === 'error';
+            }
         ]
-    ]
+    ],
+    'bnomei.boost.patch.files' => true,
+    'bnomei.boost.cache' => ['type' => 'sqlite'],
+    'routes' => require_once 'routes.php'
 ];

@@ -3,8 +3,6 @@
 /**
  * Kirby Autoloader
  */
-
-
 require __DIR__  . '/kirby/bootstrap.php';
 
 /**

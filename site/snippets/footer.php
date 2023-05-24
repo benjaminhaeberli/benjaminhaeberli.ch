@@ -3,17 +3,20 @@
 use Kirby\Cms\Html;
 
 ?>
-<footer>
-    <nav class="container flex justify-between max-w-screen-lg py-8 mx-auto mt-12 border-t-2 border-gray-300 border-dashed text-slate-600">
-        <ol class="flex flex-col gap-1 px-8 text-sm md:px-16 lg:px-0">
-            <li>
-                Icônes de heroicons.com et remixicon.com. Site codé avec Kirby et Tailwind CSS.
-            </li>
+<footer class="container flex justify-between max-w-screen-lg py-8 mx-auto mt-12 text-sm border-t-2 border-gray-300 border-dashed text-slate-600">
+    <nav class="flex">
+        <ol class="flex gap-4 px-8 md:px-16 lg:px-0">
             <li class="text-slate-900">
                 <a href="/mentions-legales">Mentions légales</a>
             </li>
+            <li class="text-slate-900">
+                <a href="/credits">Crédits</a>
+            </li>
         </ol>
     </nav>
+    <p>
+        Code et design © <a href="/" class="bh__basic-href-dark">Benjamin Haeberli</a>
+    </p>
 </footer>
 
 <?= Html::js('assets/app.js', 'defer') ?>

@@ -1,0 +1,29 @@
+Title: Crédits
+
+----
+
+Main-content: 
+
+----
+
+Kirbyseometatitle: 
+
+----
+
+Kirbyseometadesc: 
+
+----
+
+Kirbyseokeywords: 
+
+----
+
+Kirbyseocanonicalurl: 
+
+----
+
+Seometatitle: 
+
+----
+
+Uuid: T5zNadGtfnxwTfwS

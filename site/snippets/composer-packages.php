@@ -2,13 +2,14 @@
 
 use BenjaminHaeberli\Portfolio\ComposerHelper;
 
+$packages = ComposerHelper::getPackages();
 ?>
 
-<?php if (!empty($packages = ComposerHelper::getPackages())) : ?>
+<?php if (!empty($packages)) : ?>
     <h2 class="text-2xl font-bold">
-        Code du site
+        Librairies PHP
     </h2>
-    <p>Les librairies PHP utilisées pour développer ce site sont listées ci-dessous. Le code complet de ce dernier est disponible sur <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank" class="href">ce repôt GitHub</a>.</p>
+    <p>Les librairies utilisées pour développer ce site sont listées ci-dessous. Le code complet de ce dernier est disponible sur <a href="https://github.com/benjaminhaeberli/benjaminhaeberli.ch/" target="_blank" class="bh__href">ce repôt GitHub</a>.</p>
     <ul class="z-10 grid grid-cols-1 gap-2 p-2 text-sm md:p-8 md:grid-cols-2 bg-blue-50">
         <?php foreach ($packages as $package) : ?>
             <li class="flex gap-1">
