@@ -10,9 +10,7 @@
 To install or code my version :
 
 - [SEO tags](https://github.com/HashandSalt/kirby3-seo/blob/master/index.php)
-- [Feed & Sitemap](https://github.com/bnomei/kirby3-feed)
 - [Comments](https://github.com/sebastiangreger/kirby3-commentions)
-- [Static Cache](https://github.com/getkirby/staticache)
 - [Rate Page](https://github.com/mauricerenck/rate-page)
 - [Versions (from Panel)](https://github.com/lukasbestle/kirby-versions)
 

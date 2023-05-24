@@ -94,7 +94,9 @@ Be sure that PHP version ([see Infomaniak docs](https://www.infomaniak.com/fr/su
 
 #### Kirby Plugins
 
-- [Kirby 3 Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers) → Security Plugin
+- [Kirby : Static Cache](https://github.com/getkirby/staticache) → Official Static Cache Plugin
+- [Kirby 3 : Content Security Policy Header](https://github.com/bnomei/kirby3-security-headers) → Security Plugin
+- [Kirby 3 : Feed & Sitemap](https://github.com/bnomei/kirby3-feed) → RSS+XML Plugin
 
 ### Development
 

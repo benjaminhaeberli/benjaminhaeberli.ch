@@ -4,8 +4,90 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3dcb589f8a6648c53e69e9c5f73ebf7c",
+    "content-hash": "d7f9ecee54b0b3e26eb7686a8c2fae1d",
     "packages": [
+        {
+            "name": "bnomei/kirby3-feed",
+            "version": "1.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bnomei/kirby3-feed.git",
+                "reference": "e6ffb5947b58459cf848a1a3f0ee3c344fa46917"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bnomei/kirby3-feed/zipball/e6ffb5947b58459cf848a1a3f0ee3c344fa46917",
+                "reference": "e6ffb5947b58459cf848a1a3f0ee3c344fa46917",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "getkirby/cms": "^3.5",
+                "php-coveralls/php-coveralls": "^2.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "bnomei/kirby3-htmlhead": "Best-practice HTML Head Element extendable with snippets.",
+                "bnomei/kirby3-robots-txt": "Automatic robots.txt. Detects xmlsitemap.",
+                "bnomei/kirby3-security-headers": "CPS headers to make the the web a saver place. Sensible defaults with zero configuration."
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": "tests/kirby"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bnomei\\": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Meilick",
+                    "email": "b@bnomei.com"
+                }
+            ],
+            "description": "Generate a RSS/JSON/Sitemap-Feed from a Pages-Collection",
+            "keywords": [
+                "Sitemap",
+                "feed",
+                "json",
+                "kirby3",
+                "kirby3-cms",
+                "kirby3-plugin",
+                "rss",
+                "rss-feed"
+            ],
+            "support": {
+                "issues": "https://github.com/bnomei/kirby3-feed/issues",
+                "source": "https://github.com/bnomei/kirby3-feed/tree/v1.5.8"
+            },
+            "funding": [
+                {
+                    "url": "https://buymeacoff.ee/bnomei",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://paypal.me/bnomei",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/bnomei",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/bnomei",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2023-03-02T10:55:31+00:00"
+        },
         {
             "name": "claviska/simpleimage",
             "version": "4.0.2",
@@ -406,6 +488,59 @@
                 }
             ],
             "time": "2020-12-28T12:54:39+00:00"
+        },
+        {
+            "name": "getkirby/staticache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/getkirby/staticache.git",
+                "reference": "b16c5e3a55222a7ae5d151fafab7d979924ae232"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getkirby/staticache/zipball/b16c5e3a55222a7ae5d151fafab7d979924ae232",
+                "reference": "b16c5e3a55222a7ae5d151fafab7d979924ae232",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/cms": "^3.8",
+                "getkirby/composer-installer": "^1.2"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "staticache",
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bastian Allgeier",
+                    "email": "bastian@getkirby.com",
+                    "homepage": "https://getkirby.com/plugins/getkirby"
+                },
+                {
+                    "name": "Lukas Bestle",
+                    "email": "lukas@getkirby.com",
+                    "homepage": "https://getkirby.com/plugins/getkirby"
+                }
+            ],
+            "description": "Static site performance on demand",
+            "homepage": "https://getkirby.com/plugins/getkirby/staticache",
+            "support": {
+                "issues": "https://github.com/getkirby/staticache/issues",
+                "source": "https://github.com/getkirby/staticache/tree/1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://getkirby.com/buy",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-03-24T20:59:49+00:00"
         },
         {
             "name": "graham-campbell/result-type",
