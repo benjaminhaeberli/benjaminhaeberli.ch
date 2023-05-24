@@ -4,8 +4,6 @@ title:
 
 columns:
   - width: 2/3
-    icon: text
-    label: Content
     sections:
       content:
         type: fields
@@ -17,8 +15,6 @@ columns:
             type: textarea
             size: large
   - width: 1/3
-    icon: text
-    label: Content
     sections:
       seo:
         type: fields

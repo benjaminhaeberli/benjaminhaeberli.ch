@@ -9,6 +9,7 @@ use Kirby\Cms\Field;
 use Kirby\Cms\Page;
 use Kirby\Cms\Site;
 use Kirby\Toolkit\A;
+use Kirby\Cms\Url;
 
 final class KirbySeo
 {
@@ -35,7 +36,8 @@ final class KirbySeo
         $this->metaKeywords     =   $page->kirbyseokeywords();
         $this->metaRobots       =   'index, follow, noodp';
         $this->metaUrl          =   $page->url();
-        $this->metaImageUrl        =   $page->shareimage()->toFile() ? $page->shareimage()->toFile()->crop(1280, 720)->url() : '';
+        /* $this->metaImageUrl        =   $page->shareimage()->toFile() ? $page->shareimage()->toFile()->crop(1280, 720)->url() : ''; */
+        $this->metaImageUrl        =   Url::to('assets/og_image.jpg');
         $this->metaCanonicalUrl        =   $page->kirbyseocanonicalurl()->isNotEmpty() ? $page->kirbyseocanonicalurl()->toString() :  site()->url();
 
         // Facebook Meta
