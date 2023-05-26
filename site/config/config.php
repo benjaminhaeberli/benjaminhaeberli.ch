@@ -18,12 +18,10 @@ return [
         'pages' => [
             'active' => false,
             'type'   => 'static',
-            'ignore' => function ($page) {
-                return $page->template()->name() === 'error';
-            }
+            'ignore' => fn ($page): bool => $page->template()->name() === 'error'
         ]
     ],
     'bnomei.boost.patch.files' => true,
     'bnomei.boost.cache' => ['type' => 'sqlite'],
-    'routes' => require_once 'routes.php'
+    'routes' => require_once __DIR__ . '/routes.php'
 ];

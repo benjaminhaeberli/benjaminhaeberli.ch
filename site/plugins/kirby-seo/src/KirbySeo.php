@@ -35,7 +35,7 @@ final class KirbySeo implements KirbySeoInterface
             $this->metaTitle        =   $seoobject->kirbyseometatitle();
             $this->metaDescription  =   $seoobject->kirbyseometadesc();
             $this->metaKeywords     =   $seoobject->kirbyseokeywords();
-            $this->metaCanonicalUrl        =   $seoobject->kirbyseocanonicalurl()->isNotEmpty() ? $seoobject->kirbyseocanonicalurl()->toString() :  site()->url();
+            $this->metaCanonicalUrl        =   $seoobject->kirbyseocanonicalurl()->isNotEmpty() ? $seoobject->kirbyseocanonicalurl()->toString() : site()->url();
         }
 
         $this->metaRobots       =   'index, follow, noodp';

@@ -11,7 +11,7 @@ return [
             // if nothing is set, we ignore the error page
             $ignore = kirby()->option('sitemap.ignore', ['error']);
 
-            $content = snippet('sitemap', compact('pages', 'ignore'), true);
+            $content = snippet('sitemap', ['pages' => $pages, 'ignore' => $ignore], true);
 
             // return response with correct header type
             return new Kirby\Cms\Response($content, 'application/xml');
@@ -19,8 +19,6 @@ return [
     ],
     [
         'pattern' => 'sitemap',
-        'action'  => function () {
-            return go('sitemap.xml', 301);
-        }
+        'action'  => fn (): int|false => go('sitemap.xml', 301)
     ]
 ];
