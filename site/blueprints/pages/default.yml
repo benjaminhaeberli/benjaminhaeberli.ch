@@ -1,6 +1,6 @@
 title: Default Page
 
-sections:
+tabs:
   content:
     icon: text
     label: Content
@@ -12,3 +12,5 @@ sections:
         label: Text
         type: textarea
         size: large
+  meta:
+    label: Meta (todo)

@@ -65,6 +65,23 @@ Kirbyseocanonicalurl:
 
 ----
 
+Kirbyseoobject:
+
+kirbyseometatitle: >
+  Un développeur engagé pour un code
+  performant et durable | Benjamin
+  Haeberli
+kirbyseometadesc: >
+  Passionné par le développement de
+  solutions éthiques, sur-mesure et
+  écoresponsables, je travaille avec des
+  technologies modernes comme Laravel,
+  Kirby ou encore TailwindCSS.
+kirbyseokeywords: ""
+kirbyseocanonicalurl: ""
+
+----
+
 Desc: 
 
 ----
