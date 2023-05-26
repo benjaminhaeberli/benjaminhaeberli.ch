@@ -1,7 +1,7 @@
 {
-    "name": "benjaminhaeberli/kirbyseo",
-    "description": "Kirby SEO Plugin",
-    "version": "1.0.0",
+    "name": "benjaminhaeberli/kirby3-seo",
+    "description": "🔎 Minimal SEO plugin for Kirby CMS – for PHP lovers.",
+    "version": "0.1.0",
     "license": "MIT",
     "authors": [
         {
