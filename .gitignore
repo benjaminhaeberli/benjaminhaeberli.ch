@@ -31,7 +31,6 @@ Icon
 /vendor
 /node_modules
 /site/plugins/*
-!/site/plugins/kirby-seo
 !/site/accounts/index.html
 
 # Development
