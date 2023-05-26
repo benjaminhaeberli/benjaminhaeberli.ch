@@ -1,0 +1,3 @@
+[submodule "site/plugins/kirby3-seo"]
+	path = site/plugins/kirby3-seo
+	url = https://github.com/benjaminhaeberli/kirby3-seo.git
