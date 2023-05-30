@@ -1,8 +1,15 @@
 parameters:
   paths:
+    - site/config/
+    - site/languages
+    - site/models/
     - src/
     - tests/
-    - site/config/
-    - site/models/
 
   level: 6
+  #  excludePaths:
+  #    - site/config/routes.php
+  ignoreErrors:
+    - "#Anonymous function with return type void returns void but should not return anything#"
+#
+#    checkMissingIterableValueType: false

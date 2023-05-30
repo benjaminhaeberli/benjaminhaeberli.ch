@@ -57,7 +57,6 @@
         "coverage": "pest --colors=always --coverage",
         "fake:refacto": "rector --dry-run --ansi",
         "fake:lint": "pint --test --ansi",
-        "test:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",
         "test:types": "phpstan --configuration=./.phpstan.neon analyze --ansi",
         "test:unit": "pest --colors=always",
         "test": [
@@ -66,8 +65,9 @@
             "@test:types",
             "@test:unit"
         ],
+        "upgrade:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",
         "fix:composer": [
-            "@test:composer",
+            "@upgrade:composer",
             "composer clear-cache --ansi",
             "composer dump-autoload --ansi",
             "composer bump --ansi",
@@ -76,11 +76,11 @@
     },
     "require": {
         "php": "^8.1",
-        "bnomei/kirby3-boost": "^2.3",
-        "bnomei/kirby3-sqlite-cachedriver": "^1.4",
+        "bnomei/kirby3-boost": "^2.3.1",
+        "bnomei/kirby3-sqlite-cachedriver": "^1.4.2",
         "funkjedi/composer-include-files": "^1.1",
         "getkirby/cms": "^3.9.4",
-        "getkirby/staticache": "^1.0",
+        "getkirby/staticache": "^1.0.1",
         "vlucas/phpdotenv": "^5.5"
     },
     "require-dev": {

@@ -19,6 +19,6 @@ return [
     ],
     [
         'pattern' => 'sitemap',
-        'action'  => fn (): int|false => go('sitemap.xml', 301)
+        'action'  => fn (): void => go('sitemap.xml', 301)
     ]
 ];
