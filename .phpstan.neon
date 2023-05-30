@@ -9,7 +9,7 @@ parameters:
   level: 6
   #  excludePaths:
   #    - site/config/routes.php
-  ignoreErrors:
-    - "#Anonymous function with return type void returns void but should not return anything#"
+#  ignoreErrors:
+#    - "#Anonymous function with return type void returns void but should not return anything#"
 #
 #    checkMissingIterableValueType: false
