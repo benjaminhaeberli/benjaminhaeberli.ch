@@ -1,6 +1,6 @@
 on:
   workflow_run:
-    workflows: ['Test PHP code 🐘']
+    workflows: ['tests']
     branches: [main]
     types:
       - completed

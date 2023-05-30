@@ -1,4 +1,4 @@
-name: Test PHP code 🐘
+name: tests
 
 on: ['push', 'pull_request']
 
