@@ -4,36 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a35e71678b0968099e287ea864bc05f6",
+    "content-hash": "b17d6b16a1a3c51abc56afa0512ff2d8",
     "packages": [
         {
             "name": "benjaminhaeberli/kirby-seo",
-            "version": "dev-main",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/benjaminhaeberli/kirby-seo.git",
-                "reference": "3d92ead4838aca21b7381ef41c94f946fb832abc"
+                "reference": "96616df3cfafa519808efb2813c6b78dc10f9628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/benjaminhaeberli/kirby-seo/zipball/3d92ead4838aca21b7381ef41c94f946fb832abc",
-                "reference": "3d92ead4838aca21b7381ef41c94f946fb832abc",
+                "url": "https://api.github.com/repos/benjaminhaeberli/kirby-seo/zipball/96616df3cfafa519808efb2813c6b78dc10f9628",
+                "reference": "96616df3cfafa519808efb2813c6b78dc10f9628",
                 "shasum": ""
             },
             "require": {
-                "getkirby/composer-installer": "^1.2",
+                "funkjedi/composer-include-files": "^1.1",
+                "getkirby/cms": "^3.9.4",
+                "getkirby/composer-installer": "^1.2.1",
                 "php": "^8.1"
             },
             "require-dev": {
                 "laravel/pint": "^1.10",
-                "pestphp/pest": "^2.6",
-                "rector/rector": "^0.16.0"
+                "pestphp/pest": "^2.6.1",
+                "phpstan/phpstan": "^1.10.15",
+                "rector/rector": "^0.16.0",
+                "sempro/phpunit-pretty-print": "^1.2.1"
             },
-            "default-branch": true,
             "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false,
+                "include_files": [
+                    "src/bootstrap.php"
+                ]
+            },
             "autoload": {
                 "psr-4": {
-                    "KirbySeo\\": "src/"
+                    "BenjaminHaeberli\\KirbySeo\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -56,9 +65,9 @@
             ],
             "support": {
                 "issues": "https://github.com/benjaminhaeberli/kirby-seo/issues",
-                "source": "https://github.com/benjaminhaeberli/kirby-seo/tree/main"
+                "source": "https://github.com/benjaminhaeberli/kirby-seo/tree/v0.1.1"
             },
-            "time": "2023-05-30T12:03:03+00:00"
+            "time": "2023-05-30T15:45:35+00:00"
         },
         {
             "name": "bnomei/kirby3-boost",
