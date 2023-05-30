@@ -31,7 +31,7 @@ jobs:
           coverage: pcov
 
       - name: Install COMPOSER
-        run: composer install --prefer-stable --no-interaction
+        run: composer install --no-interaction
 
       - name: Test COMPOSER
         run: composer validate --strict --no-interaction
