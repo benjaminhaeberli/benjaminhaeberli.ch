@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fbb09b2669152b40f4174c0b1754fd9",
+    "content-hash": "a35e71678b0968099e287ea864bc05f6",
     "packages": [
+        {
+            "name": "benjaminhaeberli/kirby-seo",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/benjaminhaeberli/kirby-seo.git",
+                "reference": "3d92ead4838aca21b7381ef41c94f946fb832abc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/benjaminhaeberli/kirby-seo/zipball/3d92ead4838aca21b7381ef41c94f946fb832abc",
+                "reference": "3d92ead4838aca21b7381ef41c94f946fb832abc",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.2",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10",
+                "pestphp/pest": "^2.6",
+                "rector/rector": "^0.16.0"
+            },
+            "default-branch": true,
+            "type": "kirby-plugin",
+            "autoload": {
+                "psr-4": {
+                    "KirbySeo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Haeberli",
+                    "email": "hello@benjaminhaeberli.ch",
+                    "homepage": "https://benjaminhaeberli.ch/"
+                }
+            ],
+            "description": "🔎 Minimal SEO plugin for Kirby CMS – for PHP lovers.",
+            "keywords": [
+                "kirby",
+                "kirby-plugin",
+                "php",
+                "seo"
+            ],
+            "support": {
+                "issues": "https://github.com/benjaminhaeberli/kirby-seo/issues",
+                "source": "https://github.com/benjaminhaeberli/kirby-seo/tree/main"
+            },
+            "time": "2023-05-30T12:03:03+00:00"
+        },
         {
             "name": "bnomei/kirby3-boost",
             "version": "2.3.1",
