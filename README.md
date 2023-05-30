@@ -54,7 +54,6 @@ To use it, you need to configure those [Action secrets](https://docs.github.com/
 | Name           | Value (example)         |
 | -------------- | ----------------------- |
 | `SSH_HOST`     | XXXX.ftp.infomaniak.com |
-| `SSH_PORT`     | 21                      |
 | `SSH_USERNAME` | nice_username           |
 | `SSH_PASSWORD` | very_strong_password    |
 | `SSH_DIR`      | sites/exports.nanou.ch/ |
@@ -68,7 +67,7 @@ ssh-keygen -t ecdsa -b 521 -C "admin@benjaminhaeberli.ch"
 ssh-add ~/.ssh/id_portfolio
 ```
 
-And complete `known_hosts` with [GitHub's SSH key fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
+And complete `./.ssh/known_hosts` with [GitHub's SSH key fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints)
 
 ```plaintext
 github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
@@ -77,6 +76,12 @@ github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+V
 ```
 
 Be sure that PHP version ([see Infomaniak docs](https://www.infomaniak.com/fr/support/faq/2108/modifier-la-version-de-php-utilisee-en-cli-via-ssh)) is the same as required in `composer.json` ⚠️
+
+Config files `./.bashrc` and `.profile` must also define the same PHP version :
+
+```bash
+export PATH=/opt/php8.1/bin:$PATH
+```
 
 ## Directory structure 📁
 
