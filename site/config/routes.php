@@ -20,5 +20,21 @@ return [
     [
         'pattern' => 'sitemap',
         'action'  => fn () => go('sitemap.xml', 301)
-    ]
+    ],
+    [
+        'pattern' => 'index',
+        'action'  => fn () => go('/', 301)
+    ],
+    [
+        'pattern' => 'index.html',
+        'action'  => fn () => go('/', 301)
+    ],
+    [
+        'pattern' => 'index.html',
+        'action'  => fn () => go('/', 301)
+    ],
+    [
+        'pattern' => 'index.php',
+        'action'  => fn () => go('/', 301)
+    ],
 ];
