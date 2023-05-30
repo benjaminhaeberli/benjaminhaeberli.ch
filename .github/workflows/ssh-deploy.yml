@@ -11,9 +11,6 @@ jobs:
     name: 🎉 Deploy via SSH
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v3
-
       - name: 🔨 Executing SSH commands
         uses: appleboy/ssh-action@v0.1.10
         with:
