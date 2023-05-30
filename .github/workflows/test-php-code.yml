@@ -31,7 +31,7 @@ jobs:
           coverage: pcov
 
       - name: Test COMPOSER
-        run: composer test:composer
+        run: composer validate --strict
 
       - name: Test PHP
         run: composer test
