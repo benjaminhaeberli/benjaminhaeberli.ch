@@ -126,9 +126,9 @@
             </header>
             <article class="grid justify-center grid-cols-1 gap-4 py-4 lg:grid-cols-3">
                 <div class="grid gap-4 auto-rows-min">
-                    <article class="flex flex-col gap-2 p-4 bg-yellow-500/[.01] outline-2 outline-dotted outline-yellow-600">
+                    <article class="flex flex-col gap-2 p-4 bg-primary/[.01] outline-2 outline-dotted outline-primary">
                         <h3><span class="text-xl font-bold">Tarif horaire</span> <sup>1</sup></h3>
-                        <p><span class="p-1 text-2xl font-medium bg-yellow-500 text-zinc-950">110.-/heure</span></p>
+                        <p><span class="p-1 text-2xl font-medium bg-primary text-zinc-950">110.-/heure</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Développement</strong> (code, bases de données, automatisation)</li>
                             <li><strong>Stratégies</strong> (architecture logicielle, gestion de projet, conseil, analyses)</li>
@@ -136,23 +136,23 @@
                             <li><strong>Formation</strong> (CMS, sécurité, alternatives aux GAFAM)</li>
                         </ol>
                     </article>
-                    <article class="flex flex-col gap-2 p-4 bg-sky-500/[.01] outline-2 outline-dotted outline-sky-600">
+                    <article class="flex flex-col gap-2 p-4 bg-zinc-500/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Déplacements</span></h3>
-                        <p><span class="p-1 text-2xl font-medium bg-sky-500 text-zinc-950">1.-/kilomètre</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">1.-/kilomètre</span></p>
                     </article>
                 </div>
                 <div class="grid gap-4 auto-rows-min">
-                    <article class="flex flex-col gap-2 p-4 bg-green-500/[.01] outline-2 outline-dotted outline-green-600">
+                    <article class="flex flex-col gap-2 p-4 bg-zinc-500/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Sites internet</span></h3>
-                        <p><span class="p-1 text-2xl font-medium bg-green-500 text-zinc-950">Dès 2000.-</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Dès 2000.-</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Projets standards</strong> (site vitrine, blog, portoflio, e-commerce)</li>
                             <li><strong>CMS</strong> (<a href="https://getkirby.com/" class="bh__href" target="_blank">Kirby</a> )</li>
                         </ol>
                     </article>
-                    <article class="flex flex-col gap-2 p-4 bg-green-500/[.01] outline-2 outline-dotted outline-green-600">
+                    <article class="flex flex-col gap-2 p-4 bg-zinc-500/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Plateformes sur mesure</span></h3>
-                        <p><span class="p-1 text-2xl font-medium bg-green-500 text-zinc-950">Dès 8000.-</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Dès 8000.-</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Projets avancés</strong> (fonctionnalités complexes, intranet, API)</li>
                             <li><strong>Technologies avancées</strong> (<a href="https://vuejs.org/" class="bh__href" target="_blank">Laravel</a>, <a href="https://vuejs.org/" class="bh__href" target="_blank">Vue.js</a>)</li>
@@ -160,17 +160,17 @@
                     </article>
                 </div>
                 <div class="grid gap-4 auto-rows-min">
-                    <article class="flex flex-col gap-2 p-4 bg-slate-400/[.01] outline-2 outline-dotted outline-slate-600">
+                    <article class="flex flex-col gap-2 p-4 bg-zinc-400/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Licences</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-50 bg-slate-900">Sur mesure</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Sur mesure</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Commun numérique</strong><sup>2</sup> (recommandée, gratuit)</li>
                             <li><strong>Privative ou cession</strong> (sur demande, payant)</li>
                         </ol>
                     </article>
-                    <article class="flex flex-col gap-2 p-4 bg-slate-400/[.01] outline-2 outline-dotted outline-slate-600">
+                    <article class="flex flex-col gap-2 p-4 bg-zinc-400/[.01] outline-2 outline-dotted outline-slate-600">
                         <h3><span class="text-xl font-bold">Maintenance</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-50 bg-slate-900">Dès 220.-/année</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Dès 220.-/année</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Préventive</strong> (mises à jour des dépendances, sauvegardes)</li>
                             <li><strong>Corrective</strong> (corrections des bugs, rétablissement des sauvegardes)</li>

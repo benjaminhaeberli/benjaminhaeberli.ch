@@ -2414,6 +2414,43 @@ a.bh__href-dark::after {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
+.bg-primary\/\[\.01\] {
+  background-color: rgb(var(--color-primary) / .01);
+}
+
+.bg-zinc-400\/\[\.01\] {
+  background-color: rgb(161 161 170 / .01);
+}
+
+.bg-zinc-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-500\/\[\.01\] {
+  background-color: rgb(113 113 122 / .01);
+}
+
+.bg-zinc-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -3434,6 +3471,10 @@ a.bh__href-dark::after {
 
 .outline-zinc-800 {
   outline-color: #27272a;
+}
+
+.outline-zinc-600 {
+  outline-color: #52525b;
 }
 
 .ring-1 {
