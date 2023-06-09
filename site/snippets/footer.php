@@ -3,19 +3,22 @@
 use Kirby\Cms\Html;
 
 ?>
-<footer class="container flex justify-between max-w-screen-lg py-8 mx-auto mt-12 text-sm border-t-2 border-gray-300 border-dashed text-slate-600">
+<footer class="container flex justify-between max-w-screen-lg py-8 mx-auto mt-12 text-sm border-t-2 border-gray-300 border-dashed">
+    <nav class="fixed left-8 bottom-6">
+        <a href="#" class="bh__svg-up">Haut de page</a>
+    </nav>
     <nav class="flex">
         <ol class="flex gap-4 px-8 md:px-16 lg:px-0">
-            <li class="text-slate-900">
-                <a href="/mentions-legales">Mentions légales</a>
+            <li>
+                <a href="/mentions-legales" class="bh__dark-href">Mentions légales</a>
             </li>
-            <li class="text-slate-900">
-                <a href="/credits">Crédits</a>
+            <li>
+                <a href="/credits" class="bh__dark-href">Crédits</a>
             </li>
         </ol>
     </nav>
     <p>
-        Code et design © <a href="/" class="bh__basic-href-dark">Benjamin Haeberli</a>
+        Code et design © <a href="/" class="bh__dark-href">Benjamin Haeberli</a>
     </p>
 </footer>
 

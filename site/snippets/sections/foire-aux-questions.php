@@ -2,7 +2,7 @@
     <div class="flex flex-col max-w-2xl gap-2 m-auto text-slate-900">
         <p class="font-mono font-bold uppercase text-slate-600">Toujours des doutes ?</p>
         <h2 class="text-3xl font-bold ">
-            Foire aux <span class="relative inline-block before:block before:absolute before:-inset-1 before:scale-y-75 before:bg-darkyellow-600 before:translate-y-1">
+            Foire aux <span class="relative inline-block before:block before:absolute before:-inset-1 before:scale-y-75 before:bg-primary before:translate-y-1">
                 <span class="relative">questions</span>
             </span>
         </h2>
