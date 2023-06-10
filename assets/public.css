@@ -629,10 +629,15 @@ html {
 .bh__kirbytext a:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not([href^="/"])::after, a.bh__href:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
         [href^="/"]
       )::after {
-  content: url("/assets/svg/heroicon_arrow-top-right.svg");
+  -webkit-mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+          mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  content: "";
   display: inline-block;
   height: 1.1rem;
   width: 1.1rem;
+  background-color: rgb(var(--color-primary) / 1);
 }
 
 a.bh__href.bh__href-sm::before {
@@ -660,7 +665,8 @@ a.bh__href-dark:focus {
   text-decoration-line: none;
 }
 
-a.bh__href-dark::after {
+a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not([href^="/"])::after
+  {
   -webkit-mask: url("/assets/svg/heroicon_arrow-top-right.svg");
           mask: url("/assets/svg/heroicon_arrow-top-right.svg");
   -webkit-mask-size: cover;
@@ -724,7 +730,7 @@ a.bh__href-dark::after {
   padding-bottom: 0.5rem;
   font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(24 24 27 / var(--tw-text-opacity));
+  color: rgb(9 9 11 / var(--tw-text-opacity));
 }
 
 .bh__btn:hover {
@@ -750,11 +756,11 @@ a.bh__href-dark::after {
 }
 
 .bh__btn.bh__btn-light {
-  background-color: rgb(var(--color-secondary) / 1);
-}
-
-.bh__btn.bh__btn-light:hover {
-  --tw-bg-opacity: 0.8;
+  background-color: transparent;
+  color: rgb(var(--color-primary) / 1);
+  outline-style: dashed;
+  outline-width: 2px;
+  outline-color: rgb(var(--color-primary) / 1);
 }
 
 .bh__btn::after {
@@ -764,6 +770,8 @@ a.bh__href-dark::after {
           mask-size: cover;
   content: "";
 }
+
+/** TODO : METTRE LE MASK DE COULEUR PRIMARY POUR LES BOUTONS LIGHTS */
 
 .bh__btn:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
       [href^="/"]
@@ -1751,6 +1759,10 @@ a.bh__href-dark::after {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -1943,6 +1955,10 @@ a.bh__href-dark::after {
   border-bottom-width: 2px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
@@ -1965,6 +1981,10 @@ a.bh__href-dark::after {
 
 .border-dotted {
   border-style: dotted;
+}
+
+.border-double {
+  border-style: double;
 }
 
 .border-blue-600 {
@@ -1990,6 +2010,11 @@ a.bh__href-dark::after {
 .border-gray-900 {
   --tw-border-opacity: 1;
   border-color: rgb(17 24 39 / var(--tw-border-opacity));
+}
+
+.border-green-50 {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 253 244 / var(--tw-border-opacity));
 }
 
 .border-slate-200 {
@@ -2020,6 +2045,21 @@ a.bh__href-dark::after {
 .border-slate-900 {
   --tw-border-opacity: 1;
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
+}
+
+.border-zinc-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(161 161 170 / var(--tw-border-opacity));
+}
+
+.border-zinc-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
+}
+
+.border-zinc-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
 }
 
 .border-b-white {
@@ -2162,8 +2202,12 @@ a.bh__href-dark::after {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
-.bg-green-500\/\[\.01\] {
-  background-color: rgb(34 197 94 / .01);
+.bg-green-500\/10 {
+  background-color: rgb(34 197 94 / 0.1);
+}
+
+.bg-green-500\/5 {
+  background-color: rgb(34 197 94 / 0.05);
 }
 
 .bg-green-600 {
@@ -2208,6 +2252,10 @@ a.bh__href-dark::after {
 
 .bg-primary {
   background-color: rgb(var(--color-primary) / 1);
+}
+
+.bg-primary\/\[\.01\] {
+  background-color: rgb(var(--color-primary) / .01);
 }
 
 .bg-red-100 {
@@ -2288,10 +2336,6 @@ a.bh__href-dark::after {
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
-.bg-sky-500\/\[\.01\] {
-  background-color: rgb(14 165 233 / .01);
-}
-
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -2305,10 +2349,6 @@ a.bh__href-dark::after {
 .bg-slate-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.bg-slate-400\/\[\.01\] {
-  background-color: rgb(148 163 184 / .01);
 }
 
 .bg-slate-50 {
@@ -2390,13 +2430,42 @@ a.bh__href-dark::after {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-500\/\[\.01\] {
-  background-color: rgb(234 179 8 / .01);
-}
-
 .bg-yellow-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-400\/\[\.01\] {
+  background-color: rgb(161 161 170 / .01);
+}
+
+.bg-zinc-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-500\/\[\.01\] {
+  background-color: rgb(113 113 122 / .01);
 }
 
 .bg-zinc-800 {
@@ -2414,49 +2483,16 @@ a.bh__href-dark::after {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
-.bg-primary\/\[\.01\] {
-  background-color: rgb(var(--color-primary) / .01);
-}
-
-.bg-zinc-400\/\[\.01\] {
-  background-color: rgb(161 161 170 / .01);
-}
-
-.bg-zinc-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-500\/\[\.01\] {
-  background-color: rgb(113 113 122 / .01);
-}
-
-.bg-zinc-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .from-indigo-100 {
@@ -2795,6 +2831,10 @@ a.bh__href-dark::after {
 
 .pb-32 {
   padding-bottom: 8rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-6 {
@@ -3393,6 +3433,10 @@ a.bh__href-dark::after {
   outline-color: #4ade80;
 }
 
+.outline-green-500 {
+  outline-color: #22c55e;
+}
+
 .outline-green-600 {
   outline-color: #16a34a;
 }
@@ -3469,12 +3513,12 @@ a.bh__href-dark::after {
   outline-color: #fafafa;
 }
 
-.outline-zinc-800 {
-  outline-color: #27272a;
-}
-
 .outline-zinc-600 {
   outline-color: #52525b;
+}
+
+.outline-zinc-800 {
+  outline-color: #27272a;
 }
 
 .ring-1 {
@@ -3495,6 +3539,15 @@ a.bh__href-dark::after {
 .ring-gray-900 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(17 24 39 / var(--tw-ring-opacity));
+}
+
+.ring-green-500 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(34 197 94 / var(--tw-ring-opacity));
+}
+
+.ring-green-500\/20 {
+  --tw-ring-color: rgb(34 197 94 / 0.2);
 }
 
 .ring-indigo-50 {
@@ -3786,9 +3839,9 @@ a.bh__href-dark::after {
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-.hover\:text-zinc-400:hover {
+.hover\:text-zinc-100:hover {
   --tw-text-opacity: 1;
-  color: rgb(161 161 170 / var(--tw-text-opacity));
+  color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
 .hover\:before\:-translate-y-0:hover::before {
@@ -3822,16 +3875,16 @@ a.bh__href-dark::after {
   outline-style: dashed;
 }
 
-.group:hover .group-hover\:fill-zinc-400 {
-  fill: #a1a1aa;
+.group:hover .group-hover\:fill-zinc-100 {
+  fill: #f4f4f5;
 }
 
 .group:hover .group-hover\:stroke-slate-700 {
   stroke: #334155;
 }
 
-.group:hover .group-hover\:stroke-zinc-400 {
-  stroke: #a1a1aa;
+.group:hover .group-hover\:stroke-zinc-100 {
+  stroke: #f4f4f5;
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -3908,10 +3961,6 @@ a.bh__href-dark::after {
 @media (min-width: 1024px) {
   .lg\:m-0 {
     margin: 0px;
-  }
-
-  .lg\:max-w-screen-lg {
-    max-width: 1024px;
   }
 
   .lg\:grid-cols-2 {

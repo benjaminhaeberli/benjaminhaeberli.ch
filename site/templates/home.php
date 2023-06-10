@@ -3,12 +3,12 @@
 <main class="z-10 flex flex-col gap-16">
     <section id="introduction" class="max-w-screen-xl px-8 mx-auto md:px-16 lg:px-0">
         <div class="flex flex-wrap items-center justify-between gap-8 md:gap-16 lg:flex-nowrap lg:flex-row">
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-6">
                 <?= page()->hero_title()->kt() ?>
-                <div class="bh__kirbytext">
+                <div class="text-lg bh__kirbytext b">
                     <?= page()->hero_text()->kt() ?>
                 </div>
-                <div class="flex gap-4">
+                <div class="flex gap-6">
                     <a href="https://tally.so/r/mJDQXw" class="bh__btn">Contactez-moi</a>
                     <a href="#tarifs" class="bh__btn bh__btn-light">Mes tarifs</a>
                 </div>
@@ -138,13 +138,13 @@
                     </article>
                     <article class="flex flex-col gap-2 p-4 bg-zinc-500/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Déplacements</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">1.-/kilomètre</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-950 bg-zinc-200">1.-/kilomètre</span></p>
                     </article>
                 </div>
                 <div class="grid gap-4 auto-rows-min">
                     <article class="flex flex-col gap-2 p-4 bg-zinc-500/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Sites internet</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Dès 2000.-</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-950 bg-zinc-200">Dès 2000.-</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Projets standards</strong> (site vitrine, blog, portoflio, e-commerce)</li>
                             <li><strong>CMS</strong> (<a href="https://getkirby.com/" class="bh__href" target="_blank">Kirby</a> )</li>
@@ -152,7 +152,7 @@
                     </article>
                     <article class="flex flex-col gap-2 p-4 bg-zinc-500/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Plateformes sur mesure</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Dès 8000.-</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-950 bg-zinc-200">Dès 8000.-</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Projets avancés</strong> (fonctionnalités complexes, intranet, API)</li>
                             <li><strong>Technologies avancées</strong> (<a href="https://vuejs.org/" class="bh__href" target="_blank">Laravel</a>, <a href="https://vuejs.org/" class="bh__href" target="_blank">Vue.js</a>)</li>
@@ -162,7 +162,7 @@
                 <div class="grid gap-4 auto-rows-min">
                     <article class="flex flex-col gap-2 p-4 bg-zinc-400/[.01] outline-2 outline-dotted outline-zinc-600">
                         <h3><span class="text-xl font-bold">Licences</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Sur mesure</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-950 bg-zinc-200">Sur mesure</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Commun numérique</strong><sup>2</sup> (recommandée, gratuit)</li>
                             <li><strong>Privative ou cession</strong> (sur demande, payant)</li>
@@ -170,7 +170,7 @@
                     </article>
                     <article class="flex flex-col gap-2 p-4 bg-zinc-400/[.01] outline-2 outline-dotted outline-slate-600">
                         <h3><span class="text-xl font-bold">Maintenance</span></h3>
-                        <p><span class="p-1 text-2xl font-medium text-zinc-900 bg-zinc-200">Dès 220.-/année</span></p>
+                        <p><span class="p-1 text-2xl font-medium text-zinc-950 bg-zinc-200">Dès 220.-/année</span></p>
                         <ol class="ml-4 list-disc">
                             <li><strong>Préventive</strong> (mises à jour des dépendances, sauvegardes)</li>
                             <li><strong>Corrective</strong> (corrections des bugs, rétablissement des sauvegardes)</li>
@@ -180,7 +180,7 @@
                 </div>
             </article>
             <footer class="flex flex-col gap-2 text-sm">
-                <p><sup>1</sup> Je facture par tranche de 30min (minimum 1 heure) avec délai de paiement à 20 jours. Ce tarif horaire est majoré de 50% en cas d’horaires extraordinaires exigés : de 18:00 à 08:00 du lundi au samedi, les week-end et jours feriés (<a href="https://www.vd.ch/themes/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2022" class="bh__dark-href" target="_blank">Canton de Vaud, Suisse</a>).</p>
+                <p><sup>1</sup> Je facture par tranche de 30min (minimum 1 heure) avec délai de paiement à 20 jours. Ce tarif horaire est majoré de 50% en cas d’horaires extraordinaires exigés : de 18:00 à 08:00 du lundi au samedi, les week-end et jours feriés (<a href="https://www.vd.ch/themes/formation/jours-feries-et-vacances-scolaires/jours-feries-et-vacances-scolaires-2023" class="bh__dark-href" target="_blank">Canton de Vaud, Suisse</a>).</p>
                 <p><sup>2</sup> Le code source et la documentation doivent être rendus publiques. Licences autorisées : <a href="https://choosealicense.com/licenses/agpl-3.0/" class="bh__dark-href" target="_blank">GNU AGPLv3</a>, <a href="https://choosealicense.com/licenses/gpl-3.0/" class="bh__dark-href" target="_blank">GNU GPLv3</a>, <a href="https://choosealicense.com/licenses/mit/" class="bh__dark-href" target="_blank">MIT License</a>, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="bh__dark-href" target="_blank">CC BY-NC-SA 4.0</a></p>
             </footer>
         </div>

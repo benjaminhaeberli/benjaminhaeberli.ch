@@ -2,7 +2,7 @@
 
 ### Development workflow
 
-- [ ] Install PostCSS with `cssnano` with `cssnano-preset-default`, `postcss-combine-duplicated-selectors` with `removeDuplicatedValues: true` and `postcss-merge-idents`
+- [ ] Install Vite with PostCSS with `cssnano` with `cssnano-preset-default`, `postcss-combine-duplicated-selectors` with `removeDuplicatedValues: true` and `postcss-merge-idents`
 - [ ] Create a Kirby 3 plugin boilerplate based on this repository
 
 ### Kirby Plugins

@@ -13,7 +13,7 @@ Hero-title:
 
 ----
 
-Hero-text: Si vous êtes un passionné de la performance et de la simplicité, vous êtes au bon endroit. Je travaille avec des technologies modernes comme (link: https://laravel.com/ text: Laravel target: _blank), (link: https://getkirby.com/ text: Kirby target: _blank), (link: https://tailwindcss.com/ text: TailwindCSS target: _blank) ou encore SQL. Je développe pour vous des solutions éthiques, sur-mesure et écoresponsables.
+Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes comme (link: https://laravel.com/ text: Laravel target: _blank), (link: https://getkirby.com/ text: Kirby target: _blank), (link: https://tailwindcss.com/ text: TailwindCSS target: _blank) ou encore SQL. Je développe pour vous des solutions éthiques, sur-mesure et écoresponsables.
 
 ----
 
