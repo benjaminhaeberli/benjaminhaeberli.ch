@@ -431,26 +431,15 @@ html {
   color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
-.bh__kirbytext {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.bh__kirbytext h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-}
-
-.bh__kirbytext ul {
-  margin-left: 1rem;
-  list-style-type: disc;
-}
-
 /** Variables */
 
 :root {
+  --color-primary: 239 205 95;
+  --color-secondary: 252 226 144;
+  --color-tertiary: 253 241 211;
+}
+
+.theme__green {
   --color-primary: 34 197 94;
   --color-secondary: 74 222 128;
   --color-tertiary: 134 239 172;
@@ -602,6 +591,25 @@ html {
   }
 }
 
+/** KirbyText */
+
+.bh__kirbytext {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bh__kirbytext h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.bh__kirbytext ul {
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+
 /** Liens */
 
 .bh__kirbytext a,
@@ -673,8 +681,8 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
           mask-size: cover;
   content: "";
   display: inline-block;
-  height: 1.25rem;
-  width: 1.25rem;
+  height: 1.1rem;
+  width: 1.1rem;
   background-color: rgb(var(--color-primary) / 1);
 }
 
@@ -731,10 +739,16 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(9 9 11 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .bh__btn:hover {
-  --tw-bg-opacity: 0.8;
+  background-color: rgb(var(--color-secondary) / 1);
+}
+
+.bh__btn:focus {
+  background-color: rgb(var(--color-secondary) / 1);
 }
 
 .bh__btn::after {
@@ -742,7 +756,7 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   height: 1.25rem;
   width: 1.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
   content: var(--tw-content);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -755,12 +769,38 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.bh__btn.bh__btn-light {
+.bh__btn-light.bh__btn-light {
   background-color: transparent;
   color: rgb(var(--color-primary) / 1);
   outline-style: dashed;
   outline-width: 2px;
+  outline-offset: 0px;
   outline-color: rgb(var(--color-primary) / 1);
+}
+
+.bh__btn-light.bh__btn-light:hover {
+  color: rgb(var(--color-secondary) / 1);
+  outline-color: rgb(var(--color-secondary) / 1);
+}
+
+.bh__btn-light.bh__btn-light:focus {
+  color: rgb(var(--color-secondary) / 1);
+  outline-color: rgb(var(--color-secondary) / 1);
+}
+
+.bh__btn-light.bh__btn-light::after {
+  content: var(--tw-content);
+  background-color: rgb(var(--color-primary) / 1);
+}
+
+.bh__btn-light.bh__btn-light:hover::after {
+  content: var(--tw-content);
+  background-color: rgb(var(--color-secondary) / 1);
+}
+
+.bh__btn-light.bh__btn-light:focus::after {
+  content: var(--tw-content);
+  background-color: rgb(var(--color-secondary) / 1);
 }
 
 .bh__btn::after {
@@ -786,11 +826,19 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   margin-left: -0.75rem;
   display: flex;
   align-items: center;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+  padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .bh__svg-up:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(244 244 245 / var(--tw-text-opacity));
 }
@@ -799,8 +847,6 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   display: inline-block;
   height: 1.25rem;
   width: 1.25rem;
-  --tw-translate-y: 0.125rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(161 161 170 / var(--tw-bg-opacity));
   content: var(--tw-content);
@@ -810,8 +856,6 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
 }
 
 .bh__svg-up:hover::before {
-  --tw-translate-y: -0.125rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
@@ -1000,6 +1044,10 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   top: 0px;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .top-10 {
   top: 2.5rem;
 }
@@ -1157,6 +1205,22 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
 
 .-mr-36 {
   margin-right: -9rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .mb-4 {
@@ -2487,6 +2551,10 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -2495,9 +2563,57 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   background-image: none;
 }
 
+.from-emerald-400 {
+  --tw-gradient-from: #34d399 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(52 211 153 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-emerald-500 {
+  --tw-gradient-from: #10b981 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(16 185 129 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-gray-700 {
+  --tw-gradient-from: #374151 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(55 65 81 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-green-200 {
+  --tw-gradient-from: #bbf7d0 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(187 247 208 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-green-500 {
+  --tw-gradient-from: #22c55e var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 197 94 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-indigo-100 {
   --tw-gradient-from: #e0e7ff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(224 231 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pink-500 {
+  --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-teal-200 {
+  --tw-gradient-from: #99f6e4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(153 246 228 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2505,6 +2621,100 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   --tw-gradient-from: #fff var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-yellow-200 {
+  --tw-gradient-from: #fef08a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(254 240 138 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-amber-200 {
+  --tw-gradient-to: rgb(253 230 138 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #fde68a var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-gray-900 {
+  --tw-gradient-to: rgb(17 24 39 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #111827 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-green-200 {
+  --tw-gradient-to: rgb(187 247 208 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #bbf7d0 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-green-600 {
+  --tw-gradient-to: rgb(22 163 74 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #16a34a var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-purple-500 {
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-red-500 {
+  --tw-gradient-to: rgb(239 68 68 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #ef4444 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-sky-500 {
+  --tw-gradient-to: rgb(14 165 233 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #0ea5e9 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-black {
+  --tw-gradient-to: #000 var(--tw-gradient-to-position);
+}
+
+.to-cyan-400 {
+  --tw-gradient-to: #22d3ee var(--tw-gradient-to-position);
+}
+
+.to-emerald-500 {
+  --tw-gradient-to: #10b981 var(--tw-gradient-to-position);
+}
+
+.to-green-300 {
+  --tw-gradient-to: #86efac var(--tw-gradient-to-position);
+}
+
+.to-green-400 {
+  --tw-gradient-to: #4ade80 var(--tw-gradient-to-position);
+}
+
+.to-green-500 {
+  --tw-gradient-to: #22c55e var(--tw-gradient-to-position);
+}
+
+.to-green-700 {
+  --tw-gradient-to: #15803d var(--tw-gradient-to-position);
+}
+
+.to-green-900 {
+  --tw-gradient-to: #14532d var(--tw-gradient-to-position);
+}
+
+.to-lime-200 {
+  --tw-gradient-to: #d9f99d var(--tw-gradient-to-position);
+}
+
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+
+.to-teal-500 {
+  --tw-gradient-to: #14b8a6 var(--tw-gradient-to-position);
+}
+
+.to-yellow-500 {
+  --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .fill-current {
@@ -3248,6 +3458,10 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   color: rgb(var(--color-tertiary) / 1);
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3397,6 +3611,11 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .outline {
   outline-style: solid;
 }
@@ -3415,6 +3634,10 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
 
 .outline-2 {
   outline-width: 2px;
+}
+
+.outline-offset-0 {
+  outline-offset: 0px;
 }
 
 .outline-offset-1 {
@@ -3744,18 +3967,6 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   width: 1.25rem;
 }
 
-.before\:translate-y-0::before {
-  content: var(--tw-content);
-  --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.before\:translate-y-0\.5::before {
-  content: var(--tw-content);
-  --tw-translate-y: 0.125rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .before\:translate-y-1::before {
   content: var(--tw-content);
   --tw-translate-y: 0.25rem;
@@ -3785,13 +3996,6 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   background-color: rgb(161 161 170 / var(--tw-bg-opacity));
 }
 
-.before\:transition-all::before {
-  content: var(--tw-content);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .after\:inline-block::after {
   content: var(--tw-content);
   display: inline-block;
@@ -3807,10 +4011,15 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   width: 1.25rem;
 }
 
-.after\:bg-zinc-900::after {
+.after\:bg-primary::after {
+  content: var(--tw-content);
+  background-color: rgb(var(--color-primary) / 1);
+}
+
+.after\:bg-zinc-950::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
 .after\:transition-all::after {
@@ -3825,13 +4034,8 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   border-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
-.hover\:bg-slate-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-opacity-80:hover {
-  --tw-bg-opacity: 0.8;
+.hover\:bg-secondary:hover {
+  background-color: rgb(var(--color-secondary) / 1);
 }
 
 .hover\:text-slate-700:hover {
@@ -3842,12 +4046,6 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
 .hover\:text-zinc-100:hover {
   --tw-text-opacity: 1;
   color: rgb(244 244 245 / var(--tw-text-opacity));
-}
-
-.hover\:before\:-translate-y-0:hover::before {
-  content: var(--tw-content);
-  --tw-translate-y: -0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:before\:bg-zinc-100:hover::before {
@@ -3895,9 +4093,12 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   fill: #0f172a;
 }
 
-.hocus\:text-slate-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
+.hocus\:bg-secondary:hover {
+  background-color: rgb(var(--color-secondary) / 1);
+}
+
+.hocus\:text-primary:hover {
+  color: rgb(var(--color-primary) / 1);
 }
 
 .hocus\:text-zinc-100:hover {
@@ -3909,9 +4110,16 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
   text-decoration-line: none;
 }
 
-.hocus\:text-slate-800:focus {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
+.hocus\:outline-secondary:hover {
+  outline-color: rgb(var(--color-secondary) / 1);
+}
+
+.hocus\:bg-secondary:focus {
+  background-color: rgb(var(--color-secondary) / 1);
+}
+
+.hocus\:text-primary:focus {
+  color: rgb(var(--color-primary) / 1);
 }
 
 .hocus\:text-zinc-100:focus {
@@ -3921,6 +4129,10 @@ a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
 
 .hocus\:no-underline:focus {
   text-decoration-line: none;
+}
+
+.hocus\:outline-secondary:focus {
+  outline-color: rgb(var(--color-secondary) / 1);
 }
 
 .group:hover .group-hocus\:fill-slate-900 {

@@ -5,17 +5,14 @@
   html {
     @apply text-zinc-100 bg-zinc-950;
   }
-  .bh__kirbytext {
-    @apply flex flex-col gap-4;
-  }
-  .bh__kirbytext h2 {
-    @apply text-3xl font-bold;
-  }
-  .bh__kirbytext ul {
-    @apply ml-4 list-disc;
-  }
   /** Variables */
   :root {
+    --color-primary: 239 205 95;
+    --color-secondary: 252 226 144;
+    --color-tertiary: 253 241 211;
+  }
+
+  .theme__green {
     --color-primary: 34 197 94;
     --color-secondary: 74 222 128;
     --color-tertiary: 134 239 172;
@@ -31,6 +28,16 @@
 @tailwind components;
 
 @layer components {
+  /** KirbyText */
+  .bh__kirbytext {
+    @apply flex flex-col gap-4;
+  }
+  .bh__kirbytext h2 {
+    @apply text-3xl font-bold;
+  }
+  .bh__kirbytext ul {
+    @apply ml-4 list-disc;
+  }
   /** Liens */
   .bh__kirbytext a,
   a.bh__href {
@@ -55,7 +62,7 @@
     mask: url("/assets/svg/heroicon_arrow-top-right.svg");
     mask-size: cover;
     content: "";
-    @apply inline-block w-5 h-5 bg-primary;
+    @apply inline-block w-[1.1rem] h-[1.1rem] bg-primary;
   }
   .bh__basic-href {
     @apply underline hocus:no-underline text-secondary focus:outline-dashed outline-1 outline-offset-2;
@@ -65,11 +72,12 @@
   }
   /** Boutons */
   .bh__btn {
-    @apply flex items-center gap-2 px-3 py-2 font-medium hover:bg-opacity-80 text-zinc-950 bg-primary;
-    @apply after:inline-block after:w-5 after:h-5 after:bg-zinc-900 after:transition-all hover:after:-translate-x-0.5;
+    @apply flex items-center gap-2 px-3 py-2 font-medium outline-none hocus:bg-secondary text-zinc-950 bg-primary;
+    @apply after:inline-block after:w-5 after:h-5 after:bg-zinc-950 after:transition-all hover:after:-translate-x-0.5;
   }
-  .bh__btn.bh__btn-light {
-    @apply bg-transparent text-primary outline-2 outline-dashed outline-primary;
+  .bh__btn-light.bh__btn-light {
+    @apply bg-transparent text-primary outline-offset-0 outline-2 outline-dashed outline-primary hocus:outline-secondary hocus:text-secondary;
+    @apply after:bg-primary hocus:after:bg-secondary;
   }
   .bh__btn::after {
     mask: url("/assets/svg/heroicon_arrow-small-right.svg");
@@ -84,8 +92,8 @@
   }
   /** Specials */
   .bh__svg-up {
-    @apply flex items-center -ml-3 text-zinc-400 hover:text-zinc-100;
-    @apply before:w-5 before:h-5 before:inline-block before:bg-zinc-400 hover:before:bg-zinc-100 before:transition-all before:translate-y-0.5 hover:before:-translate-y-0.5;
+    @apply flex items-center p-2 -ml-3 border-2 text-zinc-400 hover:text-zinc-100 bg-zinc-950 border-zinc-800 hover:bg-zinc-900;
+    @apply before:w-5 before:h-5 before:inline-block before:bg-zinc-400 hover:before:bg-zinc-100 before:transition-all;
   }
   .bh__svg-up::before {
     mask: url("/assets/svg/heroicon_arrow-long-up.svg");
