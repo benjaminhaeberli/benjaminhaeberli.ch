@@ -51,8 +51,6 @@ More details in [composer.json](./composer.json) and [package.json](./package.js
 
 The `dependabot-auto-merge.yml` workflow in `.github\workflows` allow to auto-merge dependabot pull requests for for semver-minor & semver-patch updates.
 
-To use it, you need to enable `Allow auto-merge` option in repository settings.
-
 ### Deployment using FTP
 
 The `main.yml` workflow in `.github\workflows` allow to deploy the theme using FTP. It upload only modified files and install PHP dependecies using `composer install`.

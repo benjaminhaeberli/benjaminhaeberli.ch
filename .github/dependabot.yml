@@ -6,7 +6,7 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'daily'
     labels:
       - 'dependencies'
 
@@ -14,7 +14,7 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'daily'
     labels:
       - 'npm'
       - 'dependencies'
@@ -23,7 +23,7 @@ updates:
   - package-ecosystem: 'composer'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'daily'
     labels:
       - 'php'
       - 'dependencies'
