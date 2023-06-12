@@ -3,7 +3,7 @@
 return [
     [
         'pattern' => 'sitemap.xml',
-        'action'  => function () {
+        'action'  => function (): \Kirby\Cms\Response {
             /* $pages = site()->pages()->index(); */
             $pages = site()->index()->listed()->limit(500);
 

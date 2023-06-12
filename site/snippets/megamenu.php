@@ -11,7 +11,7 @@ use BenjaminHaeberli\Portfolio\KirbyHelper;
             $links = site()->megamenu()->toStructure();
             foreach ($links as $link) : ?>
                 <?php $page = $link->target_page()->toPage() ?>
-                <?php if (($page = KirbyHelper::isPage($page)) !== null) : ?>
+                <?php if (($page = KirbyHelper::isPage($page)) instanceof \Kirby\Cms\Page) : ?>
                     <li class="flex">
                         <?php if (page()->is($page)) : ?>
                             <a href="#" class="flex items-center gap-2 px-2 py-2 group focus:bg-transparent text-zinc-950 bg-primary hover:bg-secondary focus:text-slate-200 focus:outline-dashed outline-2 ">

@@ -5,7 +5,7 @@ use BenjaminHaeberli\Portfolio\ComposerHelper;
 $packages = ComposerHelper::getPackages();
 ?>
 
-<?php if (!empty($packages)) : ?>
+<?php if ($packages !== []) : ?>
     <h2 class="text-2xl font-bold">
         Librairies PHP
     </h2>
