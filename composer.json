@@ -76,21 +76,21 @@
     },
     "require": {
         "php": "^8.1",
-        "benjaminhaeberli/kirby-seo": "^0.1.0",
+        "benjaminhaeberli/kirby-seo": "^0.1.1",
         "bnomei/kirby3-boost": "^2.3.1",
         "bnomei/kirby3-sqlite-cachedriver": "^1.4.2",
         "funkjedi/composer-include-files": "^1.1",
-        "getkirby/cms": "^3.9.4",
-        "getkirby/staticache": "^1.0.1",
+        "getkirby/cms": "^3.9.5",
+        "getkirby/staticache": "^1.0.2",
         "vlucas/phpdotenv": "^5.5"
     },
     "require-dev": {
-        "laravel/pint": "^1.10",
+        "laravel/pint": "^1.10.1",
         "maximebf/debugbar": "^1.18.2",
         "pestphp/pest": "^1.23",
-        "phpstan/phpstan": "^1.10.15",
-        "phpunit/phpunit": "^9.6.8",
-        "rector/rector": "^0.14.8",
+        "phpstan/phpstan": "^1.10.18",
+        "phpunit/phpunit": "^9.6.9",
+        "rector/rector": "^0.17.0",
         "sempro/phpunit-pretty-print": "^1.4"
     }
 }
