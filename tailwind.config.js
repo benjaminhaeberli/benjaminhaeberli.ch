@@ -39,12 +39,9 @@ module.exports = {
         "2xl": "1536px",
       },
       colors: {
-        darkblue: "#131723",
-        darkyellow: {
-          400: "#FDF1D3",
-          500: "#FCE290",
-          600: "#EFCD5F",
-        },
+        primary: "rgb(var(--color-primary) / 1)",
+        secondary: "rgb(var(--color-secondary) / 1)",
+        tertiary: "rgb(var(--color-tertiary) / 1)",
       },
     },
   },

@@ -22,6 +22,6 @@ return [
         ]
     ],
     'bnomei.boost.patch.files' => true,
-    'bnomei.boost.cache' => ['type' => 'sqlite'],
+    # 'bnomei.boost.cache' => ['type' => 'sqlite'],
     'routes' => require_once __DIR__ . '/routes.php'
 ];

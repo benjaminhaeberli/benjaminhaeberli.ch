@@ -43,11 +43,17 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
 
-## Deployment 🚀
+## CI/CD 🧙‍♂️
 
-### Deploy with GitHub Actions
+> Powered by GitHub Actions
 
-The `main.yml` workflow `.github\workflows` allow to deploy the theme using FTP. It upload only modified files and install PHP dependecies using `composer install`.
+### Dependabot (with auto-merge)
+
+The `dependabot-auto-merge.yml` workflow in `.github\workflows` allow to auto-merge dependabot pull requests for for semver-minor & semver-patch updates.
+
+### Deployment using FTP
+
+The `main.yml` workflow in `.github\workflows` allow to deploy the theme using FTP. It upload only modified files and install PHP dependecies using `composer install`.
 
 To use it, you need to configure those [Action secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) :
 

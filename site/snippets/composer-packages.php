@@ -5,7 +5,7 @@ use BenjaminHaeberli\Portfolio\ComposerHelper;
 $packages = ComposerHelper::getPackages();
 ?>
 
-<?php if (!empty($packages)) : ?>
+<?php if ($packages !== []) : ?>
     <h2 class="text-2xl font-bold">
         Librairies PHP
     </h2>
@@ -14,7 +14,7 @@ $packages = ComposerHelper::getPackages();
         <?php foreach ($packages as $package) : ?>
             <li class="flex gap-1">
                 <?php if ($package->url->toString() !== '' && $package->url->toString() !== '0') : ?>
-                    <a href="<?= $package->url->toString() ?>" class="bh__basic-href-dark" target="_blank"><?= $package->name ?></a>
+                    <a href="<?= $package->url->toString() ?>" class="bh__dark-href" target="_blank"><?= $package->name ?></a>
                 <?php else : ?>
                     <span><?= $package->name ?></span>
                 <?php endif; ?>

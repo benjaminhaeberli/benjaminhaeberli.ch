@@ -6,6 +6,7 @@ use Rector\Config\RectorConfig;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 use Rector\TypeDeclaration\Rector\ArrowFunction\AddArrowFunctionReturnTypeRector;
+use Rector\TypeDeclaration\Rector\ClassMethod\ReturnTypeFromStrictTypedCallRector;
 
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->paths([
@@ -31,8 +32,9 @@ return static function (RectorConfig $rectorConfig): void {
     ]);
 
     $rectorConfig->skip([
-        AddArrowFunctionReturnTypeRector::class => [
+        ReturnTypeFromStrictTypedCallRector::class => [
             __DIR__ . '/site/config/routes.php',
         ],
+        AddArrowFunctionReturnTypeRector::class
     ]);
 };
