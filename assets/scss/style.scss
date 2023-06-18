@@ -1,5 +1,9 @@
 @tailwind base;
 
+body {
+  color: red;
+}
+
 @layer base {
   /** Styles de base */
   html {

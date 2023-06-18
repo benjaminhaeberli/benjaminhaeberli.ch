@@ -1,0 +1,61 @@
+.bh__kirbytext a,
+a.bh__href {
+  @apply relative z-10 inline-flex font-medium underline focus:outline-dashed outline-1 outline-offset-2 text-primary hover:text-secondary;
+}
+.bh__kirbytext a:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not([href^="/"])::after, a.bh__href:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
+        [href^="/"]
+      )::after {
+  mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+  mask-size: cover;
+  content: "";
+  @apply inline-block w-[1.1rem] h-[1.1rem] bg-primary;
+}
+a.bh__href.bh__href-sm {
+  @apply before:h-1 before:bottom-1;
+}
+a.bh__href-dark {
+  @apply underline text-primary hocus:no-underline focus:outline-dashed outline-1 outline-offset-2;
+}
+a.bh__href-dark:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not([href^="/"])::after
+{
+  mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+  mask-size: cover;
+  content: "";
+  @apply inline-block w-[1.1rem] h-[1.1rem] bg-primary;
+}
+.bh__basic-href {
+  @apply underline hocus:no-underline text-secondary focus:outline-dashed outline-1 outline-offset-2;
+}
+.bh__dark-href {
+  @apply underline hocus:no-underline text-zinc-400 focus:outline-dashed outline-1 outline-offset-2;
+}
+/** Boutons */
+.bh__btn {
+  @apply flex items-center gap-2 px-3 py-2 font-medium outline-none hocus:bg-secondary text-zinc-950 bg-primary;
+  @apply after:inline-block after:w-5 after:h-5 after:bg-zinc-950 after:transition-all hover:after:-translate-x-0.5;
+}
+.bh__btn-light.bh__btn-light {
+  @apply bg-transparent text-primary outline-offset-0 outline-2 outline-dashed outline-primary hocus:outline-secondary hocus:text-secondary;
+  @apply after:bg-primary hocus:after:bg-secondary;
+}
+.bh__btn::after {
+  mask: url("/assets/svg/heroicon_arrow-small-right.svg");
+  mask-size: cover;
+  content: "";
+}
+/** TODO : METTRE LE MASK DE COULEUR PRIMARY POUR LES BOUTONS LIGHTS */
+.bh__btn:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
+      [href^="/"]
+    )::after {
+  mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+}
+/** Specials */
+.bh__svg-up {
+  @apply flex items-center p-2 -ml-3 border-2 text-zinc-400 hover:text-zinc-100 bg-zinc-950 border-zinc-800 hover:bg-zinc-900;
+  @apply before:w-5 before:h-5 before:inline-block before:bg-zinc-400 hover:before:bg-zinc-100 before:transition-all;
+}
+.bh__svg-up::before {
+  mask: url("/assets/svg/heroicon_arrow-long-up.svg");
+  mask-size: cover;
+  content: "";
+}
