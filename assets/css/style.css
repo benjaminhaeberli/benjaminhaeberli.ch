@@ -1,0 +1,53 @@
+@import "modules/kirbytext.css";
+@import "modules/buttons.css";
+@import "modules/links.css";
+
+@tailwind base;
+
+@layer base {
+  /** Styles de base */
+  html {
+    @apply text-zinc-100 bg-zinc-950;
+  }
+  /** Variables */
+  :root {
+    --color-primary: 239 205 95;
+    --color-secondary: 252 226 144;
+    --color-tertiary: 253 241 211;
+  }
+
+  .theme__green {
+    --color-primary: 34 197 94;
+    --color-secondary: 74 222 128;
+    --color-tertiary: 134 239 172;
+  }
+
+  .theme__musician {
+    --color-primary: 239 68 68;
+    --color-secondary: 248 113 113;
+    --color-tertiary: 252 165 165;
+  }
+}
+
+@tailwind components;
+
+@layer components {
+  /** TODO : METTRE LE MASK DE COULEUR PRIMARY POUR LES BOUTONS LIGHTS */
+  .bh__btn:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
+      [href^="/"]
+    )::after {
+    mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+  }
+  /** Specials */
+  .bh__svg-up {
+    @apply flex items-center p-2 -ml-3 border-2 text-zinc-400 hover:text-zinc-100 bg-zinc-950 border-zinc-800 hover:bg-zinc-900;
+    @apply before:w-5 before:h-5 before:inline-block before:bg-zinc-400 hover:before:bg-zinc-100 before:transition-all;
+  }
+  .bh__svg-up::before {
+    mask: url("/assets/svg/heroicon_arrow-long-up.svg");
+    mask-size: cover;
+    content: "";
+  }
+}
+
+@tailwind utilities;

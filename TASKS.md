@@ -5,6 +5,9 @@
 - [ ] Install Vite with PostCSS with `cssnano` with `cssnano-preset-default`, `postcss-combine-duplicated-selectors` with `removeDuplicatedValues: true` and `postcss-merge-idents`
 - [ ] Create a Kirby 3 plugin boilerplate based on this repository
 
+  // "watch": "npx tailwindcss -i ./assets/css/style.css -o ./assets/public.css -c ./tailwind.config.js --watch",
+  // "build": "npx tailwindcss -i ./assets/css/style.css -o ./assets/public.css -c ./tailwind.config.js --minify",
+
 ### Kirby Plugins
 
 To transform into GIT/composer plugin :
@@ -31,8 +34,3 @@ To install or code my version :
 - https://benjaminhaeberli.ch/
 - https://github.com/benjaminhaeberli
 - https://www.linkedin.com/in/benjaminhaeberli
-
-## Future features
-
-- [ ] Dynamically display a list of all dependencies _(composer.json + package.json)_ with authors and licenses on a "Legal Notice" page
-- [ ] Add a `"funding"` key _(Adyen or Stripe payment link)_ in [composer.json](https://getcomposer.org/doc/04-schema.md#funding) and [package.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-json#funding)

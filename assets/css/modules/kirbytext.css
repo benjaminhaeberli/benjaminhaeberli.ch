@@ -1,0 +1,12 @@
+/** KirbyText */
+.bh__kirbytext {
+  @apply flex flex-col gap-4;
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  ul {
+    @apply ml-4 list-disc;
+  }
+}

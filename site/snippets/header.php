@@ -1,6 +1,6 @@
 <?php
 
-use Kirby\Cms\Html;
+use BenjaminHaeberli\Portfolio\KirbyAssets;
 use Kirby\Cms\Url;
 
 ?>
@@ -15,7 +15,8 @@ use Kirby\Cms\Url;
     <link rel="icon" href="<?= Url::to('assets/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/svg+xml" href="<?= Url::to('/assets/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/png" href="<?= Url::to('/assets/favicon/favicon.png') ?>">
-    <?= Html::css('assets/public.css') ?>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <?= KirbyAssets::versionedCss('assets/public.css') ?>
 </head>
 
 <body>
