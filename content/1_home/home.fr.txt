@@ -11,7 +11,7 @@ Hero-title:
 
 ----
 
-Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes afin d'automatiser vos processus et vous permettre de reprendre la main sur vos données.
+Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes pour développer des outils sur-mesure et éco-conçus.
 
 ----
 
