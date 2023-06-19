@@ -1,0 +1,9 @@
+.bh__svg-down {
+  @apply flex items-center p-2 border-2 text-zinc-400 hover:text-zinc-100 bg-zinc-950 border-zinc-800 hover:bg-zinc-900;
+  @apply before:w-5 before:h-5 before:inline-block before:bg-zinc-400 hover:before:bg-zinc-100 before:transition-all;
+}
+.bh__svg-down::before {
+  mask: url("/assets/svg/heroicon_arrow-small-down.svg");
+  mask-size: cover;
+  content: "";
+}

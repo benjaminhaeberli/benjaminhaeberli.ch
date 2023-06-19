@@ -8,7 +8,7 @@
                 <div class="text-lg bh__kirbytext b">
                     <?= page()->hero_text()->kt() ?>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex flex-wrap gap-x-6 gap-y-4">
                     <a href="https://tally.so/r/mJDQXw" class="bh__btn">Contactez-moi</a>
                     <a href="#tarifs" class="bh__btn bh__btn-light">Mes tarifs</a>
                 </div>
@@ -16,46 +16,52 @@
             <img class="inline-block object-cover m-auto h-96 lg:m-0" src="/assets/images/benjamin-haeberli-software-developer.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
         </div>
     </section>
-    <section id="offres" class="max-w-screen-xl px-8 mx-auto mt-12 md:px-16 lg:px-0">
-        <div class="flex flex-wrap items-center justify-between gap-8 md:gap-16 lg:flex-nowrap lg:flex-row">
-            <div class="flex flex-col gap-4 text-center">
-                <div class="flex flex-col max-w-screen-lg gap-4 mx-auto">
-                    <p class="font-mono font-bold uppercase text-zinc-400 ">Mes services</p>
-                    <h2 class="text-3xl font-bold">Je conçois pour vous des outils sur-mesure et simples d'utilisation avec lesquels vous reprenez le contrôle de votre business.</h2>
-                </div>
-                <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
-                    <ol class="flex flex-col items-center gap-2 text-center">
-                        <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <li>Votre site n'est pas optimisé et vous souhaitez y remédier ?</li>
-                    </ol>
-                    <ol class="flex flex-col items-center gap-2 text-center">
-                        <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <li>Vous ne trouvez aucune solution sur le marché ne respecte vos valeurs ?</li>
-                    </ol>
-                    <ol class="flex flex-col items-center gap-2 text-center">
-                        <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <li>Vous perdez du temps avec des processus manuels fastidieux ?</li>
-                    </ol>
-                    <ol class="flex flex-col items-center gap-2 text-center">
-                        <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <li>Vos données personnelles ne sont pas en votre pleine posession ?</li>
-                    </ol>
-                </div>
-                <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
-                    <div>Site internet</div>
-                    <div>Plateforme numérique</div>
-                    <div>Référencement naturel SEO</div>
-                    <div>Audit technique</div>
-                    <div>Maintenance</div>
-                </div>
+    <section class="flex flex-col gap-6 px-8 mx-auto mt-12 text-lg text-center md:px-16 lg:px-0">
+        <div class="grid max-w-screen-xl grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+            <ol class="flex flex-col items-center gap-2">
+                <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Votre site n'est pas optimisé et vous souhaitez y remédier ?</li>
+            </ol>
+            <ol class="flex flex-col items-center gap-2">
+                <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Vous ne trouvez aucune solution sur le marché ne respecte vos valeurs ?</li>
+            </ol>
+            <ol class="flex flex-col items-center gap-2">
+                <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Vous perdez du temps avec des processus manuels fastidieux ?</li>
+            </ol>
+            <ol class="flex flex-col items-center gap-2">
+                <svg class="w-6 h-6 text-red-500" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Vos données personnelles ne sont pas en votre pleine posession ?</li>
+            </ol>
+        </div>
+        <div class="flex">
+            <nav class="mx-auto">
+                <a href="#services" class="bh__svg-down"></a>
+            </nav>
+        </div>
+    </section>
+    <section id="services" class="px-8 mx-auto mt-12 md:px-16 lg:px-0">
+
+        <div class="flex flex-col gap-4 text-center">
+            <div class="flex flex-col max-w-screen-lg gap-4 mx-auto">
+                <h2 class="font-mono font-bold uppercase text-zinc-400 ">Mes services</h2>
+                <p class="text-3xl font-bold">Je développe pour vous des outils simples <open-source></open-source>, légers et optimisés.</p>
+            </div>
+            <div class="grid max-w-screen-xl grid-cols-2 gap-4 md:grid-cols-5">
+                <div>Site internet</div>
+                <div>Plateforme numérique</div>
+                <div>Référencement naturel SEO</div>
+                <div>Audit technique</div>
+                <div>Maintenance</div>
             </div>
         </div>
     </section>

@@ -22,9 +22,8 @@ use BenjaminHaeberli\Portfolio\KirbyAssets;
         </ol>
     </nav>
 </footer>
-
-<?= KirbyAssets::versionedJs('assets/app.js', 'defer') ?>
-<script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js" nonce="<?= site()->nonce() ?>"></script>
+<?= KirbyAssets::versionedJs('assets/js/app.js', 'defer') ?>
+<script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js?v=100" nonce="<?= site()->nonce() ?>"></script>
 </body>
 
 </html>
