@@ -7,10 +7,6 @@
 @tailwind base;
 
 @layer base {
-  /** Styles de base */
-  html {
-    @apply text-zinc-100 bg-zinc-950;
-  }
   /** Variables */
   :root {
     --color-primary: 239 205 95;
@@ -28,6 +24,10 @@
     --color-primary: 239 68 68;
     --color-secondary: 248 113 113;
     --color-tertiary: 252 165 165;
+  }
+  /** Styles de base */
+  html {
+    @apply text-zinc-100 bg-zinc-950;
   }
 }
 
