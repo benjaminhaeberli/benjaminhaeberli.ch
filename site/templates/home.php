@@ -6,10 +6,10 @@ use Kirby\Cms\Url;
 
 <?php snippet('header') ?>
 
-<main class="z-50 flex flex-col gap-16">
-    <section id="introduction" class="max-w-screen-xl px-8 mx-auto">
-        <div class="flex flex-wrap items-center justify-between gap-8 md:gap-16 lg:flex-nowrap lg:flex-row">
-            <div class="flex flex-col gap-6">
+<main class="flex flex-col">
+    <section id="introduction" class="flex flex-col max-w-screen-xl gap-16 px-8 py-24 mx-auto">
+        <div class="flex flex-wrap items-center justify-between gap-8 md:gap-16 xmd:flex-nowrap lg:flex-row">
+            <div class="flex flex-col max-w-lg gap-6">
                 <?= page()->hero_title()->kt() ?>
                 <div class="text-lg bh__kirbytext b">
                     <?= page()->hero_text()->kt() ?>
@@ -19,29 +19,51 @@ use Kirby\Cms\Url;
                     <a href="#tarifs" class="bh__btn bh__btn-light">Mes tarifs</a>
                 </div>
             </div>
-            <img class="inline-block object-cover m-auto h-96 lg:m-0" src="/assets/images/benjamin-haeberli-software-developer.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
+            <img class="inline-block object-cover m-auto h-96 lg:m-0" src="/assets/images/benjamin-haeberli-software-developer_squooshed.avif" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
+        </div>
+        <div class="flex flex-col gap-6 text-center ">
+            <h2 class="font-mono font-bold uppercase text-zinc-400 ">Disponible pour...</h2>
+            <div class="grid max-w-screen-xl grid-cols-1 gap-2 px-8 sm:grid-cols-2 md:grid-cols-4">
+                <ol class="flex flex-col items-center gap-2">
+                    <svg class="w-6 h-6 text-green-500 text-zinc-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <li class="text-zinc-400">Développer votre outil numérique sur-mesure</li>
+                </ol>
+                <ol class="flex flex-col items-center gap-2">
+                    <svg class="w-6 h-6 text-green-500 text-zinc-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <li class="text-zinc-400">Optimiser les performances de votre site web</li>
+                </ol>
+                <ol class="flex flex-col items-center gap-2">
+                    <svg class="w-6 h-6 text-green-500 text-zinc-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <li class="text-zinc-400">Réusiner votre code source et le rendre plus efficient</li>
+                </ol>
+                <ol class="flex flex-col items-center gap-2">
+                    <svg class="w-6 h-6 text-green-500 text-zinc-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <li class="text-zinc-400">Automatiser vos processus et gérer vos données</li>
+                </ol>
+            </div>
         </div>
     </section>
-    <section id="services">
+
+    <section id="services" class="py-24 bg-zinc-900/20">
         <div class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 mx-auto sm:grid-cols-2 lg:grid-cols-3">
-            <details class="flex flex-col gap-2 group">
-                <summary class="font-bold list-none border-2 h-48 gap-4 p-4 border-dashed flex items-center justify-center flex-col cursor-pointer group-open:bg-zinc-400/[.01] group-open:border-primary hover:border-primary border-zinc-600 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-primary">
+            <div class="flex flex-col gap-4 px-4 py-8 text-center bg-zinc-950">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 mx-auto mb-1 text-primary group-hover:-translate-y-2" aria-hidden="true">
                         <path fill-rule="evenodd" d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z" clip-rule="evenodd" />
                     </svg>
-                    <div>
-                        <h3 class="text-xl font-bold group-open:text-primary">Développement web</h3>
-                        <p class="text-lg text-zinc-400">Site internet & plateforme numérique</span></p>
-                    </div>
-                    <svg class="w-6 h-6 group-open:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                    </svg>
-                    <svg class="hidden w-6 h-6 group-open:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                    </svg>
-                </summary>
-                <ol class="p-4 list-disc border-b-2 group-open:border-primary">
-                    <li><strong>Projets standards</strong> avec <a href="https://getkirby.com/" class="bh__href" target="_blank">Kirby</a>
+                    <h3 class="text-xl font-bold">Développement web</h3>
+                    <p class="text-lg text-zinc-400">Site internet & plateforme numérique</span></p>
+                </div>
+                <ol class="flex flex-col gap-2">
+                    <li><strong>Projets standards</strong> avec <a href=" https://getkirby.com/" class="bh__href" target="_blank">Kirby</a>
                         <p class="text-sm list-none text-zinc-400">
                             (Site vitrine, blog, portoflio, e-commerce)
                         </p>
@@ -62,24 +84,16 @@ use Kirby\Cms\Url;
                         </p>
                     </li>
                 </ol>
-            </details>
-            <details class="flex flex-col gap-2 group">
-                <summary class="font-bold list-none border-2 h-48 gap-2 p-4 border-dashed flex items-center justify-center flex-col cursor-pointer group-open:bg-zinc-400/[.01] group-open:border-primary hover:border-primary border-zinc-600 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-primary">
-                        <path d="M11.983 1.907a.75.75 0 00-1.292-.657l-8.5 9.5A.75.75 0 002.75 12h6.572l-1.305 6.093a.75.75 0 001.292.657l8.5-9.5A.75.75 0 0017.25 8h-6.572l1.305-6.093z" />
-                    </svg>
-                    <div>
-                        <h3 class="text-xl font-bold group-open:text-primary">Optimisation & éco-conception</h3>
-                        <p class="text-lg text-zinc-400">Améliorer vos outils existants</span></p>
-                    </div>
-                    <svg class="w-6 h-6 group-open:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                    </svg>
-                    <svg class="hidden w-6 h-6 group-open:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                    </svg>
-                </summary>
-                <ol class="p-4 list-disc border-b-2 group-open:border-primary">
+            </div>
+            <div class="flex flex-col gap-4 px-4 py-8 text-center bg-zinc-950">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 mx-auto text-primary" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M4.25 2A2.25 2.25 0 002 4.25v11.5A2.25 2.25 0 004.25 18h11.5A2.25 2.25 0 0018 15.75V4.25A2.25 2.25 0 0015.75 2H4.25zm4.03 6.28a.75.75 0 00-1.06-1.06L4.97 9.47a.75.75 0 000 1.06l2.25 2.25a.75.75 0 001.06-1.06L6.56 10l1.72-1.72zm4.5-1.06a.75.75 0 10-1.06 1.06L13.44 10l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z" clip-rule="evenodd" />
+                </svg>
+                <div class="">
+                    <h3 class="text-xl font-bold ">Optimisation & éco-conception</h3>
+                    <p class="text-lg text-zinc-400">Améliorer vos outils existants</span></p>
+                </div>
+                <ol class="flex flex-col gap-2">
                     <li>
                         <strong>Amélioration sémantique & SEO</strong>
                         <p class="text-sm list-none">
@@ -97,24 +111,16 @@ use Kirby\Cms\Url;
                         </p>
                     </li>
                 </ol>
-            </details>
-            <details class="flex flex-col gap-1 group">
-                <summary class="font-bold list-none border-2 h-48 gap-2 p-4 border-dashed flex items-center justify-center flex-col cursor-pointer group-open:bg-zinc-400/[.01] group-open:border-primary hover:border-primary border-zinc-600 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 text-primary">
-                        <path fill-rule="evenodd" d="M19 5.5a4.5 4.5 0 01-4.791 4.49c-.873-.055-1.808.128-2.368.8l-6.024 7.23a2.724 2.724 0 11-3.837-3.837L9.21 8.16c.672-.56.855-1.495.8-2.368a4.5 4.5 0 015.873-4.575c.324.105.39.51.15.752L13.34 4.66a.455.455 0 00-.11.494 3.01 3.01 0 001.617 1.617c.17.07.363.02.493-.111l2.692-2.692c.241-.241.647-.174.752.15.14.435.216.9.216 1.382zM4 17a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-                    </svg>
-                    <div>
-                        <h3 class="text-xl font-bold group-open:text-primary">Développement PHP</h3>
-                        <p class="text-lg text-zinc-400">Outils sur mesure, API, CRON</span></p>
-                    </div>
-                    <svg class="w-6 h-6 group-open:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                    </svg>
-                    <svg class="hidden w-6 h-6 group-open:block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                    </svg>
-                </summary>
-                <ol class="p-4 list-disc border-b-2 group-open:border-primary">
+            </div>
+            <div class="flex flex-col gap-4 px-4 py-8 text-center bg-zinc-950">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 mx-auto text-primary" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M19 5.5a4.5 4.5 0 01-4.791 4.49c-.873-.055-1.808.128-2.368.8l-6.024 7.23a2.724 2.724 0 11-3.837-3.837L9.21 8.16c.672-.56.855-1.495.8-2.368a4.5 4.5 0 015.873-4.575c.324.105.39.51.15.752L13.34 4.66a.455.455 0 00-.11.494 3.01 3.01 0 001.617 1.617c.17.07.363.02.493-.111l2.692-2.692c.241-.241.647-.174.752.15.14.435.216.9.216 1.382zM4 17a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                </svg>
+                <div class="">
+                    <h3 class="text-xl font-bold">Développement PHP</h3>
+                    <p class="text-lg text-zinc-400">Outils sur mesure, API, CRON</span></p>
+                </div>
+                <ol class="flex flex-col gap-2">
                     <li>
                         <strong>Réusinage du code selon <a href="https://fr.wikipedia.org/wiki/SOLID_(informatique)" class="bh__href" target="_blank">SOLID</a> et <a href="https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas" class="bh__href" target="_blank">DRY</a></strong>
                         <p class="text-sm list-none text-zinc-400">
@@ -128,12 +134,15 @@ use Kirby\Cms\Url;
                         </p>
                     </li>
                 </ol>
-                <!--  <a href="xxxurlxxx" class="bh__href" target="_blank">Kirby</a> -->
-            </details>
+            </div>
         </div>
     </section>
-    <section class="flex items-center max-w-screen-xl gap-4 px-8 mx-auto">
+    <section class="flex items-center max-w-screen-xl gap-4 px-8 py-24 mx-auto">
         <article class="flex flex-col max-w-lg gap-8 p-4 mb-8">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-3xl font-bold">Cas client</h2>
+                <p class="text-zinc-400">Site <a href="https://guillemsalles.fr/" class="bh__href" target="_blank">guillemsalles.fr</a> réalisé en 2022</p>
+            </div>
             <p class="pl-4 text-lg border-l-4 border-primary">Benjamin a fait un super job pour créer mon site web. Des propositions au niveau de l'architecture, de l'hébergement jusqu'aux différentes fonctionnalités son travail a été soigné et précieux, notamment sur le volet de l'impact environnemental.
                 Il intègre les nouvelles fonctionnalités avec réactivité et assure parfaitement la maintenance.
             </p>
@@ -145,15 +154,24 @@ use Kirby\Cms\Url;
                 </div>
             </div>
         </article>
-        <article class="flex flex-col gap-2">
+        <article class="flex flex-col gap-4 text-sm">
             <video class="object-cover w-full h-full " autoplay muted loop id="birds">
                 <source src="<?= Url::to('assets/videos/compressed_loom_guillemsalles.fr.mp4') ?>" type="video/mp4">
             </video>
-            <span>Aperçu du site <a href="https://guillemsalles.fr/" class="bh__href" target="_blank">guillemsalles.fr</a> réalisé en 2022</span>
+            <div class="flex items-center gap-2">
+                <span class="px-2 py-1 text-green-500 rounded-full bg-green-500/10 ring-1 ring-inset ring-green-500/20">
+                    EcoIndex : <strong>A</strong>
+                </span>
+                <span class="px-2 py-1 text-green-500 rounded-full bg-green-500/10 ring-1 ring-inset ring-green-500/20">
+                    CO<sub>2</sub> : <strong>0.07 g</strong>
+                </span>
+                <span class="text-zinc-400">•</span>
+                <a href="https://www.websitecarbon.com/website/guillemsalles-fr/" class="bh__dark-href" target="_blank">Plus de détails sur websitecarbon.com</a>
+            </div>
         </article>
     </section>
 
-    <section id="competences" class="max-w-screen-lg m-auto outline-2 outline-dashed outline-zinc-800">
+    <section id="competences" class="max-w-screen-lg m-auto my-24 outline-2 outline-dashed outline-zinc-800">
         <div class="flex flex-col gap-4 p-8 m-auto md:p-16 text-zinc-50">
             <header class="flex flex-col gap-4 ">
                 <p class="font-mono font-bold uppercase text-zinc-400">Outils et frameworks 🛠️</p>
@@ -253,7 +271,7 @@ use Kirby\Cms\Url;
     </section>
 
 
-    <section id="tarifs" class="max-w-screen-xl mx-auto">
+    <section id="tarifs" class="max-w-screen-xl py-24 mx-auto ">
         <div class="flex flex-col gap-4 px-8 mx-auto md:px-16 lg:px-0">
             <header class="flex flex-col gap-4 ">
                 <p class="font-mono font-bold uppercase text-zinc-400">Combien ça coûte ? 💸</p>
@@ -323,7 +341,7 @@ use Kirby\Cms\Url;
         </div>
     </section>
 
-    <section id="avis-clients" class="container max-w-screen-lg mx-auto">
+    <section id="avis-clients" class="container max-w-screen-lg py-24 mx-auto ">
         <div class="flex flex-col gap-4 px-8 mx-auto md:px-16 lg:px-0">
             <p class="font-mono font-bold uppercase text-zinc-400">Le résultat d'un travail minutieux 💬</p>
             <h2 class="text-3xl font-bold">
@@ -385,35 +403,7 @@ use Kirby\Cms\Url;
 
     <?php /* snippet('sections/foire-aux-questions') */  ?>
 
-    <section class="flex flex-col gap-6 px-8 mx-auto mt-12 text-lg text-center md:px-16 lg:px-0">
-        <h2 class="font-mono font-bold uppercase text-zinc-400 ">Collaborons ensemble pour...</h2>
-        <div class="grid max-w-screen-xl grid-cols-1 gap-2 px-8 sm:grid-cols-2 md:grid-cols-4">
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Développer votre outil numérique sur-mesure</li>
-            </ol>
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Optimiser les performances de votre site web</li>
-            </ol>
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Réusiner votre code source et le rendre plus efficient</li>
-            </ol>
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Automatiser vos processus et gérer vos données</li>
-            </ol>
-        </div>
-    </section>
+
 </main>
 
 <?php snippet('footer') ?>

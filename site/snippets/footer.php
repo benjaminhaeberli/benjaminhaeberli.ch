@@ -3,7 +3,7 @@
 use BenjaminHaeberli\Portfolio\KirbyAssets;
 
 ?>
-<footer class="container flex items-center justify-between max-w-screen-lg py-8 mx-auto mt-12 text-sm border-t-2 border-gray-300 border-dashed">
+<footer class="container flex items-center justify-between max-w-screen-lg py-8 mx-auto text-sm border-t-2 border-gray-300 border-dashed">
     <nav class="fixed left-8 bottom-6">
         <a href="#" class="bh__svg-up">Haut de page</a>
     </nav>

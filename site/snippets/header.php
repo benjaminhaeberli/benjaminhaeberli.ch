@@ -21,8 +21,7 @@ use Kirby\Cms\Url;
 </head>
 
 <body>
-
-    <header class="z-50 w-full max-w-screen-xl px-8 m-auto mb-20">
+    <header class="z-50 w-full max-w-screen-xl px-8 m-auto">
         <nav class="flex flex-wrap items-center justify-center gap-2 mx-auto my-3 text-sm md:justify-between">
             <ol class="flex flex-wrap gap-x-6 gap-y-2">
                 <li>
