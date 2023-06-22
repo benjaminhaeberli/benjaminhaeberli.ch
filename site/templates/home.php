@@ -51,7 +51,6 @@ use Kirby\Cms\Url;
             </div>
         </div>
     </section>
-
     <section id="services" class="py-24 bg-zinc-900/20">
         <div class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 mx-auto sm:grid-cols-2 lg:grid-cols-3">
             <div class="flex flex-col gap-4 px-4 py-8 text-center bg-zinc-950">
