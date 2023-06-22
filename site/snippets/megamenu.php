@@ -5,7 +5,7 @@ use BenjaminHaeberli\Portfolio\KirbyHelper;
 ?>
 
 <?php if (KirbyHelper::siteHasField('megamenu')) : ?>
-    <nav class="flex gap-2 pb-4 mx-auto text-lg font-semibold">
+    <nav class="flex gap-2 pb-4 mx-auto text-lg font-semibold border-b-2 border-zinc-800">
         <ol class="flex gap-2">
             <?php
             $links = site()->megamenu()->toStructure();

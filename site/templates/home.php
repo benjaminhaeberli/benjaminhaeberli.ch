@@ -1,7 +1,13 @@
+<?php
+
+use Kirby\Cms\Url;
+
+?>
+
 <?php snippet('header') ?>
 
-<main class="z-10 flex flex-col gap-16">
-    <section id="introduction" class="max-w-screen-xl px-8 mx-auto md:px-16 lg:px-0">
+<main class="z-50 flex flex-col gap-16">
+    <section id="introduction" class="max-w-screen-xl px-8 mx-auto">
         <div class="flex flex-wrap items-center justify-between gap-8 md:gap-16 lg:flex-nowrap lg:flex-row">
             <div class="flex flex-col gap-6">
                 <?= page()->hero_title()->kt() ?>
@@ -16,39 +22,7 @@
             <img class="inline-block object-cover m-auto h-96 lg:m-0" src="/assets/images/benjamin-haeberli-software-developer.png" alt="Photo de Benjamin Haeberli assis devant son ordinateur">
         </div>
     </section>
-    <section class="flex flex-col gap-6 px-8 mx-auto mt-12 text-lg text-center md:px-16 lg:px-0">
-        <h2 class="font-mono font-bold uppercase text-zinc-400 ">Collaborons ensemble pour...</h2>
-        <div class="grid max-w-screen-xl grid-cols-1 gap-2 px-8 sm:grid-cols-2 md:grid-cols-4">
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Développer votre outil numérique sur-mesure</li>
-            </ol>
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Optimiser les performances de votre site web</li>
-            </ol>
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Réusiner votre code source et le rendre plus efficient</li>
-            </ol>
-            <ol class="flex flex-col items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <li>Automatiser vos processus et gérer vos données</li>
-            </ol>
-        </div>
-    </section>
     <section id="services">
-        <h2 class="mb-6 text-4xl font-bold text-center ">
-            Services
-        </h2>
         <div class="grid max-w-screen-xl grid-cols-1 gap-8 px-8 mx-auto sm:grid-cols-2 lg:grid-cols-3">
             <details class="flex flex-col gap-2 group">
                 <summary class="font-bold list-none border-2 h-48 gap-4 p-4 border-dashed flex items-center justify-center flex-col cursor-pointer group-open:bg-zinc-400/[.01] group-open:border-primary hover:border-primary border-zinc-600 text-center">
@@ -158,6 +132,27 @@
             </details>
         </div>
     </section>
+    <section class="flex items-center max-w-screen-xl gap-4 px-8 mx-auto">
+        <article class="flex flex-col max-w-lg gap-8 p-4 mb-8">
+            <p class="pl-4 text-lg border-l-4 border-primary">Benjamin a fait un super job pour créer mon site web. Des propositions au niveau de l'architecture, de l'hébergement jusqu'aux différentes fonctionnalités son travail a été soigné et précieux, notamment sur le volet de l'impact environnemental.
+                Il intègre les nouvelles fonctionnalités avec réactivité et assure parfaitement la maintenance.
+            </p>
+            <div class="flex flex-row items-center gap-4">
+                <img class="block object-cover w-16 h-16" src="/assets/images/reviews/guillemsalles.avif" alt="Photo de Guillem Salle" loading="lazy">
+                <div class="flex flex-col ">
+                    <h3><a href="https://guillemsalles.fr/" class="bh__dark-href" target="_blank">Guillem Salles</a></h3>
+                    <p class="text-zinc-300">Ghostwriter engagé</p>
+                </div>
+            </div>
+        </article>
+        <article class="flex flex-col gap-2">
+            <video class="object-cover w-full h-full " autoplay muted loop id="birds">
+                <source src="<?= Url::to('assets/videos/compressed_loom_guillemsalles.fr.mp4') ?>" type="video/mp4">
+            </video>
+            <span>Aperçu du site <a href="https://guillemsalles.fr/" class="bh__href" target="_blank">guillemsalles.fr</a> réalisé en 2022</span>
+        </article>
+    </section>
+
     <section id="competences" class="max-w-screen-lg m-auto outline-2 outline-dashed outline-zinc-800">
         <div class="flex flex-col gap-4 p-8 m-auto md:p-16 text-zinc-50">
             <header class="flex flex-col gap-4 ">
@@ -388,11 +383,36 @@
         </div>
     </section>
 
-    <?php /* snippet('sections/foire-aux-questions') */ ?>
+    <?php /* snippet('sections/foire-aux-questions') */  ?>
 
-    <section class="container flex flex-col max-w-screen-lg gap-2 px-8 m-auto mx-auto text-sm md:px-16 lg:px-0">
-        <img class="block object-cover w-full h-64 " src="/assets/images/benjamin-haeberli-by-rrowell-368.avif" alt="Photo de Benjamin Haeberli assis devant son ordinateur" loading="lazy">
-        <span>© Photographie par <a href=" https://www.rainirowell.com/" class="bh__href" target="_blank">Raini Rowell</a> sur <a href="https://goo.gl/maps/eNUojpXtKhTtqArA7" class="bh__dark-href" target="_blank">l'île de Skye</a></span>
+    <section class="flex flex-col gap-6 px-8 mx-auto mt-12 text-lg text-center md:px-16 lg:px-0">
+        <h2 class="font-mono font-bold uppercase text-zinc-400 ">Collaborons ensemble pour...</h2>
+        <div class="grid max-w-screen-xl grid-cols-1 gap-2 px-8 sm:grid-cols-2 md:grid-cols-4">
+            <ol class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Développer votre outil numérique sur-mesure</li>
+            </ol>
+            <ol class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Optimiser les performances de votre site web</li>
+            </ol>
+            <ol class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Réusiner votre code source et le rendre plus efficient</li>
+            </ol>
+            <ol class="flex flex-col items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <li>Automatiser vos processus et gérer vos données</li>
+            </ol>
+        </div>
     </section>
 </main>
 

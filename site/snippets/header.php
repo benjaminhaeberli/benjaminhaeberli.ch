@@ -21,8 +21,9 @@ use Kirby\Cms\Url;
 </head>
 
 <body>
-    <header class="z-50 w-full max-w-screen-xl px-8 m-auto mb-20 border-b-2 border-zinc-800 md:px-0">
-        <nav class="flex flex-wrap items-center justify-center gap-2 mx-auto my-3 text-sm lg:p-0 md:justify-between">
+
+    <header class="z-50 w-full max-w-screen-xl px-8 m-auto mb-20">
+        <nav class="flex flex-wrap items-center justify-center gap-2 mx-auto my-3 text-sm md:justify-between">
             <ol class="flex flex-wrap gap-x-6 gap-y-2">
                 <li>
                     <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group text-zinc-400 hover:text-zinc-100 focus:outline-dashed outline-1 outline-offset-2">
@@ -56,14 +57,13 @@ use Kirby\Cms\Url;
                 <li class="flex">
                     <div class="flex items-center gap-1 group focus:outline-dashed outline-1 outline-offset-2">
                         <span class="relative flex items-center justify-center w-4 h-4" aria-hidden="true">
-                            <span class="absolute inline-flex w-2 h-2 bg-red-600 rounded-full opacity-75 animate-ping"></span>
-                            <span class="relative inline-flex w-2 h-2 bg-red-600 rounded-full"></span>
+                            <span class="absolute inline-flex w-2 h-2 bg-green-600 rounded-full opacity-75 animate-ping"></span>
+                            <span class="relative inline-flex w-2 h-2 bg-green-600 rounded-full"></span>
                         </span>
-                        <span class="px-2 py-1 text-red-500 rounded-full bg-red-500/10 ring-1 ring-inset ring-red-500/20">Indisponible jusqu'au 1<sup>er</sup> août 2023</span>
+                        <span class="px-2 py-1 text-green-500 rounded-full bg-green-500/10 ring-1 ring-inset ring-green-500/20">Disponibilités dès le 1<sup>er</sup> août 2023</span>
                     </div>
                 </li>
             </ol>
         </nav>
         <?php snippet('megamenu') ?>
-        <?php /* snippet('submenu') */ ?>
     </header>
