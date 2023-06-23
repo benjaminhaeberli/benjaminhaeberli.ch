@@ -1,14 +1,13 @@
 title:
-  en: Experience
-  fr: Expérience
+  en: Rates
+  fr: Tarifs
 
 tabs:
   content:
     columns:
-      content:
+      - width: 7/12
         icon: text
         label: Content
-        width: 2/3
         fields:
           hero_title:
             label: Hero - Title
@@ -18,13 +17,9 @@ tabs:
             label: Hero - Text
             type: textarea
             size: small
-      contentbis:
+      - width: 5/12
         icon: text
         label: Content
-        width: 1/3
         fields:
-          desc:
-            label: Desc
-            type: text
-          line1:
-            type: line
+          submenu: fields/submenu
+          seo: fields/seo/meta
