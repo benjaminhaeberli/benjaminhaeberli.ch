@@ -12,14 +12,13 @@ final class KirbyAssets
      * Creates one versioned CSS link tag
      *
      * @param string $relative_url Relative file url like `assets/public.css`
-     * @param string|array|null $options
-     * @return string
+     * @param string|mixed[] $options
      */
-    public static function versionedCss(string $relative_url,  string|array $options = null): string
+    public static function versionedCss(string $relative_url, string|array $options = null): string
     {
         $filemtime = static::filemtime($relative_url);
 
-        if (!empty($filemtime)) {
+        if ($filemtime !== 0 && $filemtime !== false) {
             return Html::css($relative_url . '?v=' . $filemtime, $options);
         }
 
@@ -30,14 +29,13 @@ final class KirbyAssets
      * Creates a versioned script tag to load a javascript file
      *
      * @param string $relative_url Relative file url like `assets/app.js`
-     * @param string|array|null $options
-     * @return string
+     * @param string|mixed[] $options
      */
     public static function versionedJs(string $relative_url, string|array $options = null): string
     {
         $filemtime = static::filemtime($relative_url);
 
-        if (!empty($filemtime)) {
+        if ($filemtime !== 0 && $filemtime !== false) {
             return Html::js($relative_url . '?v=' . $filemtime, $options);
         }
 
@@ -48,7 +46,6 @@ final class KirbyAssets
      * Execute `filemtime()` for a given relative file url
      *
      * @param string $relative_url Relative file url (example : `assets/public.css`)
-     * @return boolean
      */
     public static function filemtime(string $relative_url): int|false
     {
