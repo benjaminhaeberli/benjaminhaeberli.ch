@@ -71,16 +71,16 @@
         },
         {
             "name": "bnomei/kirby3-boost",
-            "version": "2.3.2",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bnomei/kirby3-boost.git",
-                "reference": "712aa9835f3cdbc416e7fce210e65800bc0243c5"
+                "reference": "76c51b5e2c82f0800a3b7efefa610ed25da27092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/712aa9835f3cdbc416e7fce210e65800bc0243c5",
-                "reference": "712aa9835f3cdbc416e7fce210e65800bc0243c5",
+                "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/76c51b5e2c82f0800a3b7efefa610ed25da27092",
+                "reference": "76c51b5e2c82f0800a3b7efefa610ed25da27092",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
             ],
             "support": {
                 "issues": "https://github.com/bnomei/kirby3-boost/issues",
-                "source": "https://github.com/bnomei/kirby3-boost/tree/v2.3.2"
+                "source": "https://github.com/bnomei/kirby3-boost/tree/v2.3.4"
             },
             "funding": [
                 {
@@ -166,7 +166,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-06-14T08:33:58+00:00"
+            "time": "2023-09-12T14:35:23+00:00"
         },
         {
             "name": "bnomei/kirby3-sqlite-cachedriver",
