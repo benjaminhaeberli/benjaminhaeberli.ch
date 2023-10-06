@@ -1,0 +1,14 @@
+/** Buttons */
+.bh__btn {
+  @apply flex items-center gap-2 px-3 py-2 font-medium outline-none hocus:bg-secondary text-zinc-950 bg-primary;
+  @apply after:inline-block after:w-5 after:h-5 after:bg-zinc-950 after:transition-all hover:after:-translate-x-0.5;
+}
+.bh__btn-light {
+  @apply bg-transparent text-primary outline-offset-0 outline-2 outline-dashed outline-primary hocus:outline-secondary hocus:bg-transparent hocus:text-secondary;
+  @apply after:bg-primary hocus:after:bg-secondary;
+}
+.bh__btn::after {
+  mask: url("/assets/svg/heroicon_arrow-small-right.svg");
+  mask-size: cover;
+  content: "";
+}

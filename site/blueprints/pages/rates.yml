@@ -1,0 +1,25 @@
+title:
+  en: Rates
+  fr: Tarifs
+
+tabs:
+  content:
+    columns:
+      - width: 7/12
+        icon: text
+        label: Content
+        fields:
+          hero_title:
+            label: Hero - Title
+            type: textarea
+            size: medium
+          hero_text:
+            label: Hero - Text
+            type: textarea
+            size: small
+      - width: 5/12
+        icon: text
+        label: Content
+        fields:
+          submenu: fields/submenu
+          seo: fields/seo/meta

@@ -56,5 +56,8 @@ tabs:
                 type: textarea
                 size: medium
                 required: true
+              visible:
+                label: Visible?
+                type: toggle
   meta:
     label: Meta (todo)

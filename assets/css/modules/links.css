@@ -1,0 +1,21 @@
+/** Links */
+.bh__kirbytext a,
+a.bh__href {
+  @apply font-medium underline text-primary hocus:no-underline focus:outline-dashed outline-1 outline-offset-2;
+}
+.bh__kirbytext a:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not([href^="/"])::after, a.bh__href:not([href^="https://benjaminhaeberli.ch"]):not([href^="#"]):not(
+      [href^="/"]
+    )::after {
+  mask: url("/assets/svg/heroicon_arrow-top-right.svg");
+  mask-size: cover;
+  content: "";
+  @apply inline-block w-[1.1rem] h-[1.1rem] bg-primary;
+}
+
+/** Basic links */
+.bh__basic-href {
+  @apply underline hocus:no-underline text-primary focus:outline-dashed outline-1 outline-offset-2;
+}
+.bh__dark-href {
+  @apply underline hocus:no-underline text-zinc-400 focus:outline-dashed outline-1 outline-offset-2;
+}

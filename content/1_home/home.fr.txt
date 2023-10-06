@@ -6,14 +6,12 @@ Hero-title:
 
 <p class="font-mono font-bold uppercase text-zinc-400">Bienvenue, je suis Benjamin Haeberli !</p>
             <h1 class="text-5xl font-bold">
-                Un développeur <span class="relative inline-block text-primary"> 
-                    <span class="relative">engagé</span>
-                </span> pour du code performant et durable.
+                Un développeur <span class="text-primary">engagé</span> pour du code performant et durable.
             </h1>
 
 ----
 
-Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes comme (link: https://laravel.com/ text: Laravel target: _blank), (link: https://getkirby.com/ text: Kirby target: _blank), (link: https://tailwindcss.com/ text: TailwindCSS target: _blank) ou encore SQL. Je développe pour vous des solutions éthiques, sur-mesure et écoresponsables.
+Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes pour développer des outils sur-mesure et éco-conçus.
 
 ----
 

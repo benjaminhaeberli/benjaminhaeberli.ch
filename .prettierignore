@@ -12,3 +12,5 @@ site/accounts/
 site/cache/
 site/plugins/
 site/sessions/
+
+collect.js

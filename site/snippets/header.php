@@ -1,6 +1,6 @@
 <?php
 
-use Kirby\Cms\Html;
+use BenjaminHaeberli\Portfolio\KirbyAssets;
 use Kirby\Cms\Url;
 
 ?>
@@ -15,12 +15,14 @@ use Kirby\Cms\Url;
     <link rel="icon" href="<?= Url::to('assets/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/svg+xml" href="<?= Url::to('/assets/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/png" href="<?= Url::to('/assets/favicon/favicon.png') ?>">
-    <?= Html::css('assets/public.css') ?>
+    <!--  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"> -->
+    <?= KirbyAssets::versionedJs('assets/js/scrollreveal.min.js', 'defer') ?>
+    <?= KirbyAssets::versionedCss('assets/public.css') ?>
 </head>
 
 <body>
-    <header class="z-50 w-full px-8 mb-16 border-b-2 border-zinc-800 md:px-16">
-        <nav class="flex flex-wrap items-center justify-center gap-2 mx-auto my-3 text-sm lg:p-0 md:justify-between">
+    <header class="z-50 w-full max-w-screen-xl px-8 m-auto">
+        <nav class="flex flex-wrap items-center justify-center gap-2 mx-auto my-3 text-sm md:justify-between">
             <ol class="flex flex-wrap gap-x-6 gap-y-2">
                 <li>
                     <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group text-zinc-400 hover:text-zinc-100 focus:outline-dashed outline-1 outline-offset-2">
@@ -54,14 +56,13 @@ use Kirby\Cms\Url;
                 <li class="flex">
                     <div class="flex items-center gap-1 group focus:outline-dashed outline-1 outline-offset-2">
                         <span class="relative flex items-center justify-center w-4 h-4" aria-hidden="true">
-                            <span class="absolute inline-flex w-2 h-2 bg-red-600 rounded-full opacity-75 animate-ping"></span>
-                            <span class="relative inline-flex w-2 h-2 bg-red-600 rounded-full"></span>
+                            <span class="absolute inline-flex w-2 h-2 bg-green-600 rounded-full opacity-75 animate-ping"></span>
+                            <span class="relative inline-flex w-2 h-2 bg-green-600 rounded-full"></span>
                         </span>
-                        <span class="px-2 py-1 text-red-500 rounded-full bg-red-500/10 ring-1 ring-inset ring-red-500/20">Indisponible jusqu'au 1<sup>er</sup> août 2023</span>
+                        <span class="px-2 py-1 text-green-500 rounded-full bg-green-500/10 ring-1 ring-inset ring-green-500/20">Disponible en ce moment !</span>
                     </div>
                 </li>
             </ol>
         </nav>
         <?php snippet('megamenu') ?>
-        <?php /* snippet('submenu') */ ?>
     </header>
