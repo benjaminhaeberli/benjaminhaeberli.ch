@@ -59,7 +59,7 @@ use Kirby\Cms\Url;
                             <span class="absolute inline-flex w-2 h-2 bg-green-600 rounded-full opacity-75 animate-ping"></span>
                             <span class="relative inline-flex w-2 h-2 bg-green-600 rounded-full"></span>
                         </span>
-                        <span class="px-2 py-1 text-green-500 rounded-full bg-green-500/10 ring-1 ring-inset ring-green-500/20">Disponibilités dès le 1<sup>er</sup> août 2023</span>
+                        <span class="px-2 py-1 text-green-500 rounded-full bg-green-500/10 ring-1 ring-inset ring-green-500/20">Disponible en ce moment !</span>
                     </div>
                 </li>
             </ol>

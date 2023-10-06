@@ -11,7 +11,7 @@ use BenjaminHaeberli\Portfolio\KirbyHelper;
             $links = site()->megamenu()->toStructure();
             foreach ($links as $link) : ?>
                 <?php $page = $link->target_page()->toPage() ?>
-                <?php if (($page = KirbyHelper::isPage($page)) instanceof \Kirby\Cms\Page) : ?>
+                <?php if (($page = KirbyHelper::isPage($page)) instanceof \Kirby\Cms\Page && $link->visible()->toBool()) : ?>
                     <li class="flex">
                         <?php if (page()->is($page)) : ?>
                             <a href="#" class="flex items-center gap-2 px-2 py-2 group text-primary hover:text-secondary focus:text-slate-200 focus:outline-dashed outline-2 ">
@@ -26,7 +26,7 @@ use BenjaminHaeberli\Portfolio\KirbyHelper;
             <?php endforeach ?>
         </ol>
         <div>
-            <a href="/contact" class="bh__btn">Contactez-moi !</a>
+            <a href="https://tally.so/r/n08Eey" target="_blank" class="bh__btn">Contactez-moi !</a>
         </div>
     </nav>
 <?php endif; ?>
