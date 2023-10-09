@@ -82,7 +82,7 @@
     },
     "require": {
         "php": "^8.1",
-        "benjaminhaeberli/kirby-seo": "^0.1.1",
+        "benjaminhaeberli/kirby-seo": "^0.2.1",
         "bnomei/kirby3-boost": "^2.3.1",
         "bnomei/kirby3-sqlite-cachedriver": "^1.4.2",
         "funkjedi/composer-include-files": "^1.1",
