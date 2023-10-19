@@ -31,7 +31,7 @@
     "cssnano": "^6.0.1",
     "autoprefixer": "^10.4.14",
     "@prettier/plugin-php": "^0.19.6",
-    "concurrently": "^8.2.0",
+    "concurrently": "^8.2.2",
     "license-checker": "^25.0.1",
     "live-server": "^1.1.0",
     "postcss": "^8.4.24",
