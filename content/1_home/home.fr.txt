@@ -11,17 +11,17 @@ Hero-title:
 
 ----
 
-Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes pour développer des outils sur-mesure et éco-conçus.
+Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes pour développer des outils sur-mesure et optimisés.
 
 ----
 
 Questions:
 
-- 
+-
   title: Quels sont tes tarifs ?
   answer: '<p>Mon tarif horaire est fixé à 110 CHF, mais vous pouvez retrouver tous les détails <a href="/#tarifs" title="Tarifs" rel="noreferrer">dans cette section</a>.</p>'
   open: 'false'
-- 
+-
   title: >
     Où habites-tu ? Travailles-tu à
     distance ?
@@ -32,16 +32,16 @@ Questions:
 
 Submenu:
 
-- 
+-
   title: Intro
   slug: introduction
-- 
+-
   title: Compétences
   slug: competences
-- 
+-
   title: Tarifs
   slug: tarifs
-- 
+-
   title: 'Avis client·e·s '
   slug: avis-clients
 
@@ -72,15 +72,15 @@ Kirbyseometadesc: Passionné par le développement de solutions éthiques, sur-m
 
 ----
 
-Kirbyseokeywords: 
+Kirbyseokeywords:
 
 ----
 
-Kirbyseocanonicalurl: 
+Kirbyseocanonicalurl:
 
 ----
 
-Desc: 
+Desc:
 
 ----
 
