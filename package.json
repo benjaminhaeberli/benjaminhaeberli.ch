@@ -27,7 +27,7 @@
     "build": "postcss ./assets/css/style.css -o ./assets/public.css"
   },
   "devDependencies": {
-    "fast-glob": "^3.2.12",
+    "fast-glob": "^3.3.2",
     "cssnano": "^6.0.1",
     "autoprefixer": "^10.4.14",
     "@prettier/plugin-php": "^0.19.6",
