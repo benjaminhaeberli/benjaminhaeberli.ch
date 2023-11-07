@@ -15,7 +15,7 @@ final class KirbyAssets
      * @param string|array|null $options
      * @return string
      */
-    public static function versionedCss(string $relative_url,  string|array $options = null): string
+    public static function versionedCss(string $relative_url, string|array $options = null): string
     {
         $filemtime = static::filemtime($relative_url);
 
