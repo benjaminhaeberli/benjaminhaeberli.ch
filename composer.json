@@ -96,7 +96,7 @@
         "pestphp/pest": "^1.23",
         "phpstan/phpstan": "^1.10.18",
         "phpunit/phpunit": "^9.6.9",
-        "rector/rector": "^0.17.0",
+        "rector/rector": "^0.18.10",
         "sempro/phpunit-pretty-print": "^1.4"
     }
 }
