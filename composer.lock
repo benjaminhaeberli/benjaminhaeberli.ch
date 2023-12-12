@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2c96eddf25567835926ad1ba7df8a4b",
+    "content-hash": "aa71968f428d94cb57a4a4b9df229e7c",
     "packages": [
+        {
+            "name": "benjaminhaeberli/kirby-seo",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/benjaminhaeberli/kirby-seo.git",
+                "reference": "f4d5a374370acf15ff1e3036526930df469139b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/benjaminhaeberli/kirby-seo/zipball/f4d5a374370acf15ff1e3036526930df469139b8",
+                "reference": "f4d5a374370acf15ff1e3036526930df469139b8",
+                "shasum": ""
+            },
+            "require": {
+                "funkjedi/composer-include-files": "^1.1",
+                "getkirby/cms": "^4.0.1",
+                "getkirby/composer-installer": "^1.2.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.10",
+                "pestphp/pest": "^2.6.1",
+                "phpstan/phpstan": "^1.10.15",
+                "rector/rector": "^0.18.0",
+                "sempro/phpunit-pretty-print": "^1.2.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false,
+                "include_files": [
+                    "src/bootstrap.php"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "BenjaminHaeberli\\KirbySeo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Haeberli",
+                    "email": "hello@benjaminhaeberli.ch",
+                    "homepage": "https://benjaminhaeberli.ch/"
+                }
+            ],
+            "description": "🔎 Minimal SEO plugin for Kirby CMS – for PHP lovers.",
+            "keywords": [
+                "kirby",
+                "kirby-plugin",
+                "php",
+                "seo"
+            ],
+            "support": {
+                "issues": "https://github.com/benjaminhaeberli/kirby-seo/issues",
+                "source": "https://github.com/benjaminhaeberli/kirby-seo/tree/v0.3.0"
+            },
+            "time": "2023-12-12T21:55:06+00:00"
+        },
         {
             "name": "bnomei/kirby3-boost",
             "version": "2.4.1",
