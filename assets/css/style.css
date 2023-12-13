@@ -10,7 +10,7 @@
 @layer base {
   /** Styles de base */
   html {
-    @apply text-neutral-50 bg-slate-950;
+    @apply text-slate-50 bg-slate-950;
   }
 }
 

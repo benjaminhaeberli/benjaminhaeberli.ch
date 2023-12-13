@@ -21,6 +21,3 @@ use Kirby\Cms\Url;
 </head>
 
 <body>
-    <header class="z-50 w-full max-w-screen-xl px-8 m-auto">
-        No header
-    </header>
