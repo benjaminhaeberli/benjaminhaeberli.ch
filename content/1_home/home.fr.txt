@@ -2,16 +2,11 @@ Title: Accueil
 
 ----
 
-Hero-title:
-
-<p class="font-mono font-bold uppercase text-zinc-400">Bienvenue, je suis Benjamin Haeberli !</p>
-            <h1 class="text-5xl font-bold">
-                Un développeur <span class="text-primary">engagé</span> pour du code performant et durable.
-            </h1>
+Hero-title: 
 
 ----
 
-Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes pour développer des outils sur-mesure et éco-conçus.
+Hero-text: Si vous êtes à la recherche de simplicité et de performance, vous êtes au bon endroit. Je travaille avec des technologies modernes pour développer des outils sur-mesure et optimisés.
 
 ----
 
@@ -30,20 +25,7 @@ Questions:
 
 ----
 
-Submenu:
-
-- 
-  title: Intro
-  slug: introduction
-- 
-  title: Compétences
-  slug: competences
-- 
-  title: Tarifs
-  slug: tarifs
-- 
-  title: 'Avis client·e·s '
-  slug: avis-clients
+Submenu: 
 
 ----
 

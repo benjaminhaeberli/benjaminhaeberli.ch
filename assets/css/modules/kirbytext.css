@@ -1,12 +1,16 @@
 /** KirbyText */
 .bh__kirbytext {
-  @apply flex flex-col gap-4;
+  @apply flex flex-col gap-4 text-sm;
 
   h2 {
-    @apply text-3xl font-bold;
+    @apply text-lg font-bold;
   }
 
   ul {
     @apply ml-4 list-disc;
+  }
+
+  a {
+    @apply underline hover:no-underline;
   }
 }

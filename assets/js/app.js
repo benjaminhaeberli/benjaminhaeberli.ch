@@ -3,5 +3,9 @@ console.log(
 );
 console.log("🇨🇭 Developed by Benjamin Haeberli (https://benjaminhaeberli.ch)");
 
-/* ScrollReveal().reveal("header");
-ScrollReveal().reveal("section, footer", { delay: 250 }); */
+ScrollReveal().reveal(".to-reveal", {
+  duration: 650,
+  interval: 200,
+  origin: "left",
+  distance: "48px",
+});

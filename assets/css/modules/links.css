@@ -17,5 +17,5 @@ a.bh__href {
   @apply underline hocus:no-underline text-primary focus:outline-dashed outline-1 outline-offset-2;
 }
 .bh__dark-href {
-  @apply underline hocus:no-underline text-zinc-400 focus:outline-dashed outline-1 outline-offset-2;
+  @apply underline hocus:no-underline text-slate-400 focus:outline-dashed outline-1 outline-offset-2;
 }
