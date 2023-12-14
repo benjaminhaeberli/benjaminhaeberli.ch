@@ -5,10 +5,10 @@
 
 <?php snippet('header') ?>
 
-<main class="flex flex-col mt-8 sm:mt-32">
+<main class="flex flex-col mt-8 sm:mt-24">
 
     <!-- Hero -->
-    <?php snippet('blocks/container', slots: true) ?>
+    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-1 text-2xl font-bold sm:text-4xl">
@@ -38,7 +38,7 @@
     <?php endsnippet() ?>
 
     <!-- Work -->
-    <?php snippet('blocks/container', slots: true) ?>
+    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <?php snippet(
         'blocks/basic-section',
@@ -65,7 +65,7 @@
     <?php endsnippet() ?>
 
     <!-- Open source -->
-    <?php snippet('blocks/container', slots: true) ?>
+    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <?php snippet(
         'blocks/basic-section',
@@ -96,13 +96,13 @@
     <?php endslot() ?>
     <?php endsnippet() ?>
 
-    <!-- Reviews -->
-    <?php snippet('blocks/container', slots: true, data: ['fullsize' => 'testing']) ?>
+    <!-- Testimonials -->
+    <?php snippet('blocks/container', slots: true, data: ['fullsize' => true]) ?>
     <?php slot('content') ?>
     <?php snippet(
         'blocks/reviews-section',
         data: [
-            'title' => 'Avis',
+            'title' => 'Témoignages',
             'logo' => snippet('svg/icons/remixicon-sparkling-line', return: true),
             'reviews' => [
                 [
@@ -143,4 +143,4 @@
 
 </main>
 
-<?php snippet('footer') ?>
+<?php snippet('footer', data: ['css' => 'to-reveal']) ?>

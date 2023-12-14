@@ -1,4 +1,4 @@
-<article class="flex flex-col gap-4 text-xs w-full xs:w-80 sm:w-64">
+<article class="flex flex-col w-full gap-4 text-xs xs:w-80 sm:w-64 to-reveal">
     <div class="flex flex-col gap-2 text-slate-300">
         <?= $content ?>
     </div>

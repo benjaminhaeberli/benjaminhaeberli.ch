@@ -1,7 +1,7 @@
 title:
-  en: Legal notice
-  fr: Mentions légales
-icon: ⚖️
+  en: Error
+  fr: Erreur
+icon: ⚠️
 
 columns:
   content:
@@ -9,12 +9,11 @@ columns:
     label: Content
     width: 2/3
     fields:
-      main_content:
+      message:
         label:
-          en: Main content
-          fr: Contenu principal
+          en: Message
+          fr: Message
         type: textarea
-        size: huge
   contentbis:
     icon: text
     label: Content

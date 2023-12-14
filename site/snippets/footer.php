@@ -1,9 +1,11 @@
 <?php
 
 use BenjaminHaeberli\Portfolio\KirbyAssets;
-?>
-<footer class="container flex flex-col items-center gap-4 justify-between max-w-screen-lg mx-auto mt-32 mb-8 text-sm">
 
+$css = isset($css) ? $css : null;
+
+?>
+<footer class="flex flex-col items-center justify-between max-w-screen-lg gap-4 mx-auto mt-32 mb-8 text-sm <?= $css ?>">
     <nav class="flex">
         <ol class="flex gap-4 px-8 md:px-16 lg:px-0">
             <li>
@@ -12,7 +14,7 @@ use BenjaminHaeberli\Portfolio\KirbyAssets;
         </ol>
     </nav>
 
-    <ol class="flex flex-wrap gap-x-6 gap-y-1 items-center justify-center">
+    <ol class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
         <li>
             <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group text-slate-400 hover:text-slate-100 focus:outline-dashed outline-1 outline-offset-2">
                 <svg class="w-4 h-4 fill-slate-400 group-hover:fill-slate-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -41,7 +43,7 @@ use BenjaminHaeberli\Portfolio\KirbyAssets;
         </li>
     </ol>
 
-    <a href="https://www.websitecarbon.com/website/benjaminhaeberli-ch/" class="flex gap-2  group hover:underline" target="_blank">
+    <a href="https://www.websitecarbon.com/website/benjaminhaeberli-ch/" class="flex gap-2 group hover:underline" target="_blank">
         <div class="w-4 h-4 bg-gradient-to-r from-sky-500 to-indigo-500 group-hover:from-pink-500 group-hover:to-yellow-500 rounded-2xl"></div>
         <span>0.02 g of CO<sub>2</sub>/view</span>
     </a>

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main class="flex flex-col mt-8 sm:mt-16">
+<main class="flex flex-col mt-8 sm:mt-8">
 
     <?php snippet('blocks/container', slots: true) ?>
     <?php slot('content') ?>

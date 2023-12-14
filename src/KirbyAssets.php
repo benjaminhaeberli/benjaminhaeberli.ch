@@ -12,7 +12,7 @@ final class KirbyAssets
      * Creates one versioned CSS link tag
      *
      * @param string $relative_url Relative file url like `assets/public.css`
-     * @param string|array|null $options
+     * @param string|array<mixed>|null $options
      */
     public static function versionedCss(string $relative_url, string|array $options = null): string
     {
@@ -29,7 +29,7 @@ final class KirbyAssets
      * Creates a versioned script tag to load a javascript file
      *
      * @param string $relative_url Relative file url like `assets/app.js`
-     * @param string|array|null $options
+     * @param string|array<mixed>|null $options
      */
     public static function versionedJs(string $relative_url, string|array $options = null): string
     {
@@ -46,7 +46,6 @@ final class KirbyAssets
      * Execute `filemtime()` for a given relative file url
      *
      * @param string $relative_url Relative file url (example : `assets/public.css`)
-     * @return boolean
      */
     public static function filemtime(string $relative_url): int|false
     {

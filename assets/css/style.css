@@ -7,7 +7,7 @@
   html {
     @apply text-slate-50 bg-slate-950;
     background-image: url("/assets/images/benjaminhaeberli_banner.avif");
-    background-size: contain;
+    background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
