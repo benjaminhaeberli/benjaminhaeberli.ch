@@ -83,19 +83,19 @@
     "require": {
         "php": "^8.1",
         "benjaminhaeberli/kirby-seo": "^0.3.0",
-        "bnomei/kirby3-boost": "^2.3.1",
+        "bnomei/kirby3-boost": "^2.4.1",
         "bnomei/kirby3-sqlite-cachedriver": "^1.4.2",
         "funkjedi/composer-include-files": "^1.1",
         "getkirby/cms": "^4.0.1",
         "getkirby/staticache": "^1.0.2"
     },
     "require-dev": {
-        "laravel/pint": "^1.10.1",
-        "maximebf/debugbar": "^1.18.2",
-        "pestphp/pest": "^1.23",
-        "phpstan/phpstan": "^1.10.18",
-        "phpunit/phpunit": "^9.6.9",
-        "rector/rector": "^0.17.0",
+        "laravel/pint": "^1.13.7",
+        "maximebf/debugbar": "^1.19.1",
+        "pestphp/pest": "^1.23.1",
+        "phpstan/phpstan": "^1.10.50",
+        "phpunit/phpunit": "^9.6.15",
+        "rector/rector": "^0.17.13",
         "sempro/phpunit-pretty-print": "^1.4"
     }
 }

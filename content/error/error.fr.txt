@@ -1,4 +1,15 @@
-Title: Error
+Title: Erreur 404
+
+----
+
+Message:
+
+Je suis désolé de t'annoncer que cette page n'existe pas.
+Peut-être un jour, qui sait ?
+
+----
+
+Content: Je suis désolé de t'annoncer que cette page n'existe pas. Peut-être un jour, qui sait ?
 
 ----
 

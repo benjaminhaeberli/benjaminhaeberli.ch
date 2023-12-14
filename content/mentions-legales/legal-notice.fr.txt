@@ -10,7 +10,6 @@ Le site web benjaminhaeberli.ch est édité par **Benjamin Haeberli** et publié
 - Avenue Biaudet 2B
 - 1880 Bex, Suisse
 - (link: mailto:hello@benjaminhaeberli.ch text: hello@benjaminhaeberli.ch)
-- (link: tel:+41796684431 text:  +41 79 668 44 31)
 - IDE : CHE-150.194.639
 
 ## Propriété intellectuelle

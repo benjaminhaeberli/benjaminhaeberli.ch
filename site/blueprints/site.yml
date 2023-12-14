@@ -3,61 +3,28 @@ title: Content
 options:
   changeTitle: true
 
-tabs:
-  content:
-    label: Content
-    columns:
-      left:
-        width: 1/2
-        sections:
-          pages:
-            label: Pages
-            status: all
-      right:
-        width: 1/2
-        fields:
-          availability:
-            label:
-              en: Availability
-              fr: Disponibilité
-            type: writer
-            inline: true
-          email:
-            label: Email
-            type: email
-          linkedin:
-            icon: linkedin
-            label: LinkedIn
-            placeholder: 'https://www.linkedin.com/in/benjaminhaeberli/'
-            translate: false
-            type: url
-          github:
-            icon: github
-            label: GitHub
-            placeholder: 'github.com/benjaminhaeberli'
-            translate: false
-            type: url
-          megamenu:
-            label:
-              en: Main menu
-              fr: Menu principal
-            type: structure
-            sortable: true
-            fields:
-              target_page:
-                label: Page
-                type: pages
-                multiple: false
-                required: true
-              svg_icon:
-                label:
-                  en: Icon (SVG)
-                  fr: Icône (SVG)
-                type: textarea
-                size: medium
-                required: true
-              visible:
-                label: Visible?
-                type: toggle
-  meta:
-    label: Meta (todo)
+columns:
+  left:
+    width: 1/2
+    sections:
+      pages:
+        label: Pages
+        status: all
+  right:
+    width: 1/2
+    fields:
+      email:
+        label: Email
+        type: email
+      linkedin:
+        icon: linkedin
+        label: LinkedIn
+        placeholder: 'https://www.linkedin.com/in/benjaminhaeberli/'
+        translate: false
+        type: url
+      github:
+        icon: github
+        label: GitHub
+        placeholder: 'github.com/benjaminhaeberli'
+        translate: false
+        type: url

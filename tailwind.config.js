@@ -26,11 +26,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Work Sans", "Helvetica", ...defaultTheme.fontFamily.sans],
-        serif: ["Crimson Pro", ...defaultTheme.fontFamily.serif],
+        sans: ["Inter", "Helvetica", ...defaultTheme.fontFamily.sans],
+        /* serif: ["Crimson Pro", ...defaultTheme.fontFamily.serif], */
         /* mono: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono], */
       },
       screens: {
+        xs: "576px",
         sm: "640px",
         md: "768px",
         xmd: "896px",
@@ -38,11 +39,6 @@ module.exports = {
         xl: "1280px",
         xxl: "1440px",
         "2xl": "1536px",
-      },
-      colors: {
-        primary: "rgb(var(--color-primary) / 1)",
-        secondary: "rgb(var(--color-secondary) / 1)",
-        tertiary: "rgb(var(--color-tertiary) / 1)",
       },
     },
   },
