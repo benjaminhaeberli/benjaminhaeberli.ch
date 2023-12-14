@@ -25,20 +25,7 @@ Questions:
 
 ----
 
-Submenu:
-
-- 
-  title: Intro
-  slug: introduction
-- 
-  title: Compétences
-  slug: competences
-- 
-  title: Tarifs
-  slug: tarifs
-- 
-  title: 'Avis client·e·s '
-  slug: avis-clients
+Submenu: 
 
 ----
 

@@ -1,9 +1,4 @@
-/* @import "modules/kirbytext.css";
-@import "modules/buttons.css";
-@import "modules/links.css";
-@import "modules/svg-patterns.css";
-@import "components/svg-up.css";
-@import "components/svg-down.css"; */
+@import "modules/kirbytext.css";
 
 @tailwind base;
 
@@ -11,6 +6,9 @@
   /** Styles de base */
   html {
     @apply text-slate-50 bg-slate-950;
+    background-image: url("/assets/images/benjaminhaeberli_banner.avif");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
