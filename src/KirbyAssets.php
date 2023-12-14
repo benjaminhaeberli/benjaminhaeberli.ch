@@ -13,13 +13,12 @@ final class KirbyAssets
      *
      * @param string $relative_url Relative file url like `assets/public.css`
      * @param string|array|null $options
-     * @return string
      */
     public static function versionedCss(string $relative_url, string|array $options = null): string
     {
         $filemtime = static::filemtime($relative_url);
 
-        if (!empty($filemtime)) {
+        if ($filemtime !== 0 && $filemtime !== false) {
             return Html::css($relative_url . '?v=' . $filemtime, $options);
         }
 
@@ -31,13 +30,12 @@ final class KirbyAssets
      *
      * @param string $relative_url Relative file url like `assets/app.js`
      * @param string|array|null $options
-     * @return string
      */
     public static function versionedJs(string $relative_url, string|array $options = null): string
     {
         $filemtime = static::filemtime($relative_url);
 
-        if (!empty($filemtime)) {
+        if ($filemtime !== 0 && $filemtime !== false) {
             return Html::js($relative_url . '?v=' . $filemtime, $options);
         }
 
