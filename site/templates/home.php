@@ -11,7 +11,7 @@
     <?php snippet('blocks/container', slots: true) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
-        <div class="flex flex-col gap-1 text-2xl sm:text-4xl font-bold">
+        <div class="flex flex-col gap-1 text-2xl font-bold sm:text-4xl">
             <p>
                 Salut, je suis Benjamin.
             </p>
@@ -29,7 +29,7 @@
             <?php snippet('svg/logos/tailwindcss') ?>
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
-        <div class="flex flex-wrap gap-x-6 gap-y-4 text-sm sm:text-base">
+        <div class="flex flex-wrap text-sm gap-x-6 gap-y-4 sm:text-base">
             <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">Planifier un appel</a>
             <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 border-slate-50 hover:bg-slate-100 hover:border-slate-100 hover:text-slate-800">Me contacter</a>
         </div>
@@ -131,7 +131,7 @@
                     'job' => 'Développeur web',
                     'url' => 'https://www.linkedin.com/in/miguel-maldonado-071b23194/',
                     'image_src' => '/assets/images/reviews/thomasmiller.avif',
-                    'content' => "<p>J'ai eu la chance de travailler avec Benjamin sur divers projets chez 925. Toujours très agréable de travailler avec un autre passionné du monde du web, j'espère pouvoir continuer à collaborer sur des projets dans le futur!</p><p>Son éthique de travail, ses grandes connaissances et sa communication très claire avec les clients font de lui un freelancer performant. Vivement recommandé!</p>"
+                    'content' => "<p>J'ai eu la chance de travailler avec Benjamin sur divers projets chez 925. Toujours très agréable de travailler avec un autre passionné du monde du web, j'espère pouvoir continuer à collaborer sur des projets dans le futur !</p><p>Son éthique de travail, ses grandes connaissances et sa communication très claire avec les clients font de lui un freelancer performant. Vivement recommandé !</p>"
                 ],
             ]
         ],
