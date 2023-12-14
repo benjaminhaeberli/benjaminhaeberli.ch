@@ -2,7 +2,7 @@
 
 use BenjaminHaeberli\Portfolio\KirbyAssets;
 
-$css = isset($css) ? $css : null;
+$css ??= null;
 
 ?>
 <footer class="flex flex-col items-center justify-between max-w-screen-lg gap-4 mx-auto mt-32 mb-8 text-sm <?= $css ?>">
