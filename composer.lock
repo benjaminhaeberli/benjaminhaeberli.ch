@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "21298660b1b8e8e7d78c1116f120e448",
+    "content-hash": "8236f4e915823c13f8c1e04ab15fbaaa",
     "packages": [
         {
             "name": "benjaminhaeberli/kirby-seo",
@@ -71,30 +71,31 @@
         },
         {
             "name": "bnomei/kirby3-boost",
-            "version": "2.4.1",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bnomei/kirby3-boost.git",
-                "reference": "25843b14119e66cfebff4146294457817aa0c755"
+                "reference": "8f47976667d5c8f1a616b71f3ef2f3587188c32f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/25843b14119e66cfebff4146294457817aa0c755",
-                "reference": "25843b14119e66cfebff4146294457817aa0c755",
+                "url": "https://api.github.com/repos/bnomei/kirby3-boost/zipball/8f47976667d5c8f1a616b71f3ef2f3587188c32f",
+                "reference": "8f47976667d5c8f1a616b71f3ef2f3587188c32f",
                 "shasum": ""
             },
             "require": {
                 "getkirby/composer-installer": "^1.2",
-                "php": ">=8.0.0"
+                "php": ">=8.2.0"
             },
             "require-dev": {
-                "getkirby/cms": ">=3.8.0",
-                "php-coveralls/php-coveralls": "^2.4",
-                "phpunit/phpunit": "^9.5"
+                "getkirby/cms": "^4.0.0-beta.2",
+                "laravel/pint": "^1.13",
+                "nunomaduro/larastan": "^2.6",
+                "pestphp/pest": "^2.24",
+                "pestphp/pest-plugin-type-coverage": "^2.4"
             },
             "suggest": {
                 "bnomei/kirby3-apcu-cachedriver": "APCu based Cache-Driver (with garbage collection)",
-                "bnomei/kirby3-boost-demo": "Try boost with a big set of data",
                 "bnomei/kirby3-lapse": "Cache any data until set expiration time (with automatic keys)",
                 "bnomei/kirby3-mysql-cachedriver": "MySQL based Cache-Driver",
                 "bnomei/kirby3-php-cachedriver": "PHP based Cache-Driver",
@@ -128,9 +129,9 @@
                 "boost",
                 "cache",
                 "file",
-                "kirby3",
-                "kirby3-cms",
-                "kirby3-plugin",
+                "kirby",
+                "kirby-cms",
+                "kirby-plugin",
                 "lookup",
                 "memcache",
                 "memcached",
@@ -146,7 +147,7 @@
             ],
             "support": {
                 "issues": "https://github.com/bnomei/kirby3-boost/issues",
-                "source": "https://github.com/bnomei/kirby3-boost/tree/v2.4.1"
+                "source": "https://github.com/bnomei/kirby3-boost/tree/v4.0.1"
             },
             "funding": [
                 {
@@ -166,7 +167,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-10-20T15:22:50+00:00"
+            "time": "2023-11-06T12:04:51+00:00"
         },
         {
             "name": "bnomei/kirby3-sqlite-cachedriver",
@@ -4314,5 +4315,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
