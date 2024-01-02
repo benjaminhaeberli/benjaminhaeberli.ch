@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🔨 Executing SSH commands
-        uses: appleboy/ssh-action@v1.0.0
+        uses: appleboy/ssh-action@v1.0.2
         env:
           SSH_DIR: ${{ secrets.SSH_DIR }}
         with:
