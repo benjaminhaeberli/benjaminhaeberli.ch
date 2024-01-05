@@ -34,7 +34,7 @@
     "concurrently": "^8.2.0",
     "license-checker": "^25.0.1",
     "live-server": "^1.1.0",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.33",
     "postcss-cli": "^10.1.0",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-import": "^15.1.0",
