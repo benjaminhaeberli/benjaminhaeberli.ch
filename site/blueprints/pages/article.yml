@@ -1,7 +1,7 @@
 title:
-  en: Blog
-  fr: Blog
-icon: 📚
+  en: Post
+  fr: Article
+icon: 📰
 
 columns:
   - width: 7/12
@@ -14,10 +14,6 @@ columns:
             label: Accroche du blog
             type: textarea
             size: small
-      pages:
-        type: pages
-        label: Articles
-        templates: article
   - width: 5/12
     icon: text
     fields:

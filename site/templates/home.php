@@ -26,7 +26,7 @@
         <div class="flex flex-wrap items-center gap-6">
             <?php snippet('svg/logos/laravel') ?>
             <?php snippet('svg/logos/kirbycms') ?>
-            <?php snippet('svg/logos/nuxtjs') ?>
+            <?php snippet('svg/logos/mysql') ?>
             <?php snippet('svg/logos/tailwindcss') ?>
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
