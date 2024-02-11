@@ -18,7 +18,7 @@
 ### Requirements
 
 - [PHP](https://secure.php.net/manual/en/install.php) ^8.1
-- [Composer](https://getcomposer.org/download/) >= 2.4.2
+- [Composer](https://getcomposer.org/download/) >= 2.5.0
 - [Node.js](http://nodejs.org/) >= 16.13
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) >= 8.19.2
 
@@ -39,17 +39,13 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 - `composer lint`
 - `composer test`
 - `composer fix:composer`
-- `npm run prettier:write`
+- `npm run prettier`
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
 
 ## CI/CD 🧙‍♂️
 
 > Powered by GitHub Actions
-
-### Dependabot (with auto-merge)
-
-The `dependabot-auto-merge.yml` workflow in `.github\workflows` allow to auto-merge dependabot pull requests for for semver-minor & semver-patch updates.
 
 ### Deployment using FTP
 

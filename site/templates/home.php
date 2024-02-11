@@ -8,6 +8,7 @@
 <main class="flex flex-col mt-8 sm:mt-24">
 
     <!-- Hero -->
+
     <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
