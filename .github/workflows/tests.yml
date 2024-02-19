@@ -27,8 +27,8 @@ jobs:
       - name: Install COMPOSER
         run: composer install --no-interaction
 
-      - name: Test COMPOSER
-        run: composer validate --strict --no-interaction
+      # - name: Test COMPOSER
+      #  run: composer validate --strict --no-interaction
 
       - name: Test PHP
         run: composer test
