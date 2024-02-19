@@ -2,6 +2,19 @@ Title: Blog
 
 ----
 
+Example: 
+
+----
+
+Kirbyseoobject:
+
+kirbyseometatitle: ""
+kirbyseometadesc: ""
+kirbyseokeywords: ""
+kirbyseocanonicalurl: ""
+
+----
+
 Hero-title: Blog
 
 ----

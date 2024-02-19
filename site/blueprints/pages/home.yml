@@ -8,28 +8,10 @@ columns:
     icon: text
     label: Content
     fields:
-      hero_title:
-        label: Hero - Title
-        type: textarea
-        size: medium
-      hero_text:
-        label: Hero - Text
+      example:
+        label: Example
         type: textarea
         size: small
-      questions:
-        label: Questions (FAQ)
-        type: structure
-        sortable: true
-        fields:
-          title:
-            label: Title
-            type: text
-          answer:
-            label: Answer
-            type: writer
-          open:
-            label: Open?
-            type: toggle
   - width: 5/12
     icon: text
     label: Content

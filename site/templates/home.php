@@ -8,6 +8,7 @@
 <main class="flex flex-col mt-8 sm:mt-24">
 
     <!-- Hero -->
+
     <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
@@ -25,7 +26,7 @@
         <div class="flex flex-wrap items-center gap-6">
             <?php snippet('svg/logos/laravel') ?>
             <?php snippet('svg/logos/kirbycms') ?>
-            <?php snippet('svg/logos/nuxtjs') ?>
+            <?php snippet('svg/logos/mysql') ?>
             <?php snippet('svg/logos/tailwindcss') ?>
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
