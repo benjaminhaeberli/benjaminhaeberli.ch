@@ -4,6 +4,7 @@
 /**
  * This file is called at a higher priority and define critical settings.
  * It's done in composer.json in "include_files" key.
+ * Necessary to use some third-party libraries like PHPStan or Ray.
  * @see https://github.com/funkjedi/composer-include-files
  */
 
