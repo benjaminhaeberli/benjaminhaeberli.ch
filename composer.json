@@ -51,6 +51,11 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "extra": {
+        "include_files": [
+            "src/bootstrap.php"
+        ]
+    },
     "scripts": {
         "serve": [
             "Composer\\Config::disableProcessTimeout",
@@ -64,7 +69,6 @@
         "test:types": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyze --ansi",
         "test:unit": "./vendor/bin/pest --colors=always",
         "test": [
-            "@fake:refacto",
             "@fake:lint",
             "@test:types",
             "@test:unit"
