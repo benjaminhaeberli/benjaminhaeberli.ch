@@ -24,11 +24,12 @@
 
 ### Installation
 
-1. `composer install`
-2. `npm install`
-3. Copy `.\.env.development.example` to `.\.env`
-4. `npm run watch`
-5. `composer serve`
+```bash
+composer install
+npm install
+npm run watch
+composer serve
+```
 
 More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
