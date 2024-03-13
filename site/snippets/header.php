@@ -3,6 +3,9 @@
 use BenjaminHaeberli\Portfolio\KirbyAssets;
 use Kirby\Cms\Url;
 
+/* <?= KirbyAssets::versionedJs('assets/js/scrollreveal.min.js') ?>
+<?= KirbyAssets::versionedCss('assets/public.css') ?> */
+
 ?>
 <!DOCTYPE html>
 <html lang="<?= kirby()->languageCode() ?>">
@@ -15,8 +18,19 @@ use Kirby\Cms\Url;
     <link rel="icon" href="<?= Url::to('assets/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/svg+xml" href="<?= Url::to('/assets/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/png" href="<?= Url::to('/assets/favicon/favicon.png') ?>">
-    <?= KirbyAssets::versionedJs('assets/js/scrollreveal.min.js') ?>
-    <?= KirbyAssets::versionedCss('assets/public.css') ?>
+    <?= vite(['assets/css/style.css']) ?>
+    <script type="module">
+        import {
+            codeToHtml
+        } from 'https://esm.sh/shiki@1.1.7'
+
+        document.querySelectorAll('.shiki').forEach(async (el) => {
+            el.innerHTML = await codeToHtml(el.innerHTML, {
+                lang: el.getAttribute('data-lang'),
+                theme: 'rose-pine'
+            })
+        })
+    </script>
 </head>
 
 <body>

@@ -1,5 +1,0 @@
-Title: Make Kirby more intellisense friendly
-
-----
-
-Uuid: TgGOUxzjbf6KW2N0

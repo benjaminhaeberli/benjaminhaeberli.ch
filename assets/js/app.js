@@ -3,9 +3,10 @@ console.log(
 );
 console.log("🇨🇭 Developed by Benjamin Haeberli (https://benjaminhaeberli.ch)");
 
-ScrollReveal().reveal(".to-reveal", {
+/* ScrollReveal().reveal(".to-reveal", {
   duration: 650,
   interval: 200,
   origin: "left",
   distance: "48px",
 });
+ */

@@ -1,5 +1,7 @@
 <?php
 
+use LukasKleinschmidt\Vite;
+
 header('X-Frame-Options: sameorigin');
 header('X-XSS-Protection: 1; mode=block');
 header('X-Content-Type-Options: nosniff');
@@ -23,5 +25,9 @@ return [
     ],
     'bnomei.boost.patch.files' => true,
     # 'bnomei.boost.cache' => ['type' => 'sqlite'],
-    'routes' => require_once __DIR__ . '/routes.php'
+    'routes' => require_once __DIR__ . '/routes.php',
+    'ready' => function () {
+        Vite::instance()
+            ->useBuildDirectory('public/build');
+    },
 ];

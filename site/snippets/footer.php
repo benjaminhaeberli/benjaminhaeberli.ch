@@ -50,7 +50,8 @@ $css ??= null;
     </a>
 
 </footer>
-<?= KirbyAssets::versionedJs('assets/js/app.js', 'defer') ?>
+<?= vite(['assets/js/app.js']) ?>
+<!-- <?= KirbyAssets::versionedJs('assets/js/app.js', 'defer') ?> -->
 <script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js?v=100" nonce="<?= site()->nonce() ?>"></script>
 </body>
 

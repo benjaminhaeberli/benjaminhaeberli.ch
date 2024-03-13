@@ -1,4 +1,4 @@
-@import "modules/kirbytext.css";
+@import "./modules/kirbytext.css";
 
 @tailwind base;
 
@@ -24,3 +24,5 @@
 }
 
 @tailwind utilities;
+
+@config '../../tailwind.config.js';
