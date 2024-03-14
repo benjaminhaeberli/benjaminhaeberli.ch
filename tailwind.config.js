@@ -19,8 +19,8 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: fastGlob.sync([
     "./**/*.php",
-    "./assets/**/*.js",
-    "./assets/**/*.css",
+    "./resources/**/*.js",
+    "./resources/**/*.css",
     "./content/**/*.txt",
   ]),
   theme: {

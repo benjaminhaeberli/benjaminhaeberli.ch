@@ -59,7 +59,7 @@
     "scripts": {
         "serve": [
             "Composer\\Config::disableProcessTimeout",
-            "@php -S localhost:8000 ./kirby/router.php --ansi"
+            "@php -S localhost:8000 ./public/router.php --ansi"
         ],
         "refacto": "./vendor/bin/rector --ansi",
         "lint": "./vendor/bin/pint --ansi",

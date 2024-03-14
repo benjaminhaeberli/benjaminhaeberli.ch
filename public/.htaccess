@@ -1,5 +1,4 @@
 # Kirby .htaccess
-# revision 2020-06-15
 
 # rewrite rules
 <IfModule mod_rewrite.c>

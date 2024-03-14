@@ -49,7 +49,7 @@ $css ??= null;
     </a>
 
 </footer>
-<?= vite(['assets/js/app.js']) ?>
+<?= vite(['resources/js/app.js']) ?>
 <script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js?v=100" nonce="<?= site()->nonce() ?>"></script>
 </body>
 

@@ -14,7 +14,7 @@ use Kirby\Cms\Url;
     <link rel="icon" href="<?= Url::to('/public/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/svg+xml" href="<?= Url::to('/public/favicon/favicon.svg') ?>">
     <link rel="icon" type="image/png" href="<?= Url::to('/public/favicon/favicon.png') ?>">
-    <?= vite(['assets/css/app.css']) ?>
+    <?= vite(['resources/css/app.css']) ?>
     <script type="module">
         import {
             codeToHtml
