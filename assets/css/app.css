@@ -1,0 +1,18 @@
+@import "./modules/kirbytext.css";
+
+@tailwind base;
+
+@layer base {
+  /** Styles de base */
+  html {
+    @apply text-slate-50 bg-slate-950;
+    background-image: url("../../images/benjaminhaeberli_banner.avif");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@config '../../tailwind.config.js';

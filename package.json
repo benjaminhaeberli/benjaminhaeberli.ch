@@ -24,10 +24,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier:check": "prettier . --check",
     "prettier": "prettier . --write",
-    "serve": "concurrently \"postcss ./assets/css/style.css -o ./assets/public.css --watch\"  \"live-server ./\"",
-    "build": "postcss ./assets/css/style.css -o ./assets/public.css",
+    "serve": "live-server ./",
     "dev": "vite",
-    "vite": "vite build"
+    "build": "vite build"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.19.6",

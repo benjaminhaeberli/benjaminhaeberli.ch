@@ -1,20 +1,12 @@
 {
-  "assets/css/style.css": {
-    "file": "assets/style-i2tE-xcv.css",
-    "src": "assets/css/style.css",
+  "assets/css/app.css": {
+    "file": "assets/app-9AQ7zrUE.css",
+    "src": "assets/css/app.css",
     "isEntry": true
-  },
-  "assets/images/benjaminhaeberli_banner.avif": {
-    "file": "assets/benjaminhaeberli_banner-DE2alOPO.avif",
-    "src": "assets/images/benjaminhaeberli_banner.avif"
   },
   "assets/js/app.js": {
-    "file": "assets/app-QzoRPuZq.js",
+    "file": "assets/app-CNkVn0FE.js",
     "src": "assets/js/app.js",
     "isEntry": true
-  },
-  "assets/svg/heroicon_arrow-top-right.svg": {
-    "file": "assets/heroicon_arrow-top-right-C_w_s0h_.svg",
-    "src": "assets/svg/heroicon_arrow-top-right.svg"
   }
 }

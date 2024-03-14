@@ -110,28 +110,28 @@
                     'name' => 'Guillem Salles',
                     'job' => 'Ghostwriter engagé',
                     'url' => 'https://guillemsalles.fr/',
-                    'image_src' => '/assets/images/reviews/guillemsalles.avif',
+                    'image_src' => '/public/images/reviews/guillemsalles.avif',
                     'content' => "<p>Benjamin a fait un super job pour créer mon site web. Des propositions au niveau de l'architecture, de l'hébergement jusqu'aux différentes fonctionnalités son travail a été soigné et précieux, notamment sur le volet de l'impact environnemental. Il intègre les nouvelles fonctionnalités avec réactivité et assure parfaitement la maintenance.</p>"
                 ],
                 [
                     'name' => 'Miguel Maldonado',
                     'job' => 'Lead UI Designer / Artist 2D',
                     'url' => 'https://www.linkedin.com/in/miguel-maldonado-071b23194/',
-                    'image_src' => '/assets/images/reviews/miguelmaldonado.avif',
+                    'image_src' => '/public/images/reviews/miguelmaldonado.avif',
                     'content' => "<p>Benjamin, sans aucun doute, fait partie des collègues les plus dynamiques et les plus appliqués avec lesquels j'ai eu la chance de pouvoir collaborer. En plus de ses compétences expertes dans le domaine du développement web, il est capable d'adaptations et sait apporter avec pertinence son point de vue sur d'autres secteurs dont celui du graphic/web design dont je fais partie.</p><p>Je ne peux que grandement recommander ses aptitudes et son attitude chaleureuse en tant que collègue ! Je lui souhaite bonne chance pour ses projets futurs !</p>"
                 ],
                 [
                     'name' => 'Morgane Raposo',
                     'job' => 'Photographe indépendante',
                     'url' => 'https://morganeraposo.ch/',
-                    'image_src' => '/assets/images/reviews/morganeraposo.avif',
+                    'image_src' => '/public/images/reviews/morganeraposo.avif',
                     'content' => "<p>J'ai fait appel à Benjamin pour refaire mon site internet. Je recherchais quelqu'un de bien organisé et réactif, et je suis super bien tombée ! Benjamin était à l'écoute de mes demandes et besoins, et j'ai senti qu'il s'est vraiment investi pour mon projet. Je sais que si j'ai le moindre souci, je peux compter sur lui pour le régler rapidement. Je le recommande sans hésitation pour vos projets web !</p>"
                 ],
                 [
                     'name' => 'Thomas Miller',
                     'job' => 'Développeur web',
                     'url' => 'https://www.linkedin.com/in/miguel-maldonado-071b23194/',
-                    'image_src' => '/assets/images/reviews/thomasmiller.avif',
+                    'image_src' => '/public/images/reviews/thomasmiller.avif',
                     'content' => "<p>J'ai eu la chance de travailler avec Benjamin sur divers projets chez 925. Toujours très agréable de travailler avec un autre passionné du monde du web, j'espère pouvoir continuer à collaborer sur des projets dans le futur !</p><p>Son éthique de travail, ses grandes connaissances et sa communication très claire avec les clients font de lui un freelancer performant. Vivement recommandé !</p>"
                 ],
             ]
