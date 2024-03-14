@@ -13,6 +13,6 @@ site/cache/
 site/plugins/
 site/sessions/
 
-public.css
+public/
 *.min.js
 *.min.css
