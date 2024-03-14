@@ -61,17 +61,13 @@
             "Composer\\Config::disableProcessTimeout",
             "@php -S localhost:8000 ./public/router.php --ansi"
         ],
-        "refacto": "./vendor/bin/rector --ansi",
-        "lint": "./vendor/bin/pint --ansi",
-        "coverage": "./vendor/bin/pest --colors=always --coverage",
+        "pint": "./vendor/bin/pint --ansi",
         "fake:refacto": "./vendor/bin/rector --dry-run --ansi",
-        "fake:lint": "./vendor/bin/pint --test --ansi",
-        "test:types": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyze --ansi",
-        "test:unit": "./vendor/bin/pest --colors=always",
+        "fake:pint": "./vendor/bin/pint --test --ansi",
+        "phpstan": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyze --ansi",
         "test": [
             "@fake:lint",
-            "@test:types",
-            "@test:unit"
+            "phpstan"
         ],
         "upgrade:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",
         "fix:composer": [

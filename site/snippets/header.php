@@ -11,9 +11,9 @@ use Kirby\Cms\Url;
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <?= snippet('seo/meta') ?>
-    <link rel="icon" href="<?= Url::to('/public/favicon/favicon.svg') ?>">
-    <link rel="icon" type="image/svg+xml" href="<?= Url::to('/public/favicon/favicon.svg') ?>">
-    <link rel="icon" type="image/png" href="<?= Url::to('/public/favicon/favicon.png') ?>">
+    <link rel="icon" href="/public/favicon/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/public/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="/public/favicon/favicon.svg">
     <?= vite(['resources/css/app.css']) ?>
     <script type="module">
         import {

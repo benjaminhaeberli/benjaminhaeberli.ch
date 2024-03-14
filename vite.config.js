@@ -8,9 +8,4 @@ export default defineConfig({
       refresh: ["site/templates/**", "site/snippets/**", "site/models/**"],
     }),
   ],
-  resolve: {
-    alias: {
-      "@": "/public/",
-    },
-  },
 });

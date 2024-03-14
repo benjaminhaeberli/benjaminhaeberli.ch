@@ -35,9 +35,7 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 ### Code quality
 
-- `composer coverage`
-- `composer refacto`
-- `composer lint`
+- `composer pint`
 - `composer test`
 - `composer fix:composer`
 - `npm run prettier`

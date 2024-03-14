@@ -26,8 +26,4 @@ return [
     'bnomei.boost.patch.files' => true,
     # 'bnomei.boost.cache' => ['type' => 'sqlite'],
     'routes' => require_once __DIR__ . '/routes.php',
-    'ready' => function () {
-        Vite::instance()
-            ->useBuildDirectory('public/build');
-    },
 ];
