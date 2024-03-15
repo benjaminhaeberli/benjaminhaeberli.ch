@@ -6,12 +6,6 @@
 Icon
 .DS_Store
 
-# Temporary files
-# ---------------
-
-/media/*
-!/media/index.html
-
 # Lock files
 # ---------------
 
@@ -27,11 +21,9 @@ Icon
 # Kirby
 # (core file, automatically installed with composer)
 # --------------------------------------------------
-/kirby
+/app/core/*
 /vendor
 /node_modules
-/site/plugins/*
-!/site/accounts/index.html
 
 # Development
 # --------------------------------------------------
@@ -42,29 +34,8 @@ Icon
 npm-debug.log
 yarn-error.log
 
-# -------------SECURITY-------------
-# NEVER publish these files via Git!
-# -------------SECURITY-------------
-
-# Cache Files
+# Storage
 # ---------------
+/storage/*
+!/storage/content/
 
-/site/cache/*
-!/site/cache/index.html
-
-# Accounts
-# ---------------
-
-/site/accounts/*
-!/site/accounts/index.html
-
-# Sessions
-# ---------------
-
-/site/sessions/*
-!/site/sessions/index.html
-
-# License
-# ---------------
-
-/site/config/.license

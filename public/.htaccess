@@ -28,15 +28,6 @@ RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 RewriteRule ^[^\/]+\.[a-z]+ index.php [L]
 
 # block all files in the content folder from being accessed directly
-RewriteRule ^content/(.*) index.php [L]
-RewriteRule ^site/(.*) index.php [L]
-RewriteRule ^kirby/(.*) index.php [L]
-
-# block direct access to files under dev folders
-RewriteRule ^docs/(.*) index.php [L]
-RewriteRule ^tests/(.*) index.php [L]
-RewriteRule ^node_modules/(.*) index.php [L]
-RewriteRule ^vendor/(.*) index.php [L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f

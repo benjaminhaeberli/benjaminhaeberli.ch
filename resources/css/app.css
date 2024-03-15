@@ -5,7 +5,7 @@
 @layer base {
   html {
     @apply text-slate-50 bg-slate-950;
-    background-image: url("/public/images/benjaminhaeberli_banner.avif");
+    background-image: url("/images/benjaminhaeberli_banner.avif");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }

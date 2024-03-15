@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ddce626cc78dbaf5922c1f9b46e8413",
+    "content-hash": "d89284f6a51deac3c382f2b3ca290d8e",
     "packages": [
         {
             "name": "benjaminhaeberli/kirby-seo",

@@ -28,7 +28,7 @@
             "BenjaminHaeberli\\Portfolio\\": "src/"
         },
         "classmap": [
-            "site/"
+            "app/"
         ],
         "files": [
             "src/helpers.php"
@@ -44,23 +44,20 @@
     "config": {
         "allow-plugins": {
             "getkirby/composer-installer": true,
-            "funkjedi/composer-include-files": true,
-            "pestphp/pest-plugin": true
+            "funkjedi/composer-include-files": true
         },
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
     },
     "extra": {
+        "kirby-cms-path": "storage/kirby",
+        "kirby-plugin-path": "storage/plugins",
         "include_files": [
             "src/bootstrap.php"
         ]
     },
     "scripts": {
-        "serve": [
-            "Composer\\Config::disableProcessTimeout",
-            "@php -S localhost:8000 ./public/router.php --ansi"
-        ],
         "pint": "./vendor/bin/pint --ansi",
         "fake:refacto": "./vendor/bin/rector --dry-run --ansi",
         "fake:pint": "./vendor/bin/pint --test --ansi",
