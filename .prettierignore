@@ -1,18 +1,13 @@
 *.php
 
-kirby/
-
 vendor/
 node_modules/
 .vscode/
-
-media/
-
-site/accounts/
-site/cache/
-site/plugins/
-site/sessions/
+composer.lock
+composer.json
 
 public/
+storage/
+
 *.min.js
 *.min.css

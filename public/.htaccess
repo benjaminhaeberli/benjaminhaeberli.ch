@@ -18,7 +18,7 @@ RewriteEngine on
 
 # In some environments it's necessary to
 # set the RewriteBase to:
-# RewriteBase /
+RewriteBase /
 
 # block files and folders beginning with a dot, such as .git
 # except for the .well-known folder, which is used for Let's Encrypt and security.txt
@@ -28,6 +28,7 @@ RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 RewriteRule ^[^\/]+\.[a-z]+ index.php [L]
 
 # block all files in the content folder from being accessed directly
+RewriteRule ^content/(.*) index.php [L]
 
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
