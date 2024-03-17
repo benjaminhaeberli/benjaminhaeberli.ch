@@ -1,6 +1,6 @@
 on:
   workflow_run:
-    workflows: ['tests']
+    workflows: ['Code quality ✅']
     branches: [main]
     types:
       - completed

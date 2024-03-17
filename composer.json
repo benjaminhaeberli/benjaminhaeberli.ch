@@ -60,11 +60,9 @@
     },
     "scripts": {
         "pint": "./vendor/bin/pint --ansi",
-        "fake:refacto": "./vendor/bin/rector --dry-run --ansi",
         "fake:pint": "./vendor/bin/pint --test --ansi",
         "phpstan": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyze --ansi",
         "test": [
-            "@fake:pint",
             "phpstan"
         ],
         "upgrade:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",

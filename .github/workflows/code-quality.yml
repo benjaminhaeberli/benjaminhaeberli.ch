@@ -1,0 +1,74 @@
+name: Code quality ✅
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  composer:
+    name: 🧰 Validate composer.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.2
+          extensions: dom, mbstring, zip
+          coverage: none
+
+      - name: Validate Composer
+        run: composer validate
+
+  pint:
+    name: 🎨 Fix styling
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Laravel Pint
+        uses: aglipanci/laravel-pint-action@2.4.0
+
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 🎨 pint
+
+  phpstan:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [ubuntu-latest]
+        php: [8.2]
+        dependencies: ['highest', 'lowest']
+        composer-options: ['--ignore-platform-reqs']
+
+    name: ⚗️ Static analysis - PHP ${{ matrix.php }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, mbstring, zip
+          coverage: none
+
+      - name: Composer install
+      - uses: 'ramsey/composer-install@v3'
+        with:
+          dependency-versions: ${{ matrix.dependencies }}
+          composer-options: ${{ matrix.composer-options }}
+
+      - name: Test PHP
+        run: composer test
