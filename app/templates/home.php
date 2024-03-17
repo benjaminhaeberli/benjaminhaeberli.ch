@@ -44,21 +44,21 @@
     <?php snippet(
         'blocks/basic-section',
         data: [
-                        'title' => 'Travaux',
-                        'logo' => snippet('svg/icons/remixicon-briefcase-3-line', return: true),
-                        'items' => [
-                            [
-                                'name' => ' standard-deluxe.ch',
-                                'url' => 'https://standard-deluxe.ch',
-                                'description' => 'Back-office du site mis en place avec KirbyCMS.'
-                            ],
-                            [
-                                'name' => ' guillemsalles.fr',
-                                'url' => 'https://guillemsalles.fr',
-                                'description' => 'Site vitrine pour un ghostwriter freelance créé avec WordPress.'
+                            'title' => 'Travaux',
+                            'logo' => snippet('svg/icons/remixicon-briefcase-3-line', return: true),
+                            'items' => [
+                                [
+                                    'name' => ' standard-deluxe.ch',
+                                    'url' => 'https://standard-deluxe.ch',
+                                    'description' => 'Back-office du site mis en place avec KirbyCMS.'
+                                ],
+                                [
+                                    'name' => ' guillemsalles.fr',
+                                    'url' => 'https://guillemsalles.fr',
+                                    'description' => 'Site vitrine pour un ghostwriter freelance créé avec WordPress.'
+                                ]
                             ]
-                        ]
-                    ],
+                        ],
         slots: true
     ) ?>
     <?php endsnippet() ?>
