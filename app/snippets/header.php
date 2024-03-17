@@ -15,18 +15,6 @@ use Kirby\Cms\Url;
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="/favicon/favicon.svg">
     <?= vite(['resources/css/app.css']) ?>
-    <script type="module">
-        import {
-            codeToHtml
-        } from 'https://esm.sh/shiki@1.1.7'
-
-        document.querySelectorAll('.shiki').forEach(async (el) => {
-            el.innerHTML = await codeToHtml(el.innerHTML, {
-                lang: el.getAttribute('data-lang'),
-                theme: 'rose-pine'
-            })
-        })
-    </script>
 </head>
 
 <body>

@@ -1,3 +1,4 @@
+@import "./modules/highlight.css";
 @import "./modules/kirbytext.css";
 
 @tailwind base;
