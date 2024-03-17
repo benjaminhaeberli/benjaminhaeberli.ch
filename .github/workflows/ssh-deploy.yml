@@ -27,4 +27,4 @@ jobs:
             ssh-add ~/.ssh/id_portfolio
             rm -rf vendor/
             git pull
-            composer install --no-dev --optimize-autoloader --no-interaction
+            composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
