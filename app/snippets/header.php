@@ -1,6 +1,5 @@
 <?php
 
-use Kirby\Cms\Url;
 
 ?>
 <!DOCTYPE html>

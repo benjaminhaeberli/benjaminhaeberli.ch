@@ -1,6 +1,5 @@
 <?php
 
-use Treast\KirbyDebugbar\Debugbar;
 
 $css ??= null;
 

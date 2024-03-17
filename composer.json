@@ -64,7 +64,7 @@
         "fake:pint": "./vendor/bin/pint --test --ansi",
         "phpstan": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyze --ansi",
         "test": [
-            "@fake:lint",
+            "@fake:pint",
             "phpstan"
         ],
         "upgrade:composer": "composer update --prefer-stable --no-interaction --prefer-dist --ansi && composer validate --strict --ansi",

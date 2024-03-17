@@ -1,10 +1,10 @@
 parameters:
   paths:
-    - site/config/
-    - site/languages
-    - site/models/
+    - app/models/
+    - config/
+    - lang/
     - src/
-    - tests/
+    # - tests/
 
   level: 6
   #  excludePaths:

@@ -1,6 +1,5 @@
 <?php
 
-use LukasKleinschmidt\Vite;
 
 header('X-Frame-Options: sameorigin');
 header('X-XSS-Protection: 1; mode=block');
