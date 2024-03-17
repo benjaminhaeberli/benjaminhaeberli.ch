@@ -7,8 +7,8 @@ parameters:
     # - tests/
 
   level: 6
-  #  excludePaths:
-  #    - site/config/routes.php
+#     excludePaths:
+#         - vendor/
 #  ignoreErrors:
 #    - "#Anonymous function with return type void returns void but should not return anything#"
 #
