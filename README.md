@@ -17,10 +17,10 @@
 
 ### Requirements
 
-- [PHP](https://secure.php.net/manual/en/install.php) ^8.1
-- [Composer](https://getcomposer.org/download/) >= 2.5.0
-- [Node.js](http://nodejs.org/) >= 16.13
-- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) >= 8.19.2
+- [PHP](https://secure.php.net/manual/en/install.php)
+- [Composer](https://getcomposer.org/download/)
+- [Node.js](http://nodejs.org/)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ### Installation
 
