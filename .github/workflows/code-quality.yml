@@ -34,7 +34,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT_AUTO_COMMIT }}
+          ssh-key: ${{secrets.GIT_AUTO_COMMIT}}
 
       - name: Laravel Pint
         uses: aglipanci/laravel-pint-action@latest
