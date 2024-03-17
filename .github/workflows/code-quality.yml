@@ -25,6 +25,7 @@ jobs:
         run: composer validate
 
   pint:
+    if: github.actor !== 'github-actions[bot]'
     name: 🎨 Fix styling
     runs-on: ubuntu-latest
     permissions:
@@ -43,6 +44,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 🎨 pint
+          commit_user_name: github-actions[bot]
+          commit_author: GitHub Actions <actions@github.com>
 
   phpstan:
     runs-on: ${{ matrix.os }}

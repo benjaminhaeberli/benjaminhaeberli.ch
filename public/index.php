@@ -5,7 +5,7 @@ include dirname(__DIR__) . '/vendor/autoload.php';
 $base = dirname(__DIR__);
 $app = $base . '/app';
 $storage = $base . '/storage';
-$resources = $base . '/resources';
+$views = $base . '/resources/views';
 
 $kirby = new Kirby\Cms\App([
     'roots' => [
@@ -14,6 +14,8 @@ $kirby = new Kirby\Cms\App([
         'base'      => $base,
         'config'    => $base . '/config',
         'languages' => $base . '/lang',
+        'snippets'  => $views . '/snippets',
+        'templates'  => $views . '/templates',
         'storage'   => $storage,
         'license'   => $storage . '.license',
         'accounts'  => $storage . '/accounts',
