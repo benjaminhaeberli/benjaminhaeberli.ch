@@ -1,17 +1,8 @@
 <?php
+
+
 $highlighter = new \Tempest\Highlight\Highlighter();
-
-$code = $highlighter->parse(htmlentities("<?php
-
-use Treast\KirbyDebugbar\Debugbar;
-
-if (!function_exists('debug')) {
-    function debug(): Treast\KirbyDebugbar\Logger
-    {
-        return Debugbar::getLogger();
-    }
-}"), 'php');
-
+$code = $highlighter->parse("<?php echo 'Test' ?>", 'php');
 
 ?>
 
@@ -30,7 +21,7 @@ if (!function_exists('debug')) {
                 <a href="/" class="underline hover:no-underline ">Retour à l'accueil</a>
             </div>
 
-            <pre class="text-black bg-white"><code><?= $code ?></code></pre>
+            <pre class="text-sm bg-slate-900"><code><?= $code ?></code></pre>
         </div>
     </section>
 </main>

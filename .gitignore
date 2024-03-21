@@ -2,13 +2,11 @@
 
 # System files
 # ------------
-
 Icon
 .DS_Store
 
 # Lock files
 # ---------------
-
 .lock
 
 # Editors
@@ -19,9 +17,9 @@ Icon
 /.idea
 
 # Kirby
-# (core file, automatically installed with composer)
+# (core file, automatically installed with composer or generated)
 # --------------------------------------------------
-/app/core/*
+/public/media
 /vendor
 /node_modules
 
@@ -35,6 +33,7 @@ npm-debug.log
 yarn-error.log
 
 # Storage
+# (cache,accounts, plugins, sessions)
 # ---------------
 /storage/*
 !/storage/content/

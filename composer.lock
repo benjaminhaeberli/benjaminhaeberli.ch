@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d24eeff4dc92964c2e253116beb83f5",
+    "content-hash": "b4b12b486368e02e0deb697052c6ed6d",
     "packages": [
         {
             "name": "benjaminhaeberli/kirby-seo",
@@ -1587,12 +1587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tempestphp/highlight.git",
-                "reference": "02393b527f889457bff53959a98c58e812f0b7cf"
+                "reference": "04a546dc16ac8eb78f3dca5b62e128804a5de975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tempestphp/highlight/zipball/02393b527f889457bff53959a98c58e812f0b7cf",
-                "reference": "02393b527f889457bff53959a98c58e812f0b7cf",
+                "url": "https://api.github.com/repos/tempestphp/highlight/zipball/04a546dc16ac8eb78f3dca5b62e128804a5de975",
+                "reference": "04a546dc16ac8eb78f3dca5b62e128804a5de975",
                 "shasum": ""
             },
             "require": {
@@ -1633,7 +1633,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-17T13:40:25+00:00"
+            "time": "2024-03-21T07:53:30+00:00"
         }
     ],
     "packages-dev": [
@@ -1826,16 +1826,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.62",
+            "version": "1.10.64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "cd5c8a1660ed3540b211407c77abf4af193a6af9"
+                "reference": "fb9f270daffedcb5ff46275dcafe92538b1bc4bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/cd5c8a1660ed3540b211407c77abf4af193a6af9",
-                "reference": "cd5c8a1660ed3540b211407c77abf4af193a6af9",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/fb9f270daffedcb5ff46275dcafe92538b1bc4bb",
+                "reference": "fb9f270daffedcb5ff46275dcafe92538b1bc4bb",
                 "shasum": ""
             },
             "require": {
@@ -1884,7 +1884,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-13T12:27:20+00:00"
+            "time": "2024-03-21T09:57:47+00:00"
         },
         {
             "name": "psr/container",
@@ -2599,8 +2599,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

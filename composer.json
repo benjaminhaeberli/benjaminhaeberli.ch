@@ -75,7 +75,7 @@
         ]
     },
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "benjaminhaeberli/kirby-seo": "^0.3.0",
         "bnomei/kirby3-boost": "^2.4.1",
         "bnomei/kirby3-sqlite-cachedriver": "^1.4.2",

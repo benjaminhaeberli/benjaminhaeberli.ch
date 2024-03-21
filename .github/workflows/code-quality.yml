@@ -17,7 +17,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.2
+          php-version: 8.3
           extensions: dom, mbstring, zip
           coverage: none
 
@@ -44,8 +44,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 🎨 pint
-          commit_user_name: github-actions[bot]
-          commit_author: GitHub Actions <actions@github.com>
 
   phpstan:
     runs-on: ${{ matrix.os }}
@@ -53,7 +51,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [8.2]
+        php: [8.3]
         dependencies: ['highest', 'lowest']
         composer-options: ['--ignore-platform-reqs']
 
