@@ -24,9 +24,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier:check": "prettier . --check",
     "prettier": "prettier . --write",
-    "serve": "live-server ./",
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "watch": "vite build --watch"
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.19.6",

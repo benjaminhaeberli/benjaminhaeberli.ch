@@ -16,7 +16,7 @@ $code = $highlighter->parse("<?php echo 'Test' ?>", 'php');
             </h1>
             <?= page()->message()->kt() ?>
 
-
+            <div class="bg-red-500">ee</div>
             <div>
                 <a href="/" class="underline hover:no-underline ">Retour à l'accueil</a>
             </div>
