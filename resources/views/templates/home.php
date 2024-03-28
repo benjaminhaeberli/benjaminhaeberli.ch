@@ -5,11 +5,10 @@
 
 <?php snippet('header') ?>
 
-<main class="flex flex-col mt-8 sm:mt-24">
+<main class="flex flex-col mt-8 sm:mt-32">
 
     <!-- Hero -->
-
-    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
+    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => '']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-1 text-2xl font-bold sm:text-4xl">

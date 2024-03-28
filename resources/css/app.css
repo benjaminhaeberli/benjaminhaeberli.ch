@@ -19,3 +19,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/**
+ * Google Translate (temporary
+ */
+.goog-te-gadget {
+  display: flex;
+  justify-content: center;
+  font-size: 0px !important;
+}
+.goog-te-gadget span {
+  display: none;
+}

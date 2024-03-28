@@ -18,3 +18,7 @@ columns:
     icon: text
     fields:
       seo: fields/seo/meta
+      publishedAt:
+        label: Publié le
+        type: date
+        required: true

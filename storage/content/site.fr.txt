@@ -2,7 +2,10 @@ Title: Benjamin Haeberli
 
 ----
 
-Availability: Disponible dès le 1er avril 2023
+Navigation:
+
+- page://SKbOjmhLmukEQmu1
+- page://4FrQw653OSLAzLEA
 
 ----
 
@@ -15,6 +18,10 @@ Linkedin: https://www.linkedin.com/in/benjaminhaeberli/
 ----
 
 Github: https://github.com/benjaminhaeberli
+
+----
+
+Availability: Disponible dès le 1er avril 2023
 
 ----
 
@@ -73,3 +80,23 @@ Main-menu:
 ----
 
 Twitter: https://www.linkedin.com/in/benjaminhaeberli/
+
+----
+
+Menu:
+
+- 
+  id: home
+  image:
+    back: pattern
+    color: gray-500
+    cover: false
+    icon: 🏠
+  info: ""
+  link: /pages/home
+  sortable: true
+  text: Accueil
+  uuid: page://SKbOjmhLmukEQmu1
+  dragText: '(link: page://SKbOjmhLmukEQmu1 text: Accueil)'
+  hasChildren: false
+  url: http://benjaminhaeberli.test

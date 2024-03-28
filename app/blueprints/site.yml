@@ -10,6 +10,12 @@ columns:
       pages:
         label: Pages
         status: all
+      content:
+        type: fields
+        fields:
+          navigation:
+            label: Navigation
+            type: pages
   right:
     width: 1/2
     fields:

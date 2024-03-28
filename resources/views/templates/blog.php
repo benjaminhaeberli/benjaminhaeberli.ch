@@ -8,22 +8,31 @@ $code = $highlighter->parse("<?php echo 'Test' ?>", 'php');
 
 <?php snippet('header') ?>
 
-<main class="flex flex-col mt-32">
-    <section class="flex px-4 pt-24 md:px-16 lg:px-0">
-        <div class="flex flex-col gap-1 mx-auto">
-            <h1 class="text-4xl font-bold text-center">
-                <?= page()->title() ?>
-            </h1>
-            <?= page()->message()->kt() ?>
-
-            <div class="bg-red-500">ee</div>
-            <div>
-                <a href="/" class="underline hover:no-underline ">Retour à l'accueil</a>
-            </div>
-
-            <pre class="text-sm bg-slate-900"><code><?= $code ?></code></pre>
+<main class="flex flex-col mt-8 sm:mt-24">
+    <?php snippet('blocks/container', slots: true, data: [
+        'css' => 'to-reveal', 'paddingTop' => 'pt-8', 'gap' => 'gap-6'
+    ]) ?>
+    <?php slot('content') ?>
+    <div class="flex flex-col gap-2">
+        <h1 class="text-xl font-bold sm:text-3xl">
+            <?= page()->title() ?>
+        </h1>
+        <div class="font-medium text-slate-300">
+            <?= page()->accroche()->kt() ?>
         </div>
-    </section>
+    </div>
+    <div class="flex flex-col gap-2">
+        <?php foreach ($page->children()->listed()->flip() as $article) : ?>
+            <article class="flex items-center justify-between">
+                <a href="<?= $article->url() ?>" class="hover:underline">
+                    <h2><?= $article->title() ?></h2>
+                </a>
+                <span class="text-sm "><?= formatDate($article->publishedAt()->toDate('Y-m-d')) ?></span>
+            </article>
+        <?php endforeach ?>
+    </div>
+    <?php endslot() ?>
+    <?php endsnippet() ?>
 </main>
 
 <?php snippet('footer') ?>

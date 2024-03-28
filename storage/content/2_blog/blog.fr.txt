@@ -2,7 +2,7 @@ Title: Blog
 
 ----
 
-Example: 
+Accroche: J'écris des trucs à propos de Laravel, PHP, mais aussi de l'entrepreneuriat.
 
 ----
 
@@ -12,6 +12,18 @@ kirbyseometatitle: ""
 kirbyseometadesc: ""
 kirbyseokeywords: ""
 kirbyseocanonicalurl: ""
+
+----
+
+Werwer: 
+
+----
+
+Heading: 
+
+----
+
+Example: I write **things **about tech.
 
 ----
 

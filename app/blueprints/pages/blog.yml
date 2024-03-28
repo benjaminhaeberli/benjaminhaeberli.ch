@@ -10,7 +10,7 @@ columns:
       fields:
         type: fields
         fields:
-          example:
+          accroche:
             label: Accroche du blog
             type: textarea
             size: small

@@ -13,7 +13,7 @@ $css ??= null;
         </ol>
     </nav>
 
-    <ol class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
+    <ol class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 notranslate">
         <li>
             <a href='<?= site()->github() ?>' target="_blank" class="flex items-center gap-1 group text-slate-400 hover:text-slate-100 focus:outline-dashed outline-1 outline-offset-2">
                 <svg class="w-4 h-4 fill-slate-400 group-hover:fill-slate-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -49,6 +49,15 @@ $css ??= null;
 
 </footer>
 <?= vite(['resources/js/app.js']) ?>
+<script defer type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'fr'
+        }, 'temporary_translator');
+    }
+</script>
+
+<script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js?v=100" nonce="<?= site()->nonce() ?>"></script>
 </body>
 

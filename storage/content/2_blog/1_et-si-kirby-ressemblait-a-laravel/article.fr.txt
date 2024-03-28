@@ -1,0 +1,27 @@
+Title: Et si Kirby ressemblait à Laravel ?
+
+----
+
+Example:
+
+Test de code
+
+```php
+Du code php
+```
+
+----
+
+Kirbyseoobject: 
+
+----
+
+Publishedat: 2024-03-28
+
+----
+
+Published: 2024-03-28
+
+----
+
+Uuid: TgGOUxzjbf6KW2N0
