@@ -31,3 +31,9 @@
 .goog-te-gadget span {
   display: none;
 }
+#temporary_translator {
+  @apply bg-gray-200;
+  margin: auto;
+  width: 158px;
+  min-height: 24px;
+}

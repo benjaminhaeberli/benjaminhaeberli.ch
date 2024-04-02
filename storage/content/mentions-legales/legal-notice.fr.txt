@@ -7,8 +7,8 @@ Main-content:
 Le site web benjaminhaeberli.ch est édité par **Benjamin Haeberli** et publié sous licence (link: https://github.com/benjaminhaeberli/benjaminhaeberli.ch/blob/main/LICENSE text: GNU AGPL v3.0 target:_blank). Pour toute demande technique, veuillez vous référer à l’administrateur : hello@benjaminhaeberli.ch
 
 - Benjamin Haeberli
-- Avenue Biaudet 2B
-- 1880 Bex, Suisse
+- Chemn des Lieugex 9
+- 1860 Aigle
 - (link: mailto:hello@benjaminhaeberli.ch text: hello@benjaminhaeberli.ch)
 - IDE : CHE-150.194.639
 

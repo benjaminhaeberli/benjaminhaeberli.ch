@@ -52,15 +52,13 @@ $css ??= null;
 <script defer type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-            pageLanguage: 'fr'
+            pageLanguage: 'fr',
+            includedLanguages: 'en,zh-CN,hi,es,ar,ru,pt ,de',
         }, 'temporary_translator');
     }
 </script>
-
-<script defer type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script defer data-domain="benjaminhaeberli.ch" src="https://collect.benjaminhaeberli.ch/assets/collect.js?v=100" nonce="<?= site()->nonce() ?>"></script>
 </body>
-
-
 
 </html>

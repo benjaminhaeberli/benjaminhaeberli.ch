@@ -23,7 +23,7 @@ $code = $highlighter->parse("<?php echo 'Test' ?>", 'php');
     </div>
     <div class="flex flex-col gap-2">
         <?php foreach ($page->children()->listed()->flip() as $article) : ?>
-            <article class="flex items-center justify-between">
+            <article class="flex flex-wrap items-center justify-between">
                 <a href="<?= $article->url() ?>" class="hover:underline">
                     <h2><?= $article->title() ?></h2>
                 </a>
