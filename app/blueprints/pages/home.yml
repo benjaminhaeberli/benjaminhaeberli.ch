@@ -8,10 +8,12 @@ columns:
     icon: text
     label: Content
     fields:
-      example:
-        label: Example
-        type: textarea
-        size: small
+      works:
+        label: Travaux
+        extends: fields/references
+      openSource:
+        label: Open source
+        extends: fields/references
   - width: 5/12
     icon: text
     label: Content

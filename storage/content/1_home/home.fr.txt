@@ -2,6 +2,23 @@ Title: Accueil
 
 ----
 
+Works:
+
+-
+  name: standard-deluxe.ch
+  description: >
+    Back-office du site mis en place avec
+    KirbyCMS.
+  url: https://standard-deluxe.ch/
+-
+  name: guillemsalles.fr
+  description: >
+    Site vitrine pour un ghostwriter
+    freelance créé avec WordPress.
+  url: https://guillemsalles.fr/
+
+----
+
 Hero-title:
 
 ----

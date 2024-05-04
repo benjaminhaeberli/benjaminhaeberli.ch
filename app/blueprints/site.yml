@@ -7,30 +7,44 @@ columns:
   left:
     width: 1/2
     sections:
-      pages:
-        label: Pages
-        status: all
       content:
         type: fields
         fields:
+          pagesContent:
+            label: Pages
+            type: headline
+      pages:
+        label: Pages
+        status: all
+
+  right:
+    width: 1/2
+    sections:
+      global:
+        type: fields
+        fields:
+          headlineGlobal:
+            label: Global
+            type: headline
+          email:
+            label: Email
+            type: email
+            width: 1/3
+          linkedin:
+            icon: linkedin
+            label: LinkedIn
+            placeholder: 'https://www.linkedin.com/in/benjaminhaeberli/'
+            translate: false
+            type: url
+            width: 1/3
+          github:
+            icon: github
+            label: GitHub
+            placeholder: 'github.com/benjaminhaeberli'
+            translate: false
+            type: url
+           width: 1/3
           navigation:
             label: Navigation
             type: pages
-  right:
-    width: 1/2
-    fields:
-      email:
-        label: Email
-        type: email
-      linkedin:
-        icon: linkedin
-        label: LinkedIn
-        placeholder: 'https://www.linkedin.com/in/benjaminhaeberli/'
-        translate: false
-        type: url
-      github:
-        icon: github
-        label: GitHub
-        placeholder: 'github.com/benjaminhaeberli'
-        translate: false
-        type: url
+

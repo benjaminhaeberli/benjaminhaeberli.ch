@@ -2,10 +2,20 @@ Title: Benjamin Haeberli
 
 ----
 
-Navigation:
+Works:
 
-- page://SKbOjmhLmukEQmu1
-- page://4FrQw653OSLAzLEA
+- 
+  name: standard-deluxe.ch
+  description: >
+    Back-office du site mis en place avec
+    KirbyCMS.
+  url: https://standard-deluxe.ch/
+- 
+  name: guillemsalles.fr
+  description: >
+    Site vitrine pour un ghostwriter
+    freelance créé avec WordPress.
+  url: https://guillemsalles.fr/
 
 ----
 
@@ -18,6 +28,13 @@ Linkedin: https://www.linkedin.com/in/benjaminhaeberli/
 ----
 
 Github: https://github.com/benjaminhaeberli
+
+----
+
+Navigation:
+
+- page://SKbOjmhLmukEQmu1
+- page://4FrQw653OSLAzLEA
 
 ----
 

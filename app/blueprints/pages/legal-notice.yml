@@ -7,7 +7,7 @@ columns:
   content:
     icon: text
     label: Content
-    width: 2/3
+    width: 7/12
     fields:
       main_content:
         label:
@@ -18,4 +18,6 @@ columns:
   contentbis:
     icon: text
     label: Content
-    # width: 1/3
+    width: 5/12
+    fields:
+      seo: fields/seo/meta
