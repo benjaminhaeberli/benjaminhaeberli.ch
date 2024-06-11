@@ -2,7 +2,7 @@ Title: Accueil
 
 ----
 
-Works:
+Worksrefs:
 
 -
   name: standard-deluxe.ch
@@ -16,6 +16,50 @@ Works:
     Site vitrine pour un ghostwriter
     freelance créé avec WordPress.
   url: https://guillemsalles.fr/
+
+----
+
+Opensourcerefs:
+
+-
+  name: kirby-seo
+  description: Plugin SEO minimaliste pour Kirby CMS.
+  url: >
+    https://github.com/benjaminhaeberli/kirby-seo
+-
+  name: checklist-design-web
+  description: Pour les designers et les développeurs.
+  url: >
+    https://github.com/benjaminhaeberli/checklist-design-web
+-
+  name: modeles-rgpd-web
+  description: >
+    Modèles de politique de
+    confidentialité, mentions légales,
+    etc.
+  url: >
+    https://github.com/benjaminhaeberli/modeles-rgpd-web
+
+----
+
+Submenu:
+
+----
+
+Kirbyseoobject:
+
+kirbyseometatitle: >
+  Un développeur engagé pour un code
+  performant et durable | Benjamin
+  Haeberli
+kirbyseometadesc: >
+  Passionné par le développement de
+  solutions éthiques, sur-mesure et
+  écoresponsables, je travaille avec des
+  technologies modernes comme Laravel,
+  Kirby ou encore TailwindCSS.
+kirbyseokeywords: ""
+kirbyseocanonicalurl: ""
 
 ----
 
@@ -39,27 +83,6 @@ Questions:
     distance ?
   answer: "<p>J'habite en Suisse et travaille uniquement à travail, étant déjà engagé à 40% dans une entreprise à Lausanne.</p>"
   open: 'false'
-
-----
-
-Submenu:
-
-----
-
-Kirbyseoobject:
-
-kirbyseometatitle: >
-  Un développeur engagé pour un code
-  performant et durable | Benjamin
-  Haeberli
-kirbyseometadesc: >
-  Passionné par le développement de
-  solutions éthiques, sur-mesure et
-  écoresponsables, je travaille avec des
-  technologies modernes comme Laravel,
-  Kirby ou encore TailwindCSS.
-kirbyseokeywords: ""
-kirbyseocanonicalurl: ""
 
 ----
 

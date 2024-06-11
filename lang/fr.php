@@ -7,8 +7,8 @@ return [
     'locale' => 'fr_FR',
     'name' => 'Français',
     'translations' => [
-        'Street' => 'Adresse',
-        'Content' => 'Contenu'
+        'actions.plan_call' => 'Planifier un appel',
+        'actions.contact_me' => 'Me contacter',
     ],
     'url' => '/'
 ];

@@ -26,7 +26,6 @@ use Kirby\Cms\Auth;
             </div>
         <?php endforeach; ?>
     </nav>
-    <div id="temporary_translator"></div>
     <?php if (kirby()->user()?->isAdmin()) : ?>
         <div class="text-xs text-center">
             <a href="<?= url('panel')  ?>" target="_blank">

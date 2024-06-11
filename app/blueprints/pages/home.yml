@@ -8,10 +8,10 @@ columns:
     icon: text
     label: Content
     fields:
-      works:
+      worksRefs:
         label: Travaux
         extends: fields/references
-      openSource:
+      openSourceRefs:
         label: Open source
         extends: fields/references
   - width: 5/12

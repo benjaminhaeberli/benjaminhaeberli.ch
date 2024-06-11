@@ -5,5 +5,6 @@
     <?= $logo ?>
 </div>
 <?php foreach ($items as $item) : ?>
-    <?php snippet('blocks/basic-item', $item) ?>
+    <?php dump($items); ?>
+    <?php snippet('blocks/basic-item', ['item' => $item])  ?>
 <?php endforeach ?>

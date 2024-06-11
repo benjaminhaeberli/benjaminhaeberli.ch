@@ -1,5 +1,6 @@
 <?php
 
+use Kirby\Toolkit\I18n;
 
 ?>
 
@@ -30,8 +31,12 @@
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
         <div class="flex flex-wrap text-sm gap-x-6 gap-y-4 sm:text-base">
-            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">Planifier un appel</a>
-            <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 border-slate-50 hover:bg-slate-100 hover:border-slate-100 hover:text-slate-800">Me contacter</a>
+            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
+                <?= I18n::translate('actions.plan_call') ?>
+            </a>
+            <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 border-slate-50 hover:bg-slate-100 hover:border-slate-100 hover:text-slate-800">
+                <?= I18n::translate('actions.contact_me') ?>
+            </a>
         </div>
     </div>
     <?php endslot() ?>
@@ -45,18 +50,7 @@
         data: [
             'title' => 'Travaux',
             'logo' => snippet('svg/icons/remixicon-briefcase-3-line', return: true),
-            'items' => [
-                [
-                    'name' => ' standard-deluxe.ch',
-                    'url' => 'https://standard-deluxe.ch',
-                    'description' => 'Back-office du site mis en place avec KirbyCMS.'
-                ],
-                [
-                    'name' => ' guillemsalles.fr',
-                    'url' => 'https://guillemsalles.fr',
-                    'description' => 'Site vitrine pour un ghostwriter freelance créé avec WordPress.'
-                ]
-            ]
+            'items' => page()->worksRefs()->toStructure()
         ],
         slots: true
     ) ?>
@@ -72,23 +66,7 @@
         data: [
             'title' => 'Open source',
             'logo' => snippet('svg/icons/remixicon-hand-heart-line', return: true),
-            'items' => [
-                [
-                    'name' => ' kirby-seo',
-                    'url' => 'https://github.com/benjaminhaeberli/kirby-seo',
-                    'description' => 'Plugin SEO minimaliste pour Kirby CMS. '
-                ],
-                [
-                    'name' => 'checklist-design-web',
-                    'url' => 'https://github.com/benjaminhaeberli/checklist-design-web',
-                    'description' => 'Pour les designers et les développeurs.'
-                ],
-                [
-                    'name' => 'modeles-rgpd-web',
-                    'url' => 'https://github.com/benjaminhaeberli/checklist-design-web',
-                    'description' => 'Modèles de politique de confidentialité, mentions légales, etc.'
-                ]
-            ]
+            'items' => page()->openSourceRefs()->toStructure()
         ],
         slots: true
     ) ?>
@@ -144,3 +122,5 @@
 </main>
 
 <?php snippet('footer', data: ['css' => 'to-reveal']) ?>
+
+use Kirby\Toolkit\I18n;

@@ -2,6 +2,44 @@ Title: Accueil
 
 ----
 
+WorksRefs:
+
+-
+  name: standard-deluxe.ch
+  description: >
+    Back-office du site mis en place avec
+    KirbyCMS.
+  url: https://standard-deluxe.ch/
+-
+  name: guillemsalles.fr
+  description: >
+    Site vitrine pour un ghostwriter
+    freelance créé avec WordPress.
+  url: https://guillemsalles.fr/
+
+----
+
+Submenu:
+
+----
+
+Kirbyseoobject:
+
+kirbyseometatitle: >
+  Un développeur engagé pour un code
+  performant et durable | Benjamin
+  Haeberli
+kirbyseometadesc: >
+  Passionné par le développement de
+  solutions éthiques, sur-mesure et
+  écoresponsables, je travaille avec des
+  technologies modernes comme Laravel,
+  Kirby ou encore TailwindCSS.
+kirbyseokeywords: ""
+kirbyseocanonicalurl: ""
+
+----
+
 Hero-title:
 
 <p class="font-mono font-bold uppercase text-slate-600">Bienvenue, je suis Benjamin Haeberli !</p>
@@ -19,11 +57,11 @@ Hero-text: Si vous êtes un passionné de la performance et de la simplicité, v
 
 Questions:
 
-- 
+-
   title: Quels sont tes tarifs ?
   answer: '<p>Mon tarif horaire est fixé à 110 CHF, mais vous pouvez retrouver tous les détails <strong>dans ce document</strong>.</p>'
   open: 'false'
-- 
+-
   title: >
     Où habites-tu ? Travailles-tu à
     distance ?
@@ -32,7 +70,27 @@ Questions:
 
 ----
 
-Desc: 
+Kirbyseometatitle: Un développeur engagé pour un code performant et durable | Benjamin Haeberli
+
+----
+
+Kirbyseometadesc: Passionné par le développement de solutions éthiques, sur-mesure et écoresponsables, je travaille avec des technologies modernes comme Laravel, Kirby ou encore TailwindCSS.
+
+----
+
+Kirbyseokeywords:
+
+----
+
+Kirbyseocanonicalurl:
+
+----
+
+Desc:
+
+----
+
+Classname: fields
 
 ----
 

@@ -4,8 +4,13 @@ return [
     'code' => 'en',
     'default' => false,
     'direction' => 'ltr',
-    'locale' => 'en_GB',
+    'locale' => [
+        'LC_ALL' => 'en_GB'
+    ],
     'name' => 'English',
-    'translations' => [],
-    'url' => null
+    'translations' => [
+        'actions.plan_call' => 'Plan a call',
+        'actions.contact_me' => 'Contact me',
+    ],
+    'url' => NULL
 ];
