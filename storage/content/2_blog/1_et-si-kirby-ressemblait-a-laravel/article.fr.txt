@@ -2,13 +2,11 @@ Title: Et si Kirby ressemblait à Laravel ?
 
 ----
 
-Example:
+Example: Test de code
 
-Test de code
+----
 
-```php
-Du code php
-```
+Blocks: [{"content":{"text":"<p>On peut travailler avec des <code>Enums</code> :</p>"},"id":"9d85728c-78d4-4124-bfb2-8c98418a78d8","isHidden":false,"type":"text"},{"content":{"code":"‎use App\\Enums\\GenderEnum;\n\nit('returns the correct label for each gender enum case', function () {\n   $expectedLabels = [\n        GenderEnum::WOMEN => 'Femme',\n        GenderEnum::MEN => 'Homme',\n        GenderEnum::NON_BINARY => 'Non-binaire',\n        GenderEnum::GENDER_FLUID => 'Genre fluide',\n        GenderEnum::TRANSGENDER => 'Transgenre',\n        GenderEnum::AGENDER_NEUTRAL => 'Agender neutre',\n        GenderEnum::OTHER => 'Autre',\n    ];\n\n    foreach (GenderEnum::cases() as $case) {\n        expect($case->getLabel())->toBe($expectedLabels[$case]);\n    }\n});","language":"php"},"id":"b9e97a79-d977-42a4-b15e-4ba411dea60d","isHidden":false,"type":"code"}]
 
 ----
 
@@ -17,6 +15,10 @@ Kirbyseoobject:
 ----
 
 Publishedat: 2024-03-28
+
+----
+
+Content: [{"content":{"code":"use App\\Enums\\GenderEnum;\n\nit('returns the correct label for each gender enum case', function () {\n    $expectedLabels = [\n        GenderEnum::WOMEN => 'Femme',\n        GenderEnum::MEN => 'Homme',\n        GenderEnum::NON_BINARY => 'Non-binaire',\n        GenderEnum::GENDER_FLUID => 'Genre fluide',\n        GenderEnum::TRANSGENDER => 'Transgenre',\n        GenderEnum::AGENDER_NEUTRAL => 'Agender neutre',\n        GenderEnum::OTHER => 'Autre',\n    ];\n\n    foreach (GenderEnum::cases() as $case) {\n        expect($case->getLabel())->toBe($expectedLabels[$case]);\n    }\n});","language":"php"},"id":"ca04fdb7-3d02-4c06-a27d-348a4b41bd7b","isHidden":false,"type":"code"}]
 
 ----
 

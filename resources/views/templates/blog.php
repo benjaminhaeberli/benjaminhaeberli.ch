@@ -1,15 +1,11 @@
 <?php
 
-
-$highlighter = new \Tempest\Highlight\Highlighter();
-$code = $highlighter->parse("<?php echo 'Test' ?>", 'php');
-
 ?>
 
 <?php snippet('header') ?>
 
 <main class="flex flex-col mt-8 sm:mt-24">
-    <?php snippet('blocks/container', slots: true, data: [
+    <?php snippet('partials/container', slots: true, data: [
         'css' => 'to-reveal', 'paddingTop' => 'pt-8', 'gap' => 'gap-6'
     ]) ?>
     <?php slot('content') ?>

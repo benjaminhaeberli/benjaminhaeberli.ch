@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="flex flex-col">
-    <?php snippet('blocks/container', slots: true) ?>
+    <?php snippet('partials/container', slots: true) ?>
     <?php slot('content') ?>
     <div class="flex items-center gap-2">
         <h1 class="text-4xl font-bold">

@@ -1,1 +1,7 @@
-@import "/vendor/tempest/highlight/src/Themes/Css/github-dark.css";
+@import "/vendor/tempest/highlight/src/Themes/Css/dracula.css";
+
+pre,
+code {
+  color: #ff79c6;
+  @apply bg-gray-950;
+}

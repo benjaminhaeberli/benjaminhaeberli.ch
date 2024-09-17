@@ -83,7 +83,7 @@
         "getkirby/cms": "^4.1.0",
         "getkirby/staticache": "^1.0.2",
         "lukaskleinschmidt/kirby-laravel-vite": "^2.1",
-        "tempest/highlight": "dev-main"
+        "tempest/highlight": "2.0"
     },
     "require-dev": {
         "laravel/pint": "^1.13.11",

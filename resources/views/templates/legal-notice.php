@@ -2,7 +2,7 @@
 
 <main class="flex flex-col mt-8 sm:mt-8">
 
-    <?php snippet('blocks/container', slots: true) ?>
+    <?php snippet('partials/container', slots: true) ?>
     <?php slot('content') ?>
     <div class="mb-10">
         <a href="/" class="underline hover:no-underline">Retour à l'accueil</a>

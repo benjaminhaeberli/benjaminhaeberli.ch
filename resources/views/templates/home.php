@@ -9,7 +9,7 @@ use Kirby\Toolkit\I18n;
 <main class="flex flex-col mt-8 sm:mt-32">
 
     <!-- Hero -->
-    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => '']) ?>
+    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => '']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-1 text-2xl font-bold sm:text-4xl">
@@ -43,10 +43,10 @@ use Kirby\Toolkit\I18n;
     <?php endsnippet() ?>
 
     <!-- Work -->
-    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
+    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <?php snippet(
-        'blocks/basic-section',
+        'partials/basic-section',
         data: [
             'title' => 'Travaux',
             'logo' => snippet('svg/icons/remixicon-briefcase-3-line', return: true),
@@ -59,10 +59,10 @@ use Kirby\Toolkit\I18n;
     <?php endsnippet() ?>
 
     <!-- Open source -->
-    <?php snippet('blocks/container', slots: true, data: ['css' => 'to-reveal']) ?>
+    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal']) ?>
     <?php slot('content') ?>
     <?php snippet(
-        'blocks/basic-section',
+        'partials/basic-section',
         data: [
             'title' => 'Open source',
             'logo' => snippet('svg/icons/remixicon-hand-heart-line', return: true),
@@ -75,10 +75,10 @@ use Kirby\Toolkit\I18n;
     <?php endsnippet() ?>
 
     <!-- Testimonials -->
-    <?php snippet('blocks/container', slots: true, data: ['fullsize' => true]) ?>
+    <?php snippet('partials/container', slots: true, data: ['fullsize' => true]) ?>
     <?php slot('content') ?>
     <?php snippet(
-        'blocks/reviews-section',
+        'partials/reviews-section',
         data: [
             'title' => 'Témoignages',
             'logo' => snippet('svg/icons/remixicon-sparkling-line', return: true),
@@ -122,5 +122,3 @@ use Kirby\Toolkit\I18n;
 </main>
 
 <?php snippet('footer', data: ['css' => 'to-reveal']) ?>
-
-use Kirby\Toolkit\I18n;

@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <main class="flex flex-col mt-32">
-    <?php snippet('blocks/container', slots: true) ?>
+    <?php snippet('partials/container', slots: true) ?>
     <?php slot('content') ?>
     <div class="flex flex-col max-w-md gap-4 mx-auto mt-8 text-center">
         <h1 class="text-4xl font-bold">
