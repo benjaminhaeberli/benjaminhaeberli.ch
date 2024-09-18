@@ -2,6 +2,42 @@ Title: Accueil
 
 ----
 
+Skillsrefs:
+
+- 
+  name: Front-End
+  description: >
+    HTML/CSS, JavaScript, Alpine.js,
+    TailwindCSS, Vite
+- 
+  name: Back-End
+  description: >
+    PHP, MySQL, SQLite, Laravel, Livewire,
+    API REST
+- 
+  name: CMS
+  description: WordPress, Kirby, Filament
+- 
+  name: Infrastructure
+  description: >
+    Infomaniak, GitHub, Buddy, Vultr, CRON,
+    n8n
+- 
+  name: Éco-conception
+  description: >
+    EcoIndex, Website Carbon, Google
+    Pagespeed
+- 
+  name: Référencement naturel
+  description: Ubersuggest, Plausible, Simple Analytics
+- 
+  name: Gestion de projets
+  description: >
+    Consulting, audit, conception, cahiers
+    des charges, planning
+
+----
+
 Worksrefs:
 
 - 

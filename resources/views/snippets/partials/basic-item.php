@@ -5,7 +5,7 @@
                 <?= $item->name() ?>
             </a>
         </div>
-        <span class="hidden text-slate-400 sm:block">·</span>
+        <span class="hidden text-slate-400 sm:block">&middot;</span>
         <div class="text-slate-400">
             <?= $item->description() ?>
         </div>

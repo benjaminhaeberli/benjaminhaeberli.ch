@@ -8,6 +8,19 @@ columns:
     icon: text
     label: Content
     fields:
+      skillsRefs:
+        label: Compétences
+        type: structure
+        fields:
+          name:
+            label: Nom
+            type: text
+            width: 1/3
+          description:
+            label: Description
+            type: text
+            maxlength: 64
+            width: 2/3
       worksRefs:
         label: Travaux
         extends: fields/references

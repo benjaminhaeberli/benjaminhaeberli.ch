@@ -4,7 +4,8 @@ use Kirby\Toolkit\I18n;
 
 $highlighter = new \Tempest\Highlight\Highlighter();
 /** @var \Kirby\Cms\Block $block */
-$code = '<code>' . $highlighter->parse($block->code()->value, 'php') . '</code>';
+$code = '<code>' . $highlighter->parse($block->code()->value, $block->language()) . '</code>';
+// https://getkirby.com/docs/reference/panel/blocks/code
 ?>
 
 <div class="relative text-xs group">
