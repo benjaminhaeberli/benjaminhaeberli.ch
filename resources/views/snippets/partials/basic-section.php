@@ -4,6 +4,7 @@
     </h2>
     <?= $logo ?>
 </div>
+
 <?php foreach ($items as $item) : ?>
-    <?php snippet('blocks/basic-item', ['item' => $item])  ?>
+    <?php snippet('partials/basic-item', ['item' => $item])  ?>
 <?php endforeach ?>

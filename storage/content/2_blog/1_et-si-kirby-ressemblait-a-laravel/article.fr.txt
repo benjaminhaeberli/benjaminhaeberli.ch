@@ -1,4 +1,4 @@
-Title: Et si Kirby ressemblait à Laravel ?
+Title: Et si Kirby ressemblait presque à Laravel ?
 
 ----
 

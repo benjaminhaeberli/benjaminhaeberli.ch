@@ -4,16 +4,12 @@
     "src": "public/images/benjaminhaeberli_banner.avif"
   },
   "resources/css/app.css": {
-<<<<<<< Updated upstream
-    "file": "assets/app-U-RXN6hM.css",
-=======
-    "file": "assets/app-BcHs1uqV.css",
->>>>>>> Stashed changes
+    "file": "assets/app-DFEKaQXw.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-gyTtttGt.js",
+    "file": "assets/app-CsQ_qx4R.js",
     "src": "resources/js/app.js",
     "isEntry": true
   }

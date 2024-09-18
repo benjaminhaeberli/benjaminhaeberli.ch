@@ -6,7 +6,7 @@
         <?= $content ?>
     </div>
     <div class="flex flex-row items-center gap-4">
-        <img class="block object-cover w-12 h-12" src="<?= $image_src ?>" alt="Photo de <?= $name ?>" loading="lazy">
+        <img class="block object-cover w-12 h-12 rounded-full" src="<?= $image_src ?>" alt="Photo de <?= $name ?>" loading="lazy">
         <div class="flex flex-col ">
             <h3>
                 <a href="<?= $url ?>" class="font-semibold hover:underline" target="_blank"><?= $name ?></a>

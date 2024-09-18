@@ -4,10 +4,7 @@
 
     <?php snippet('partials/container', slots: true) ?>
     <?php slot('content') ?>
-    <div class="mb-10">
-        <a href="/" class="underline hover:no-underline">Retour à l'accueil</a>
-    </div>
-    <h1 class="text-4xl font-bold">
+    <h1 class="text-xl font-bold sm:text-4xl">
         <?= page()->title() ?>
     </h1>
     <div class="bh__kirbytext">

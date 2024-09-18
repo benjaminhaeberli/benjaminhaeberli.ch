@@ -6,10 +6,10 @@ use Kirby\Toolkit\I18n;
 
 <?php snippet('header') ?>
 
-<main class="flex flex-col mt-8 sm:mt-32">
+<main class="flex flex-col mt-8 sm:mt-24">
 
     <!-- Hero -->
-    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => '']) ?>
+    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => 'pt-8']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
         <div class="flex flex-col gap-1 text-2xl font-bold sm:text-4xl">
@@ -31,10 +31,10 @@ use Kirby\Toolkit\I18n;
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
         <div class="flex flex-wrap text-sm gap-x-6 gap-y-4 sm:text-base">
-            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
+            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
                 <?= I18n::translate('actions.plan_call') ?>
             </a>
-            <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 border-slate-50 hover:bg-slate-100 hover:border-slate-100 hover:text-slate-800">
+            <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 rounded border-slate-50 hover:bg-slate-100 hover:border-slate-100 hover:text-slate-800">
                 <?= I18n::translate('actions.contact_me') ?>
             </a>
         </div>
@@ -48,10 +48,10 @@ use Kirby\Toolkit\I18n;
     <?php snippet(
         'partials/basic-section',
         data: [
-            'title' => 'Travaux',
-            'logo' => snippet('svg/icons/remixicon-briefcase-3-line', return: true),
-            'items' => page()->worksRefs()->toStructure()
-        ],
+                                                                        'title' => 'Travaux',
+                                                                        'logo' => snippet('svg/icons/remixicon-briefcase-3-line', return: true),
+                                                                        'items' => page()->worksRefs()->toStructure()
+                                                                    ],
         slots: true
     ) ?>
     <?php endsnippet() ?>
@@ -64,9 +64,9 @@ use Kirby\Toolkit\I18n;
     <?php snippet(
         'partials/basic-section',
         data: [
-            'title' => 'Open source',
-            'logo' => snippet('svg/icons/remixicon-hand-heart-line', return: true),
-            'items' => page()->openSourceRefs()->toStructure()
+        'title' => 'Open source',
+        'logo' => snippet('svg/icons/remixicon-hand-heart-line', return: true),
+        'items' => page()->openSourceRefs()->toStructure()
         ],
         slots: true
     ) ?>

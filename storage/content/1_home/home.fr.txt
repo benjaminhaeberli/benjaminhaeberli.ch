@@ -4,13 +4,23 @@ Title: Accueil
 
 Worksrefs:
 
--
+- 
+  name: app.nanou.ch
+  description: >
+    Application interne Laravel de placement
+    de personnel éducatif.
+  url: https://nanou.ch/
+- 
+  name: jamiiyasinema.club
+  description: "Ajouts de fonctionnalités et optimisations d'un site KirbyCMS."
+  url: https://jamiiyasinema.club/
+- 
   name: standard-deluxe.ch
   description: >
     Back-office du site mis en place avec
     KirbyCMS.
   url: https://standard-deluxe.ch/
--
+- 
   name: guillemsalles.fr
   description: >
     Site vitrine pour un ghostwriter
@@ -21,17 +31,28 @@ Worksrefs:
 
 Opensourcerefs:
 
--
-  name: kirby-seo
-  description: Plugin SEO minimaliste pour Kirby CMS.
+- 
+  name: php-skeleton
+  description: >
+    Une base PHP moderne qui inclut CI/CD,
+    PHPStan, Pest etC.
   url: >
-    https://github.com/benjaminhaeberli/kirby-seo
--
+    https://github.com/benjaminhaeberli/php-skeleton
+- 
+  name: benjaminhaeberli.ch
+  description: >
+    Code source de ce site web, propulsé
+    par KirbyCMS.
+  url: >
+    https://github.com/benjaminhaeberli/benjaminhaeberli.ch
+- 
   name: checklist-design-web
-  description: Pour les designers et les développeurs.
+  description: >
+    Checklist pour les designers et les
+    développeurs du web.
   url: >
     https://github.com/benjaminhaeberli/checklist-design-web
--
+- 
   name: modeles-rgpd-web
   description: >
     Modèles de politique de
@@ -39,10 +60,17 @@ Opensourcerefs:
     etc.
   url: >
     https://github.com/benjaminhaeberli/modeles-rgpd-web
+- 
+  name: kirby-seo
+  description: >
+    Plugin de référencement naturel (SEO)
+    minimaliste pour KirbyCMS.
+  url: >
+    https://github.com/benjaminhaeberli/kirby-seo
 
 ----
 
-Submenu:
+Submenu: 
 
 ----
 
@@ -63,7 +91,7 @@ kirbyseocanonicalurl: ""
 
 ----
 
-Hero-title:
+Hero-title: 
 
 ----
 
@@ -94,15 +122,15 @@ Kirbyseometadesc: Passionné par le développement de solutions éthiques, sur-m
 
 ----
 
-Kirbyseokeywords:
+Kirbyseokeywords: 
 
 ----
 
-Kirbyseocanonicalurl:
+Kirbyseocanonicalurl: 
 
 ----
 
-Desc:
+Desc: 
 
 ----
 
