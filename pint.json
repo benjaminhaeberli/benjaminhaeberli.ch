@@ -1,4 +1,4 @@
 {
-  "preset": "psr12",
+  "preset": "laravel",
   "exclude": ["public/", "resources/", "storage/"]
 }

@@ -1,14 +1,10 @@
 {
-  "benjaminhaeberli_banner.avif": {
-    "file": "assets/benjaminhaeberli_banner-DE2alOPO.avif",
-    "src": "benjaminhaeberli_banner.avif"
-  },
   "public/images/benjaminhaeberli_banner.avif": {
     "file": "assets/benjaminhaeberli_banner-DE2alOPO.avif",
     "src": "public/images/benjaminhaeberli_banner.avif"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BfVNB7I7.css",
+    "file": "assets/app-FLyfQITi.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },

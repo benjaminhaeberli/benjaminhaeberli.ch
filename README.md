@@ -37,7 +37,6 @@ More details on [getkirby.com](https://getkirby.com/docs/guide/quickstart)
 
 - `composer pint`
 - `composer test`
-- `composer fix:composer`
 - `npm run prettier`
 
 More details in [composer.json](./composer.json) and [package.json](./package.json)
