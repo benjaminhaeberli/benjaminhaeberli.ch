@@ -59,7 +59,7 @@
         ]
     },
     "scripts": {
-        "post-update-dump": [
+        "post-autoload-dump": [
             "./vendor/bin/php-icons init",
             "./vendor/bin/php-icons scan"
         ],
