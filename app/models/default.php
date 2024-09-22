@@ -13,13 +13,15 @@ class DefaultPage extends Page
     {
         return 'meta test';
     }
+
     public function getSeoImage(): File|FileVersion
     {
         $image_path = page()->content('fr')->get('cover');
         $image = image($image_path);
-        if (!$image instanceof File) {
+        if (! $image instanceof File) {
             return File::factory([]);
         }
+
         return $image->crop(1280, 720);
     }
 }

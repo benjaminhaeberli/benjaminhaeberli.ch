@@ -18,15 +18,15 @@ const kirbyjs = {
     try {
       await navigator.clipboard.writeText(code);
 
-      const copyIcon = button.querySelector("[data-icon=copy-icon]");
-      const copiedIcon = button.querySelector("[data-icon=copied-icon]");
+      const copyElements = button.querySelectorAll("[data-code=copy]");
+      const copiedElements = button.querySelectorAll("[data-code=copied]");
 
-      copyIcon.classList.add("hidden");
-      copiedIcon.classList.remove("hidden");
+      copyElements.forEach((i) => i.classList.add("hidden"));
+      copiedElements.forEach((i) => i.classList.remove("hidden"));
 
       setTimeout(() => {
-        copyIcon.classList.remove("hidden");
-        copiedIcon.classList.add("hidden");
+        copyElements.forEach((i) => i.classList.remove("hidden"));
+        copiedElements.forEach((i) => i.classList.add("hidden"));
       }, 1000);
     } catch (err) {
       console.error("Error copying code: " + err);

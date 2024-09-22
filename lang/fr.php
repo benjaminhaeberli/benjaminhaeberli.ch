@@ -10,6 +10,7 @@ return [
         'actions.plan_call' => 'Planifier un appel',
         'actions.contact_me' => 'Me contacter',
         'actions.copy' => 'Copier',
+        'actions.copied' => 'Copié',
     ],
-    'url' => '/'
+    'url' => '/',
 ];

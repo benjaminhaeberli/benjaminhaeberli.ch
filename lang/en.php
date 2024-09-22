@@ -5,7 +5,7 @@ return [
     'default' => false,
     'direction' => 'ltr',
     'locale' => [
-        'LC_ALL' => 'en_GB'
+        'LC_ALL' => 'en_GB',
     ],
     'name' => 'English',
     'translations' => [
@@ -13,5 +13,5 @@ return [
         'actions.contact_me' => 'Contact me',
         'actions.copy' => 'Copy',
     ],
-    'url' => null
+    'url' => null,
 ];

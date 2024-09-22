@@ -16,7 +16,7 @@ final class KirbyHelper
         return in_array($field_key, site()->content()->keys());
     }
 
-    public static function isPage(mixed $page): Page|null
+    public static function isPage(mixed $page): ?Page
     {
         return $page instanceof Page ? $page : null;
     }

@@ -59,17 +59,17 @@
         ]
     },
     "scripts": {
-        "post-autoload-dump": [
+        "post-update-dump": [
+            "./vendor/bin/php-icons init",
             "./vendor/bin/php-icons scan"
         ],
         "pint": "./vendor/bin/pint --ansi",
         "fake:pint": "./vendor/bin/pint --test --ansi",
-        "phpstan": "./vendor/bin/phpstan --configuration=./.phpstan.neon analyze --ansi",
+        "phpstan": "./vendor/bin/phpstan --ansi",
         "test": [
             "@phpstan"
         ],
         "core:update": [
-            "composer validate --strict --ansi",
             "composer update --no-interaction --prefer-stable",
             "composer validate --strict --ansi",
             "composer bump --ansi",
@@ -90,7 +90,7 @@
     },
     "require-dev": {
         "laravel/pint": "^1.17.3",
-        "phpstan/phpstan": "^1.12.3",
+        "phpstan/phpstan": "^1.12.4",
         "spatie/ray": "^1.41.2",
         "treast/kirby-debugbar": "^1.3.3"
     }

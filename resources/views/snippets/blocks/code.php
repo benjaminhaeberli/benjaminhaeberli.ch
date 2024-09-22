@@ -11,9 +11,10 @@ $code = '<code>'.$highlighter->parse($block->code()->value, $block->language()).
 
 <div class="relative text-xs group">
     <button class="absolute hidden gap-2 uppercase group-hover:flex top-4 right-4" data-code-id="<?= $block->id() ?>">
-        <span data-icon="copy-icon"><?= icon('lucide:copy', ['class' => 'text-sm']) ?></span>
-        <span class="hidden" data-icon="copied-icon"><?= icon('lucide:check', ['class' => 'text-sm']) ?></span>
-        <span><?= I18n::translate('actions.copy') ?></span>
+        <span data-code="copy"><?= icon('lucide:copy', ['class' => 'text-sm']) ?></span>
+        <span data-code="copied" class="hidden" ><?= icon('lucide:check', ['class' => 'text-sm']) ?></span>
+        <span data-code="copy"><?= I18n::translate('actions.copy') ?></span>
+        <span data-code="copied" class="hidden" ><?= I18n::translate('actions.copied') ?></span>
     </button>
     <pre id="code-<?= $block->id() ?>" class="p-8 overflow-scroll leading-relaxed bg-gray-950 bg-gradient-to-t from-indigo-400/5 to-transparent rounded-2xl"><?= $code ?></pre>
 </div>

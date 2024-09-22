@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "965e2e7d0ed840f66122ec1724d6edaa",
+    "content-hash": "f09269aa7adbacfbf46bcfba487fdb7e",
     "packages": [
         {
             "name": "adhocore/cli",
@@ -1765,12 +1765,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yassinedoghri/php-icons.git",
-                "reference": "976acbd9564f5ba13b11f4086c59b007a9374a4e"
+                "reference": "2ae1d446f0149ea55780a09c8f3668cd444b5be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yassinedoghri/php-icons/zipball/976acbd9564f5ba13b11f4086c59b007a9374a4e",
-                "reference": "976acbd9564f5ba13b11f4086c59b007a9374a4e",
+                "url": "https://api.github.com/repos/yassinedoghri/php-icons/zipball/2ae1d446f0149ea55780a09c8f3668cd444b5be6",
+                "reference": "2ae1d446f0149ea55780a09c8f3668cd444b5be6",
                 "shasum": ""
             },
             "require": {
@@ -1813,7 +1813,7 @@
                 "issues": "https://github.com/yassinedoghri/php-icons/issues",
                 "source": "https://github.com/yassinedoghri/php-icons/tree/develop"
             },
-            "time": "2024-04-26T15:47:20+00:00"
+            "time": "2024-09-22T11:25:33+00:00"
         }
     ],
     "packages-dev": [
@@ -2013,16 +2013,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.12.3",
+            "version": "1.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "0fcbf194ab63d8159bb70d9aa3e1350051632009"
+                "reference": "ffa517cb918591b93acc9b95c0bebdcd0e4538bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0fcbf194ab63d8159bb70d9aa3e1350051632009",
-                "reference": "0fcbf194ab63d8159bb70d9aa3e1350051632009",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ffa517cb918591b93acc9b95c0bebdcd0e4538bd",
+                "reference": "ffa517cb918591b93acc9b95c0bebdcd0e4538bd",
                 "shasum": ""
             },
             "require": {
@@ -2067,7 +2067,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-09-09T08:10:35+00:00"
+            "time": "2024-09-19T07:58:01+00:00"
         },
         {
             "name": "psr/container",
@@ -2648,16 +2648,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v7.1.4",
+            "version": "v7.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "a5fa7481b199090964d6fd5dab6294d5a870c7aa"
+                "reference": "e20e03889539fd4e4211e14d2179226c513c010d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a5fa7481b199090964d6fd5dab6294d5a870c7aa",
-                "reference": "a5fa7481b199090964d6fd5dab6294d5a870c7aa",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e20e03889539fd4e4211e14d2179226c513c010d",
+                "reference": "e20e03889539fd4e4211e14d2179226c513c010d",
                 "shasum": ""
             },
             "require": {
@@ -2711,7 +2711,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v7.1.4"
+                "source": "https://github.com/symfony/var-dumper/tree/v7.1.5"
             },
             "funding": [
                 {
@@ -2727,7 +2727,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-30T16:12:47+00:00"
+            "time": "2024-09-16T10:07:02+00:00"
         },
         {
             "name": "treast/kirby-debugbar",
@@ -2783,7 +2783,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yassinedoghri/php-icons": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
