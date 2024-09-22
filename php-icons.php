@@ -6,8 +6,8 @@ use PHPIcons\Config\PHPIconsConfig;
 
 return PHPIconsConfig::configure()
     ->withPaths([
-        __DIR__.'\resources',
-        __DIR__.'\src',
+        __DIR__.DIRECTORY_SEPARATOR.'resources',
+        __DIR__.DIRECTORY_SEPARATOR.'src',
     ])
     ->withDefaultPrefix('')
     ->withIdentifiers(['phpicon', 'icon'])
