@@ -2,15 +2,51 @@ Title: Accueil
 
 ----
 
-WorksRefs:
+Skillsrefs:
 
--
+- 
+  name: CMS
+  description: WordPress, Kirby, Filament
+- 
+  name: Front-End
+  description: >
+    HTML/CSS, JavaScript, Alpine.js,
+    TailwindCSS, Vite
+- 
+  name: Back-End
+  description: >
+    PHP, MySQL, SQLite, Laravel, Livewire,
+    API REST
+- 
+  name: Infrastructure
+  description: >
+    Infomaniak, GitHub, Vultr, ChatGPT,
+    Docsbot.ai, n8n
+- 
+  name: Éco-conception
+  description: >
+    EcoIndex, Website Carbon, Google
+    Pagespeed
+- 
+  name: Référencement naturel
+  description: Ubersuggest, Plausible, Simple Analytics
+- 
+  name: Gestion de projets
+  description: >
+    Consulting, audit, conception, cahiers
+    des charges, planning
+
+----
+
+Worksrefs:
+
+- 
   name: standard-deluxe.ch
   description: >
     Back-office du site mis en place avec
     KirbyCMS.
   url: https://standard-deluxe.ch/
--
+- 
   name: guillemsalles.fr
   description: >
     Site vitrine pour un ghostwriter
@@ -19,7 +55,48 @@ WorksRefs:
 
 ----
 
-Submenu:
+Opensourcerefs:
+
+- 
+  name: php-skeleton
+  description: >
+    Une base PHP moderne qui inclut CI/CD,
+    PHPStan, Pest etC.
+  url: >
+    https://github.com/benjaminhaeberli/php-skeleton
+- 
+  name: benjaminhaeberli.ch
+  description: >
+    Code source de ce site web, propulsé
+    par KirbyCMS.
+  url: >
+    https://github.com/benjaminhaeberli/benjaminhaeberli.ch
+- 
+  name: checklist-design-web
+  description: >
+    Checklist pour les designers et les
+    développeurs du web.
+  url: >
+    https://github.com/benjaminhaeberli/checklist-design-web
+- 
+  name: modeles-rgpd-web
+  description: >
+    Modèles de politique de
+    confidentialité, mentions légales,
+    etc.
+  url: >
+    https://github.com/benjaminhaeberli/modeles-rgpd-web
+- 
+  name: kirby-seo
+  description: >
+    Plugin de référencement naturel (SEO)
+    minimaliste pour KirbyCMS.
+  url: >
+    https://github.com/benjaminhaeberli/kirby-seo
+
+----
+
+Submenu: 
 
 ----
 
@@ -78,15 +155,15 @@ Kirbyseometadesc: Passionné par le développement de solutions éthiques, sur-m
 
 ----
 
-Kirbyseokeywords:
+Kirbyseokeywords: 
 
 ----
 
-Kirbyseocanonicalurl:
+Kirbyseocanonicalurl: 
 
 ----
 
-Desc:
+Desc: 
 
 ----
 

@@ -5,6 +5,9 @@ Title: Accueil
 Skillsrefs:
 
 - 
+  name: CMS
+  description: WordPress, Kirby, Filament
+- 
   name: Front-End
   description: >
     HTML/CSS, JavaScript, Alpine.js,
@@ -15,13 +18,10 @@ Skillsrefs:
     PHP, MySQL, SQLite, Laravel, Livewire,
     API REST
 - 
-  name: CMS
-  description: WordPress, Kirby, Filament
-- 
   name: Infrastructure
   description: >
-    Infomaniak, GitHub, Buddy, Vultr, CRON,
-    n8n
+    Infomaniak, GitHub, Vultr, ChatGPT,
+    Docsbot.ai, n8n
 - 
   name: Éco-conception
   description: >

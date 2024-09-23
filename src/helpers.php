@@ -30,7 +30,7 @@ if (! function_exists('icon')) {
      */
     function icon(string $iconKey, array $attributes = []): string
     {
-        $phpicons = (new PHPIcons(kirby()->root('base').'\php-icons.php'));
+        $phpicons = (new PHPIcons(kirby()->root('base').DIRECTORY_SEPARATOR.'php-icons.php'));
 
         return (string) $phpicons
             ->icon($iconKey)

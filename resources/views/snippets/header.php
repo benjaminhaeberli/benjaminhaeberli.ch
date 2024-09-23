@@ -25,7 +25,7 @@
             </div>
         <?php } ?>
     </nav>
-    <?php if (! kirby()->user()?->isAdmin()) { ?>
+    <?php if (kirby()->user()?->isAdmin()) { ?>
         <div class="text-xs text-center">
             <a href="<?= url('panel')  ?>" target="_blank">
                 Accéder au panel
