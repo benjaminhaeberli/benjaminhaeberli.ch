@@ -26,5 +26,6 @@ jobs:
             eval "$(ssh-agent -s)"
             ssh-add ~/.ssh/id_portfolio
             rm -rf vendor/
+            git reset --hard
             git pull
             composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
