@@ -2,19 +2,19 @@
  * Use fast-glob
  * @link https://stackoverflow.com/questions/71160737/tailwind-laravelmix-infinity-loop-on-watch
  */
-const fastGlob = require("fast-glob");
+import fastGlob from "fast-glob";
 
 /**
  * Referencing the default theme
  * @link https://tailwindcss.com/docs/theme#referencing-the-default-theme
  */
-const defaultTheme = require("tailwindcss/defaultTheme");
+import defaultTheme from "tailwindcss/defaultTheme";
 
 /**
  * Allow to add custom plugins
  * @link https://tailwindcss.com/docs/plugins
  */
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
 
 module.exports = {
   content: fastGlob.sync([

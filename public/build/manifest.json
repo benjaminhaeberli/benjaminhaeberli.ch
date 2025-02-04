@@ -4,12 +4,13 @@
     "src": "public/images/benjaminhaeberli_banner.avif"
   },
   "resources/css/app.css": {
-    "file": "assets/app-C90YwCX_.css",
+    "file": "assets/app-DWC8QGQx.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-DLfgtm5t.js",
+    "file": "assets/app-C0tlhA_X.js",
+    "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
   }
