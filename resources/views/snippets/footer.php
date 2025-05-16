@@ -42,6 +42,7 @@ $css ??= null;
         </li>
     </ol>
 
+
     <a href="https://www.websitecarbon.com/website/benjaminhaeberli-ch/" class="flex gap-2 group hover:underline" target="_blank">
         <div class="w-4 h-4 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 group-hover:from-pink-500 group-hover:to-yellow-500"></div>
         <span>0.02 g of CO<sub>2</sub>/view</span>
