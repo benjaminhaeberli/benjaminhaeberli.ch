@@ -111,12 +111,6 @@ Ce projet utilise GitMoji pour les commits:
 | `git-commit` | Commits avec GitMoji |
 | `skill-creator` | Créer de nouveaux skills |
 
-## Slash Commands
-
-- `/doc <description>` - Créer un document
-- `/quality` - Vérifier la qualité du code
-- `/commit <message>` - Commit avec GitMoji
-
 ## Conventions Documentation
 
 **Format**: `YYMMDD_type_nom-du-doc.md`
