@@ -91,11 +91,11 @@ fieldName:
 ## GitMoji
 
 Ce projet utilise GitMoji pour les commits:
-- :sparkles: feature
-- :bug: fix
-- :art: style
-- :arrow_up: upgrade
-- :memo: docs
+- ✨ feature
+- 🐛 fix
+- 🎨 style
+- ⬆️ upgrade
+- 📝 docs
 
 ---
 
