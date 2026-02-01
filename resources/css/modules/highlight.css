@@ -1,4 +1,4 @@
-@import "/vendor/tempest/highlight/src/Themes/Css/dracula.css";
+@import "../../../vendor/tempest/highlight/src/Themes/Css/dracula.css";
 
 pre,
 code {

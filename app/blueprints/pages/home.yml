@@ -32,4 +32,3 @@ columns:
     label: Content
     fields:
       submenu: fields/submenu
-      seo: fields/seo/meta

@@ -77,20 +77,17 @@
         ]
     },
     "require": {
-        "php": "^8.3",
-        "benjaminhaeberli/kirby-seo": "^0.3.0",
-        "bnomei/kirby3-boost": "^2.4.1",
-        "bnomei/kirby3-sqlite-cachedriver": "^1.4.2",
+        "php": "^8.4",
         "funkjedi/composer-include-files": "^1.1",
-        "getkirby/cms": "^4.4.0",
-        "getkirby/staticache": "^1.0.3",
-        "lukaskleinschmidt/kirby-laravel-vite": "^2.1.3",
+        "getkirby/cms": "^5.0",
+        "getkirby/staticache": "^2.0",
+        "lukaskleinschmidt/kirby-laravel-vite": "^2.2.0",
         "tempest/highlight": "^2.10.3",
         "yassinedoghri/php-icons": "dev-develop"
     },
     "require-dev": {
         "laravel/pint": "^1.17.3",
         "phpstan/phpstan": "^1.12.4",
-        "treast/kirby-debugbar": "^1.3.3"
+        "treast/kirby-debugbar": "^1.4.0"
     }
 }

@@ -17,7 +17,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.3
+          php-version: 8.4
           extensions: dom, mbstring, zip
           coverage: none
 
@@ -51,7 +51,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [8.3]
+        php: [8.4]
         dependencies: ['highest', 'lowest']
         composer-options: ['--ignore-platform-reqs']
 

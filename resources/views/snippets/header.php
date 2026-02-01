@@ -8,7 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <?php snippet('seo/meta') ?>
+    <title><?= $page->title() ?> | <?= $site->title() ?></title>
+    <meta name="description" content="<?= $site->description() ?>">
     <link rel="icon" href="/favicon/favicon.svg">
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="/favicon/favicon.svg">

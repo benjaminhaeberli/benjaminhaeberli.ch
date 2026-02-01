@@ -4,10 +4,10 @@ Site web personnel développé avec Kirby CMS.
 
 ## Stack
 
-- **CMS**: Kirby 4.4.0 (flat-file PHP)
-- **PHP**: 8.3+
-- **CSS**: Tailwind 3.4.1
-- **Build**: Vite 5.1.6
+- **CMS**: Kirby 5.2.2 (flat-file PHP)
+- **PHP**: 8.4+
+- **CSS**: Tailwind 4.x (CSS-first config)
+- **Build**: Vite 7.x
 - **Qualité**: Laravel Pint, PHPStan, Prettier
 
 ## Structure
@@ -120,7 +120,7 @@ Types: feature, fix, refactor, docs, style, perf, test, chore
 ## Fichiers Clés
 
 - `vite.config.js` - Config Vite
-- `tailwind.config.js` - Config Tailwind (breakpoints custom)
+- `resources/css/app.css` - Config Tailwind (CSS-first, breakpoints, fonts, variants)
 - `composer.json` - Dépendances PHP + scripts
 - `package.json` - Dépendances NPM + scripts
 - `app/blueprints/site.yml` - Config globale site
