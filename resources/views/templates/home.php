@@ -133,6 +133,13 @@ use Kirby\Toolkit\I18n;
                     'image_src' => '/images/reviews/thomasmiller.avif',
                     'content' => "<p>J'ai eu la chance de travailler avec Benjamin sur divers projets chez 925. Toujours très agréable de travailler avec un autre passionné du monde du web, j'espère pouvoir continuer à collaborer sur des projets dans le futur !</p><p>Son éthique de travail, ses grandes connaissances et sa communication très claire avec les clients font de lui un freelancer performant. Vivement recommandé !</p>",
                 ],
+                [
+                    'name' => 'Maria Iorio',
+                    'job' => 'Artiste/cinéaste, professeure HKB',
+                    'url' => 'https://www.instagram.com/iorio.cuomo/',
+                    'image_src' => '/images/reviews/mariaiorio.avif',
+                    'content' => "<p>Lors de nos deux collaborations sur deux web sites pour des projets artistiques importants avec Benjamin Haeberli, il a fait preuve d'un professionnalisme exceptionnel et d'une très grande disponibilité pour agir, avec beaucoup de méticulosité et une éthique de travail rare. Benjamin Haeberli, sait travailler en équipe et faciliter le travail de ces mandataires en offrant des conseils adaptés aux situations spécifiquement. Son investissement et sa compréhension font de lui un collaborateur remarquable, que nous recommandons au plus haut point. Nous nous réjouissons de nos futures collaborations.</p>",
+                ],
             ],
         ],
         slots: true
