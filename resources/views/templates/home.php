@@ -138,7 +138,7 @@ use Kirby\Toolkit\I18n;
                     'job' => 'Artiste/cinéaste, professeure HKB',
                     'url' => 'https://www.instagram.com/iorio.cuomo/',
                     'image_src' => '/images/reviews/mariaiorio.avif',
-                    'content' => "<p>Lors de nos deux collaborations sur deux web sites pour des projets artistiques importants avec Benjamin Haeberli, il a fait preuve d'un professionnalisme exceptionnel et d'une très grande disponibilité pour agir, avec beaucoup de méticulosité et une éthique de travail rare. Benjamin Haeberli, sait travailler en équipe et faciliter le travail de ces mandataires en offrant des conseils adaptés aux situations spécifiquement. Son investissement et sa compréhension font de lui un collaborateur remarquable, que nous recommandons au plus haut point. Nous nous réjouissons de nos futures collaborations.</p>",
+                    'content' => "<p>Lors de nos deux collaborations sur deux web sites pour des projets artistiques importants avec Benjamin, il a fait preuve d'un professionnalisme exceptionnel et d'une très grande disponibilité pour agir, avec beaucoup de méticulosité et une éthique de travail rare. Benjamin, sait travailler en équipe et faciliter le travail de ces mandataires en offrant des conseils adaptés aux situations spécifiquement. Son investissement et sa compréhension font de lui un collaborateur remarquable, que nous recommandons au plus haut point. Nous nous réjouissons de nos futures collaborations.</p>",
                 ],
             ],
         ],
