@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
+import tailwindcss from "@tailwindcss/vite";
 import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
@@ -14,6 +15,7 @@ export default defineConfig({
         "./storage/content/**/*.txt",
       ],
     }),
+    tailwindcss(),
   ],
   resolve: {
     alias: {

@@ -20,5 +20,4 @@ columns:
         templates: article
   - width: 5/12
     icon: text
-    fields:
-      seo: fields/seo/meta
+    fields: []
