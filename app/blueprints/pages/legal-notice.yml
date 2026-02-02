@@ -19,4 +19,5 @@ columns:
     icon: text
     label: Content
     width: 5/12
-    fields: []
+    fields:
+      seo: fields/seo/meta

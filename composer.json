@@ -78,6 +78,7 @@
     },
     "require": {
         "php": "^8.4",
+        "benjaminhaeberli/kirby-seo": "^1.0",
         "funkjedi/composer-include-files": "^1.1",
         "getkirby/cms": "^5.0",
         "getkirby/staticache": "^2.0",
