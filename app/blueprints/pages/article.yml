@@ -20,6 +20,7 @@ columns:
   - width: 5/12
     icon: text
     fields:
+      seo: fields/seo/meta
       publishedAt:
         label: Publié le
         type: date
