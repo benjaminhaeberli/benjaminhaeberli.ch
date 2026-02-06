@@ -91,6 +91,8 @@ fieldName:
 <?= icon('lucide:heart', ['class' => 'text-rose-400']) ?>
 ```
 
+> **Important** : php-icons ne scanne que les fichiers `.php`. Les icônes référencées dynamiquement depuis le contenu Kirby (fichiers `.txt`) doivent être déclarées dans `src/content-icons.php` pour être détectées lors du build.
+
 ## GitMoji
 
 Ce projet utilise GitMoji pour les commits:

@@ -111,6 +111,12 @@ export PATH=/opt/php8.1/bin:$PATH
 - [Laravel/Pint](https://github.com/laravel/pint) → Opinionated PHP code style fixer for minimalists built on top of [PHP-CS-Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer)
 - [Prettier](https://prettier.io/) → Opinionated code formatter
 
+### Icons (php-icons)
+
+Icons are managed by [php-icons](https://github.com/yassinedoghri/php-icons), which scans PHP files for `icon()` calls and fetches SVG data from the Iconify API.
+
+> **Important :** php-icons only scans `.php` files. Icons referenced dynamically from Kirby content files (`.txt`) must be declared in `src/content-icons.php` to be discovered during the build.
+
 ## Documentation 📒
 
 - [GitMoji](https://gitmoji.dev/) → Emoji guide for GIT commit messages
