@@ -61,6 +61,7 @@ composer core:update  # Update + validate + audit
 ## Patterns Kirby
 
 ### Template avec snippets
+
 ```php
 <?php snippet('header') ?>
 <main>
@@ -74,6 +75,7 @@ composer core:update  # Update + validate + audit
 ```
 
 ### Blueprint structure
+
 ```yaml
 fieldName:
   label: Label
@@ -84,6 +86,7 @@ fieldName:
 ```
 
 ### Icons (php-icons)
+
 ```php
 <?= icon('lucide:heart', ['class' => 'text-rose-400']) ?>
 ```
@@ -91,6 +94,7 @@ fieldName:
 ## GitMoji
 
 Ce projet utilise GitMoji pour les commits:
+
 - ✨ feature
 - 🐛 fix
 - 🎨 style
@@ -101,15 +105,15 @@ Ce projet utilise GitMoji pour les commits:
 
 ## Skills Disponibles
 
-| Skill | Usage |
-|-------|-------|
-| `documentator` | Créer docs dans /docs avec convention YYMMDD_type_nom.md |
-| `kirby-template` | Créer/modifier templates et snippets |
-| `kirby-blueprint` | Créer/modifier blueprints YAML |
-| `tailwind-component` | Créer composants UI Tailwind |
-| `code-quality` | Lancer Pint, PHPStan, Prettier |
-| `git-commit` | Commits avec GitMoji |
-| `skill-creator` | Créer de nouveaux skills |
+| Skill                | Usage                                                    |
+| -------------------- | -------------------------------------------------------- |
+| `documentator`       | Créer docs dans /docs avec convention YYMMDD_type_nom.md |
+| `kirby-template`     | Créer/modifier templates et snippets                     |
+| `kirby-blueprint`    | Créer/modifier blueprints YAML                           |
+| `tailwind-component` | Créer composants UI Tailwind                             |
+| `code-quality`       | Lancer Pint, PHPStan, Prettier                           |
+| `git-commit`         | Commits avec GitMoji                                     |
+| `skill-creator`      | Créer de nouveaux skills                                 |
 
 ## Conventions Documentation
 

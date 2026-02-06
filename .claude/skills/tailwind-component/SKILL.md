@@ -12,6 +12,7 @@ Build UI components with Tailwind CSS for this project.
 **File**: `tailwind.config.js`
 
 ### Custom Breakpoints
+
 ```
 xs:  576px
 sm:  640px
@@ -24,12 +25,14 @@ xxl: 1440px
 ```
 
 ### Custom Variants
+
 ```css
 hocus:       /* &:hover, &:focus */
 group-hocus: /* .group:hover &, .group:focus & */
 ```
 
 ### Font Family
+
 ```
 font-sans: Inter, Helvetica, system fonts
 ```
@@ -37,6 +40,7 @@ font-sans: Inter, Helvetica, system fonts
 ## Common Patterns
 
 ### Container Component
+
 ```php
 <div class="w-full max-w-screen-lg mx-auto px-4 sm:px-8">
     <!-- Content -->
@@ -44,6 +48,7 @@ font-sans: Inter, Helvetica, system fonts
 ```
 
 ### Card/Item Component
+
 ```php
 <article class="flex flex-col w-full gap-4 text-xs xs:w-80 sm:w-64">
     <div class="flex flex-col gap-2 text-slate-300">
@@ -53,6 +58,7 @@ font-sans: Inter, Helvetica, system fonts
 ```
 
 ### Button Styles
+
 ```php
 <!-- Primary -->
 <a class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
@@ -66,6 +72,7 @@ font-sans: Inter, Helvetica, system fonts
 ```
 
 ### Section Header
+
 ```php
 <div class="flex items-center gap-2">
     <h2 class="text-lg font-bold">Title</h2>
@@ -74,6 +81,7 @@ font-sans: Inter, Helvetica, system fonts
 ```
 
 ### Image with Lazy Loading
+
 ```php
 <img
     class="block object-cover w-12 h-12 rounded-full"
@@ -91,6 +99,7 @@ font-sans: Inter, Helvetica, system fonts
 - `border-slate-50` - Borders
 
 ### Accent Colors
+
 - `text-sky-400` / `bg-sky-500` - Primary accent
 - `text-indigo-400` / `bg-indigo-500` - Secondary accent
 - `text-rose-400` - Heart/love elements
@@ -99,7 +108,9 @@ font-sans: Inter, Helvetica, system fonts
 ## Animation
 
 ### ScrollReveal
+
 Add `to-reveal` class for scroll animations:
+
 ```php
 <div class="to-reveal">
     <!-- Animates on scroll -->
@@ -107,6 +118,7 @@ Add `to-reveal` class for scroll animations:
 ```
 
 ### Gradient Animation
+
 ```php
 <a class="bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
 ```
@@ -114,6 +126,7 @@ Add `to-reveal` class for scroll animations:
 ## Responsive Design
 
 Mobile-first approach:
+
 ```php
 <div class="text-sm sm:text-base md:text-lg">
     <!-- Text scales up -->

@@ -5,12 +5,14 @@
 Le site utilise actuellement des versions qui nécessitent une mise à jour majeure pour bénéficier des dernières fonctionnalités et correctifs de sécurité.
 
 **Versions actuelles**:
+
 - Kirby CMS: 4.4.0
 - Vite: 5.1.6
 - Tailwind CSS: 3.4.1
 - PHP: 8.3
 
 **Versions cibles**:
+
 - Kirby CMS: 5.x
 - Vite: 7.x
 - Tailwind CSS: 4.x
@@ -42,6 +44,7 @@ Le site utilise actuellement des versions qui nécessitent une mise à jour maje
 ### 1. Kirby 4 vers 5
 
 **Fichiers concernés**:
+
 - `composer.json` - Version Kirby
 - `app/blueprints/**/*.yml` - Possible restructuration
 - `resources/views/**/*.php` - API changes
@@ -49,6 +52,7 @@ Le site utilise actuellement des versions qui nécessitent une mise à jour maje
 **Guide de migration**: https://getkirby.com/docs/guide/updates/update-to-v5
 
 **Points d'attention**:
+
 - Vérifier la compatibilité des plugins
 - Tester le Panel
 - Vérifier les helpers et méthodes dépréciées
@@ -56,11 +60,13 @@ Le site utilise actuellement des versions qui nécessitent une mise à jour maje
 ### 2. Vite 5 vers 7
 
 **Fichiers concernés**:
+
 - `package.json` - Version Vite
 - `vite.config.js` - Possible ajustements config
 - `resources/views/snippets/header.php` - Vite directives
 
 **Points d'attention**:
+
 - Compatibilité laravel-vite-plugin
 - Config ESM
 - Hot reload
@@ -68,12 +74,14 @@ Le site utilise actuellement des versions qui nécessitent une mise à jour maje
 ### 3. Tailwind 3 vers 4
 
 **Fichiers concernés**:
+
 - `package.json` - Version Tailwind
 - `tailwind.config.js` - Nouvelle syntaxe (CSS-based config)
 - `resources/css/app.css` - Directives @tailwind
 - `postcss.config.js` - Possible ajustements
 
 **Points d'attention**:
+
 - Nouvelle syntaxe de configuration (CSS-first)
 - Changements dans les classes utilitaires
 - Compatibilité des plugins custom (hocus variant)
@@ -81,11 +89,13 @@ Le site utilise actuellement des versions qui nécessitent une mise à jour maje
 ### 4. PHP 8.4
 
 **Fichiers concernés**:
+
 - `composer.json` - Version PHP requise
 - `.github/workflows/*.yml` - Version CI
 - Hébergement Infomaniak
 
 **Points d'attention**:
+
 - Nouvelles fonctionnalités (property hooks, asymmetric visibility)
 - Dépréciations
 - Compatibilité extensions
@@ -122,11 +132,11 @@ Le site utilise actuellement des versions qui nécessitent une mise à jour maje
 
 ## Risques
 
-| Risque | Probabilité | Impact | Mitigation |
-|--------|-------------|--------|------------|
-| Plugin Kirby incompatible | Moyenne | Haut | Vérifier avant upgrade |
-| Régression CSS Tailwind | Haute | Moyen | Tests visuels complets |
-| laravel-vite-plugin incompatible | Basse | Haut | Vérifier releases |
+| Risque                           | Probabilité | Impact | Mitigation             |
+| -------------------------------- | ----------- | ------ | ---------------------- |
+| Plugin Kirby incompatible        | Moyenne     | Haut   | Vérifier avant upgrade |
+| Régression CSS Tailwind          | Haute       | Moyen  | Tests visuels complets |
+| laravel-vite-plugin incompatible | Basse       | Haut   | Vérifier releases      |
 
 ---
 

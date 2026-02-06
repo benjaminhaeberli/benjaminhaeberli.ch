@@ -15,16 +15,16 @@ Create clean, structured markdown documentation in the `/docs` folder.
 
 ### Types (Conventional Commits)
 
-| Type | Usage |
-|------|-------|
-| `feature` | New functionality |
-| `fix` | Bug fix documentation |
-| `refactor` | Code refactoring notes |
-| `docs` | General documentation |
-| `style` | UI/CSS changes |
-| `perf` | Performance improvements |
-| `test` | Test documentation |
-| `chore` | Maintenance tasks |
+| Type       | Usage                    |
+| ---------- | ------------------------ |
+| `feature`  | New functionality        |
+| `fix`      | Bug fix documentation    |
+| `refactor` | Code refactoring notes   |
+| `docs`     | General documentation    |
+| `style`    | UI/CSS changes           |
+| `perf`     | Performance improvements |
+| `test`     | Test documentation       |
+| `chore`    | Maintenance tasks        |
 
 ## Document Structure
 
@@ -34,29 +34,36 @@ Create clean, structured markdown documentation in the `/docs` folder.
 # [Feature Name]
 
 ## Context
+
 Brief description of why this is needed.
 
 ## Objectives
+
 - [ ] Objective 1
 - [ ] Objective 2
 
 ## Requirements
 
 ### Functional
+
 - Requirement 1
 - Requirement 2
 
 ### Technical
+
 - Technical constraint 1
 
 ## Implementation Notes
+
 Technical guidance for implementation.
 
 ## Acceptance Criteria
+
 - [ ] Criteria 1
 - [ ] Criteria 2
 
 ## References
+
 - Link to related docs
 ```
 
@@ -66,12 +73,15 @@ Technical guidance for implementation.
 # [Title]
 
 ## Overview
+
 Brief description.
 
 ## Details
+
 Main content with code examples.
 
 ## Related
+
 - Links to related files/docs
 ```
 
