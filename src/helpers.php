@@ -16,4 +16,4 @@ if (! function_exists('formatDate')) {
 
 // Configure the PHPIcons singleton with the correct config path
 // The vendor's icon() function (from php-icons autoload) uses this singleton
-PHPIconsSingleton::setInstance(new PHPIcons(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'php-icons.php'));
+PHPIconsSingleton::setInstance(new PHPIcons(dirname(__DIR__).DIRECTORY_SEPARATOR.'php-icons.php'));
