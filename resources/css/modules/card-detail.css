@@ -81,11 +81,11 @@
   pointer-events: auto;
 }
 
-/* Desktop: fixed right side, vertically centered */
+/* Desktop: fixed, flush with content right edge, vertically centered */
 @media (min-width: 48rem) {
   .card-detail-popup {
-    left: auto;
-    right: 2rem;
+    left: calc(50% + 19rem);
+    right: auto;
     top: 50%;
     translate: 0 -50%;
     width: 20rem;
