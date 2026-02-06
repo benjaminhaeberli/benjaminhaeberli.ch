@@ -9,66 +9,31 @@ use Kirby\Toolkit\I18n;
 <main class="flex flex-col mt-8 sm:mt-24">
 
     <!-- Hero -->
-    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => 'pt-8']) ?>
+    <?php snippet('partials/container', slots: true, data: ['css' => '', 'paddingTop' => 'pt-8']) ?>
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
-        <div class="space-y-4">
-            <p class="p-1 px-2 text-sm rounded w-fit bg-gradient-to-t from-neutral-50/20 to-neutral-50/5">
-                Architecte Logiciel ✽ Freelance
-            </p>
+        <div class="space-y-4 ">
+            <div class="p-1 px-2 text-sm rounded w-fit bg-gradient-to-t flex items-center gap-2 bg-neutral-50/10">
+                <span class="relative flex size-3">
+                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 opacity-75"></span>
+                    <span class="relative inline-flex size-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500"></span>
+                </span>
+                <p>
+                Disponible · <span class="text-neutral-300"> Mis à jour le <?= date('d.m.Y', strtotime('-2 days')) ?></span>
+                </p>
+
+            </div>
             <div class="space-y-2">
                 <p class="text-2xl font-bold sm:text-4xl">
-                 Salut, je suis Benjamin.
+                 Bonjour, je suis Benjamin.
                 </p>
                 <h1 class="text-2xl font-medium text-neutral-300 sm:text-3xl">
-                    Un développeur freelance qui aime le code performant et durable.
+                    Un développeur web spécialisé en éco-conception et code durable.
                 </h1>
             </div>
         </div>
-        <div class="text-base sm:text-lg">
-            Je vous aide à concevoir, architecturer et coder vos projets web. Je travaille avec des technologies modernes pour développer des outils sur-mesure et optimisés.
-        </div>
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                        <?= icon('lucide:globe', ['class' => 'size-4 text-neutral-400']) ?>
-                        <h3 class="text-sm font-semibold">Sites internet</h3>
-                    </div>
-                    <span class="text-xs font-medium text-neutral-400">Dès 2000.-</span>
-                </div>
-                <p class="text-xs text-neutral-400">Sites vitrines, blogs, portfolios, e-commerce avec Kirby ou WordPress.</p>
-            </div>
-            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                        <?= icon('lucide:blocks', ['class' => 'size-4 text-neutral-400']) ?>
-                        <h3 class="text-sm font-semibold">Plateformes sur mesure</h3>
-                    </div>
-                    <span class="text-xs font-medium text-neutral-400">Dès 9000.-</span>
-                </div>
-                <p class="text-xs text-neutral-400">Apps complexes, intranets et API avec Laravel et Vue.js.</p>
-            </div>
-            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                        <?= icon('lucide:lightbulb', ['class' => 'size-4 text-neutral-400']) ?>
-                        <h3 class="text-sm font-semibold">Conseil & Stratégie</h3>
-                    </div>
-                    <span class="text-xs font-medium text-neutral-400">110.-/h</span>
-                </div>
-                <p class="text-xs text-neutral-400">Architecture logicielle, gestion de projet, formation et audits.</p>
-            </div>
-            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                        <?= icon('lucide:shield-check', ['class' => 'size-4 text-neutral-400']) ?>
-                        <h3 class="text-sm font-semibold">Maintenance</h3>
-                    </div>
-                    <span class="text-xs font-medium text-neutral-400">Dès 200.-/an</span>
-                </div>
-                <p class="text-xs text-neutral-400">Mises à jour, sauvegardes, corrections de bugs et évolutions.</p>
-            </div>
+        <div class="text-base sm:text-lg ">
+            Je vous aide à concevoir, architecturer et développer vos projets web avec des technologies performantes, tout en minimisant leur impact environnemental.
         </div>
         <div class="flex flex-wrap items-center gap-6">
             <?php snippet('svg/logos/laravel') ?>
@@ -77,8 +42,9 @@ use Kirby\Toolkit\I18n;
             <?php snippet('svg/logos/tailwindcss') ?>
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
+
         <div class="flex flex-wrap text-sm gap-x-6 gap-y-4 sm:text-base">
-            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-500/40 hover:to-yellow-500/40">
+            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-pink-500/70 to-yellow-500/70 hover:from-pink-500/50 hover:to-yellow-500/50">
                 <?= I18n::translate('actions.plan_call') ?>
             </a>
             <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 rounded border-neutral-50 hover:bg-neutral-100 hover:border-neutral-100 hover:text-neutral-800">
@@ -89,46 +55,115 @@ use Kirby\Toolkit\I18n;
     <?php endslot() ?>
     <?php endsnippet() ?>
 
-    <!-- Skills -->
-    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal']) ?>
+    <!-- Services -->
+    <?php snippet('partials/container', slots: true, data: ['css' => '']) ?>
     <?php slot('content') ?>
     <div class="flex items-center gap-2">
-    <h2 class="text-lg font-bold">
-        <?= 'Compétences' ?>
-    </h2>
-    <?= icon('lucide:file-code-2', ['class' => 'text-neutral-400']) ?>
+        <h2 class="text-lg font-bold">
+            <?= 'Services' ?>
+        </h2>
+        <?= icon('lucide:handshake', ['class' => 'text-neutral-400']) ?>
     </div>
+    <p class="text-md text-neutral-300">
+        Des solutions adaptées à vos besoins et votre budget
+    </p>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-4">
+        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <?= icon('lucide:globe', ['class' => 'size-4 text-neutral-400']) ?>
+                    <h3 class="text-sm font-semibold">Sites internet</h3>
+                </div>
+                <span class="text-xs font-medium text-neutral-400">Dès 2000.-</span>
+            </div>
+            <p class="text-sm text-neutral-400">Sites vitrines, blogs et e-commerce modernes avec Kirby CMS.</p>
+        </div>
+        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <?= icon('lucide:blocks', ['class' => 'size-4 text-neutral-400']) ?>
+                    <h3 class="text-sm font-semibold">Plateformes sur mesure</h3>
+                </div>
+                <span class="text-xs font-medium text-neutral-400">Dès 4500.-</span>
+            </div>
+            <p class="text-sm text-neutral-400">Applications métier, intranets et API avec Laravel, Filament et Livewire.</p>
+        </div>
+        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <?= icon('lucide:lightbulb', ['class' => 'size-4 text-neutral-400']) ?>
+                    <h3 class="text-sm font-semibold">Conseil & Stratégie</h3>
+                </div>
+                <span class="text-xs font-medium text-neutral-400">110.-/h</span>
+            </div>
+            <p class="text-sm text-neutral-400">Architecture logicielle, gestion de projet, formation et audits.</p>
+        </div>
+        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <?= icon('lucide:shield-check', ['class' => 'size-4 text-neutral-400']) ?>
+                    <h3 class="text-sm font-semibold">Maintenance</h3>
+                </div>
+                <span class="text-xs font-medium text-neutral-400">Dès 200.-/an</span>
+            </div>
+            <p class="text-sm text-neutral-400">Mises à jour, sauvegardes, corrections de bugs et évolutions.</p>
+        </div>
+    </div>
+    <?php endslot() ?>
+    <?php endsnippet() ?>
+
+    <!-- Work -->
+    <?php snippet('partials/container', slots: true, data: ['css' => '', 'paddingTop' => 'pt-16']) ?>
+    <?php slot('content') ?>
+    <div class="flex items-center gap-2">
+        <h2 class="text-lg font-bold">
+            <?= 'Projets' ?>
+        </h2>
+        <?= icon('lucide:briefcase-business', ['class' => 'text-neutral-400']) ?>
+    </div>
+    <p class="text-md text-neutral-300">
+        Une sélection de mes réalisations
+    </p>
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-4">
+        <?php foreach (page()->worksRefs()->toStructure() as $item) { ?>
+        <a href="<?= $item->url() ?>" target="_blank" class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10 cursor-pointer hover:bg-neutral-600/15">
+            <div class="flex items-center gap-2">
+                <?= icon('lucide:globe', ['class' => 'size-4 text-neutral-400']) ?>
+                <h3 class="text-sm font-semibold"><?= $item->name() ?></h3>
+            </div>
+            <p class="text-sm text-neutral-400"><?= $item->description() ?></p>
+        </a>
+        <?php } ?>
+    </div>
+    <?php endslot() ?>
+    <?php endsnippet() ?>
+
+        <!-- Skills -->
+    <?php snippet('partials/container', slots: true, data: ['css' => '', 'paddingTop' => 'pt-16']) ?>
+    <?php slot('content') ?>
+    <div class="flex items-center gap-2">
+        <h2 class="text-lg font-bold">
+            <?= 'Compétences techniques' ?>
+        </h2>
+        <?= icon('lucide:file-code-2', ['class' => 'text-neutral-400']) ?>
+    </div>
+    <p class="text-md text-neutral-300 pb-4">
+        Technologies et outils que j'utilise quotidiennement
+    </p>
     <?php foreach (page()->skillsRefs()->toStructure() as $item) { ?>
             <?php snippet('partials/skill-item', ['item' => $item])  ?>
         <?php } ?>
     <?php endslot() ?>
     <?php endsnippet() ?>
 
-    <!-- Work -->
-    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => 'pt-12']) ?>
-    <?php slot('content') ?>
-    <?php snippet(
-        name: 'partials/basic-section',
-        data: [
-            'title' => 'Travaux',
-            'logo' => icon('lucide:briefcase-business', ['class' => 'text-neutral-400']),
-            'items' => page()
-                ->worksRefs()
-                ->toStructure(),
-        ],
-        slots: true
-    ); ?>
-    <?php endsnippet() ?>
-    <?php endslot() ?>
-    <?php endsnippet() ?>
-
     <!-- Open source -->
-    <?php snippet('partials/container', slots: true, data: ['css' => 'to-reveal', 'paddingTop' => 'pt-12']) ?>
+    <?php snippet('partials/container', slots: true, data: ['css' => '', 'paddingTop' => 'pt-12']) ?>
     <?php slot('content') ?>
     <?php snippet(
         'partials/basic-section',
         data: [
             'title' => 'Open source',
+            'subtitle' => "Mes contributions à la communauté des développeurs",
             'logo' => icon('lucide:hand-heart', ['class' => 'text-neutral-400']),
             'items' => page()->openSourceRefs()->toStructure(),
         ],
@@ -145,6 +180,7 @@ use Kirby\Toolkit\I18n;
         'partials/reviews-section',
         data: [
             'title' => 'Témoignages',
+            'subtitle' => 'Ils/elles ont travaillé avec moi',
             'logo' => icon('lucide:messages-square', ['class' => 'text-neutral-400']),
             'reviews' => [
                 [
@@ -190,6 +226,9 @@ use Kirby\Toolkit\I18n;
     <?php endslot() ?>
     <?php endsnippet() ?>
 
+
+
+
 </main>
 
-<?php snippet('footer', data: ['css' => 'to-reveal']) ?>
+<?php snippet('footer', data: ['css' => '']) ?>

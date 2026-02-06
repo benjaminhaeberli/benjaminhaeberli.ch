@@ -6,13 +6,12 @@ console.log(
 );
 console.log("🇨🇭 Developed by Benjamin Haeberli (https://benjaminhaeberli.ch)");
 
-/* ScrollReveal().reveal(".to-reveal", {
-  duration: 650,
-  interval: 200,
-  origin: "left",
-  distance: "48px",
-});
- */
+// ScrollReveal().reveal(".to-reveal", {
+//   duration: 800,
+//   interval: 50,
+//   origin: "top",
+//   distance: "48px",
+// });
 
 // window.document.addEventListener("DOMContentLoaded", function () {
 //   window.document.body.addEventListener("click", function (event) {
