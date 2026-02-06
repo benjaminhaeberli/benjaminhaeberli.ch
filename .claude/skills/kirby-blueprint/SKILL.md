@@ -14,14 +14,12 @@ app/blueprints/
 ├── site.yml                    # Site-wide settings
 ├── pages/
 │   ├── home.yml
-│   ├── blog.yml
-│   ├── article.yml
 │   ├── default.yml
 │   ├── error.yml
 │   └── legal-notice.yml
 ├── fields/                     # Reusable field definitions
-│   ├── references.yml
-│   └── submenu.yml
+│   ├── cards.yml
+│   └── references.yml
 └── users/
     └── default.yml
 ```
@@ -45,7 +43,6 @@ columns:
 
   - width: 5/12
     fields:
-      submenu: fields/submenu
       seo: fields/seo/meta
 ```
 

@@ -19,7 +19,7 @@ app/                  # Blueprints, models, bootstrap
 
 resources/            # Sources frontend
 ├── views/
-│   ├── templates/    # Templates PHP (home, blog, article...)
+│   ├── templates/    # Templates PHP (home, default...)
 │   └── snippets/     # Composants réutilisables
 ├── css/              # Styles (app.css + modules)
 └── js/               # Scripts (app.js)

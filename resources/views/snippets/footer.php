@@ -42,9 +42,12 @@ $css ??= null;
     </ol>
 
 
-    <a href="https://www.websitecarbon.com/website/benjaminhaeberli-ch/" class="flex gap-2 group hover:underline" target="_blank">
-        <div class="w-4 h-4 rounded-full bg-neutral-400 group-hover:bg-neutral-200"></div>
-        <span>0.02 g of CO<sub>2</sub>/view</span>
+    <a href="https://www.websitecarbon.com/website/benjaminhaeberli-ch/" class="flex items-center gap-2 group hover:underline" target="_blank">
+        <span class="relative flex size-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 opacity-75"></span>
+            <span class="relative inline-flex size-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500"></span>
+        </span>
+        <span>0.05 g of CO<sub>2</sub>/view</span>
     </a>
 
 </footer>

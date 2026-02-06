@@ -1,0 +1,27 @@
+label: Cartes (champ réutilisable)
+type: structure
+fields:
+  name:
+    label: Nom
+    type: text
+    width: 1/4
+  description:
+    label: Description
+    type: text
+    maxlength: 80
+    width: 1/4
+  icon:
+    label: Icône
+    type: text
+    placeholder: 'lucide:globe'
+    help: "Identifiant d'icône (ex: lucide:globe, lucide:blocks)"
+    width: 1/4
+  label:
+    label: Label
+    type: text
+    placeholder: 'Dès 2000.-'
+    help: 'Petit texte affiché en haut à droite (prix, techno, année...)'
+    width: 1/4
+  url:
+    label: URL
+    type: url

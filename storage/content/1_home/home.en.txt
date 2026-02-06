@@ -2,6 +2,35 @@ Title: Accueil
 
 ----
 
+Servicesrefs:
+
+-
+  name: Sites internet
+  description: Sites vitrines et e-commerce modernes avec Kirby CMS.
+  icon: lucide:globe
+  label: Dès 2000.-
+  url: ""
+-
+  name: Plateformes sur mesure
+  description: Applications métier, intranets et API avec Laravel, Filament et Livewire.
+  icon: lucide:blocks
+  label: Dès 4500.-
+  url: ""
+-
+  name: Conseil & Stratégie
+  description: Architecture logicielle, gestion de projet, formation et audits.
+  icon: lucide:lightbulb
+  label: 110.-/h
+  url: ""
+-
+  name: Maintenance
+  description: Mises à jour, sauvegardes, corrections de bugs et évolutions.
+  icon: lucide:shield-check
+  label: Dès 200.-/an
+  url: ""
+
+----
+
 Skillsrefs:
 
 - 
@@ -40,17 +69,17 @@ Skillsrefs:
 
 Worksrefs:
 
-- 
+-
   name: standard-deluxe.ch
-  description: >
-    Back-office du site mis en place avec
-    KirbyCMS.
+  description: Back-office du site mis en place avec KirbyCMS.
+  icon: lucide:globe
+  label: Kirby
   url: https://standard-deluxe.ch/
-- 
+-
   name: guillemsalles.fr
-  description: >
-    Site vitrine pour un ghostwriter
-    freelance créé avec WordPress.
+  description: Site vitrine pour un ghostwriter freelance créé avec WordPress.
+  icon: lucide:globe
+  label: WordPress
   url: https://guillemsalles.fr/
 
 ----
@@ -93,10 +122,6 @@ Opensourcerefs:
     minimaliste pour KirbyCMS.
   url: >
     https://github.com/benjaminhaeberli/kirby-seo
-
-----
-
-Submenu: 
 
 ----
 

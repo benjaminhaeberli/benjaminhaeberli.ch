@@ -8,6 +8,12 @@ columns:
     icon: text
     label: Content
     fields:
+      servicesRefs:
+        label: Services
+        extends: fields/cards
+      worksRefs:
+        label: Travaux
+        extends: fields/cards
       skillsRefs:
         label: Compétences
         type: structure
@@ -21,9 +27,6 @@ columns:
             type: text
             maxlength: 64
             width: 2/3
-      worksRefs:
-        label: Travaux
-        extends: fields/references
       openSourceRefs:
         label: Open source
         extends: fields/references
@@ -31,5 +34,4 @@ columns:
     icon: text
     label: Content
     fields:
-      submenu: fields/submenu
       seo: fields/seo/meta
