@@ -105,18 +105,6 @@ font-sans: Inter, Helvetica, system fonts
 - `text-rose-400` - Heart/love elements
 - `text-pink-500`, `text-yellow-500` - Hover gradients
 
-## Animation
-
-### ScrollReveal
-
-Add `to-reveal` class for scroll animations:
-
-```php
-<div class="to-reveal">
-    <!-- Animates on scroll -->
-</div>
-```
-
 ### Gradient Animation
 
 ```php

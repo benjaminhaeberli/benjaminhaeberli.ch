@@ -4,7 +4,7 @@
     "src": "public/images/benjaminhaeberli_banner.avif"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BXIGp4LD.css",
+    "file": "assets/app-BWAvLkJp.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -13,7 +13,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-LFzN4AuU.js",
+    "file": "assets/app-DrJckdKs.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true

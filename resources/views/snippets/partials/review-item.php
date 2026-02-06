@@ -1,7 +1,7 @@
 <?php
 
 ?>
-<article class="flex flex-col w-full gap-4 text-xs xs:w-80 sm:w-64 to-reveal">
+<article class="flex flex-col w-full gap-4 text-xs xs:w-80 sm:w-64">
     <div class="flex flex-col gap-2 text-neutral-400">
         <?= $content ?>
     </div>
