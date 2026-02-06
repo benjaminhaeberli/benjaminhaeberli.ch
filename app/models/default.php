@@ -1,14 +1,11 @@
 <?php
 
-use Bnomei\ModelHasBoost;
 use Kirby\Cms\File;
 use Kirby\Cms\FileVersion;
 use Kirby\Cms\Page;
 
 class DefaultPage extends Page
 {
-    use ModelHasBoost;
-
     public function getMeta(): string
     {
         return 'meta test';

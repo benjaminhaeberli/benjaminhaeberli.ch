@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer pint)",
+      "Bash(composer phpstan)",
+      "Bash(composer test)",
+      "Bash(npm run prettier)",
+      "Bash(npm run prettier:check)",
+      "Bash(npm run dev)",
+      "Bash(npm run build)",
+      "Bash(npm run watch)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git log*)",
+      "Bash(git branch*)",
+      "Bash(git checkout*)"
+    ],
+    "deny": []
+  }
+}

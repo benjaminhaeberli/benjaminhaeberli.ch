@@ -1,7 +1,29 @@
-@import "./modules/highlight.css";
-@import "./modules/kirbytext.css";  
+@import "tailwindcss";
 
-@tailwind base;
+@source "../views/**/*.php";
+@source "../../app/**/*.php";
+@source "../../storage/content/**/*.txt";
+
+@theme {
+  --breakpoint-xs: 36rem;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-xmd: 56rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-xxl: 90rem;
+  --breakpoint-2xl: 96rem;
+
+  --font-sans: "Inter", "Helvetica", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+@custom-variant hocus (&:hover, &:focus);
+@custom-variant group-hocus (.group:hover &, .group:focus &);
+
+@import "./modules/highlight.css";
+@import "./modules/kirbytext.css";
 
 @layer base {
   html {
@@ -11,7 +33,3 @@
     background-repeat: no-repeat;
   }
 }
-
-@tailwind components;
-
-@tailwind utilities;
