@@ -10,7 +10,7 @@ columns:
     fields:
       servicesRefs:
         label: Services
-        extends: fields/cards
+        extends: fields/cards-service
       worksRefs:
         label: Travaux
         extends: fields/cards

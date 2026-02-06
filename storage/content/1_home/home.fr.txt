@@ -10,7 +10,6 @@ Servicesrefs:
   icon: lucide:globe
   label: Dès 2000.-
   url: ""
-  cover_image: /images/covers/services-sites.avif
   details: |
     Chaque site est conçu sur mesure avec **Kirby CMS**, un système de gestion
     de contenu flat-file rapide et flexible.
@@ -25,7 +24,6 @@ Servicesrefs:
   icon: lucide:blocks
   label: Dès 4500.-
   url: ""
-  cover_image: /images/covers/services-platforms.avif
   details: |
     Des applications robustes avec **Laravel**, le framework PHP de référence,
     combiné à **Filament** pour les interfaces d'administration.
@@ -40,7 +38,6 @@ Servicesrefs:
   icon: lucide:lightbulb
   label: 110.-/h
   url: ""
-  cover_image: /images/covers/services-consulting.avif
   details: |
     Un accompagnement personnalisé pour structurer vos projets numériques
     et faire les bons choix techniques.
@@ -55,7 +52,6 @@ Servicesrefs:
   icon: lucide:shield-check
   label: Dès 200.-/an
   url: ""
-  cover_image: /images/covers/services-maintenance.avif
   details: |
     Un suivi régulier pour garantir la sécurité et la pérennité de votre site.
 
