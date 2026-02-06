@@ -1,15 +1,10 @@
 /** Card Detail Popup */
 
-/* Wrapper keeps relative positioning for desktop */
-.card-detail-wrapper {
-  /* position: relative; */
-}
-
-/* The popup itself */
+/* The popup itself — always fixed, right side of screen, vertically centered */
 .card-detail-popup {
   pointer-events: none;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   z-index: 50;
   width: calc(100vw - 2rem);
   max-width: 20rem;
@@ -20,10 +15,7 @@
   box-shadow:
     0 25px 50px -12px rgb(0 0 0 / 0.5),
     0 0 0 1px rgb(255 255 255 / 0.05);
-  /* transition:
-    opacity 0.25s ease,
-    transform 0.25s ease; */
-  transform: translateY(8px);
+  transition: opacity 0.2s ease;
 
   /* Mobile: centered */
   left: 50%;
@@ -57,7 +49,7 @@
   transition: transform 0.2s ease;
 }
 
-/* Active state (JS-toggled) */
+/* Active state (hover or pinned) */
 .card-detail-wrapper.is-active .card-detail-popup {
   pointer-events: auto;
   opacity: 1;
@@ -65,6 +57,12 @@
 
 .card-detail-wrapper.is-active .card-detail-chevron {
   transform: rotate(90deg);
+}
+
+/* Pinned card gets a subtle highlight */
+.card-detail-wrapper.is-pinned .card-item {
+  background-color: rgb(115 115 115 / 0.15);
+  border-color: rgb(255 255 255 / 0.2);
 }
 
 /* Overlay for mobile */
@@ -75,7 +73,7 @@
   background-color: rgb(0 0 0 / 0.6);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.2s ease;
 }
 
 .card-detail-overlay.is-active {
@@ -83,17 +81,13 @@
   pointer-events: auto;
 }
 
-/* Desktop: position to the right of the card */
+/* Desktop: fixed right side, vertically centered */
 @media (min-width: 48rem) {
   .card-detail-popup {
-    position: absolute;
-    left: calc(100% + 1rem);
+    left: auto;
+    right: 2rem;
     top: 50%;
     translate: 0 -50%;
     width: 20rem;
-  }
-
-  .card-detail-wrapper.is-active .card-detail-popup {
-    transform: translateX(0);
   }
 }

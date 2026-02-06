@@ -67,7 +67,7 @@ use Kirby\Toolkit\I18n;
     <p class="text-md text-neutral-300">
         Des solutions adaptées à vos besoins et votre budget
     </p>
-    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-4 overflow-visible">
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-4">
         <?php foreach (page()->servicesRefs()->toStructure() as $item) { ?>
             <?php snippet('partials/card-item', ['item' => $item]) ?>
         <?php } ?>
@@ -87,7 +87,7 @@ use Kirby\Toolkit\I18n;
     <p class="text-md text-neutral-300">
         Une sélection de mes réalisations
     </p>
-    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-fr pt-4 overflow-visible">
+    <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-fr pt-4">
         <?php foreach (page()->worksRefs()->toStructure() as $item) { ?>
             <?php snippet('partials/card-item', ['item' => $item]) ?>
         <?php } ?>
