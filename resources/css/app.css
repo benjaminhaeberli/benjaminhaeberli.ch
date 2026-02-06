@@ -38,5 +38,6 @@
     background-image: url("../../public/images/benjaminhaeberli_banner.avif");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-position-y: -125px;
   }
 }

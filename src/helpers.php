@@ -14,18 +14,6 @@ if (! function_exists('formatDate')) {
     }
 }
 
-if (! function_exists('icon')) {
-    /**
-     * Provides convenient access to rendering an icon with optional attributes using the PHPIcons class
-     *
-     * @param  array<string, string>  $attributes
-     */
-    function icon(string $iconKey, array $attributes = []): string
-    {
-        $phpicons = (new PHPIcons(kirby()->root('base').DIRECTORY_SEPARATOR.'php-icons.php'));
-
-        return (string) $phpicons
-            ->icon($iconKey)
-            ->attributes($attributes);
-    }
-}
+// Configure the PHPIcons singleton with the correct config path
+// The vendor's icon() function (from php-icons autoload) uses this singleton
+PHPIconsSingleton::setInstance(new PHPIcons(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'php-icons.php'));
