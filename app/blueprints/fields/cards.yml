@@ -27,9 +27,8 @@ fields:
     type: url
   cover_image:
     label: Image de couverture
-    type: url
-    placeholder: '/images/covers/example.avif'
-    help: "Chemin vers l'image de couverture pour le popup de détails"
+    type: files
+    max: 1
     width: 1/2
   details:
     label: Détails

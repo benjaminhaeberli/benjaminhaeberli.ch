@@ -2,9 +2,9 @@
 /** @var \Kirby\Cms\StructureObject $item */
 ?>
 <div class="card-detail-popup">
-    <?php if ($item->cover_image()->isNotEmpty()) : ?>
+    <?php if ($image = $item->cover_image()->toFile()) : ?>
         <div class="card-detail-banner">
-            <img src="<?= $item->cover_image() ?>" alt="<?= $item->name() ?>" loading="lazy">
+            <img src="<?= $image->url() ?>" alt="<?= $item->name() ?>" loading="lazy">
         </div>
     <?php endif ?>
     <div class="card-detail-body">

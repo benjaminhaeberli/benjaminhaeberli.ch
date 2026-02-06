@@ -106,7 +106,7 @@ Worksrefs:
   icon: lucide:globe
   label: Laravel
   url: https://nanou.ch/
-  cover_image: /images/covers/work-nanou.avif
+  cover_image:
   details: |
     Application web complète développée avec **Laravel**, **Filament** et **Livewire**
     pour une association active dans le domaine éducatif.
@@ -121,7 +121,7 @@ Worksrefs:
   icon: lucide:globe
   label: Kirby
   url: https://jamiiyasinema.club/
-  cover_image: /images/covers/work-jamiiya.avif
+  cover_image:
   details: |
     Site vitrine pour un club de cinéma basé à Berne, construit avec **Kirby CMS**.
 
@@ -134,7 +134,7 @@ Worksrefs:
   icon: lucide:globe
   label: Kirby
   url: https://standard-deluxe.ch/
-  cover_image: /images/covers/work-standard.avif
+  cover_image:
   details: |
     Refonte du back-office **Kirby** pour un studio de design graphique zurichois.
 
@@ -147,7 +147,7 @@ Worksrefs:
   icon: lucide:globe
   label: WordPress
   url: https://guillemsalles.fr/
-  cover_image: /images/covers/work-guillem.avif
+  cover_image:
   details: |
     Site portfolio développé avec **WordPress** pour un ghostwriter professionnel.
 
