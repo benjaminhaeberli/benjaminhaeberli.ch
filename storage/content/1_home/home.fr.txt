@@ -11,7 +11,7 @@ Servicesrefs:
   label: Dès 2000.-
   url: ""
   cover_image: /images/covers/services-sites.avif
-  details: >
+  details: |
     Chaque site est conçu sur mesure avec **Kirby CMS**, un système de gestion
     de contenu flat-file rapide et flexible.
 
@@ -26,7 +26,7 @@ Servicesrefs:
   label: Dès 4500.-
   url: ""
   cover_image: /images/covers/services-platforms.avif
-  details: >
+  details: |
     Des applications robustes avec **Laravel**, le framework PHP de référence,
     combiné à **Filament** pour les interfaces d'administration.
 
@@ -41,7 +41,7 @@ Servicesrefs:
   label: 110.-/h
   url: ""
   cover_image: /images/covers/services-consulting.avif
-  details: >
+  details: |
     Un accompagnement personnalisé pour structurer vos projets numériques
     et faire les bons choix techniques.
 
@@ -56,7 +56,7 @@ Servicesrefs:
   label: Dès 200.-/an
   url: ""
   cover_image: /images/covers/services-maintenance.avif
-  details: >
+  details: |
     Un suivi régulier pour garantir la sécurité et la pérennité de votre site.
 
     - Mises à jour CMS et dépendances
@@ -111,7 +111,7 @@ Worksrefs:
   label: Laravel
   url: https://nanou.ch/
   cover_image: /images/covers/work-nanou.avif
-  details: >
+  details: |
     Application web complète développée avec **Laravel**, **Filament** et **Livewire**
     pour une association active dans le domaine éducatif.
 
@@ -126,7 +126,7 @@ Worksrefs:
   label: Kirby
   url: https://jamiiyasinema.club/
   cover_image: /images/covers/work-jamiiya.avif
-  details: >
+  details: |
     Site vitrine pour un club de cinéma basé à Berne, construit avec **Kirby CMS**.
 
     - Mise en place de l'environnement de développement
@@ -139,7 +139,7 @@ Worksrefs:
   label: Kirby
   url: https://standard-deluxe.ch/
   cover_image: /images/covers/work-standard.avif
-  details: >
+  details: |
     Refonte du back-office **Kirby** pour un studio de design graphique zurichois.
 
     - Affichages de données avancés avec vues personnalisées
@@ -152,7 +152,7 @@ Worksrefs:
   label: WordPress
   url: https://guillemsalles.fr/
   cover_image: /images/covers/work-guillem.avif
-  details: >
+  details: |
     Site portfolio développé avec **WordPress** pour un ghostwriter professionnel.
 
     - Design sur mesure avec thème custom

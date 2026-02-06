@@ -84,7 +84,7 @@
 /* Desktop: fixed, flush with content right edge, vertically centered */
 @media (min-width: 48rem) {
   .card-detail-popup {
-    left: calc(50% + 19rem);
+    left: calc(50% + 20rem);
     right: auto;
     top: 50%;
     translate: 0 -50%;
