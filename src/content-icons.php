@@ -16,5 +16,3 @@ icon('lucide:blocks');
 icon('lucide:lightbulb');
 icon('lucide:shield-check');
 
-// Card details
-icon('lucide:chevron-right');

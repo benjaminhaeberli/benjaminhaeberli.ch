@@ -44,19 +44,23 @@
   padding: 1rem;
 }
 
-/* Chevron transition */
-.card-detail-chevron {
-  transition: transform 0.2s ease;
+/* Icon toggle: arrow-up-right ↔ x */
+.card-detail-icon-close {
+  display: none;
+}
+
+.card-detail-wrapper.is-active .card-detail-icon-open {
+  display: none;
+}
+
+.card-detail-wrapper.is-active .card-detail-icon-close {
+  display: inline;
 }
 
 /* Active state (hover or pinned) */
 .card-detail-wrapper.is-active .card-detail-popup {
   pointer-events: auto;
   opacity: 1;
-}
-
-.card-detail-wrapper.is-active .card-detail-chevron {
-  transform: rotate(90deg);
 }
 
 /* Pinned card gets a subtle highlight */
