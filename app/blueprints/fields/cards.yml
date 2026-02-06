@@ -8,7 +8,7 @@ fields:
   description:
     label: Description
     type: text
-    maxlength: 80
+    maxlength: 200
     width: 1/4
   icon:
     label: Icône
