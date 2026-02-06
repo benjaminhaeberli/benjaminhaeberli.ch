@@ -31,6 +31,7 @@
 
 @import "./modules/highlight.css";
 @import "./modules/kirbytext.css";
+@import "./modules/card-detail.css";
 
 @layer base {
   html {
