@@ -44,17 +44,14 @@
   padding: 1rem;
 }
 
-/* Icon toggle: arrow-up-right ↔ x */
-.card-detail-icon-close {
-  display: none;
+/* Icon: grey by default, white when active */
+.card-detail-icon {
+  color: rgb(115 115 115);
+  transition: color 0.2s ease;
 }
 
-.card-detail-wrapper.is-active .card-detail-icon-open {
-  display: none;
-}
-
-.card-detail-wrapper.is-active .card-detail-icon-close {
-  display: inline;
+.card-detail-wrapper.is-active .card-detail-icon {
+  color: rgb(255 255 255);
 }
 
 /* Active state (hover or pinned) */

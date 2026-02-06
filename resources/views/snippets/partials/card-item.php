@@ -19,8 +19,7 @@ $interactive = $item->url()->isNotEmpty() || $hasDetails;
                     <span class="text-xs font-medium text-neutral-400"><?= $item->label() ?></span>
                 <?php endif ?>
                 <?php if ($hasDetails) : ?>
-                    <span class="card-detail-icon-open"><?= icon('lucide:arrow-up-right', ['class' => 'size-3.5 text-neutral-500']) ?></span>
-                    <span class="card-detail-icon-close"><?= icon('lucide:x', ['class' => 'size-3.5 text-neutral-500']) ?></span>
+                    <span class="card-detail-icon"><?= icon('lucide:arrow-up-right', ['class' => 'size-3.5']) ?></span>
                 <?php endif ?>
             </div>
         </div>
