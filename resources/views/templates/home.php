@@ -36,7 +36,7 @@ use Kirby\Toolkit\I18n;
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
         <div class="flex flex-wrap text-sm gap-x-6 gap-y-4 sm:text-base">
-            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
+            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-500/40 hover:to-yellow-500/40">
                 <?= I18n::translate('actions.plan_call') ?>
             </a>
             <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 rounded border-neutral-50 hover:bg-neutral-100 hover:border-neutral-100 hover:text-neutral-800">
