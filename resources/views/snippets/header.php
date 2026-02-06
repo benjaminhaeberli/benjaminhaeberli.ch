@@ -21,7 +21,7 @@
                 <a href="<?= $page->url() ?>" class="py-2 px-2 flex gap-4 items-center <?= ! $page->isActive() ?: 'font-semibold' ?>">
                     <span><?= $page->title() ?></span>
                 </a>
-                <span class="w-full h-[0.125rem] group-hocus:bg-slate-50 <?= ! $page->isActive() ?: 'bg-slate-50' ?>"></span>
+                <span class="w-full h-[0.125rem] group-hocus:bg-neutral-50 <?= ! $page->isActive() ?: 'bg-neutral-50' ?>"></span>
             </div>
         <?php } ?>
     </nav>

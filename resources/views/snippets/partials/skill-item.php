@@ -3,9 +3,9 @@
     <span>
         <?= $item->name() ?>
     </span>
-    <span class="hidden text-slate-400 sm:block">&middot;</span>
+    <span class="hidden text-neutral-400 sm:block">&middot;</span>
     <?php if($item->description()->value) : ?>
-        <div class="text-slate-400">
+        <div class="text-neutral-400">
             <?= $item->description() ?>
         </div>
     <?php endif ?>

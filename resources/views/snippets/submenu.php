@@ -11,7 +11,7 @@ use BenjaminHaeberli\Portfolio\KirbyHelper;
             $links = page()->submenu()->toStructure();
             foreach ($links as $link) : ?>
                 <li class="flex ">
-                    <a href="#<?= $link->slug() ?>" class="flex items-center px-1 text-slate-400 outline-slate-400 outline-dotted <hocus:outline-slate-5></hocus:outline-slate-5>0 outline-2 hocus:text-slate-100">
+                    <a href="#<?= $link->slug() ?>" class="flex items-center px-1 text-neutral-400 outline-neutral-400 outline-dotted hocus:outline-neutral-500 outline-2 hocus:text-neutral-100">
                         <?= $link->title() ?>
                     </a>
                 </li>

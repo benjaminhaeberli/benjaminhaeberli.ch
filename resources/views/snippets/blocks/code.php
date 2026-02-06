@@ -16,6 +16,6 @@ $code = '<code>'.$highlighter->parse($block->code()->value, $block->language()).
         <span data-code="copy"><?= I18n::translate('actions.copy') ?></span>
         <span data-code="copied" class="hidden" ><?= I18n::translate('actions.copied') ?></span>
     </button>
-    <pre id="code-<?= $block->id() ?>" class="p-8 overflow-scroll leading-relaxed bg-gray-950 bg-gradient-to-t from-indigo-400/5 to-transparent rounded-2xl"><?= $code ?></pre>
+    <pre id="code-<?= $block->id() ?>" class="p-8 overflow-scroll leading-relaxed bg-neutral-900 rounded-2xl"><?= $code ?></pre>
 </div>
 

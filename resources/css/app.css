@@ -4,6 +4,13 @@
 @source "../../app/**/*.php";
 @source "../../storage/content/**/*.txt";
 
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 @theme {
   --breakpoint-xs: 36rem;
   --breakpoint-sm: 40rem;
@@ -14,9 +21,9 @@
   --breakpoint-xxl: 90rem;
   --breakpoint-2xl: 96rem;
 
-  --font-sans: "Inter", "Helvetica", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  --font-sans:
+    "Hanken Grotesk", "Helvetica", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @custom-variant hocus (&:hover, &:focus);
@@ -27,7 +34,7 @@
 
 @layer base {
   html {
-    @apply text-slate-50 bg-slate-950;
+    @apply text-neutral-50 bg-neutral-950;
     background-image: url("../../public/images/benjaminhaeberli_banner.avif");
     background-size: 100% auto;
     background-repeat: no-repeat;
