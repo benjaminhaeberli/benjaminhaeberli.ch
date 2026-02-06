@@ -71,25 +71,25 @@ Worksrefs:
 
 -
   name: app.nanou.ch
-  description: Plateforme de gestion et placement de personnel pour une association éducative.
+  description: Plateforme de gestion de missions et de personnel éducatif. Génération automatique de contrats, scan QR pour suivi des signatures, filtres de recherche avancés et actions intelligentes.
   icon: lucide:globe
   label: Laravel
   url: https://nanou.ch/
 -
   name: jamiiyasinema.club
-  description: Site web pour un club de cinéma associatif basé à Bienne.
+  description: Site web pour un club de cinéma associatif. Mise en place de l'environnement technique, création de nouvelles pages et corrections visuelles.
   icon: lucide:globe
   label: Kirby
   url: https://jamiiyasinema.club/
 -
   name: standard-deluxe.ch
-  description: Espace d'administration sur mesure pour un studio de design graphique.
+  description: Espace d'administration pour un studio de design graphique. Affichages de données avancés et refonte de l'architecture du contenu.
   icon: lucide:globe
   label: Kirby
   url: https://standard-deluxe.ch/
 -
   name: guillemsalles.fr
-  description: Site vitrine pour un rédacteur indépendant spécialisé en ghostwriting.
+  description: Site vitrine sur mesure pour un rédacteur indépendant, entièrement éditable en autonomie grâce à un back-office intuitif.
   icon: lucide:globe
   label: WordPress
   url: https://guillemsalles.fr/
