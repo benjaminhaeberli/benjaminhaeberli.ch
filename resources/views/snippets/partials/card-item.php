@@ -16,6 +16,6 @@ $attrs = $item->url()->isNotEmpty() ? ' href="' . $item->url() . '" target="_bla
         <?php endif ?>
     </div>
     <?php if ($item->description()->isNotEmpty()) : ?>
-        <p class="text-sm text-neutral-400"><?= $item->description() ?></p>
+        <p class="text-sm text-neutral-400 hyphens-auto"><?= $item->description() ?></p>
     <?php endif ?>
 </<?= $tag ?>>
