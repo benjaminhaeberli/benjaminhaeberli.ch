@@ -5,7 +5,7 @@ $tag = $item->url()->isNotEmpty() && !$hasDetails ? 'a' : 'div';
 $attrs = $item->url()->isNotEmpty() && !$hasDetails ? ' href="' . $item->url() . '" target="_blank"' : '';
 $interactive = $item->url()->isNotEmpty() || $hasDetails;
 ?>
-<div class="<?= $hasDetails ? 'card-detail-wrapper' : '' ?> relative">
+<div class="<?= $hasDetails ? 'card-detail-wrapper' : '' ?>">
     <<?= $tag ?><?= $attrs ?> class="card-item flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10 <?= $interactive ? 'cursor-pointer hover:bg-neutral-600/15' : '' ?>"<?= $hasDetails ? ' data-card-detail' : '' ?>>
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
