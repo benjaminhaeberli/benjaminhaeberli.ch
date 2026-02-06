@@ -28,6 +28,48 @@ use Kirby\Toolkit\I18n;
         <div class="text-base sm:text-lg">
             Je vous aide à concevoir, architecturer et coder vos projets web. Je travaille avec des technologies modernes pour développer des outils sur-mesure et optimisés.
         </div>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <?= icon('lucide:globe', ['class' => 'size-4 text-neutral-400']) ?>
+                        <h3 class="text-sm font-semibold">Sites internet</h3>
+                    </div>
+                    <span class="text-xs font-medium text-neutral-400">Dès 2000.-</span>
+                </div>
+                <p class="text-xs text-neutral-400">Sites vitrines, blogs, portfolios, e-commerce avec Kirby ou WordPress.</p>
+            </div>
+            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <?= icon('lucide:blocks', ['class' => 'size-4 text-neutral-400']) ?>
+                        <h3 class="text-sm font-semibold">Plateformes sur mesure</h3>
+                    </div>
+                    <span class="text-xs font-medium text-neutral-400">Dès 9000.-</span>
+                </div>
+                <p class="text-xs text-neutral-400">Apps complexes, intranets et API avec Laravel et Vue.js.</p>
+            </div>
+            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <?= icon('lucide:lightbulb', ['class' => 'size-4 text-neutral-400']) ?>
+                        <h3 class="text-sm font-semibold">Conseil & Stratégie</h3>
+                    </div>
+                    <span class="text-xs font-medium text-neutral-400">110.-/h</span>
+                </div>
+                <p class="text-xs text-neutral-400">Architecture logicielle, gestion de projet, formation et audits.</p>
+            </div>
+            <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-50/5 border border-neutral-50/10">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <?= icon('lucide:shield-check', ['class' => 'size-4 text-neutral-400']) ?>
+                        <h3 class="text-sm font-semibold">Maintenance</h3>
+                    </div>
+                    <span class="text-xs font-medium text-neutral-400">Dès 200.-/an</span>
+                </div>
+                <p class="text-xs text-neutral-400">Mises à jour, sauvegardes, corrections de bugs et évolutions.</p>
+            </div>
+        </div>
         <div class="flex flex-wrap items-center gap-6">
             <?php snippet('svg/logos/laravel') ?>
             <?php snippet('svg/logos/kirbycms') ?>

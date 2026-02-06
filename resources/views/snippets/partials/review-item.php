@@ -2,7 +2,7 @@
 
 ?>
 <article class="flex flex-col w-full gap-4 text-xs xs:w-80 sm:w-64 to-reveal">
-    <div class="flex flex-col gap-2 text-neutral-300">
+    <div class="flex flex-col gap-2 text-neutral-400">
         <?= $content ?>
     </div>
     <div class="flex flex-row items-center gap-4">
@@ -11,7 +11,7 @@
             <h3>
                 <a href="<?= $url ?>" class="font-semibold hover:underline" target="_blank"><?= $name ?></a>
             </h3>
-            <p class="text-neutral-300"><?= $job ?></p>
+            <p class="text-neutral-400"><?= $job ?></p>
         </div>
     </div>
 </article>
