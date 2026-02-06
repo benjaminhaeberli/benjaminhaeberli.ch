@@ -25,3 +25,17 @@ fields:
   url:
     label: URL
     type: url
+  cover_image:
+    label: Image de couverture
+    type: url
+    placeholder: '/images/covers/example.avif'
+    help: "Chemin vers l'image de couverture pour le popup de détails"
+    width: 1/2
+  details:
+    label: Détails
+    type: textarea
+    help: 'Texte enrichi affiché dans le popup (supporte le KirbyText)'
+    buttons:
+      - bold
+      - italic
+      - link

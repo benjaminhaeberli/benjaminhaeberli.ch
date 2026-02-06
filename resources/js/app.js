@@ -1,5 +1,6 @@
 import ScrollReveal from "scrollreveal";
 import kirbyjs from "./kirbyjs";
+import initCardDetails from "./card-detail";
 
 console.log(
   "ℹ️ This website uses JavaScript to anonymously analyse user traffic using Plausible (https://plausible.io/)"
@@ -28,4 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
       kirbyjs.copyCodeBlock(button);
     });
   });
+
+  initCardDetails();
 });

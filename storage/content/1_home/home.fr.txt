@@ -10,24 +10,59 @@ Servicesrefs:
   icon: lucide:globe
   label: Dès 2000.-
   url: ""
+  cover_image: /images/covers/services-sites.avif
+  details: >
+    Chaque site est conçu sur mesure avec **Kirby CMS**, un système de gestion
+    de contenu flat-file rapide et flexible.
+
+    - Design responsive et accessible
+    - Optimisation SEO et performances
+    - Hébergement éco-responsable en Suisse
+    - Formation à l'édition du contenu
 -
   name: Plateformes sur mesure
   description: Applications métier, intranets et API avec Laravel, Filament et Livewire.
   icon: lucide:blocks
   label: Dès 4500.-
   url: ""
+  cover_image: /images/covers/services-platforms.avif
+  details: >
+    Des applications robustes avec **Laravel**, le framework PHP de référence,
+    combiné à **Filament** pour les interfaces d'administration.
+
+    - Authentification et gestion des rôles
+    - Tableaux de bord et rapports
+    - API REST documentées
+    - Déploiement automatisé
 -
   name: Conseil & Stratégie
   description: Architecture logicielle, gestion de projet, formation et audits.
   icon: lucide:lightbulb
   label: 110.-/h
   url: ""
+  cover_image: /images/covers/services-consulting.avif
+  details: >
+    Un accompagnement personnalisé pour structurer vos projets numériques
+    et faire les bons choix techniques.
+
+    - Audit de code et de performance
+    - Rédaction de cahiers des charges
+    - Formation sur les outils et bonnes pratiques
+    - Conseil en éco-conception web
 -
   name: Maintenance
   description: Mises à jour, sauvegardes, corrections de bugs et évolutions.
   icon: lucide:shield-check
   label: Dès 200.-/an
   url: ""
+  cover_image: /images/covers/services-maintenance.avif
+  details: >
+    Un suivi régulier pour garantir la sécurité et la pérennité de votre site.
+
+    - Mises à jour CMS et dépendances
+    - Sauvegardes automatiques
+    - Monitoring et corrections de bugs
+    - Évolutions fonctionnelles à la demande
 
 ----
 
@@ -75,24 +110,54 @@ Worksrefs:
   icon: lucide:globe
   label: Laravel
   url: https://nanou.ch/
+  cover_image: /images/covers/work-nanou.avif
+  details: >
+    Application web complète développée avec **Laravel**, **Filament** et **Livewire**
+    pour une association active dans le domaine éducatif.
+
+    - Génération automatique de contrats PDF
+    - Système de scan QR pour le suivi des signatures
+    - Filtres de recherche avancés et actions groupées
+    - Tableau de bord avec statistiques en temps réel
 -
   name: jamiiyasinema.club
   description: Site web pour un club de cinéma associatif. Mise en place de l'environnement technique, création de nouvelles pages et corrections visuelles.
   icon: lucide:globe
   label: Kirby
   url: https://jamiiyasinema.club/
+  cover_image: /images/covers/work-jamiiya.avif
+  details: >
+    Site vitrine pour un club de cinéma basé à Berne, construit avec **Kirby CMS**.
+
+    - Mise en place de l'environnement de développement
+    - Création de templates pour les pages événements
+    - Corrections visuelles et responsive design
 -
   name: standard-deluxe.ch
   description: Espace d'administration pour un studio de design graphique. Affichages de données avancés et refonte de l'architecture du contenu.
   icon: lucide:globe
   label: Kirby
   url: https://standard-deluxe.ch/
+  cover_image: /images/covers/work-standard.avif
+  details: >
+    Refonte du back-office **Kirby** pour un studio de design graphique zurichois.
+
+    - Affichages de données avancés avec vues personnalisées
+    - Restructuration complète de l'architecture du contenu
+    - Optimisation des workflows éditoriaux
 -
   name: guillemsalles.fr
   description: Site vitrine sur mesure pour un rédacteur indépendant, entièrement éditable en autonomie grâce à un back-office intuitif.
   icon: lucide:globe
   label: WordPress
   url: https://guillemsalles.fr/
+  cover_image: /images/covers/work-guillem.avif
+  details: >
+    Site portfolio développé avec **WordPress** pour un ghostwriter professionnel.
+
+    - Design sur mesure avec thème custom
+    - Back-office intuitif pour édition en autonomie
+    - Optimisation SEO et performances
 
 ----
 

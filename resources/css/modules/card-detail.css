@@ -1,0 +1,112 @@
+/** Card Detail Popup */
+
+/* Floating animation */
+@keyframes card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Wrapper keeps relative positioning for desktop */
+.card-detail-wrapper {
+  position: relative;
+}
+
+/* The popup itself */
+.card-detail-popup {
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 50;
+  width: calc(100vw - 2rem);
+  max-width: 20rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  background-color: rgb(23 23 23);
+  box-shadow:
+    0 25px 50px -12px rgb(0 0 0 / 0.5),
+    0 0 0 1px rgb(255 255 255 / 0.05);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  transform: translateY(8px);
+
+  /* Mobile: centered */
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+/* Banner image */
+.card-detail-banner {
+  width: 100%;
+  height: 8rem;
+  overflow: hidden;
+}
+
+.card-detail-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Body content */
+.card-detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+/* Chevron transition */
+.card-detail-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* Active state (JS-toggled) */
+.card-detail-wrapper.is-active .card-detail-popup {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  animation: card-float 3s ease-in-out 0.3s infinite;
+}
+
+.card-detail-wrapper.is-active .card-detail-chevron {
+  transform: rotate(90deg);
+}
+
+/* Overlay for mobile */
+.card-detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background-color: rgb(0 0 0 / 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.card-detail-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Desktop: position to the right of the card */
+@media (min-width: 48rem) {
+  .card-detail-popup {
+    position: absolute;
+    left: calc(100% + 1rem);
+    top: 50%;
+    translate: 0 -50%;
+    width: 20rem;
+  }
+
+  .card-detail-wrapper.is-active .card-detail-popup {
+    transform: translateX(0);
+  }
+}
