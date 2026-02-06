@@ -3,12 +3,14 @@
 ## Analyse de la Codebase
 
 ### Stack Technique
+
 - **CMS**: Kirby 4.4.0 (flat-file CMS PHP)
 - **PHP**: 8.3+
 - **Frontend**: Tailwind CSS 3.4.1 + Vite 5.1.6
 - **Outils qualité**: Laravel Pint (code style), PHPStan (analyse statique), Prettier
 
 ### Structure du Projet
+
 ```
 app/                  # Blueprints Kirby, models, bootstrap
 resources/            # Views (templates, snippets), CSS, JS
@@ -18,6 +20,7 @@ public/               # Assets compilés par Vite
 ```
 
 ### Types de Pages
+
 - `home` - Page d'accueil avec compétences, travaux, témoignages
 - `blog` - Liste des articles
 - `article` - Article individuel
@@ -29,27 +32,27 @@ public/               # Assets compilés par Vite
 
 ## Skills Proposés (7)
 
-| Skill | Description | Priorité |
-|-------|-------------|----------|
-| `documentator` | Créer des docs markdown dans /docs avec convention de nommage | Haute |
-| `kirby-template` | Créer/modifier templates et snippets Kirby | Haute |
-| `kirby-blueprint` | Créer/modifier blueprints YAML Kirby | Haute |
-| `tailwind-component` | Créer composants avec Tailwind CSS | Moyenne |
-| `code-quality` | Exécuter Pint, PHPStan, Prettier | Moyenne |
-| `git-commit` | Commits avec GitMoji | Moyenne |
-| `deploy` | Déployer via SSH/GitHub Actions | Basse |
+| Skill                | Description                                                   | Priorité |
+| -------------------- | ------------------------------------------------------------- | -------- |
+| `documentator`       | Créer des docs markdown dans /docs avec convention de nommage | Haute    |
+| `kirby-template`     | Créer/modifier templates et snippets Kirby                    | Haute    |
+| `kirby-blueprint`    | Créer/modifier blueprints YAML Kirby                          | Haute    |
+| `tailwind-component` | Créer composants avec Tailwind CSS                            | Moyenne  |
+| `code-quality`       | Exécuter Pint, PHPStan, Prettier                              | Moyenne  |
+| `git-commit`         | Commits avec GitMoji                                          | Moyenne  |
+| `deploy`             | Déployer via SSH/GitHub Actions                               | Basse    |
 
 ---
 
 ## Agents Proposés (5)
 
-| Agent | Description | Utilisation |
-|-------|-------------|-------------|
-| `kirby-expert` | Expert Kirby CMS pour architecture et patterns | Questions techniques Kirby |
-| `frontend-builder` | Développement frontend Tailwind + Vite | Nouvelles features UI |
-| `php-reviewer` | Review code PHP avec PHPStan/Pint | Avant commit |
-| `task-planner` | Créer des PRD dans docs/tasks | Nouvelles features |
-| `upgrade-assistant` | Assistance migrations/upgrades | Mises à jour dépendances |
+| Agent               | Description                                    | Utilisation                |
+| ------------------- | ---------------------------------------------- | -------------------------- |
+| `kirby-expert`      | Expert Kirby CMS pour architecture et patterns | Questions techniques Kirby |
+| `frontend-builder`  | Développement frontend Tailwind + Vite         | Nouvelles features UI      |
+| `php-reviewer`      | Review code PHP avec PHPStan/Pint              | Avant commit               |
+| `task-planner`      | Créer des PRD dans docs/tasks                  | Nouvelles features         |
+| `upgrade-assistant` | Assistance migrations/upgrades                 | Mises à jour dépendances   |
 
 ---
 
@@ -89,6 +92,7 @@ CLAUDE.md                            # Instructions principales
 Format: `YYMMDD_type_nom-du-doc.md`
 
 Types (inspirés de Conventional Commits):
+
 - `feature` - Nouvelle fonctionnalité
 - `fix` - Correction de bug
 - `refactor` - Refactoring

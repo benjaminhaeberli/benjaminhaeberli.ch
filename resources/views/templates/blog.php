@@ -13,7 +13,7 @@
             <h1 class="text-xl font-bold sm:text-4xl">
                 <?= page()->title() ?>
             </h1>
-            <div class="font-medium text-slate-300">
+            <div class="font-medium text-neutral-300">
                 <?= page()->accroche()->kt() ?>
             </div>
         </div>

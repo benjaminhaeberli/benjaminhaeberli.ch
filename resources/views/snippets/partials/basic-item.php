@@ -5,8 +5,8 @@
                 <?= $item->name() ?>
             </a>
         </div>
-        <span class="hidden text-slate-400 sm:block">&middot;</span>
-        <div class="text-slate-400">
+        <span class="hidden text-neutral-400 sm:block">&middot;</span>
+        <div class="text-neutral-400">
             <?= $item->description() ?>
         </div>
     </div>

@@ -49,6 +49,7 @@ Kirby::plugin('benjaminhaeberli/kirby-seo', [
 ### Classe `KirbySeo` (src/KirbySeo.php)
 
 Utilise les APIs Kirby suivantes :
+
 - `Kirby\Cms\App`, `Kirby\Cms\Page`, `Kirby\Toolkit\A`
 - `$kirby->site()->kirbyseositeobject()->toObject()`
 - `$seoobject->kirbyseoimage()->toFile()?->crop(1200, 630)->url()`
@@ -69,20 +70,20 @@ Utilise `Html::tag()` et la fonction `e()` pour générer conditionnellement les
 
 ### API vérifiée (aucun changement cassant)
 
-| API | Status K5 |
-|-----|-----------|
-| `Kirby\Cms\App` | Stable |
-| `Kirby\Cms\Page` | Stable |
-| `Kirby\Toolkit\A` | Stable |
-| `$field->toObject()` | Stable |
-| `$field->toFile()` | Stable |
-| `$file->crop()` | Stable |
-| `Html::tag()` | Stable |
-| `e()` helper | Stable |
-| `kirby()->language()->locale()` | Stable |
-| `site()->url()` | Stable |
-| Blueprint `type: group` | Stable |
-| Blueprint `type: object` | Stable |
+| API                             | Status K5 |
+| ------------------------------- | --------- |
+| `Kirby\Cms\App`                 | Stable    |
+| `Kirby\Cms\Page`                | Stable    |
+| `Kirby\Toolkit\A`               | Stable    |
+| `$field->toObject()`            | Stable    |
+| `$field->toFile()`              | Stable    |
+| `$file->crop()`                 | Stable    |
+| `Html::tag()`                   | Stable    |
+| `e()` helper                    | Stable    |
+| `kirby()->language()->locale()` | Stable    |
+| `site()->url()`                 | Stable    |
+| Blueprint `type: group`         | Stable    |
+| Blueprint `type: object`        | Stable    |
 
 ### Points d'attention K5
 
@@ -97,22 +98,23 @@ Utilise `Html::tag()` et la fonction `e()` pour générer conditionnellement les
 
 ```json
 {
-    "require": {
-        "php": "^8.2",
-        "getkirby/cms": "^4.0.1 || ^5.0",
-        "getkirby/composer-installer": "^1.2.1",
-        "funkjedi/composer-include-files": "^1.1"
-    },
-    "require-dev": {
-        "laravel/pint": "^1.17",
-        "pestphp/pest": "^3.0",
-        "phpstan/phpstan": "^1.12",
-        "rector/rector": "^1.0"
-    }
+  "require": {
+    "php": "^8.2",
+    "getkirby/cms": "^4.0.1 || ^5.0",
+    "getkirby/composer-installer": "^1.2.1",
+    "funkjedi/composer-include-files": "^1.1"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.17",
+    "pestphp/pest": "^3.0",
+    "phpstan/phpstan": "^1.12",
+    "rector/rector": "^1.0"
+  }
 }
 ```
 
 **Changements :**
+
 - `php` : `^8.1` → `^8.2`
 - `getkirby/cms` : `^4.0.1` → `^4.0.1 || ^5.0`
 - `pestphp/pest` : `^2.6.1` → `^3.0` (Pest 3 supporte PHP 8.2+)
@@ -124,6 +126,7 @@ Utilise `Html::tag()` et la fonction `e()` pour générer conditionnellement les
 ### 2. `src/KirbySeo.php`
 
 Aucun changement de logique nécessaire. Optionnellement :
+
 - Ajouter des return types explicites si manquants
 - Vérifier que `A::first(kirby()->language()->locale())` fonctionne en mode single-language (pas de `language()` disponible) et ajouter un fallback
 
@@ -158,6 +161,7 @@ composer require benjaminhaeberli/kirby-seo:^0.4.0
 ```
 
 Puis restaurer :
+
 - `seo: fields/seo/meta` dans les blueprints (`home.yml`, `blog.yml`, `article.yml`, `legal-notice.yml`)
 - `<?php snippet('seo/meta') ?>` dans `header.php` (remplacer les balises meta basiques)
 

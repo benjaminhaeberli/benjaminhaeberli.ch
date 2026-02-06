@@ -52,6 +52,7 @@ columns:
 ## Common Field Types
 
 ### Text Fields
+
 ```yaml
 title:
   label: Title
@@ -65,6 +66,7 @@ description:
 ```
 
 ### Structure (Repeatable)
+
 ```yaml
 items:
   label: Items
@@ -84,17 +86,19 @@ items:
 ```
 
 ### Extending Fields
+
 ```yaml
 myField:
   extends: fields/references
 ```
 
 ### URL/Email
+
 ```yaml
 website:
   label: Website
   type: url
-  placeholder: 'https://example.com'
+  placeholder: "https://example.com"
 
 email:
   label: Email
@@ -102,6 +106,7 @@ email:
 ```
 
 ### Pages Reference
+
 ```yaml
 navigation:
   label: Navigation
@@ -109,6 +114,7 @@ navigation:
 ```
 
 ### Images
+
 ```yaml
 image:
   label: Image

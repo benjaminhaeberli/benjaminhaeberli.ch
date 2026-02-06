@@ -74,16 +74,19 @@ resources/views/
 ## Common Patterns
 
 ### Icons (php-icons)
+
 ```php
 <?= icon('lucide:heart', ['class' => 'text-rose-400']) ?>
 ```
 
 ### Translations
+
 ```php
 <?= I18n::translate('actions.contact_me') ?>
 ```
 
 ### Page Data
+
 ```php
 <?php foreach (page()->items()->toStructure() as $item) { ?>
     <?php snippet('partials/item', ['item' => $item]) ?>
@@ -91,6 +94,7 @@ resources/views/
 ```
 
 ### Kirby Fields
+
 ```php
 <?= $page->title() ?>
 <?= $page->text()->kirbytext() ?>
@@ -100,6 +104,7 @@ resources/views/
 ## CSS Classes
 
 Use Tailwind CSS classes. Common patterns:
+
 - `to-reveal` - ScrollReveal animation trigger
 - `flex flex-col gap-*` - Flexbox layouts
 - `text-slate-300` - Muted text color

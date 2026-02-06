@@ -9,34 +9,34 @@ Create commits with GitMoji convention.
 
 ## GitMoji Reference
 
-| Emoji | Code | Usage |
-|-------|------|-------|
-| :sparkles: | `:sparkles:` | New feature |
-| :bug: | `:bug:` | Bug fix |
-| :art: | `:art:` | Code style/format |
-| :recycle: | `:recycle:` | Refactoring |
-| :zap: | `:zap:` | Performance |
-| :memo: | `:memo:` | Documentation |
-| :lipstick: | `:lipstick:` | UI/Style |
-| :wrench: | `:wrench:` | Configuration |
-| :heavy_plus_sign: | `:heavy_plus_sign:` | Add dependency |
-| :heavy_minus_sign: | `:heavy_minus_sign:` | Remove dependency |
-| :arrow_up: | `:arrow_up:` | Upgrade dependency |
-| :arrow_down: | `:arrow_down:` | Downgrade dependency |
-| :fire: | `:fire:` | Remove code/files |
-| :truck: | `:truck:` | Move/rename files |
-| :construction: | `:construction:` | Work in progress |
-| :white_check_mark: | `:white_check_mark:` | Add tests |
-| :green_heart: | `:green_heart:` | Fix CI |
-| :lock: | `:lock:` | Security fix |
-| :rotating_light: | `:rotating_light:` | Fix linter warnings |
-| :globe_with_meridians: | `:globe_with_meridians:` | Internationalization |
-| :pencil2: | `:pencil2:` | Fix typo |
-| :rewind: | `:rewind:` | Revert changes |
-| :twisted_rightwards_arrows: | `:twisted_rightwards_arrows:` | Merge branches |
-| :package: | `:package:` | Build/package |
-| :alien: | `:alien:` | External API changes |
-| :see_no_evil: | `:see_no_evil:` | Update .gitignore |
+| Emoji                       | Code                          | Usage                |
+| --------------------------- | ----------------------------- | -------------------- |
+| :sparkles:                  | `:sparkles:`                  | New feature          |
+| :bug:                       | `:bug:`                       | Bug fix              |
+| :art:                       | `:art:`                       | Code style/format    |
+| :recycle:                   | `:recycle:`                   | Refactoring          |
+| :zap:                       | `:zap:`                       | Performance          |
+| :memo:                      | `:memo:`                      | Documentation        |
+| :lipstick:                  | `:lipstick:`                  | UI/Style             |
+| :wrench:                    | `:wrench:`                    | Configuration        |
+| :heavy_plus_sign:           | `:heavy_plus_sign:`           | Add dependency       |
+| :heavy_minus_sign:          | `:heavy_minus_sign:`          | Remove dependency    |
+| :arrow_up:                  | `:arrow_up:`                  | Upgrade dependency   |
+| :arrow_down:                | `:arrow_down:`                | Downgrade dependency |
+| :fire:                      | `:fire:`                      | Remove code/files    |
+| :truck:                     | `:truck:`                     | Move/rename files    |
+| :construction:              | `:construction:`              | Work in progress     |
+| :white_check_mark:          | `:white_check_mark:`          | Add tests            |
+| :green_heart:               | `:green_heart:`               | Fix CI               |
+| :lock:                      | `:lock:`                      | Security fix         |
+| :rotating_light:            | `:rotating_light:`            | Fix linter warnings  |
+| :globe_with_meridians:      | `:globe_with_meridians:`      | Internationalization |
+| :pencil2:                   | `:pencil2:`                   | Fix typo             |
+| :rewind:                    | `:rewind:`                    | Revert changes       |
+| :twisted_rightwards_arrows: | `:twisted_rightwards_arrows:` | Merge branches       |
+| :package:                   | `:package:`                   | Build/package        |
+| :alien:                     | `:alien:`                     | External API changes |
+| :see_no_evil:               | `:see_no_evil:`               | Update .gitignore    |
 
 ## Commit Message Format
 
@@ -45,6 +45,7 @@ Create commits with GitMoji convention.
 ```
 
 ### Examples
+
 ```
 :sparkles: add user authentication
 :bug: fix login redirect loop

@@ -13,14 +13,14 @@ use Kirby\Toolkit\I18n;
     <?php slot('content') ?>
     <div class="flex flex-col gap-6">
         <div class="space-y-4">
-            <p class="p-1 px-2 text-sm rounded w-fit bg-gradient-to-t from-slate-50/20 to-slate-50/5">
+            <p class="p-1 px-2 text-sm rounded w-fit bg-gradient-to-t from-neutral-50/20 to-neutral-50/5">
                 Architecte Logiciel ✽ Freelance
             </p>
             <div class="space-y-2">
                 <p class="text-2xl font-bold sm:text-4xl">
                  Salut, je suis Benjamin.
                 </p>
-                <h1 class="text-2xl font-medium text-slate-300 sm:text-3xl">
+                <h1 class="text-2xl font-medium text-neutral-300 sm:text-3xl">
                     Un développeur freelance qui aime le code performant et durable.
                 </h1>
             </div>
@@ -36,10 +36,10 @@ use Kirby\Toolkit\I18n;
             <?php snippet('svg/logos/infomaniak') ?>
         </div>
         <div class="flex flex-wrap text-sm gap-x-6 gap-y-4 sm:text-base">
-            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-pink-500 hover:to-yellow-500">
+            <a href="https://calendly.com/benjaminhaeberli/visioconference" target="_blank" class="flex items-center px-4 py-2 font-bold rounded bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-500/40 hover:to-yellow-500/40">
                 <?= I18n::translate('actions.plan_call') ?>
             </a>
-            <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 rounded border-slate-50 hover:bg-slate-100 hover:border-slate-100 hover:text-slate-800">
+            <a href="https://tally.so/r/n08Eey" target="_blank" class="flex items-center px-4 py-2 font-bold border-2 rounded border-neutral-50 hover:bg-neutral-100 hover:border-neutral-100 hover:text-neutral-800">
                 <?= I18n::translate('actions.contact_me') ?>
             </a>
         </div>
@@ -54,7 +54,7 @@ use Kirby\Toolkit\I18n;
     <h2 class="text-lg font-bold">
         <?= 'Compétences' ?>
     </h2>
-    <?= icon('lucide:file-code-2', ['class' => 'text-sky-400']) ?>
+    <?= icon('lucide:file-code-2', ['class' => 'text-neutral-400']) ?>
     </div>
     <?php foreach (page()->skillsRefs()->toStructure() as $item) { ?>
             <?php snippet('partials/skill-item', ['item' => $item])  ?>
@@ -69,7 +69,7 @@ use Kirby\Toolkit\I18n;
         name: 'partials/basic-section',
         data: [
             'title' => 'Travaux',
-            'logo' => icon('lucide:briefcase-business', ['class' => 'text-sky-400']),
+            'logo' => icon('lucide:briefcase-business', ['class' => 'text-neutral-400']),
             'items' => page()
                 ->worksRefs()
                 ->toStructure(),
@@ -87,7 +87,7 @@ use Kirby\Toolkit\I18n;
         'partials/basic-section',
         data: [
             'title' => 'Open source',
-            'logo' => icon('lucide:hand-heart', ['class' => 'text-rose-400']),
+            'logo' => icon('lucide:hand-heart', ['class' => 'text-neutral-400']),
             'items' => page()->openSourceRefs()->toStructure(),
         ],
         slots: true
@@ -103,7 +103,7 @@ use Kirby\Toolkit\I18n;
         'partials/reviews-section',
         data: [
             'title' => 'Témoignages',
-            'logo' => icon('lucide:messages-square', ['class' => 'text-indigo-400']),
+            'logo' => icon('lucide:messages-square', ['class' => 'text-neutral-400']),
             'reviews' => [
                 [
                     'name' => 'Guillem Salles',
