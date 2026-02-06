@@ -13,8 +13,6 @@ Create and modify Kirby CMS templates and snippets for this project.
 resources/views/
 ├── templates/          # Page templates (match blueprint names)
 │   ├── home.php
-│   ├── blog.php
-│   ├── article.php
 │   ├── default.php
 │   ├── error.php
 │   └── legal-notice.php
@@ -24,9 +22,9 @@ resources/views/
     ├── partials/       # Reusable UI components
     │   ├── container.php
     │   ├── basic-section.php
+    │   ├── card-item.php
     │   ├── review-item.php
     │   └── skill-item.php
-    ├── blocks/         # Kirby blocks
     └── svg/            # SVG icons and logos
 ```
 

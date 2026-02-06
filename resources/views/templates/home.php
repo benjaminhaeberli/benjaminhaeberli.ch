@@ -68,46 +68,9 @@ use Kirby\Toolkit\I18n;
         Des solutions adaptées à vos besoins et votre budget
     </p>
     <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-4">
-        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <?= icon('lucide:globe', ['class' => 'size-4 text-neutral-400']) ?>
-                    <h3 class="text-sm font-semibold">Sites internet</h3>
-                </div>
-                <span class="text-xs font-medium text-neutral-400">Dès 2000.-</span>
-            </div>
-            <p class="text-sm text-neutral-400">Sites vitrines, blogs et e-commerce modernes avec Kirby CMS.</p>
-        </div>
-        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <?= icon('lucide:blocks', ['class' => 'size-4 text-neutral-400']) ?>
-                    <h3 class="text-sm font-semibold">Plateformes sur mesure</h3>
-                </div>
-                <span class="text-xs font-medium text-neutral-400">Dès 4500.-</span>
-            </div>
-            <p class="text-sm text-neutral-400">Applications métier, intranets et API avec Laravel, Filament et Livewire.</p>
-        </div>
-        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <?= icon('lucide:lightbulb', ['class' => 'size-4 text-neutral-400']) ?>
-                    <h3 class="text-sm font-semibold">Conseil & Stratégie</h3>
-                </div>
-                <span class="text-xs font-medium text-neutral-400">110.-/h</span>
-            </div>
-            <p class="text-sm text-neutral-400">Architecture logicielle, gestion de projet, formation et audits.</p>
-        </div>
-        <div class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <?= icon('lucide:shield-check', ['class' => 'size-4 text-neutral-400']) ?>
-                    <h3 class="text-sm font-semibold">Maintenance</h3>
-                </div>
-                <span class="text-xs font-medium text-neutral-400">Dès 200.-/an</span>
-            </div>
-            <p class="text-sm text-neutral-400">Mises à jour, sauvegardes, corrections de bugs et évolutions.</p>
-        </div>
+        <?php foreach (page()->servicesRefs()->toStructure() as $item) { ?>
+            <?php snippet('partials/card-item', ['item' => $item]) ?>
+        <?php } ?>
     </div>
     <?php endslot() ?>
     <?php endsnippet() ?>
@@ -126,13 +89,7 @@ use Kirby\Toolkit\I18n;
     </p>
     <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pt-4">
         <?php foreach (page()->worksRefs()->toStructure() as $item) { ?>
-        <a href="<?= $item->url() ?>" target="_blank" class="flex flex-col gap-1.5 p-4 rounded-lg bg-neutral-600/5 border border-neutral-50/10 cursor-pointer hover:bg-neutral-600/15">
-            <div class="flex items-center gap-2">
-                <?= icon('lucide:globe', ['class' => 'size-4 text-neutral-400']) ?>
-                <h3 class="text-sm font-semibold"><?= $item->name() ?></h3>
-            </div>
-            <p class="text-sm text-neutral-400"><?= $item->description() ?></p>
-        </a>
+            <?php snippet('partials/card-item', ['item' => $item]) ?>
         <?php } ?>
     </div>
     <?php endslot() ?>

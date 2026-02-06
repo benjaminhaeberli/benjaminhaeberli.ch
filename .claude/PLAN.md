@@ -21,9 +21,7 @@ public/               # Assets compilés par Vite
 
 ### Types de Pages
 
-- `home` - Page d'accueil avec compétences, travaux, témoignages
-- `blog` - Liste des articles
-- `article` - Article individuel
+- `home` - Page d'accueil avec services, projets, compétences, témoignages
 - `default` - Page standard
 - `error` - Page d'erreur
 - `legal-notice` - Mentions légales
