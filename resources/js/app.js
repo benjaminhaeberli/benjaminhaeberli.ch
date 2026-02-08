@@ -22,13 +22,6 @@ console.log("🇨🇭 Developed by Benjamin Haeberli (https://benjaminhaeberli.c
 //   });
 // });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   var copyCodeButtons = document.querySelectorAll("button[data-code-id]");
-//   copyCodeButtons.forEach(function (button) {
-//     button.addEventListener("click", function () {
-//       kirbyjs.copyCodeBlock(button);
-//     });
-//   });
-
-//   initCardDetails();
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  initCardDetails();
+});

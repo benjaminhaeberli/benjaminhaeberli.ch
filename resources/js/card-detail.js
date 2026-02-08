@@ -124,6 +124,22 @@ function initCardDetails() {
       unpinAndClose();
     }
   });
+
+  // Close pinned popup on click outside (except on popup links)
+  document.addEventListener("click", (e) => {
+    if (!pinnedWrapper) return;
+
+    const popup = pinnedWrapper.querySelector(".card-detail-popup");
+    const trigger = pinnedWrapper.querySelector("[data-card-detail]");
+
+    // Don't close if clicking the trigger card (handled by its own listener)
+    if (trigger && trigger.contains(e.target)) return;
+
+    // Don't close if clicking inside the popup (allow link clicks etc.)
+    if (popup && popup.contains(e.target)) return;
+
+    unpinAndClose();
+  });
 }
 
 export default initCardDetails;
