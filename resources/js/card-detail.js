@@ -1,12 +1,12 @@
 /**
  * Card Detail Popup
  *
- * Desktop: hover shows popup, mouseleave hides it.
- *          Click "pins" the popup — it stays open until you click again.
- * Mobile:  click toggles popup with overlay.
+ * Desktop (≥1400px): hover shows popup, mouseleave hides it.
+ *                    Click "pins" the popup — it stays open until you click again.
+ * Smaller screens:   click toggles popup with overlay (centered).
  */
 
-const MOBILE_BREAKPOINT = 768;
+const MOBILE_BREAKPOINT = 1400;
 
 let overlay = null;
 let activeWrapper = null;
