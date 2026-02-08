@@ -9,9 +9,9 @@
     <?php endif ?>
     <div class="card-detail-body">
         <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
+            <div class="group flex items-center gap-2">
                 <?php if ($item->icon()->isNotEmpty()) : ?>
-                    <?= icon($item->icon()->value(), ['class' => 'size-4 text-neutral-400']) ?>
+                    <?= icon($item->icon()->value(), ['class' => 'size-4 text-neutral-400 group-hocus:text-white transition-colors']) ?>
                 <?php endif ?>
                 <?php if ($item->url()->isNotEmpty()) : ?>
                     <a href="<?= $item->url() ?>" target="_blank" class="text-sm font-semibold hocus:underline" data-card-detail-link><?= $item->name() ?></a>

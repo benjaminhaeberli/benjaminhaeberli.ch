@@ -75,8 +75,9 @@ Worksrefs:
 - 
   name: app.nanou.ch
   description: >
-    Gestion de missions et personnel
-    éducatif avec Laravel et Filament.
+    Gestion d'un pool de personnel éducatif
+    et de leurs missions pour une
+    entreprise lausannoise.
   icon: lucide:globe
   label: Laravel
   url: https://nanou.ch/
@@ -117,7 +118,7 @@ Worksrefs:
   cover_image:
     - file://riegchsdyvgeptgt
   details: |
-    Refonte du back-office **Kirby** pour un studio de design graphique zurichois.
+    Refonte du back-office **Kirby CMS** pour un studio de design graphique zurichois.
     
     - Affichages de données avancés avec vues personnalisées
     - Restructuration complète de l'architecture du contenu
