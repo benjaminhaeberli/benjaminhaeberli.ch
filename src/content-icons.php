@@ -15,4 +15,3 @@ icon('lucide:globe');
 icon('lucide:blocks');
 icon('lucide:lightbulb');
 icon('lucide:shield-check');
-
