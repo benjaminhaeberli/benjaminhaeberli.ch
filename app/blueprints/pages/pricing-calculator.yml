@@ -1,0 +1,33 @@
+title:
+  fr: Calculateur de prix
+  en: Pricing Calculator
+icon: calculator
+
+columns:
+  - width: 2/3
+    fields:
+      intro_title:
+        label:
+          fr: Titre
+          en: Title
+        type: text
+        default: 'Quel site web pour votre projet ?'
+      intro_text:
+        label:
+          fr: Texte d'introduction
+          en: Introduction text
+        type: textarea
+        size: small
+        default: 'Répondez à quelques questions pour obtenir une estimation personnalisée et comparer les solutions.'
+      cta_url:
+        label:
+          fr: URL du bouton principal (Calendly)
+          en: Main CTA URL (Calendly)
+        type: url
+        default: 'https://calendly.com/benjaminhaeberli/visioconference'
+      contact_url:
+        label:
+          fr: URL du formulaire de contact (Tally)
+          en: Contact form URL (Tally)
+        type: url
+        default: 'https://tally.so/r/n08Eey'

@@ -74,10 +74,7 @@ Worksrefs:
 
 - 
   name: app.nanou.ch
-  description: >
-    Gestion d'un pool de personnel
-    éducatif pour une entreprise
-    lausannoise.
+  description: "Gestion d'un pool de personnel éducatif pour une entreprise lausannoise."
   icon: lucide:globe
   label: Laravel
   url: https://nanou.ch/
@@ -110,8 +107,8 @@ Worksrefs:
 - 
   name: standard-deluxe.ch
   description: >
-    Back-office sur mesure pour un studio
-    de design graphique.
+    Back-office sur mesure pour un studio de
+    design graphique.
   icon: lucide:globe
   label: Kirby
   url: https://standard-deluxe.ch/

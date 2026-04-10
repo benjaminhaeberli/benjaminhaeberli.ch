@@ -1,0 +1,21 @@
+Title: calculateur-de-prix
+
+----
+
+Intro-title: Quel site web pour votre projet ?
+
+----
+
+Intro-text: Répondez à quelques questions pour obtenir une estimation personnalisée et comparer les solutions.
+
+----
+
+Cta-url: https://calendly.com/benjaminhaeberli/visioconference
+
+----
+
+Contact-url: https://tally.so/r/n08Eey
+
+----
+
+Uuid: bf6fgp5wu9clgjj8

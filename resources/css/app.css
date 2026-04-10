@@ -32,6 +32,7 @@
 @import "./modules/highlight.css";
 @import "./modules/kirbytext.css";
 @import "./modules/card-detail.css";
+@import "./modules/pricing-calculator.css";
 
 @layer base {
   html {

@@ -1,6 +1,7 @@
 import ScrollReveal from "scrollreveal";
 import kirbyjs from "./kirbyjs";
 import initCardDetails from "./card-detail";
+import initPricingCalculator from "./pricing-calculator";
 
 console.log(
   "ℹ️ This website uses JavaScript to anonymously analyse user traffic using Plausible (https://plausible.io/)"
@@ -24,4 +25,5 @@ console.log("🇨🇭 Developed by Benjamin Haeberli (https://benjaminhaeberli.c
 
 document.addEventListener("DOMContentLoaded", function () {
   initCardDetails();
+  initPricingCalculator();
 });
